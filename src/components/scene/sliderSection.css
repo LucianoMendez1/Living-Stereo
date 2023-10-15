@@ -1,92 +1,102 @@
 /* sceneScroll.css */
 
-
 body {
-  font-family: "Messina",sans-serif;
+  font-family: "Messina", sans-serif;
   width: 100vw;
-  background-color: #090909;
-  color: #fff;
-  overflow: hidden;
   text-transform: uppercase;
-  overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   user-select: none;
   font-size: 14px;
   line-height: 20px;
+  scrollbar-width: 0.2px; /* Establece el ancho de la barra de desplazamiento */
+
 }
+
+/* Estiliza la barra de desplazamiento */
+body::-webkit-scrollbar {
+  width: 0.2px; /* Ancho de la barra de desplazamiento en navegadores webkit (Chrome, Safari, Edge) */
+}
+
+body::-webkit-scrollbar-track {
+  background: #000000; /* Color de fondo de la barra de desplazamiento */
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #333; /* Color del "pomo" de la barra de desplazamiento */
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background: #555; /* Color del "pomo" cuando se pasa el mouse sobre él */
+}
+
 
 .inactive {
   opacity: 0.5;
   pointer-events: none;
+
 }
 
 .scene-scroll-container {
   display: flex;
   flex-direction: row;
   width: 125%;
-  
-  height: 100vh;
+  height: 20vw;
   transition: transform 0.8s ease, opacity 0.3s ease;
+  overflow-x: scroll;
+  white-space: nowrap;
 }
 
 .section {
   position: relative;
-  width: calc(90vw / 3); 
-
+  width: calc(90vw / 3);
   flex-direction: column;
   transition: transform 1s ease;
   align-items: center;
   justify-content: center;
-  color: white;
   font-size: 2rem;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
   overflow: hidden;
 }
 
-
 .section.inactive {
-  opacity: 0.5; /* Cambia la opacidad de las secciones inactivas */
-  pointer-events: none; /* Desactiva eventos en las secciones inactivas */
-  filter: brightness(0.6); /* Aplica un filtro de brillo para oscurecer las secciones inactivas */
+  opacity: 0.5;
+  pointer-events: none;
+ 
 }
-
 
 .section.active {
   filter: brightness(1.5);
- 
-  transform: scale(1.1); /* Escala la sección activa al 120% de su tamaño original */
+  bottom: 2%;
+  transform: scale(1.1);
 }
 
 .background-image {
- 
   background-size: cover;
   background-repeat: no-repeat;
-  background-attachment: fixed; /* Esto asegura que el fondo no se desplace con el contenido */
+  background-attachment: fixed;
 }
+
 .background-container {
   position: absolute;
   top: 0;
   left: 0;
   width: 125%;
   height: 100%;
- background-color: #101010;
+  background-color: #ff0a0a;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  z-index: -1; /* Asegura que el fondo esté detrás de otros elementos */
+  z-index: -1;
 }
 
-
 .section h1 {
- 
   font-size: 1rem;
- margin-top: 40rem;
+  margin-top: 40rem;
   margin-left: 30rem;
-  font-family: "Messina",sans-serif;
-  color: #fafafaf3;
- font-weight: 600;
-  transform:  rotateX(30deg);
+  font-family: "Messina", sans-serif;
+  font-weight: 600;
+  transform: rotateX(30deg);
 }
 
 .video-background {
@@ -94,16 +104,15 @@ body {
   top: 0;
   left: 0;
   padding: 20px;
-  top: 35%;
-  /* Cambia el ancho y el alto para que ocupen un tercio del contenedor */
+  top: 10%;
   width: 100%;
   height: 33.33vh;
   object-fit: cover;
-  
   z-index: -1;
 }
-.video-background-active{
-   border: 1px solid ;
+
+.video-background-active {
+  border: 1px solid;
 }
 
 .content {
@@ -132,7 +141,6 @@ button {
   margin-left: 80%;
   cursor: pointer;
   font-size: 1rem;
-  
   transition: background-color 0.3s ease;
   position: relative;
   overflow: hidden;
@@ -152,21 +160,30 @@ button {
   text-shadow: 10px 3px 4px rgba(0, 0, 0, 0.5);
   transform: perspective(900px) rotateX(30deg);
 }
+
 /* Media query para dispositivos móviles */
 @media screen and (max-width: 480px) {
   body {
-    font-size: 16px; /* Ejemplo: Cambiar el tamaño de fuente en dispositivos móviles */
+    font-size: 16px;
+  text-shadow: none;
+  background-color: #090909;
+  line-height: 1.5;
+  white-space: normal;
+  overflow: visible;
+  background-color: #090909;
+  text-transform: none;
+  overflow: visible;
+  overflow-x: hidden;
+    font-size: 16px;
   }
-  
+
   .section h1 {
-    font-size: 4rem; /* Ejemplo: Cambiar el tamaño de fuente de los encabezados en dispositivos móviles */
+    font-size: 4rem;
   }
 
   .start-button1,
   .start-button2 {
-    font-size: 1.5rem; /* Ejemplo: Cambiar el tamaño de fuente de los botones en dispositivos móviles */
-    bottom: 10rem; /* Ejemplo: Ajustar la posición vertical de los botones en dispositivos móviles */
+    font-size: 1.5rem;
+    bottom: 10rem;
   }
-  
-  /* Puedes agregar más estilos específicos para dispositivos móviles según tus necesidades */
 }

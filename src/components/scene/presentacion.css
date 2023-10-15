@@ -1,0 +1,246 @@
+body {
+  margin: 0;
+  padding: 0;
+  color: #ffffff;
+  background-color: #000;
+}
+
+/* Contenedor principal */
+.home-container {
+  display: flex;
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* Video de fondo */
+.background-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.3);
+  z-index: -1;
+}
+
+/* Contenido principal */
+.start-screen {
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  animation: zoomOut 1s ease-in-out both;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  opacity: 1;
+  pointer-events: auto;
+  filter: none;
+  transition: opacity 0.5s ease;
+}
+
+/* Estilos para el contenido principal */
+.start-content {
+  z-index: 1;
+  text-align: center; /* Alinea el texto al centro */
+}
+
+/* Estilos para el título "glitch" */
+.start-content .glitch-text {
+  font-size: 10rem; 
+  color: #ffffff;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  
+  background-color: transparent;
+  text-align: center;
+  animation: changeColor 3s linear infinite;
+  transform-origin: center; /* Establece el punto de origen de la rotación en el centro */
+}
+
+@keyframes changeColor {
+  0% {
+      color: #ffffff;
+  }
+  25% {
+      color: #7d7d7d;
+  }
+  50% {
+      color: #faf9fc;
+  }
+  75% {
+      color: #a0a0a0;
+  }
+  100% {
+      color: #ffffff;
+  }
+}
+.glitch-text.glitching::before {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: rgb(255, 255, 255); /* Cambia el color del "glitch" según tu preferencia */
+  clip: rect(1px, auto, 1px, 0);
+  animation: glitch 0.3s linear infinite;
+}
+
+@keyframes glitch {
+  2%, 64% {
+    transform: translate(2px, 0);
+  }
+  4%, 60% {
+    transform: translate(-2px, 0);
+  }
+  62% {
+    transform: translate(0, 0);
+  }
+}
+/* Estilos para la descripción */
+.description {
+  font-size: 1.5rem; /* Tamaño de fuente ajustado */
+  color: #fafafa;
+  font-weight: 700;
+  letter-spacing: 2px;
+  line-height: 1.2em;
+  margin-left: 14%;
+  margin-bottom: 1rem;
+  text-align: center;
+  max-width: 800px; /* Ajusta el ancho máximo del texto para una mejor legibilidad */
+  background: none;
+
+}
+
+/* Resto de estilos sin cambios */
+/* ... */
+
+/* Navegación de escena */
+.scene-navigation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: zoomOut 1s ease-in-out both;
+  z-index: 1000;
+}
+
+/* Estilos para el botón de silencio/sonido */
+.button-mute {
+  border: none;
+  background-color: transparent; /* Cambia el fondo a transparente */
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  z-index: 1;
+  transition: background-color 0.3s ease;
+
+  color: #faba25f3;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  transform: perspective(500px) rotateX(30deg);
+}
+
+.button-mute:hover {
+  background-color: #180521;
+}
+
+/* Estilos para la galería de imágenes */
+.image-gallery {
+  background-color: #fff;
+  color: #000;
+  padding: 40px;
+  text-align: center;
+}
+
+/* Estilos para el reproductor de música */
+.music-player {
+  background-color: #fff;
+  color: #000;
+  padding: 40px;
+  text-align: center;
+}
+
+/* Estilos para la sección de próximos eventos */
+.events-section {
+  background-color: #000;
+  color: #fff;
+  padding: 40px;
+  text-align: center;
+}
+
+/* Estilos para la sección de contacto */
+.contact-section {
+  background-color: #fff;
+  color: #000;
+  padding: 40px;
+  text-align: center;
+}
+
+/* Estilos para los enlaces a redes sociales */
+.social-links {
+  background-color: #000;
+  color: #fff;
+  padding: 40px;
+  text-align: center;
+}
+
+/* Estilos para títulos de sección */
+.social-links h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* Estilos para el formulario de contacto */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.input-field {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+}
+
+.submit-button {
+  background-color: #000;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* Estilos para los elementos de navegación (por ejemplo, enlaces a redes sociales) */
+.nav-link {
+  color: #fff;
+  text-decoration: none;
+  font-size: 24px;
+  margin: 10px;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #faba25f3;
+}
+
+
+/* Estilos para la batería */
+
+@media screen and (max-width: 768px) {
+  .start-content h1 {
+    display: flex;
+    font-size: 2rem;
+  }
+}

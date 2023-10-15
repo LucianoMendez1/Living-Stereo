@@ -1,8 +1,8 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from'./App'
-import SceneScroll from './components/scene/SceneScroll'
-
+import Home from './components/home/Home'
+import Presentacion from './components/scene/Presentacion'
 import { CssBaseline } from '@mui/material'
 import { ThemeProvider } from 'styled-components'
 import { createTheme } from "@mui/material";
@@ -38,6 +38,6 @@ const ThemeConfig = createTheme( {
 ReactDOM.createRoot(document.getElementById('root')).render(
     <ThemeProvider theme={ThemeConfig}>
         <CssBaseline/>
-        <SceneScroll  />
+        <Home  />
     </ThemeProvider>
 )
