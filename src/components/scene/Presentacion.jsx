@@ -94,7 +94,7 @@ const Presentacion = () => {
             Living Stereo
           </h1>
           <div className="description">
-            Living Stereo es una banda que fusiona elementos sonoros clásicos
+          <span style={{ color: '#fbbe3a' }}>Living Stereo </span> es una banda que fusiona elementos sonoros clásicos
             del rock progresivo, inspirados por bandas como Rush y Pink Floyd,
             con elementos electrónicos de la escena de progressive house. En su
             viaje musical encuentran inspiración en DJs y productores como Sasha,

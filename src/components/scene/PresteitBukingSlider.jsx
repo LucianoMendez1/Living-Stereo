@@ -12,7 +12,7 @@ const PresteitBukingSlider = () => {
   );
   const [isMuted, setIsMuted] = useState(true);
   const videoRef = useRef(null);
-  const descriptionRef = useRef(null);
+  const titulopresteitRef = useRef(null);
 
   // Función para alternar el mute/desmute del video
   const toggleMute = () => {
@@ -24,34 +24,33 @@ const PresteitBukingSlider = () => {
 
   useEffect(() => {
     const video = videoRef.current;
-    const description = descriptionRef.current;
+    const titulopresteit = titulopresteitRef.current;
     const scrollTriggerContainer = document.querySelector(".home-container");
 
     gsap.registerPlugin(ScrollTrigger);
 
-    // Animación del bloque de texto al hacer scroll
-    gsap.to(description, {
+  
+    gsap.to(titulopresteit, {
       scrollTrigger: {
-        trigger: description,
+        trigger: titulopresteit,
         start: "top bottom", // La animación comienza cuando la parte superior del bloque de texto llega a la parte inferior de la vista
       },
       opacity: 1, // Cambia la opacidad a 1
       y: 0, // Cambia la posición vertical (y) a 0
       duration: 1.5, // Duración de la animación en segundos
     });
-  }, []); // El array vacío significa que este efecto se ejecuta solo una vez, equivalente a componentDidMount
+  }, []); 
   return (
     <div className="home-container">
       <div className="start-screen">
-        <div className="start-content">
+        <div className="start-content1">
           
           <div
-            ref={descriptionRef}
+           
             className="titulopresteit"
-            style={{ color: 'white' }}
           >
             <span>Preskeit Buking</span>
-          </div><SliderSection /> {/* Usa el componente SliderSection aquí */}
+          </div><SliderSection /> 
           <video
             ref={videoRef}
             autoPlay

@@ -58,8 +58,7 @@ const Biografia = () => {
                esto incluye sets b2b como agustin bragoni b2b simon di
               marzio, agustin bragoni b2b nicolas nieves y simon di marzio b2b
               nicolas nieves.<p></p><br></br>
-               <span style={{ color: '#fbbe3a' }}>living stereo</span>
-              paralelamente ofrecen una experiencia única con su formato
+               <span style={{ color: '#fbbe3a' }}>living stereo</span> paralelamente ofrecen una experiencia única con su formato
               "living stereo" que combina guitarra, lap steel,
               synthesizer, drums y dj set en un espectáculo impresionante y
               enérgico.<p></p><br></br>

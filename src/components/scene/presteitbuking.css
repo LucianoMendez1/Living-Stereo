@@ -1,13 +1,31 @@
 .titulopresteit{
-  font-size: 8rem; 
-  color: #ffffff;
+  font-size: 6rem; 
+  font-family: 'Clash Display', sans-serif;
   font-weight: 700;
   margin-bottom: 1rem;
   margin-bottom: 5rem;
   background-color: transparent;
   text-align: center;
-  animation: changeColor 3s linear infinite;
+  animation: changeColor1 5s linear infinite;
   transform-origin: center; /* Establece el punto de origen de la rotación en el centro */
+}
+
+@keyframes changeColor1 {
+  0% {
+      color: #ffffff;
+  }
+  25% {
+      color: #fbbe3a;
+  }
+  50% {
+      color: #faf9fc;
+  }
+  75% {
+      color: #fbbe3a;
+  }
+  100% {
+      color: #ffffff;
+  }
 }
 @media screen and (max-width: 768px) {
   .titulopresteit {
