@@ -9,7 +9,8 @@ body {
   user-select: none;
   font-size: 14px;
   line-height: 20px;
-  scrollbar-width: 50px; /* Establece el ancho de la barra de desplazamiento */
+  
+  scrollbar-width: 1px; /* Establece el ancho de la barra de desplazamiento */
   z-index: 999;
 }
 
@@ -162,7 +163,7 @@ button {
 }
 
 /* Media query para dispositivos móviles */
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
   body {
     font-size: 16px;
   text-shadow: none;
@@ -185,5 +186,26 @@ button {
   .start-button2 {
     font-size: 1.5rem;
     bottom: 10rem;
+  }
+  .scene-scroll-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100vw;
+    transition: transform 0.8s ease, opacity 0.3s ease;
+    overflow-x: scroll;
+    white-space: nowrap;
+  }
+  
+  .section {
+    position: relative;
+    width: calc(125vw /3);
+    flex-direction: column;
+    transition: transform 1s ease;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+    overflow: hidden;
   }
 }
