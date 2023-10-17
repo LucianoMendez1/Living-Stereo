@@ -9,8 +9,8 @@ body {
   user-select: none;
   font-size: 14px;
   line-height: 20px;
-  scrollbar-width: 0.2px; /* Establece el ancho de la barra de desplazamiento */
-
+  scrollbar-width: 50px; /* Establece el ancho de la barra de desplazamiento */
+  z-index: 999;
 }
 
 /* Estiliza la barra de desplazamiento */
@@ -49,7 +49,7 @@ body::-webkit-scrollbar-thumb:hover {
 
 .section {
   position: relative;
-  width: calc(120vw / 4);
+  width: calc(100vw / 4);
   flex-direction: column;
   transition: transform 1s ease;
   align-items: center;
@@ -91,8 +91,8 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 .section h1 {
-  font-size: 1rem;
-  margin-top: 40rem;
+  
+  
   margin-left: 30rem;
   font-family: "Messina", sans-serif;
   font-weight: 600;
@@ -104,7 +104,7 @@ body::-webkit-scrollbar-thumb:hover {
   top: 0;
   left: 0;
   padding: 20px;
-  top: 10%;
+  bottom: 90rem;
   width: 100%;
   height: 33.33vh;
   object-fit: cover;

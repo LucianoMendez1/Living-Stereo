@@ -1,0 +1,16 @@
+.titulopresteit{
+  font-size: 8rem; 
+  color: #ffffff;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  margin-bottom: 5rem;
+  background-color: transparent;
+  text-align: center;
+  animation: changeColor 3s linear infinite;
+  transform-origin: center; /* Establece el punto de origen de la rotación en el centro */
+}
+@media screen and (max-width: 768px) {
+  .titulopresteit {
+    font-size: 4rem;
+  }
+}

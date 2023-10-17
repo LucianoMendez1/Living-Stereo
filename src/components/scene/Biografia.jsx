@@ -54,25 +54,27 @@ const Biografia = () => {
               musical a través de sonidos innovadores.
               versatilidad en el escenario
               cuentan con una variedad de formatos para sus presentaciones
-              en vivo. esto incluye sets b2b como agustin bragoni b2b simon di
+              en vivo.<p></p>
+               esto incluye sets b2b como agustin bragoni b2b simon di
               marzio, agustin bragoni b2b nicolas nieves y simon di marzio b2b
-              nicolas nieves.
+              nicolas nieves.<p></p><br></br>
                <span style={{ color: '#fbbe3a' }}>living stereo</span>
               paralelamente ofrecen una experiencia única con su formato
               "living stereo" que combina guitarra, lap steel,
               synthesizer, drums y dj set en un espectáculo impresionante y
-              enérgico.
+              enérgico.<p></p><br></br>
+
               recorrido en la escena musical:
-              reconocimiento nacional e internacional.
+              <span style={{ color: '#fbbe3a' }}> reconocimiento nacional e internacional.</span>
               sus tres primeras producciones recibieron una cálida
               respuesta de dj’s tanto a nivel nacional como internacional,
-              siendo <span style={{ color: '#fbbe3a' }}>sellados bajo el label south america avenue.</span>
+              siendo <span style={{ color: '#fbbe3a' }}>sellados bajo el label south america avenue.</span><p></p>
               support de djs destacados
               han tenido el honor de recibir el apoyo de destacados djs
               como hernan cattaneo en su redisent 645 (galactic original
               mix)
               así como nick varon, kevin di serna, paul deep, soundexile, emi
-              galvan, entre otros en sus producciones.
+              galvan, entre otros en sus producciones.<p></p>
               producción de eventos:
               iconic club como djs residentes y productores*
               secret location como djs residentes y co-productores*

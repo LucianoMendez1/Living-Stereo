@@ -3,7 +3,7 @@ import './sliderSection.css';
 
 const sectionData = [
   { name: 'Mellino', background: 'https://res.cloudinary.com/dvnhn35l4/video/upload/v1696907182/ProyectAgustin/1_iiwrbe.mp4' },
-  { name: 'Iconic', background: 'https://res.cloudinary.com/dvnhn35l4/video/upload/v1696907149/ProyectAgustin/2_gtnfou.mp4' },
+  { name: 'Agustin Bragoni', background: 'https://res.cloudinary.com/dvnhn35l4/video/upload/v1697520511/2550f605-d1ef-4035-91a9-db4619c37d4b_joy6bd.mov' },
   { name: 'Uno', background: 'https://res.cloudinary.com/dvnhn35l4/video/upload/v1696907183/ProyectAgustin/3_dgsoa2.mp4' },
   { name: 'Carpa Servian', background: 'https://res.cloudinary.com/dvnhn35l4/video/upload/v1696907204/ProyectAgustin/4_uisfb1.mp4' },
 ];

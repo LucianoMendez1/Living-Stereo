@@ -4,6 +4,8 @@ import App from'./App'
 import Home from './components/home/Home'
 import Biografia from './components/scene/Biografia'
 import Presentacion from './components/scene/Presentacion'
+import PresteitBukingSlider from './components/scene/PresteitBukingSlider'
+import SliderSection from './components/scene/SliderSection'
 import { CssBaseline } from '@mui/material'
 import { ThemeProvider } from 'styled-components'
 import { createTheme } from "@mui/material";
