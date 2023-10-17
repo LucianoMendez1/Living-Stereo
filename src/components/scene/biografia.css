@@ -3,7 +3,7 @@ body {
   padding: 0;
   color: #ffffff;
   background-color: #000;
-  font-family: Arial, sans-serif; /* Establecer una fuente legible */
+  font-family: 'Clash Display', sans-serif;
 }
 
 /* Contenedor principal */
@@ -55,7 +55,7 @@ body {
 .description {
   color: #fafafa;
   letter-spacing: 0.1rem;
-  max-width: 90%;
+  max-width: 75%;
   text-align: justify;
   background: rgba(0, 0, 0, 0.7);
   padding: 20px;
@@ -64,7 +64,7 @@ body {
   font-size: 1.4rem;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-  font-family: 'Arial', sans-serif; /* Cambiar a la fuente que prefieras */
+  
   
 }
 
@@ -174,10 +174,30 @@ body {
   
   /* Estilos para la batería */
   
-  @media screen and (max-width: 768px) {
-    .start-content h1 {
-      display: flex;
-      font-size: 2rem;
-    }
+ /* Estilos para dispositivos móviles (ancho de pantalla <= 768px) */
+@media screen and (max-width: 768px) {
+  /* Modificar títulos de sección */
+  .start-content h1 {
+    font-size: 2rem;
   }
-  
+
+  /* Modificar descripción */
+  .description {
+    font-size: 0.7rem;
+    max-width: 100%;
+  }
+
+  /* Modificar botón de silencio/sonido */
+  .button-mute {
+    padding: 5px 10px;
+    font-size: 12px;
+  }
+
+  /* Modificar navegación */
+  .nav-link {
+    font-size: 16px;
+    margin: 5px;
+  }
+
+  /* Otras modificaciones de estilo para dispositivos móviles, si es necesario */
+}

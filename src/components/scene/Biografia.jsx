@@ -44,18 +44,20 @@ const Biografia = () => {
         <div className="start-content">
           <div
             ref={descriptionRef}
-            className="description">
-            living stereo es una vibrante productora de argentina,
+            className="description"
+            style={{ color: 'white' }} // Establece el color del texto en blanco
+          >
+             <span style={{ color: '#fbbe3a' }}>living stereo</span> es una vibrante productora de Argentina,
               compuesta por un talentoso equipo de productores musicales:
-              agustin bragoni, joaquin irigoyen, nicolas nieves y simon di
-              marzio que tienen como objetivo generar una nueva identidad
+              <span style={{ color: '#fbbe3a' }}> agustin bragoni, joaquin irigoyen, nicolas nieves y simon di
+              marzio </span>que tienen como objetivo generar una nueva identidad
               musical a través de sonidos innovadores.
               versatilidad en el escenario
               cuentan con una variedad de formatos para sus presentaciones
               en vivo. esto incluye sets b2b como agustin bragoni b2b simon di
               marzio, agustin bragoni b2b nicolas nieves y simon di marzio b2b
               nicolas nieves.
-              living stereo 
+               <span style={{ color: '#fbbe3a' }}>living stereo</span>
               paralelamente ofrecen una experiencia única con su formato
               "living stereo" que combina guitarra, lap steel,
               synthesizer, drums y dj set en un espectáculo impresionante y
@@ -64,7 +66,7 @@ const Biografia = () => {
               reconocimiento nacional e internacional.
               sus tres primeras producciones recibieron una cálida
               respuesta de dj’s tanto a nivel nacional como internacional,
-              siendo sellados bajo el label south america avenue.
+              siendo <span style={{ color: '#fbbe3a' }}>sellados bajo el label south america avenue.</span>
               support de djs destacados
               han tenido el honor de recibir el apoyo de destacados djs
               como hernan cattaneo en su redisent 645 (galactic original
@@ -75,12 +77,12 @@ const Biografia = () => {
               iconic club como djs residentes y productores*
               secret location como djs residentes y co-productores*
               animala como productores y djs residentes.*
-              en 2023, dieron vida a "animala", un emocionante espacio con
+              <span style={{ color: '#fbbe3a' }}>En 2023, dieron vida a "Animala",</span> un emocionante espacio con
               capacidad para 500 personas que ha ido creciendo
               constantemente desde su creación. "animala" ha sido
               reconocido por su sonido innovador, puesta en escena y
               apoyo a artistas locales en crecimiento generando un gran
-              impacto en la escena musical.
+              impacto en la<span style={{ color: '#fbbe3a' }}> escena musical.</span>
           </div>
           <video
             ref={videoRef}
