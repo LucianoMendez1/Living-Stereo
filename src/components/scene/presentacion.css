@@ -9,6 +9,7 @@ body {
 .home-container {
   display: flex;
   position: relative;
+  width: auto;
   height: 100vh;
   overflow: hidden;
 }
