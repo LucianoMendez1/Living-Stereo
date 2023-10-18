@@ -52,57 +52,58 @@ body {
   text-align: center; /* Alinea el texto al centro */
 }
 
-/* Estilos para el título "glitch" */
 .start-content .glitch-text {
-  font-size: 10rem; 
-  color: #ffffff;
+  font-size: 12rem;
   font-weight: 700;
   margin-bottom: 1rem;
-  
   background-color: transparent;
   text-align: center;
-  animation: changeColor 3s linear infinite;
-  transform-origin: center; /* Establece el punto de origen de la rotación en el centro */
+  animation: changeColor 8s linear infinite;
+  transform-origin: center;
+  color: #ffffff;
+  text-shadow: 0 0 10px #fafab9, 0 0 40px #ffeabe; /* Ajusta los valores para expandir más el efecto de neón */
 }
 
 @keyframes changeColor {
   0% {
-      color: #ffffff;
+    color: #ffffff;
   }
   25% {
-      color: #9e9e9e;
+    color: #ebebeb;
   }
   50% {
-      color: #faf9fc;
+    color: #ffffff;
   }
   75% {
-      color: #fee6b6;
+    color: #d7d7d7;
   }
   100% {
-      color: #ffffff;
+    color: #ffffff;
   }
 }
+
 .glitch-text.glitching::before {
   content: attr(data-text);
   position: absolute;
   top: 0;
   left: 0;
-  color: rgb(255, 255, 255); /* Cambia el color del "glitch" según tu preferencia */
+  color: #ffffff;
   clip: rect(1px, auto, 1px, 0);
   animation: glitch 0.3s linear infinite;
 }
 
 @keyframes glitch {
   2%, 64% {
-    transform: translate(2px, 0);
+    transform: translate(20rem, 0); /* Ajusta los valores para una expansión lateral mayor */
   }
   4%, 60% {
-    transform: translate(-2px, 0);
+    transform: translate(-20rem, 0); /* Ajusta los valores para una expansión lateral mayor */
   }
   62% {
     transform: translate(0, 0);
   }
 }
+
 /* Estilos para la descripción */
 .description {
   font-size: 1.5rem; /* Tamaño de fuente ajustado */
