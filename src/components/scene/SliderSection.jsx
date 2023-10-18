@@ -1,5 +1,5 @@
 import React from 'react';
-import './SliderSection.css'
+import './sliderSection.css'
 const SliderSection = () => {
   return (
     <div>
