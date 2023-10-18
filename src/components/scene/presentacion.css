@@ -254,6 +254,6 @@ body {
 
 @media screen and (max-width: 768px) {
   .start-content .glitch-text {
-    font-size: 4rem;
+    font-size: 2rem;
   }
 }
