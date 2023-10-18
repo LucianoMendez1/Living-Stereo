@@ -6,6 +6,8 @@
   margin-bottom: 5rem;
   background-color: transparent;
   text-align: center;
+  text-shadow: 0 0 10px #fae7b9, 0 0 40px , 0 0 50px #fafab9;
+
   animation: changeColor1 5s linear infinite;
   transform-origin: center; /* Establece el punto de origen de la rotación en el centro */
 }
@@ -15,18 +17,44 @@
       color: #ffffff;
   }
   25% {
-      color: #fbbe3a;
+      color: #dedede;
   }
   50% {
       color: #faf9fc;
   }
   75% {
-      color: #fbbe3a;
+      color: #e9e9e9;
   }
   100% {
       color: #ffffff;
   }
+
 }
+
+.titulopresteit::before {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #ffffff;
+  clip: rect(1px, auto, 1px, 0);
+  animation: glitch 0.3s linear infinite;
+}
+
+@keyframes glitch {
+  2%, 64% {
+    transform: translate(20rem, 0); /* Ajusta los valores para una expansión lateral mayor */
+  }
+  4%, 60% {
+    transform: translate(-20rem, 0); /* Ajusta los valores para una expansión lateral mayor */
+  }
+  62% {
+    transform: translate(0, 0);
+  }
+}
+
+
+
 @media screen and (max-width: 768px) {
   .titulopresteit {
     font-size: 2rem;
