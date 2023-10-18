@@ -60,7 +60,7 @@ const PresteitBukingSlider = () => {
             className="background-video"
           >
             <source src={currentBackgroundVideo} type="video/mp4" />
-            Tu navegador no admite el elemento de video.
+            Tu navegador no admite el elemento de videos.
           </video>
           <button className="button-mute" onClick={toggleMute}>
             {isMuted ? "Activar Música" : "Silenciar"}
