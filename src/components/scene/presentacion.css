@@ -58,7 +58,7 @@ body {
   margin-bottom: 1rem;
   background-color: transparent;
   text-align: center;
-  animation: changeColor 8s linear infinite;
+  animation: changeColor 5s linear infinite;
   transform-origin: center;
   color: #ffffff;
   text-shadow: 0 0 10px #fafab9, 0 0 40px #ffeabe; /* Ajusta los valores para expandir más el efecto de neón */
@@ -69,13 +69,13 @@ body {
     color: #ffffff;
   }
   25% {
-    color: #ebebeb;
+    color: #fff9cf;
   }
   50% {
     color: #ffffff;
   }
   75% {
-    color: #d7d7d7;
+    color: #fef9ce;
   }
   100% {
     color: #ffffff;
