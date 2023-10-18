@@ -72,7 +72,7 @@ body {
   animation: changeColor 5s linear infinite;
   transform-origin: center;
   color: #ffffff;
-  text-shadow: 0 0 10px #ffffdbc3, 0 0 40px #fdefd0d9; /* Ajusta los valores para expandir más el efecto de neón */
+   text-shadow: 0 0 10px rgb(243, 243, 243), 0 0 20px rgb(254, 227, 165), 0 0 30px rgb(255, 255, 255);
 }
 
 @keyframes changeColor {
@@ -80,13 +80,13 @@ body {
     color: #ffffff;
   }
   25% {
-    color: #bfbfbf;
+    color: #e4e4e4;
   }
   50% {
     color: #ffffff;
   }
   75% {
-    color: #c5c5c5;
+    color: #e3e2e2;
   }
   100% {
     color: #ffffff;
