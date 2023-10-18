@@ -15,16 +15,17 @@ body {
 }
 
 /* Video de fondo */
-.background-video {
+.background-video1 {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
-  filter: brightness(0.3);
+  filter: grayscale(100%) brightness(0.09);
   z-index: -1;
 }
+
 
 /* Contenido principal */
 .start-screen {
@@ -69,13 +70,13 @@ body {
       color: #ffffff;
   }
   25% {
-      color: #7d7d7d;
+      color: #9e9e9e;
   }
   50% {
       color: #faf9fc;
   }
   75% {
-      color: #a0a0a0;
+      color: #fee6b6;
   }
   100% {
       color: #ffffff;
