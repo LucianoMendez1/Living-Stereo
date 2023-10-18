@@ -23,7 +23,7 @@ body {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  filter: brightness(0.2);
+  filter: brightness(0.03);
   z-index: -1;
 }
 
@@ -55,12 +55,12 @@ body {
 .description {
   color: #fafafa;
   letter-spacing: 0.01rem; /* Cambia este valor */
-  max-width: 75%;
+  max-width: 70%;
   text-align: justify;
   background: rgba(0, 0, 0, 0.7);
   padding: 20px;
   margin: 0 auto;
-  line-height: 1.5;
+  line-height: 1.4;
   font-family: 'PPFormula', sans-serif; 
   font-size: 2rem;
   border-radius: 10px;
