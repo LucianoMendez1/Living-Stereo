@@ -61,6 +61,9 @@ section img:hover {
   
 }
 @media screen and (max-width: 768px) {
+  section{
+    height: 70vw;
+  }
   section img {
     height: 20vh;
     width: 20%; /* Ajusta el ancho de las imágenes para ocupar todo el ancho de la pantalla */
