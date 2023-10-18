@@ -63,33 +63,36 @@ body {
 }
 
 .start-content .glitch-text {
-  font-family: 'PPFormula', sans-serif; 
+  font-family: 'PPFormula', sans-serif;
   font-size: 15rem;
   letter-spacing: 2px;
   margin-bottom: 1rem;
   background-color: transparent;
   text-align: center;
-  animation: changeColor 5s linear infinite;
+  animation: glitchShadow 6s linear infinite;
   transform-origin: center;
   color: #ffffff;
-  text-shadow: 0 0 10px #ffe294c3, 0 0 40px #fdefd0d9; /* Ajusta los valores para expandir más el efecto de neón */
+  text-shadow: 0 0 10px #ffe294c3, 0 0 40px #fdefd0d9;
 }
 
-@keyframes changeColor {
+@keyframes glitchShadow {
   0% {
-    color: #ffffff;
+    text-shadow: 0 0 10px #ffe294c3, 0 0 40px #fdefd0d9;
   }
-  25% {
-    color: #969696;
+  20% {
+    text-shadow: 0 0 10px #ffe294c3, 0 0 10px #fdefd0d9;
   }
-  50% {
-    color: #ffffff;
+  40% {
+    text-shadow: 0 0 10px #ffe294c3, 0 0 40px #fdefd0d9;
   }
-  75% {
-    color: #dddddd;
+  60% {
+    text-shadow: 0 0 10px #ffe294c3, 0 0 10px #fdefd0d9;
+  }
+  80% {
+    text-shadow: 0 0 10px #ffe294c3, 0 0 40px #fdefd0d9;
   }
   100% {
-    color: #ffffff;
+    text-shadow: 0 0 10px #ffe294c3, 0 0 10px #fdefd0d9;
   }
 }
 
