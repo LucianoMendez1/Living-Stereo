@@ -45,45 +45,24 @@ const Biografia = () => {
           <div
             ref={descriptionRef}
             className="description"
-            style={{ color: 'white' }} // Establece el color del texto en blanco
+            style={{ color: "white" }} // Establece el color del texto en blanco
           >
-             <span style={{ color: '#fbbe3a' }}>living stereo</span> es una vibrante productora de Argentina,
-              compuesta por un talentoso equipo de productores musicales:
-              <span style={{ color: '#fbbe3a' }}> agustin bragoni, joaquin irigoyen, nicolas nieves y simon di
-              marzio </span>que tienen como objetivo generar una nueva identidad
-              musical a través de sonidos innovadores.
-              versatilidad en el escenario
-              cuentan con una variedad de formatos para sus presentaciones
-              en vivo.<p></p>
-               esto incluye sets b2b como agustin bragoni b2b simon di
-              marzio, agustin bragoni b2b nicolas nieves y simon di marzio b2b
-              nicolas nieves.<p></p><br></br>
-               <span style={{ color: '#fbbe3a' }}>living stereo</span> paralelamente ofrecen una experiencia única con su formato
-              "living stereo" que combina guitarra, lap steel,
-              synthesizer, drums y dj set en un espectáculo impresionante y
-              enérgico.<p></p><br></br>
-
-              recorrido en la escena musical:
-              <span style={{ color: '#fbbe3a' }}> reconocimiento nacional e internacional.</span>
-              sus tres primeras producciones recibieron una cálida
-              respuesta de dj’s tanto a nivel nacional como internacional,
-              siendo <span style={{ color: '#fbbe3a' }}>sellados bajo el label south america avenue.</span><p></p>
-              support de djs destacados
-              han tenido el honor de recibir el apoyo de destacados djs
-              como hernan cattaneo en su redisent 645 (galactic original
-              mix)
-              así como nick varon, kevin di serna, paul deep, soundexile, emi
-              galvan, entre otros en sus producciones.<p></p>
-              producción de eventos:
-              iconic club como djs residentes y productores*
-              secret location como djs residentes y co-productores*
-              animala como productores y djs residentes.*
-              <span style={{ color: '#fbbe3a' }}>En 2023, dieron vida a "Animala",</span> un emocionante espacio con
-              capacidad para 500 personas que ha ido creciendo
-              constantemente desde su creación. "animala" ha sido
-              reconocido por su sonido innovador, puesta en escena y
-              apoyo a artistas locales en crecimiento generando un gran
-              impacto en la<span style={{ color: '#fbbe3a' }}> escena musical.</span>
+            <span style={{ color: "#fbbe3a" }}>living stereo</span> es una
+            destacada productora de Argentina conformada por un talentoso equipo
+            de productores musicales, incluyendo <span style={{ color: "#fbbe3a" }}>Agustín Bragoni, Joaquín
+            Irigoyen, Nicolás Nieves y Simón Di Marzio</span>. Su enfoque es la
+            creación de una identidad musical innovadora. Son versátiles en el
+            escenario, ofreciendo <span style={{ color: "#fbbe3a" }}>sets B2B y un formato único llamado "Living
+            Stereo" que combina guitarra, lap steel, sintetizador, batería y DJ
+            set.</span> Han ganado reconocimiento tanto a nivel nacional como
+            internacional, con sus producciones selladas bajo <span style={{ color: "#fbbe3a" }}>el sello "South
+            America Avenue". </span> Además, han recibido apoyo de DJs destacados como
+            Hernán Cattáneo. Además de ser productores, también están
+            involucrados en la producción de eventos en lugares icónicos. En
+            2023, <span style={{ color: "#fbbe3a" }}>crearon "Animala"</span>, un emocionante espacio para 500 personas
+            que se ha destacado por su sonido innovador, puesta en escena y
+            apoyo a artistas locales en crecimiento, generando un gran impacto
+            en la escena musical.
           </div>
           <video
             ref={videoRef}

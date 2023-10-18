@@ -49,7 +49,7 @@ const PresteitBukingSlider = () => {
            
             className="titulopresteit"
           >
-            <span>Preskeit Buking</span>
+            <span>Press Kit Booking</span>
           </div><SliderSection /> 
           <video
             ref={videoRef}
