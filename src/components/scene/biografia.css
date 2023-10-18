@@ -54,15 +54,15 @@ body {
 /* Estilos para la descripción */
 .description {
   color: #fafafa;
-  letter-spacing: 0.05rem; /* Cambia este valor */
+  letter-spacing: 0.01rem; /* Cambia este valor */
   max-width: 75%;
   text-align: justify;
   background: rgba(0, 0, 0, 0.7);
   padding: 20px;
   margin: 0 auto;
   line-height: 1.5;
-  
-  font-size: 1.4rem;
+  font-family: 'PPFormula', sans-serif; 
+  font-size: 2rem;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }

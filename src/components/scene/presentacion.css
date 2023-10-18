@@ -1,8 +1,18 @@
+@font-face {
+  font-family: 'PPFormula';
+  src: url('../fonts/PPFormula.woff') format('woff'); /* Ajusta la ruta según la ubicación de tu archivo de fuente */
+  font-weight: normal;
+  font-style: normal;
+}
+
+
 body {
+
   margin: 0;
   padding: 0;
   color: #ffffff;
   background-color: #000;
+  font-family: 'PPFormula', sans-serif; 
 }
 
 /* Contenedor principal */
@@ -53,15 +63,16 @@ body {
 }
 
 .start-content .glitch-text {
-  font-size: 12rem;
-  font-weight: 700;
+  font-family: 'PPFormula', sans-serif; 
+  font-size: 17rem;
+  font-weight: 800;
   margin-bottom: 1rem;
   background-color: transparent;
   text-align: center;
   animation: changeColor 5s linear infinite;
   transform-origin: center;
   color: #ffffff;
-  text-shadow: 0 0 10px #fafab9, 0 0 40px #ffeabe; /* Ajusta los valores para expandir más el efecto de neón */
+  text-shadow: 0 0 10px #ffffdbc3, 0 0 40px #fdefd0d9; /* Ajusta los valores para expandir más el efecto de neón */
 }
 
 @keyframes changeColor {
@@ -69,13 +80,13 @@ body {
     color: #ffffff;
   }
   25% {
-    color: #e8e8e8;
+    color: #bfbfbf;
   }
   50% {
     color: #ffffff;
   }
   75% {
-    color: #e5e5e5;
+    color: #c5c5c5;
   }
   100% {
     color: #ffffff;
