@@ -1,9 +1,9 @@
 import React, { useState, useRef, useEffect } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import SliderSection from "./SliderSection";
-import "./biografia.css";
-import "./presteitbuking.css";
+import SliderSection from "../buking/SliderSection";
+import "../buking/sliderSection.css";
+import "../buking/presteitbuking.css";
 
 const PresteitBukingSlider = () => {
   const [currentBackgroundVideoBuking] = useState(

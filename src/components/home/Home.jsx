@@ -2,10 +2,10 @@ import React, { useState, useRef, Suspense as ReactSuspense, useEffect } from 'r
 import './home.css';
 import { gsap } from 'gsap'; // Importa GSAP
 
-import Presentacion from '../scene/Presentacion';
-import SliderSection from '../scene/SliderSection';
-import PresteitBukingSlider from '../scene/PresteitBukingSlider';
-import Biografia from '../scene/Biografia';
+import Presentacion from '../scene/presentacion/Presentacion';
+import SliderSection from '../scene/buking/SliderSection';
+import PresteitBukingSlider from '../scene/buking/PresteitBukingSlider';
+import Biografia from '../scene/biografia/Biografia';
 
 const Home = () => {
   // Usa useRef para acceder a los elementos del DOM

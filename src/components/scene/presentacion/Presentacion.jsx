@@ -85,6 +85,8 @@ const Presentacion = () => {
     <div className="home-container">
       <div className="start-screen">
         <div className="start-content">
+       
+          
           <h1
             className={`glitch-text ${isGlitching ? "glitching" : ""}`}
             data-text="Living Stereo"
@@ -93,7 +95,7 @@ const Presentacion = () => {
           >
             Living Stereo
           </h1>
-         
+          
           <video
             ref={videoRef}
             autoPlay
@@ -109,11 +111,13 @@ const Presentacion = () => {
             {isMuted ? "Activar Música" : "Silenciar"}
           </button>
         </div>
+        
       </div>
       <div ref={contentRef} className="content-below">
         {/* Elementos a continuación */}
       </div>
     </div>
+    
   );
 };
 
