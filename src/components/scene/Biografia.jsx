@@ -7,17 +7,8 @@ const Biografia = () => {
   const [currentBackgroundVideo] = useState(
     "https://res.cloudinary.com/dvnhn35l4/video/upload/v1697501262/parabiografia_cprtlw.mp4"
   );
-  const [isMuted, setIsMuted] = useState(true);
   const videoRef = useRef(null);
   const descriptionRef = useRef(null);
-
-  // Función para alternar el mute/desmute del video
-  const toggleMute = () => {
-    setIsMuted(!isMuted);
-    if (videoRef.current) {
-      videoRef.current.muted = !isMuted;
-    }
-  };
 
   useEffect(() => {
     const video = videoRef.current;
@@ -68,16 +59,13 @@ const Biografia = () => {
             ref={videoRef}
             autoPlay
             loop
-            muted={isMuted}
+            muted
             playsInline
             className="background-video"
           >
             <source src={currentBackgroundVideo} type="video/mp4" />
             Tu navegador no admite el elemento de video.
           </video>
-          <button className="button-mute" onClick={toggleMute}>
-            {isMuted ? "Activar Música" : "Silenciar"}
-          </button>
         </div>
       </div>
     </div>
