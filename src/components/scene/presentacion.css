@@ -275,11 +275,7 @@ body {
     60% {
       text-shadow: 0 0 10px #ffe9abc3, 0 0 10px #fdefd0d9;
     }
-    80% {
-      text-shadow: 0 0 10px #ffefc4c3, 0 0 40px #fdefd0d9;
-    }
-    100% {
-      text-shadow: 0 0 10px #ffeebdc3, 0 0 10px #fdefd0d9;
-    }
+   
+   
   }
 }
