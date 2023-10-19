@@ -258,9 +258,17 @@ body {
 
 @media screen and (max-width: 768px) {
   .start-content .glitch-text {
-    font-size: 3.3rem;
+    font-family: 'PPFormula', sans-serif;
+    font-size: 3rem;
+    font-weight: 800;
+    letter-spacing: 1px;
+    margin-bottom: 1rem;
+    background-color: transparent;
+    text-align: center;
+    animation: glitchShadow 6s linear infinite;
+    transform-origin: center;
     color: #ffffff;
-    animation: glitchShadow1 6s linear infinite;
+    text-shadow: 0 0 10px #ffe294c3, 0 0 40px #fdefd0d9;
   }
   
   @keyframes glitchShadow1 {
