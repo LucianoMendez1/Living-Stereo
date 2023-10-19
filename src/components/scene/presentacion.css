@@ -64,15 +64,16 @@ body {
 
 .start-content .glitch-text {
   font-family: 'PPFormula', sans-serif;
-  font-size: 15rem;
-  letter-spacing: 2px;
+  font-size: 16rem;
+  font-weight: 800;
+  letter-spacing: 1px;
   margin-bottom: 1rem;
   background-color: transparent;
   text-align: center;
   animation: glitchShadow 6s linear infinite;
   transform-origin: center;
   color: #ffffff;
-  text-shadow: 0 0 10px #ffe294c3, 0 0 40px #fdefd0d9;
+  text-shadow: 0 0 10px #ffe294c3, 0 0 40px #fdefd0d9;;
 }
 
 @keyframes glitchShadow {
@@ -257,27 +258,27 @@ body {
 
 @media screen and (max-width: 768px) {
   .start-content .glitch-text {
-    font-size: 3rem;
+    font-size: 3.3rem;
   }
 
   @keyframes glitchShadow {
     0% {
-      text-shadow: 0 0 10px #ffe9afc3, 0 0 40px #fdefd0d9;
+      text-shadow: 0 0 10px #fdebbec3, 0 0 40px #fdefd0d9;
     }
     20% {
-      text-shadow: 0 0 10px #ffeaafc3, 0 0 10px #fff6e2d9;
+      text-shadow: 0 0 10px #ffeec1c3, 0 0 10px #fff6e2d9;
     }
     40% {
-      text-shadow: 0 0 10px #ffe294c3, 0 0 40px #fdefd0d9;
+      text-shadow: 0 0 10px #ffe9aec3, 0 0 40px #fdefd0d9;
     }
     60% {
-      text-shadow: 0 0 10px #ffe294c3, 0 0 10px #fdefd0d9;
+      text-shadow: 0 0 10px #ffe9abc3, 0 0 10px #fdefd0d9;
     }
     80% {
-      text-shadow: 0 0 10px #ffe294c3, 0 0 40px #fdefd0d9;
+      text-shadow: 0 0 10px #ffeab1c3, 0 0 40px #fdefd0d9;
     }
     100% {
-      text-shadow: 0 0 10px #ffe294c3, 0 0 10px #fdefd0d9;
+      text-shadow: 0 0 10px #ffebb4c3, 0 0 10px #fdefd0d9;
     }
   }
 }
