@@ -27,7 +27,7 @@ const Home = () => {
       biografiaRef.current,
       { opacity: 0, y: 100 },
       { opacity: 1, y: 0, duration: 1 },
-      '-=0.5' // Inicia 0.5 segundos después de la animación anterior
+      '-=0.5' 
     );
 
     tl.fromTo(

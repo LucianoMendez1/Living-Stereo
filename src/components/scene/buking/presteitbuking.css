@@ -6,7 +6,8 @@
   margin-bottom: 1rem;
   background-color: transparent;
   text-align: center;
-  animation: glitchShadow 6s linear infinite;
+ 
+  animation: glitchShadow 6s linear infinite ;
   transform-origin: center;
   color: #ffffff;
   text-shadow: 0 0 10px #ffe294c3, 0 0 40px #fdefd0d9;
