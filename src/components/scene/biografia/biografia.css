@@ -51,7 +51,7 @@ body {
   text-align: center;
 }
 
-/* Estilos para la descripción */
+
 .description {
   color: #fafafa;
   
@@ -60,14 +60,12 @@ body {
   background: rgba(0, 0, 0, 0.7);
   padding: 20px;
   margin: 0 auto;
- 
-  font-size: 1.5rem; /* Tamaño de fuente ajustado */
   font-size: 1.5rem;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   font-weight: 700;
-  letter-spacing: 2px;
-  line-height: 1.5;
+
+  line-height: 2;
    
 }
 
