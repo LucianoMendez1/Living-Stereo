@@ -64,7 +64,7 @@ body {
 
 .start-content .glitch-text {
   font-family: 'PPFormula', sans-serif;
-  font-size: clamp(10vw, 18vw , 16rem);
+  font-size: 10rem;
   font-weight: 800;
   letter-spacing: 1px;
   margin-bottom: 1rem;
