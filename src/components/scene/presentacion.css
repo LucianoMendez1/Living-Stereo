@@ -259,4 +259,25 @@ body {
   .start-content .glitch-text {
     font-size: 3rem;
   }
+
+  @keyframes glitchShadow {
+    0% {
+      text-shadow: 0 0 10px #ffe9afc3, 0 0 40px #fdefd0d9;
+    }
+    20% {
+      text-shadow: 0 0 10px #ffeaafc3, 0 0 10px #fff6e2d9;
+    }
+    40% {
+      text-shadow: 0 0 10px #ffe294c3, 0 0 40px #fdefd0d9;
+    }
+    60% {
+      text-shadow: 0 0 10px #ffe294c3, 0 0 10px #fdefd0d9;
+    }
+    80% {
+      text-shadow: 0 0 10px #ffe294c3, 0 0 40px #fdefd0d9;
+    }
+    100% {
+      text-shadow: 0 0 10px #ffe294c3, 0 0 10px #fdefd0d9;
+    }
+  }
 }
