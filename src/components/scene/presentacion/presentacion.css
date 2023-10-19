@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'PPFormula';
-  src: url('../fonts/PPFormula.woff') format('woff'); /* Ajusta la ruta según la ubicación de tu archivo de fuente */
+  src: url('../../fonts/PPFormula.woff') format('woff'); /* Ajusta la ruta según la ubicación de tu archivo de fuente */
   font-weight: normal;
   font-style: normal;
 }
@@ -64,7 +64,7 @@ body {
 
 .start-content .glitch-text {
   font-family: 'PPFormula', sans-serif;
-  font-size: 10rem;
+  font-size: clamp(10vw, 18vw , 16rem);
   font-weight: 800;
   letter-spacing: 1px;
   margin-bottom: 1rem;
