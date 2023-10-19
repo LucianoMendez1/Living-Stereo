@@ -268,27 +268,27 @@ body {
     animation: glitchShadow 6s linear infinite;
     transform-origin: center;
     color: #ffffff;
-    text-shadow: 0 0 10px #fff1ccc3, 0 0 40px #fff7e6d9;
+    text-shadow: 0 0 10px #fff7e0c3, 0 0 40px #fef8ead9;
   }
   
   @keyframes glitchShadow1 {
     0% {
-      text-shadow: 0 0 10px #fff1cec3, 0 0 40px #fdefd0d9;
+      text-shadow: 0 0 10px #fef4dac3, 0 0 40px #fdefd0d9;
     }
     20% {
-      text-shadow: 0 0 10px #fff1cec3, 0 0 10px #fff1cec3;
+      text-shadow: 0 0 10px #fff5ddc3, 0 0 10px #fff1cec3;
     }
     40% {
-      text-shadow: 0 0 10px #fff1cec3, 0 0 40px #fdefd0d9;
+      text-shadow: 0 0 10px #fef4dbc3, 0 0 40px #fdefd0d9;
     }
     60% {
-      text-shadow: 0 0 10px #fff1cec3, 0 0 10px #fff1cec3;
+      text-shadow: 0 0 10px #fff6e0c3, 0 0 10px #fff1cec3;
     }
     80% {
-      text-shadow: 0 0 10px #fff1cec3, 0 0 40px #fdefd0d9;
+      text-shadow: 0 0 10px #fcf6e6c3, 0 0 40px #fdefd0d9;
     }
     100% {
-      text-shadow: 0 0 10px #fff1cec3, 0 0 10px #fff1cec3;
+      text-shadow: 0 0 10px #fef3d6c3, 0 0 10px #fff1cec3;
     }
   }
   
