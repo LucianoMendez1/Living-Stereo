@@ -1,15 +1,15 @@
 .titulopresteit{
-  font-size: 6rem; 
-  font-family: 'PPFormula', sans-serif; 
-  font-weight: 700;
+  font-family: 'PPFormula', sans-serif;
+  font-size: 6rem;
+  font-weight: 800;
+  letter-spacing: 1px;
   margin-bottom: 1rem;
-  margin-bottom: 5rem;
   background-color: transparent;
   text-align: center;
-  text-shadow: 0 0 10px #fae7b9, 0 0 40px , 0 0 50px #fafab9;
-
-  animation: changeColor1 5s linear infinite;
-  transform-origin: center; /* Establece el punto de origen de la rotación en el centro */
+  animation: glitchShadow 6s linear infinite;
+  transform-origin: center;
+  color: #ffffff;
+  text-shadow: 0 0 10px #ffe294c3, 0 0 40px #fdefd0d9;
 }
 
 @keyframes changeColor1 {
