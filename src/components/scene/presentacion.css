@@ -64,7 +64,7 @@ body {
 
 .start-content .glitch-text {
   font-family: 'PPFormula', sans-serif;
-  font-size: 16rem;
+  font-size: clamp(10vw, 18vw , 16rem);
   font-weight: 800;
   letter-spacing: 1px;
   margin-bottom: 1rem;
@@ -96,6 +96,9 @@ body {
     text-shadow: 0 0 10px #ffe294c3, 0 0 10px #fdefd0d9;
   }
 }
+
+
+
 
 .glitch-text.glitching::before {
   content: attr(data-text);
@@ -247,7 +250,7 @@ body {
 @media screen and (max-width: 768px) {
   .start-content .glitch-text {
     font-family: 'PPFormula', sans-serif;
-    font-size: 3rem;
+    font-size: 3.5rem;
     font-weight: 800;
     letter-spacing: 1px;
     margin-bottom: 1rem;
