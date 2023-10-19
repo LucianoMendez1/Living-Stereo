@@ -260,22 +260,28 @@ body {
   .start-content .glitch-text {
     font-size: 3.3rem;
     color: #ffffff;
+    animation: glitchShadow1 6s linear infinite;
   }
-
-  @keyframes glitchShadow {
+  
+  @keyframes glitchShadow1 {
     0% {
       text-shadow: 0 0 10px #fff1cec3, 0 0 40px #fdefd0d9;
     }
     20% {
-      text-shadow: 0 0 10px #fceec9c3, 0 0 10px #fff6e2d9;
+      text-shadow: 0 0 10px #fff1cec3, 0 0 10px #fff1cec3;
     }
     40% {
-      text-shadow: 0 0 10px #ffe9aec3, 0 0 40px #fdefd0d9;
+      text-shadow: 0 0 10px #fff1cec3, 0 0 40px #fdefd0d9;
     }
     60% {
-      text-shadow: 0 0 10px #ffe9abc3, 0 0 10px #fdefd0d9;
+      text-shadow: 0 0 10px #fff1cec3, 0 0 10px #fff1cec3;
     }
-   
-   
+    80% {
+      text-shadow: 0 0 10px #fff1cec3, 0 0 40px #fdefd0d9;
+    }
+    100% {
+      text-shadow: 0 0 10px #fff1cec3, 0 0 10px #fff1cec3;
+    }
   }
+  
 }
