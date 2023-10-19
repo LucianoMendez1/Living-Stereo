@@ -268,7 +268,7 @@ body {
     animation: glitchShadow 6s linear infinite;
     transform-origin: center;
     color: #ffffff;
-    text-shadow: 0 0 10px #ffe294c3, 0 0 40px #fdefd0d9;
+    text-shadow: 0 0 10px #ffecb8c3, 0 0 40px #fdefd0d9;
   }
   
   @keyframes glitchShadow1 {
