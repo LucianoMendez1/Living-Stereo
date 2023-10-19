@@ -259,14 +259,15 @@ body {
 @media screen and (max-width: 768px) {
   .start-content .glitch-text {
     font-size: 3.3rem;
+    color: #ffffff;
   }
 
   @keyframes glitchShadow {
     0% {
-      text-shadow: 0 0 10px #fdebbec3, 0 0 40px #fdefd0d9;
+      text-shadow: 0 0 10px #fff1cec3, 0 0 40px #fdefd0d9;
     }
     20% {
-      text-shadow: 0 0 10px #ffeec1c3, 0 0 10px #fff6e2d9;
+      text-shadow: 0 0 10px #fceec9c3, 0 0 10px #fff6e2d9;
     }
     40% {
       text-shadow: 0 0 10px #ffe9aec3, 0 0 40px #fdefd0d9;
@@ -275,10 +276,10 @@ body {
       text-shadow: 0 0 10px #ffe9abc3, 0 0 10px #fdefd0d9;
     }
     80% {
-      text-shadow: 0 0 10px #ffeab1c3, 0 0 40px #fdefd0d9;
+      text-shadow: 0 0 10px #ffefc4c3, 0 0 40px #fdefd0d9;
     }
     100% {
-      text-shadow: 0 0 10px #ffebb4c3, 0 0 10px #fdefd0d9;
+      text-shadow: 0 0 10px #ffeebdc3, 0 0 10px #fdefd0d9;
     }
   }
 }
