@@ -120,19 +120,7 @@ body {
 }
 
 /* Estilos para la descripción */
-.description {
-  font-size: 1.5rem; /* Tamaño de fuente ajustado */
-  color: #fafafa;
-  font-weight: 700;
-  letter-spacing: 2px;
-  line-height: 1.2em;
-  margin-left: 14%;
-  margin-bottom: 1rem;
-  text-align: center;
-  max-width: 800px; /* Ajusta el ancho máximo del texto para una mejor legibilidad */
-  background: none;
 
-}
 
 /* Resto de estilos sin cambios */
 /* ... */

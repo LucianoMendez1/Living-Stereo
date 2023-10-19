@@ -4,7 +4,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import "./biografia.css";
 
 const Biografia = () => {
-  const [currentBackgroundVideo] = useState(
+  const [currentBackgroundVideoBiografia] = useState(
     "https://res.cloudinary.com/dvnhn35l4/video/upload/v1697501262/parabiografia_cprtlw.mp4"
   );
   const videoRef = useRef(null);
@@ -61,9 +61,9 @@ const Biografia = () => {
             loop
             muted
             playsInline
-            className="background-video"
+            className="background-videoBiografia"
           >
-            <source src={currentBackgroundVideo} type="video/mp4" />
+            <source src={currentBackgroundVideoBiografia} type="video/mp4" />
             Tu navegador no admite el elemento de video.
           </video>
         </div>

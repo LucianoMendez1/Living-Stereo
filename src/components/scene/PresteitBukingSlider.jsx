@@ -6,7 +6,7 @@ import "./biografia.css";
 import "./presteitbuking.css";
 
 const PresteitBukingSlider = () => {
-  const [currentBackgroundVideo] = useState(
+  const [currentBackgroundVideoBuking] = useState(
     "https://res.cloudinary.com/dvnhn35l4/video/upload/v1697516947/46EEF93D-F18F-41C0-B859-F0EB4A775B95_1_gcvnyh.mov"
   );
   const videoRef = useRef(null);
@@ -44,9 +44,9 @@ const PresteitBukingSlider = () => {
             loop
             muted
             playsInline
-            className="background-video"
+            className="background-videoBuking"
           >
-            <source src={currentBackgroundVideo} type="video/mp4" />
+            <source src={currentBackgroundVideoBuking} type="video/mp4" />
             Tu navegador no admite el elemento de videos.
           </video>
         </div>
