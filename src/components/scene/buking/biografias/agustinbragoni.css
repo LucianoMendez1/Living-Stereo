@@ -216,102 +216,97 @@ body {
 	 position: relative; 
 }
 
-  @media screen and (max-width: 767px) {
- 
+@media screen and (max-width: 767px) {
     .hero {
-		display: flex;
-        width: calc(var(--index) * 40); /* Ajustar el tamaño del héroe para dispositivos móviles */
-        left: 100px; /* Posicionar el héroe al principio de la pantalla */
-        top: 350px; /* Posicionar el héroe en la parte superior de la pantalla */
+        display: flex;
+        width: calc(var(--index) * 40);
+        left: 100px;
+        top: 350px;
         z-index: -1;
     }
 
-   
-
     .container {
-        padding: 0 5vw; /* Menor relleno en dispositivos móviles */
+        padding: 0 5vw;
     }
 
-	.main-title {
-		font-size: calc(var(--index) * 6); /* Tamaño de fuente */
-		position: absolute; /* Mantener la posición absoluta */
-		width: 100%; /* Ancho completo */
-		text-align: center; /* Centrar el texto */
-		right: 50px;
-		bottom: 25vh; /* Cambiar la posición vertical a 6vh (ajusta este valor según tus necesidades) */
-		line-height: 1.2;
-	}
-	
+    .main-title {
+        font-size: calc(var(--index) * 6);
+        position: absolute;
+        width: 100%;
+        text-align: center;
+        right: 50px;
+        bottom: 25vh;
+        line-height: 1.2;
+    }
 
     .gallery {
         display: flex;
-        flex-wrap: wrap; /* Permitir que los elementos de la galería se envuelvan en dispositivos móviles */
-        padding: 0; /* Eliminar el relleno en dispositivos móviles */
+        flex-wrap: wrap;
+        padding: 0;
     }
 
     .gallery__item {
-        max-width: 100%; /* Ancho máximo para los elementos de la galería en dispositivos móviles */
-        margin-bottom: var(--gallery-gap); /* Espacio entre los elementos de la galería */
+        max-width: 100%;
+        margin-bottom: var(--gallery-gap);
     }
 
     .gallery__left {
-        margin-top: var(--gallery-gap); /* Espacio en la parte superior de la galería izquierda */
+        margin-top: var(--gallery-gap);
     }
-
-   
 
     .text-block {
         color: var(--color-text);
+        text-align: left; /* Alinear el contenido a la izquierda */
+    }
+
+    .text-block__h, .text-block__p1, .djset, .liveset, .contacto {
+        font-size: calc(var(--index) * 1);
+        line-height: 1.2;
+    }
+
+    .column img {
+        width: 125%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 10px;
+        height: auto;
+        opacity: 1;
+        transition: none;
+    }
+
+    .column img:hover {
+        cursor: crosshair;
+        width: 200px;
+        height: 200px;
+        opacity: 1;
+    }
+	.text-block {
+        color: var(--color-text);
+        text-align: left;
     }
 
     .text-block__h {
-        font-size: 1rem; /* Tamaño de fuente más pequeño para encabezados */
-		margin: 5px;
-        line-height: 2rem;
-        color: var(--color-header);
-        margin-bottom: 1rem; /* Espacio inferior más pequeño para encabezados */
+        font-size: calc(var(--index) * 1);
+        line-height: 1.2;
     }
 
-    .text-block__p {
-        line-height: 1.5; /* Espaciado de línea más pequeño para párrafos */
-    }
-
-   
   
-	.column img {
-		width: 125%;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		margin: 10px; /* Agregar un margen de 10px entre las imágenes */
-		height: auto; /* Altura automática para imágenes en dispositivos móviles */
-		opacity: 1; /* Establecer la opacidad al 1 por defecto */
-		transition: none; /* Eliminar la transición en dispositivos móviles */
-	}
-	
-	.column img:hover {
-		cursor: crosshair;
-		width: 200px;
-		height: 200px;
-		opacity: 1;
-	  }
-	  .text-block__h_rider {
-		font-size: 20px;
-	  }
-	
-	  .djset, .liveset {
-		font-size: 16px;
-	  }
-	
-	  .text-block__p1 {
-		font-size: 14px;
-	  }
-	
-	  .contacto {
-		font-size: 16px;
-		text-align: left; /* Alinea el contenido a la izquierda */
-	  }
-	
-	
-}
 
+    .djset, .liveset, .contacto {
+        position: relative; /* Añade posición relativa */
+        text-align: center; /* Centra el texto */
+        margin: 0 auto; /* Centra horizontalmente */
+		
+		
+        width: 80%; /* Ancho del texto ajustable */
+        font-size: calc(var(--index) * 1);
+        line-height: 1.2;
+    }
+
+    .contacto {
+		left: 50px;
+        bottom: 0; /* Alinea el texto de contacto en la parte inferior */
+    }
+
+}
