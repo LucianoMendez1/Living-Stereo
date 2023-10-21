@@ -26,7 +26,7 @@ body {
 
 /* Video de fondo */
 .background-video1 {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -73,27 +73,27 @@ body {
   animation: glitchShadow 6s linear infinite;
   transform-origin: center;
   color: #ffffff;
-  text-shadow: 0 0 10px #ffe294c3, 0 0 40px #fdefd0d9;;
+  text-shadow: 0 0 10px #ffffffc3, 0 0 40px #ffffffd9;;
 }
 
 @keyframes glitchShadow {
   0% {
-    text-shadow: 0 0 10px #ffe294c3, 0 0 40px #fdefd0d9;
+    text-shadow: 0 0 10px #fff9e8c3, 0 0 40px #fdefd0d9;
   }
   20% {
-    text-shadow: 0 0 10px #ffe294c3, 0 0 10px #fdefd0d9;
+    text-shadow: 0 0 10px #676767c3, 0 0 10px #fdefd0d9;
   }
   40% {
-    text-shadow: 0 0 10px #ffe294c3, 0 0 40px #fdefd0d9;
+    text-shadow: 0 0 10px #646464c3, 0 0 40px #fdefd0d9;
   }
   60% {
-    text-shadow: 0 0 10px #ffe294c3, 0 0 10px #fdefd0d9;
+    text-shadow: 0 0 10px #ffffffc3, 0 0 10px #fdefd0d9;
   }
   80% {
-    text-shadow: 0 0 10px #ffe294c3, 0 0 40px #fdefd0d9;
+    text-shadow: 0 0 10px #ffffffc3, 0 0 40px #fdefd0d9;
   }
   100% {
-    text-shadow: 0 0 10px #ffe294c3, 0 0 10px #fdefd0d9;
+    text-shadow: 0 0 10px #fff1ccc3, 0 0 10px #fdefd0d9;
   }
 }
 
@@ -255,7 +255,42 @@ body {
 }
 
 
-/* Estilos para la batería */
+
+
+.vinyl-button {
+  display: flex;
+  background: none;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+}
+
+/* Estilos para la imagen del vinilo */
+.vinyl-img {
+  display: flex;
+  width: 80px; /* Ancho de la imagen del vinilo */
+  height: 80px; /* Alto de la imagen del vinilo */
+  transition: filter 0.3s;
+}
+
+/* Estilos para la imagen del vinilo cuando está activo (no muted) */
+.vinyl-button.unmuted .vinyl-img {
+  
+  animation: spin 4s linear infinite; /* Animación infinita para girar */
+  filter: brightness(1.5); /* Cambia el brillo de la imagen */
+}
+/* Definición de la animación de giro */
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 
 @media screen and (max-width: 768px) {
   .start-content .glitch-text {
@@ -292,5 +327,13 @@ body {
       text-shadow: 0 0 10px #fef3d6c3, 0 0 10px #fff1cec3;
     }
   }
-  
+  .vinyl-button {
+    bottom: 75px; /* Ajustar la posición para celulares */
+    right: 1px; /* Ajustar la posición para celulares */
+}
+
+.vinyl-img {
+    width: 60px; /* Ajustar el tamaño de la imagen del vinilo para celulares */
+    height: 60px; /* Ajustar el tamaño de la imagen del vinilo para celulares */
+}
 }

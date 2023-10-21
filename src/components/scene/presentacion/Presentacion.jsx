@@ -3,12 +3,12 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import "./presentacion.css";
 
-const Presentacion = () => {
+const Presentacion = React.forwardRef((props, ref) => {
   const [currentBackgroundVideo] = useState(
     "https://res.cloudinary.com/dvnhn35l4/video/upload/v1696907149/ProyectAgustin/2_gtnfou.mp4"
   );
   const [isMuted, setIsMuted] = useState(true);
-  const [isGlitching, setIsGlitching] = useState(false); // Nuevo estado para el efecto de "glitch"
+  const [isGlitching, setIsGlitching] = useState(false);
   const videoRef = useRef(null);
   const contentRef = useRef(null);
 
@@ -82,11 +82,9 @@ const Presentacion = () => {
   }, []);
 
   return (
-    <div className="home-container">
+    <div className="home-container" ref={ref}>
       <div className="start-screen">
         <div className="start-content">
-       
-          
           <h1
             className={`glitch-text ${isGlitching ? "glitching" : ""}`}
             data-text="Living Stereo"
@@ -95,30 +93,34 @@ const Presentacion = () => {
           >
             Living Stereo
           </h1>
-          
           <video
             ref={videoRef}
             autoPlay
             loop
             muted={isMuted}
-            playsInline 
+            playsInline
             className="background-video1"
           >
             <source src={currentBackgroundVideo} type="video/mp4" />
             Tu navegador no admite el elemento de video.
           </video>
-          <button className="button-mute" onClick={toggleMute}>
-            {isMuted ? "Activar Música" : "Silenciar"}
+          <button
+            onClick={toggleMute}
+            className={`vinyl-button ${isMuted ? "muted" : "unmuted"}`}
+          >
+            <img
+              src="https://res.cloudinary.com/dvnhn35l4/image/upload/v1697857960/klipartz.com_1_tw5vrg.png"
+              alt="Vinilo"
+              className="vinyl-img"
+            />
           </button>
         </div>
-        
       </div>
       <div ref={contentRef} className="content-below">
         {/* Elementos a continuación */}
       </div>
     </div>
-    
   );
-};
+});
 
 export default Presentacion;

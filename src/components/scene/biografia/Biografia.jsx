@@ -55,17 +55,7 @@ const Biografia = () => {
             apoyo a artistas locales en crecimiento, generando un gran impacto
             en la escena musical.
           </div>
-          <video
-            ref={videoRef}
-            autoPlay
-            loop
-            muted
-            playsInline
-            className="background-videoBiografia"
-          >
-            <source src={currentBackgroundVideoBiografia} type="video/mp4" />
-            Tu navegador no admite el elemento de video.
-          </video>
+         
         </div>
       </div>
     </div>
