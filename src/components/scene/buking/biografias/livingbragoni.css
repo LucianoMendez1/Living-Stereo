@@ -40,7 +40,7 @@
     border: none;
     cursor: pointer;
     position: relative;
-    top: 15rem;
+ 
     right: 20rem;
   }
   
@@ -59,7 +59,7 @@
     filter: brightness(1.5); /* Cambia el brillo de la imagen */
   }
   
-
+  
 
 
 
@@ -83,33 +83,34 @@
   }
 
   @media screen and (max-width: 767px) {
-    .main-title2 {
-        margin-left: 100px;
-        font-size: calc(var(--index) * 5); /* Tamaño de fuente más pequeño para celulares */
-        margin-top: 10rem; /* Margen superior más pequeño para celulares */
-        text-shadow: 0 0 5px #ffe294c3, 0 0 20px #fdefd0d9; /* Sombra de texto más suave para celulares */
-    }
-
-    .subtitle {
-        margin-left: 100px;
-        font-size: calc(var(--index) * 2); /* Tamaño de fuente más pequeño para celulares */
-        text-shadow: 0 0 5px #ffe294c3, 0 0 20px #fdefd0d9; /* Sombra de texto más suave para celulares */
-    }
-
-    .background-videoLivingbragoni {
-       
-        top: 150px;
-        width: 142%;
-      
-    }
-
-    .vinyl-button {
-        bottom: 75px; /* Ajustar la posición para celulares */
-        right: 1px; /* Ajustar la posición para celulares */
-    }
-
-    .vinyl-img {
-        width: 60px; /* Ajustar el tamaño de la imagen del vinilo para celulares */
-        height: 60px; /* Ajustar el tamaño de la imagen del vinilo para celulares */
-    }
+    @media screen and (max-width: 767px) {
+      .main-title2 {
+          margin-left: 100px;
+          font-size: calc(var(--index) * 5); /* Tamaño de fuente más pequeño para celulares */
+          margin-top: 10rem; /* Margen superior más pequeño para celulares */
+          text-shadow: 0 0 5px #ffe294c3, 0 0 20px #fdefd0d9; /* Sombra de texto más suave para celulares */
+      }
+  
+      .subtitle {
+          margin-left: 100px;
+          font-size: calc(var(--index) * 2); /* Tamaño de fuente más pequeño para celulares */
+          text-shadow: 0 0 5px #ffe294c3, 0 0 20px #fdefd0d9; /* Sombra de texto más suave para celulares */
+      }
+  
+      .background-videoLivingbragoni {
+          top: 150px;
+          width: 142%;
+      }
+  
+      .vinyl-button {
+          bottom: 75px; /* Ajustar la posición para celulares */
+          right: 1px; /* Ajustar la posición para celulares */
+      }
+  
+      .vinyl-img {
+          width: 60px; /* Ajustar el tamaño de la imagen del vinilo para celulares */
+          height: 60px; /* Ajustar el tamaño de la imagen del vinilo para celulares */
+      }
+  }
+  
 }

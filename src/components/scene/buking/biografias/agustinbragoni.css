@@ -265,7 +265,8 @@ body {
     }
 
     .text-block__h {
-        font-size: 1.5rem; /* Tamaño de fuente más pequeño para encabezados */
+        font-size: 1rem; /* Tamaño de fuente más pequeño para encabezados */
+		margin: 5px;
         line-height: 2rem;
         color: var(--color-header);
         margin-bottom: 1rem; /* Espacio inferior más pequeño para encabezados */
@@ -294,5 +295,23 @@ body {
 		height: 200px;
 		opacity: 1;
 	  }
+	  .text-block__h_rider {
+		font-size: 20px;
+	  }
+	
+	  .djset, .liveset {
+		font-size: 16px;
+	  }
+	
+	  .text-block__p1 {
+		font-size: 14px;
+	  }
+	
+	  .contacto {
+		font-size: 16px;
+		text-align: left; /* Alinea el contenido a la izquierda */
+	  }
+	
+	
 }
 
