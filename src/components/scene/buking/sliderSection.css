@@ -92,8 +92,8 @@ body::-webkit-scrollbar-thumb:horizontal:hover {
 	
 	.column2 img:hover {
 		cursor: crosshair;
-		width: 150px;
-		height: 315px;
+		width: 230px;
+		height: 430px;
 		opacity: 1;
 	  }
 }

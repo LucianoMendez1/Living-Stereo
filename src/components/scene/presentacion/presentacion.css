@@ -257,7 +257,7 @@ body {
 
 
 
-.vinyl-button {
+.vinyl-button1 {
   display: flex;
   background: none;
   border: none;
@@ -268,7 +268,7 @@ body {
 }
 
 /* Estilos para la imagen del vinilo */
-.vinyl-img {
+.vinyl-img1 {
   display: flex;
   width: 80px; /* Ancho de la imagen del vinilo */
   height: 80px; /* Alto de la imagen del vinilo */
@@ -276,7 +276,7 @@ body {
 }
 
 /* Estilos para la imagen del vinilo cuando está activo (no muted) */
-.vinyl-button.unmuted .vinyl-img {
+.vinyl-button1.unmuted .vinyl-img1 {
   
   animation: spin 4s linear infinite; /* Animación infinita para girar */
   filter: brightness(1.5); /* Cambia el brillo de la imagen */
@@ -327,12 +327,12 @@ body {
       text-shadow: 0 0 10px #fef3d6c3, 0 0 10px #fff1cec3;
     }
   }
-  .vinyl-button {
-    bottom: 75px; /* Ajustar la posición para celulares */
-    right: 1px; /* Ajustar la posición para celulares */
+  .vinyl-button1 {
+   top: 49rem;
+    right: 83%; /* Ajustar la posición para celulares */
 }
 
-.vinyl-img {
+.vinyl-img1 {
     width: 60px; /* Ajustar el tamaño de la imagen del vinilo para celulares */
     height: 60px; /* Ajustar el tamaño de la imagen del vinilo para celulares */
 }

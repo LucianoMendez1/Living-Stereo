@@ -106,12 +106,12 @@ const Presentacion = React.forwardRef((props, ref) => {
           </video>
           <button
             onClick={toggleMute}
-            className={`vinyl-button ${isMuted ? "muted" : "unmuted"}`}
+            className={`vinyl-button1 ${isMuted ? "muted" : "unmuted"}`}
           >
             <img
               src="https://res.cloudinary.com/dvnhn35l4/image/upload/v1697857960/klipartz.com_1_tw5vrg.png"
               alt="Vinilo"
-              className="vinyl-img"
+              className="vinyl-img1"
             />
           </button>
         </div>
