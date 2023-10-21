@@ -10,6 +10,10 @@ const SliderSection = () => {
     setImageClicked(true);
   };
 
+  const scrollToTop = () => {
+    window.scrollTo(0, 0); // Desplázate al principio de la página
+  };
+
   return (
     <div>
       <div className="container2">
@@ -23,7 +27,7 @@ const SliderSection = () => {
           <div className="column2">
             {imageClicked ? (
               // Si la imagen 2 ha sido clicada, redirige a la sección de destino
-              <Link to="/biografias/AgustinBragoni">
+              <Link to="/biografias/AgustinBragoni" onClick={scrollToTop}>
                 <img
                   src="https://res.cloudinary.com/dvnhn35l4/image/upload/v1697749878/Agustin_Bragoni_-_Chacra_el_Descanso_2_wv4ttr.jpg"
                   alt="Imagen 2"
