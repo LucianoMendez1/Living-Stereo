@@ -51,6 +51,18 @@
   animation: glitch 0.3s linear infinite;
 }
 
+.subtitle1{
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+   font-size: calc(var(--index) * 1);
+   width: 100%;
+   text-align: center;
+   line-height: 1.2;
+   
+   position: relative; /* Agrega posición relativa al contenedor */
+}
+
 @keyframes glitch {
   2%, 64% {
     transform: translate(20rem, 0); /* Ajusta los valores para una expansión lateral mayor */
@@ -68,5 +80,10 @@
 @media screen and (max-width: 768px) {
   .titulopresteit {
     font-size: 2rem;
+    text-shadow: 0 0 2px #ffe294c3, 0 0 8px #fdefd0d9; 
+  }
+  .subtitle1 .h6{
+    font-size: 1.5rem;
+    text-shadow: 0 0 2px #ffe294c3, 0 0 8px #fdefd0d9; 
   }
 }

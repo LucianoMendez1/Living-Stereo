@@ -79,6 +79,14 @@ body::-webkit-scrollbar-thumb:horizontal:hover {
 	opacity: 1;
   }
 
+
+.name h1{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 10px;
+}
+
 @media screen and (max-width:767px){
     
 	.column2 img {
@@ -96,6 +104,13 @@ body::-webkit-scrollbar-thumb:horizontal:hover {
 		height: 430px;
 		opacity: 1;
 	  }
+	  .name h1{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		padding: 10px;
+		font-size: 1rem;
+	}
 }
 
 

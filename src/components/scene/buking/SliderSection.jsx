@@ -19,10 +19,12 @@ const SliderSection = () => {
       <div className="container2">
         <div className="row">
           <div className="column2">
+            
             <img
               src="https://res.cloudinary.com/dvnhn35l4/image/upload/v1697588305/79536479_556673211579065_5494554745452327860_n_mjutxx.jpg"
               alt="Imagen 1"
             ></img>
+            <div className="name"><h1>Nicolas Nieves</h1></div>
           </div>
           <div className="column2">
             {imageClicked ? (
@@ -40,13 +42,16 @@ const SliderSection = () => {
                 alt="Imagen 2"
                 onClick={handleClickImage2}
               ></img>
+              
             )}
+            <div className="name"><h1>Agustin Bragoni</h1></div>
           </div>
           <div className="column2">
             <img
               src="https://res.cloudinary.com/dvnhn35l4/image/upload/v1697862792/10-DSC05673_fdwtd1.jpg"
               alt="Imagen 3"
             ></img>
+           <div className="name"><h1>Simon Dimarzio</h1></div>
           </div>
         </div>
       </div>
