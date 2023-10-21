@@ -264,7 +264,7 @@ body {
   cursor: pointer;
   position: absolute;
   bottom: 30px;
-  right: 30px;
+  left: 30px;
 }
 
 /* Estilos para la imagen del vinilo */
@@ -329,7 +329,7 @@ body {
   }
   .vinyl-button1 {
    top: 49rem;
-    right: 83%; /* Ajustar la posición para celulares */
+    left: 5px; /* Ajustar la posición para celulares */
 }
 
 .vinyl-img1 {
