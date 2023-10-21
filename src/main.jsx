@@ -42,6 +42,6 @@ const ThemeConfig = createTheme( {
 ReactDOM.createRoot(document.getElementById('root')).render(
     <ThemeProvider theme={ThemeConfig}>
         <CssBaseline/>
-        <Home  />
+        <App  />
     </ThemeProvider>
 )

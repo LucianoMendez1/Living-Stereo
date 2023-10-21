@@ -5,7 +5,7 @@ import ScrollTrigger from "gsap/ScrollTrigger";
 import "./agustinbragoni.css";
 import LivingBragoni from "./LivingBragoni";
 
-function App() {
+function AgustinBragoni() {
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
 
@@ -300,4 +300,4 @@ function App() {
   );
 }
 
-export default App;
+export default AgustinBragoni;
