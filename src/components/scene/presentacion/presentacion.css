@@ -295,16 +295,16 @@ body {
 @media screen and (max-width: 768px) {
   .start-content .glitch-text {
     font-family: 'PPFormula', sans-serif;
-    font-size: 3.5rem;
-    font-weight: 800;
-    letter-spacing: 1px;
+    font-size: 4rem;
+    font-weight: 600;
+    letter-spacing: 1.5px;
     margin-bottom: 1rem;
     background-color: transparent;
     text-align: center;
-    animation: glitchShadow 6s linear infinite;
+    
     transform-origin: center;
     color: #ffffff;
-    text-shadow: 0 0 10px #fff7e0c3, 0 0 40px #fef8ead9;
+   
   }
   
   @keyframes glitchShadow1 {
@@ -327,13 +327,24 @@ body {
       text-shadow: 0 0 10px #fef3d6c3, 0 0 10px #fff1cec3;
     }
   }
-  .vinyl-button1 {
-   top: 49rem;
-    left: 14px; /* Ajustar la posición para celulares */
-}
 
-.vinyl-img1 {
-    width: 60px; /* Ajustar el tamaño de la imagen del vinilo para celulares */
-    height: 60px; /* Ajustar el tamaño de la imagen del vinilo para celulares */
+  .vinyl-button1 {
+    display: flex;
+    background: none;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    top: 160%;
+     left:-4rem;
+  }
+  
+  /* Estilos para la imagen del vinilo */
+  .vinyl-img1 {
+    display: flex;
+    width: 80px; /* Ancho de la imagen del vinilo */
+    height: 80px; /* Alto de la imagen del vinilo */
+    transition: filter 0.3s;
+  }
+  
 }
-}
+  
