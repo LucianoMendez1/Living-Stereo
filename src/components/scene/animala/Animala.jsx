@@ -90,16 +90,8 @@ const Animala = React.forwardRef((props, ref) => {
             Animala
           </h1>
           <div className="background-container">
-            <img
-              src="https://res.cloudinary.com/dvnhn35l4/image/upload/v1697951747/Animala/animala_db07d5.jpg" // Reemplaza con la URL de tu imagen de fondo
-              alt="Fondo de pantalla"
-              className="background-image" // Agrega una clase para estilos de CSS
-            />
-            <img
-              src="https://res.cloudinary.com/dvnhn35l4/image/upload/v1697952044/Animala/Pngtree_tropical_leaves_border_frame_png_6412156_vqmzgz.png" // Reemplaza con la URL de tu imagen PNG
-              alt="Recuadro PNG"
-              className="png-image" // Agrega una clase para estilos de CSS
-            />
+            
+           
           </div>
          
         </div>
