@@ -8,6 +8,7 @@ import PresteitBukingSlider from './components/scene/buking/PresteitBukingSlider
 import SliderSection from './components/scene/buking/SliderSection'
 import AgustinBragoni from './components/scene/buking/biografias/AgustinBragoni';
 import SimonDimarzio from './components/scene/buking/biografias/SimonDimarzio'
+import Animala from './components/scene/animala/Animala'
 import { CssBaseline } from '@mui/material'
 import { ThemeProvider } from 'styled-components'
 import { createTheme } from "@mui/material";

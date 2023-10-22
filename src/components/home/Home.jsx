@@ -1,19 +1,19 @@
 import React, { useState, useRef, Suspense as ReactSuspense, useEffect } from 'react';
 import './home.css';
-import { gsap } from 'gsap'; // Importa GSAP
+import { gsap } from 'gsap';
 
 import Presentacion from '../scene/presentacion/Presentacion';
 import SliderSection from '../scene/buking/SliderSection';
 import PresteitBukingSlider from '../scene/buking/PresteitBukingSlider';
 import Biografia from '../scene/biografia/Biografia';
+import Animala from '../scene/animala/Animala';
 
 const Home = () => {
-  // Usa useRef para acceder a los elementos del DOM
   const presentacionRef = useRef(null);
   const biografiaRef = useRef(null);
-  const presteitbukingslider = useRef(null);
+  const presteitbukingsliderRef = useRef(null);
+  const animalaRef = useRef(null);
 
-  // Define una función para animar los componentes
   const animateComponents = () => {
     const tl = gsap.timeline();
 
@@ -31,10 +31,17 @@ const Home = () => {
     );
 
     tl.fromTo(
-      presteitbukingslider.current,
+      presteitbukingsliderRef.current,
       { opacity: 0, y: 100 },
       { opacity: 1, y: 0, duration: 1 },
-      '-=0.5' // Inicia 0.5 segundos después de la animación anterior
+      '-=0.5' 
+    );
+
+    tl.fromTo(
+      animalaRef.current,
+      { opacity: 0, y: 100 },
+      { opacity: 1, y: 0, duration: 1 },
+      '-=0.5' // Ajusta este valor para la separación
     );
   };
 
@@ -44,9 +51,18 @@ const Home = () => {
 
   return (
     <ReactSuspense fallback={<div>Loading Scene...</div>}>
-      <Presentacion ref={presentacionRef} />
-      <Biografia ref={biografiaRef} />
-      <PresteitBukingSlider ref={presteitbukingslider} />
+      <div ref={presentacionRef}>
+        <Presentacion />
+      </div>
+      <div ref={biografiaRef}>
+        <Biografia />
+      </div>
+      <div ref={presteitbukingsliderRef}>
+        <PresteitBukingSlider />
+      </div>
+      <div ref={animalaRef}>
+        <Animala />
+      </div>
     </ReactSuspense>
   );
 };
