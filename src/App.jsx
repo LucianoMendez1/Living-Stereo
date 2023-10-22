@@ -5,7 +5,7 @@ import './App.css';
 
 import Home from './components/home/Home';
 import AgustinBragoni from './components/scene/buking/biografias/AgustinBragoni';
-
+import SimonDimarzio from './components/scene/buking/biografias/SimonDimarzio';
 const App = () => {
   return (
     <BrowserRouter>
@@ -14,6 +14,7 @@ const App = () => {
         <Route path="/" element={<Home />} />
           <Route path="/Home" element={<Home />} />
           <Route path="/biografias/AgustinBragoni" element={<AgustinBragoni />} />
+          <Route path="/biografias/SimonDimarzio" element={<SimonDimarzio />} />
 
         </Routes>
       </Suspense>

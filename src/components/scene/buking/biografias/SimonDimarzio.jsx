@@ -201,95 +201,11 @@ function SimonDimarzio() {
                 </div>
               </div>
             </div>
-
-            <div class="container2">
-              <div class="row">
-                <div class="column">
-                  <img
-                    src="https://res.cloudinary.com/dvnhn35l4/image/upload/v1697850814/agusbragoni/1_7_tdgjte.jpg"
-                    alt="Imagen 1"
-                  ></img>
-                </div>
-                <div class="column">
-                  <img
-                    src="https://res.cloudinary.com/dvnhn35l4/image/upload/v1697851232/agusbragoni/alemna_v6rqni.jpg"
-                    alt="Imagen 2"
-                  ></img>
-                </div>
-                <div class="column">
-                  <img
-                    src=" https://res.cloudinary.com/dvnhn35l4/image/upload/v1697849793/agusbragoni/259816088_492493538611125_1617444028955560743_n_zesqyp.jpg"
-                    alt="Imagen 3"
-                  ></img>
-                </div>
-              </div>
-              <div class="row">
-                <div class="column">
-                  <img
-                    src="https://res.cloudinary.com/dvnhn35l4/image/upload/v1697849794/agusbragoni/276042996_252272707106578_8305766497880745516_n_hkyqt3.jpg"
-                    alt="Imagen 4"
-                  ></img>
-                </div>
-                <div class="column">
-                  <img
-                    src="https://res.cloudinary.com/dvnhn35l4/image/upload/v1697850814/agusbragoni/1_9_ixhipj.jpg"
-                    alt="Imagen 5"
-                  ></img>
-                </div>
-                <div class="column">
-                  <img
-                    src="https://res.cloudinary.com/dvnhn35l4/image/upload/v1697850801/agusbragoni/1_3_kwe0yk.jpg"
-                    alt="Imagen 6"
-                  ></img>
-                </div>
-              </div>
-              <div class="row">
-                <div class="column">
-                  <img
-                    src="https://res.cloudinary.com/dvnhn35l4/image/upload/v1697850812/agusbragoni/1_5_v5sldy.jpg"
-                    alt="Imagen 7"
-                  ></img>
-                </div>
-                <div class="column">
-                  <img
-                    src="https://res.cloudinary.com/dvnhn35l4/image/upload/v1697849794/agusbragoni/258850834_648713199833873_412253203610088041_n_iq4ixd.jpg"
-                    alt="Imagen 8"
-                  ></img>
-                </div>
-                <div class="column">
-                  <img
-                    src="https://res.cloudinary.com/dvnhn35l4/image/upload/v1697850813/agusbragoni/1_6_ohzbo9.jpg"
-                    alt="Imagen 9"
-                  ></img>
-                </div>
-              </div>
-            </div>
           </div>
-          <LivingBragoni />
+         
         </div>
       </div>
-      <div className="text-block gallery__item">
-        <h2 className="text-block__h_rider">RIDER TECNICO</h2>
-        <div className="djset">
-          <h4>Dj Set</h4>
-        </div>
-        <p className="text-block__p1">3 CDJ Nexus - Nexus 2 DJM 900 CDJ 2000</p>
-        <div className="liveset">
-          <h1>Live Set</h1>
-        </div>
-        <p className="text-block__p1">
-          01 X MACBOOK PRO 13 01 X AKAI APC 01 X MINILOGUE 01 X FENDER MUSTANG
-          01 X AMPLIFICADOR FENDER DELUXE 01 X INTERFAZ AUDIENT 01 X LAP STEEL
-          GRETCHS - SALIDA STEREO 2 ENTRADAS - MICROFONO ( GUITARRA ELECTRICA)
-        </p>
-      </div>
-      <div className="contacto">
-        <h1>
-          CONTACTO ELGHETTOPRODUCCiON@GMAiL.COM AGENT MANAGEMENT: LUCiO BURZOMi{" "}
-          <br />
-          TEL: 2215674139
-        </h1>
-      </div>
+     
     </div>
   );
 }
