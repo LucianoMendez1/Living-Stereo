@@ -129,7 +129,7 @@ body {
 
 
 
-/* .start-content .glitch-text {
+ .start-content .glitch-text {
   font-family: 'PPFormula', sans-serif;
   font-size: clamp(10vw, 18vw , 16rem);
   font-weight: 800;
@@ -153,7 +153,7 @@ body {
   }
   62% {
     transform: translate(0, 0);
-  } */
+  } 
 
 
 
@@ -316,8 +316,8 @@ body {
     border: none;
     cursor: pointer;
     position: relative;
-    top: 22rem;
-     left:-1rem;
+    top: 15rem;
+    left: 0;
   }
   
   /* Estilos para la imagen del vinilo */
