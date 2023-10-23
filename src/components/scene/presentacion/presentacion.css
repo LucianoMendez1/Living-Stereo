@@ -62,18 +62,30 @@ body {
   text-align: center; /* Alinea el texto al centro */
 }
 
-.start-content .glitch-text {
+
+
+.titulopresent{
   font-family: 'PPFormula', sans-serif;
-  font-size: clamp(10vw, 18vw , 16rem);
+  font-size: 12rem;
   font-weight: 800;
   letter-spacing: 1px;
   margin-bottom: 1rem;
   background-color: transparent;
   text-align: center;
-  animation: glitchShadow 6s linear infinite;
+  animation: glitchShadow 6s linear infinite ;
   transform-origin: center;
   color: #ffffff;
-  text-shadow: 0 0 10px #ffffffc3, 0 0 40px #ffffffd9;;
+  text-shadow: 0 0 10px #ffe294c3, 0 0 40px #fdefd0d9;
+}
+
+.titulopresent::before {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #ffffff;
+  clip: rect(1px, auto, 1px, 0);
+  animation: glitch 0.3s linear infinite;
 }
 
 @keyframes glitchShadow {
@@ -110,20 +122,51 @@ body {
   animation: glitch 0.3s linear infinite;
 }
 
+
+
+
+
+
+
+
+/* .start-content .glitch-text {
+  font-family: 'PPFormula', sans-serif;
+  font-size: clamp(10vw, 18vw , 16rem);
+  font-weight: 800;
+  letter-spacing: 1px;
+  margin-bottom: 1rem;
+  background-color: transparent;
+  text-align: center;
+  animation: glitchShadow 6s linear infinite;
+  transform-origin: center;
+  color: #ffffff;
+  text-shadow: 0 0 10px #ffffffc3, 0 0 40px #ffffffd9;;
+}
+
+
 @keyframes glitch {
   2%, 64% {
-    transform: translate(20rem, 0); /* Ajusta los valores para una expansión lateral mayor */
+    transform: translate(20rem, 0);
   }
-  4%, 60% {
-    transform: translate(-20rem, 0); /* Ajusta los valores para una expansión lateral mayor */
+/*   4%, 60% {
+    transform: translate(-20rem, 0);
   }
   62% {
     transform: translate(0, 0);
-  }
-}
+  } */
 
-.arrow {
+
+
+.arrow{
   animation: bounce 2s infinite;
+  position: absolute;
+  bottom: 1rem;
+  left: 48%;
+  margin-left: -20px;
+  width: 50px;
+  z-index: 9999999;
+  opacity: .7;
+ 
 }
 
 @keyframes bounce {
@@ -147,6 +190,7 @@ body {
   bottom: 5%;
   left: 50%;
   transform: translateX(-50%);
+  text-shadow: 0 0 2px #ffe294c3, 0 0 8px #fdefd0d9; 
   animation: zoomOut 1s ease-in-out both;
   z-index: 1000;
 }
@@ -201,14 +245,14 @@ body {
   cursor: pointer;
   position: absolute;
   bottom: 30px;
-  
+  left: 50px;
 }
 
 /* Estilos para la imagen del vinilo */
 .vinyl-img1 {
   display: flex;
-  width: 80px; /* Ancho de la imagen del vinilo */
-  height: 80px; /* Alto de la imagen del vinilo */
+  width: 100px; /* Ancho de la imagen del vinilo */
+  height: 100px; /* Alto de la imagen del vinilo */
   transition: filter 0.3s;
 }
 
@@ -230,15 +274,15 @@ body {
 
 
 @media screen and (max-width: 768px) {
-  .start-content .glitch-text {
+  .titulopresent {
     font-family: 'PPFormula', sans-serif;
-    font-size: 4rem;
+    font-size: 3rem;
     font-weight: 600;
     letter-spacing: 1.5px;
     margin-bottom: 1rem;
     background-color: transparent;
     text-align: center;
-    
+    animation: glitchShadow 6s linear infinite;
     transform-origin: center;
     color: #ffffff;
    
@@ -283,6 +327,8 @@ body {
     height: 80px; /* Alto de la imagen del vinilo */
     transition: filter 0.3s;
   }
-  
+  .arrow{
+    opacity: .15;
+  }
 }
   
