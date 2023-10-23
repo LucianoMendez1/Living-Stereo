@@ -201,7 +201,7 @@ body {
   cursor: pointer;
   position: absolute;
   bottom: 30px;
-  left: 30px;
+  left: 50px;
 }
 
 /* Estilos para la imagen del vinilo */
@@ -240,28 +240,28 @@ body {
     text-align: center;
     
     transform-origin: center;
-    color: #e3e3e3;
+    color: #ffffff;
    
   }
   
   @keyframes glitchShadow {
     0% {
-      text-shadow: 0 0 4px #fff9e8c3, 0 0 4px #fdefd0d9;
+      text-shadow: 0 0 4px #fdfaf2c3, 0 0 4px #fbf7f0d9;
     }
     20% {
-      text-shadow: 0 0 4px #676767c3, 0 0 4px #fdefd0d9;
+      text-shadow: 0 0 4px #dcdcdcc3, 0 0 4px #fdefd0d9;
     }
     40% {
-      text-shadow: 0 0 4px #646464c3, 0 0 20px #fdefd0d9;
+      text-shadow: 0 0 4px #cfcfcfc3, 0 0 4px #fcf3dfd9;
     }
     60% {
-      text-shadow: 0 0 4px #ffffffc3, 0 0 4px #fdefd0d9;
+      text-shadow: 0 0 4px #ffffffc3, 0 0 4px #faf3e3d9;
     }
     80% {
-      text-shadow: 0 0 4px #ffffffc3, 0 0 20px #fdefd0d9;
+      text-shadow: 0 0 4px #ffffffc3, 0 0 4px #f3e7ced9;
     }
     100% {
-      text-shadow: 0 0 4px #fff1ccc3, 0 0 4px #fdefd0d9;
+      text-shadow: 0 0 4px #fff1ccc3, 0 0 4px #fcf2dcd9;
     }
   }
   
@@ -273,7 +273,7 @@ body {
     cursor: pointer;
     position: relative;
     top: 140%;
-     left:1rem;
+     left:2rem;
   }
   
   /* Estilos para la imagen del vinilo */

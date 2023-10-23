@@ -11,11 +11,33 @@ const Presentacion = React.forwardRef((props, ref) => {
   const [isGlitching, setIsGlitching] = useState(false);
   const videoRef = useRef(null);
   const contentRef = useRef(null);
+  const audioRef = useRef(null);
 
   const toggleMute = () => {
-    setIsMuted(!isMuted);
-    if (videoRef.current) {
-      videoRef.current.muted = !isMuted;
+    if (audioRef.current) {
+      if (audioRef.current.paused) {
+        audioRef.current.play();
+        setIsMuted(false);
+      } else {
+        audioRef.current.pause();
+        setIsMuted(true);
+      }
+    }
+  };
+
+  const playVinylAudio = () => {
+    if (audioRef.current) {
+      audioRef.current.play();
+      setIsMuted(true); // Silencia el video cuando se reproduce la música del vinilo.
+    }
+  };
+
+  // Función para detener el audio del vinilo
+  const stopVinylAudio = () => {
+    if (audioRef.current) {
+      audioRef.current.pause();
+      audioRef.current.currentTime = 0;
+      setIsMuted(true);
     }
   };
 
@@ -87,7 +109,6 @@ const Presentacion = React.forwardRef((props, ref) => {
         <div className="start-content">
           <h1
             className={`glitch-text ${isGlitching ? "glitching" : ""}`}
-            data-text="Living Stereo"
             onMouseEnter={handleGlitchHover}
             onMouseLeave={handleGlitchHover}
           >
@@ -97,7 +118,7 @@ const Presentacion = React.forwardRef((props, ref) => {
             ref={videoRef}
             autoPlay
             loop
-            muted={isMuted}
+            muted
             playsInline
             className="background-video1"
           >
@@ -114,6 +135,12 @@ const Presentacion = React.forwardRef((props, ref) => {
               className="vinyl-img1"
             />
           </button>
+        
+          <audio
+            ref={audioRef}
+            src="https://res.cloudinary.com/dvnhn35l4/video/upload/v1698087033/Nicolas_Nieves_Agust%C3%ADn_Bragoni_Simon_Di_Marzio_-_Rivera_Paradise_South_America_Avenue_xbidwr.mp3"
+            preload="auto"
+          ></audio>
         </div>
       </div>
       <div ref={contentRef} className="content-below">
