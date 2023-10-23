@@ -114,6 +114,9 @@ const Presentacion = React.forwardRef((props, ref) => {
           >
             Living Stereo
           </h1>
+          <div className="arrow bounce">
+              <img src="https://www.freeiconspng.com/uploads/white-down-arrow-png-2.png" width="100"/>
+          </div>
           <video
             ref={videoRef}
             autoPlay
@@ -142,10 +145,11 @@ const Presentacion = React.forwardRef((props, ref) => {
             preload="auto"
           ></audio>
         </div>
+        
       </div>
       <div ref={contentRef} className="content-below">
-        {/* Elementos a continuación */}
       </div>
+      
     </div>
   );
 });
