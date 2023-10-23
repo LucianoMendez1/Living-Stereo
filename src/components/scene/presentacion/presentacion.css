@@ -279,7 +279,7 @@ body {
     font-size: 3rem;
     font-weight: 800;
     letter-spacing: 1.5px;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
     background-color: transparent;
     text-align: center;
     animation: glitchShadow 6s linear infinite;
@@ -316,8 +316,8 @@ body {
     border: none;
     cursor: pointer;
     position: relative;
-    top: 140%;
-     left:1rem;
+    top: 22rem;
+     left:-1rem;
   }
   
   /* Estilos para la imagen del vinilo */
