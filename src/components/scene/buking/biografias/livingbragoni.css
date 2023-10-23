@@ -40,8 +40,8 @@
     border: none;
     cursor: pointer;
     position: relative;
- 
-    right: 20rem;
+    bottom: 30px;
+    right: 30px;
   }
   
   /* Estilos para la imagen del vinilo */
