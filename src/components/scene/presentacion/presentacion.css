@@ -319,32 +319,14 @@ body {
     margin-bottom: 1rem;
     background-color: transparent;
     text-align: center;
-    animation: none;
+    
+    text-shadow: 0 0 2px #ffe294c3, 0 0 8px #fdefd0d9; 
     transform-origin: center;
     color: #fffefe;
    
   }
   
-  @keyframes glitchShadow {
-    0% {
-      text-shadow: 0 0 4px #fdfaf2c3, 0 0 4px #fbf7f0d9;
-    }
-    20% {
-      text-shadow: 0 0 4px #dcdcdcc3, 0 0 4px #fdefd0d9;
-    }
-    40% {
-      text-shadow: 0 0 4px #cfcfcfc3, 0 0 4px #fcf3dfd9;
-    }
-    60% {
-      text-shadow: 0 0 4px #ffffffc3, 0 0 4px #faf3e3d9;
-    }
-    80% {
-      text-shadow: 0 0 4px #ffffffc3, 0 0 4px #f3e7ced9;
-    }
-    100% {
-      text-shadow: 0 0 4px #fff1ccc3, 0 0 4px #fcf2dcd9;
-    }
-  }
+  
   
 
   .vinyl-button1 {
