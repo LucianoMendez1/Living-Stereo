@@ -233,7 +233,7 @@ function AgustinBragoni() {
               <div class="row">
                 <div class="column">
                   <img
-                    src="https://res.cloudinary.com/dvnhn35l4/image/upload/v1697849794/agusbragoni/276042996_252272707106578_8305766497880745516_n_hkyqt3.jpg"
+                    src="https://res.cloudinary.com/dvnhn35l4/image/upload/v1697850814/agusbragoni/1_8_lgcr6g.jpg"
                     alt="Imagen 4"
                   ></img>
                 </div>

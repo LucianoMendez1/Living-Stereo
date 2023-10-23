@@ -60,9 +60,7 @@ const Home = () => {
       <div ref={presteitbukingsliderRef}>
         <PresteitBukingSlider />
       </div>
-      <div ref={animalaRef}>
-        <Animala />
-      </div>
+     
     </ReactSuspense>
   );
 };
