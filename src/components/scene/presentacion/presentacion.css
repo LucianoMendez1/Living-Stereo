@@ -319,9 +319,9 @@ body {
     margin-bottom: 1rem;
     background-color: transparent;
     text-align: center;
-    
+    animation: none;
     transform-origin: center;
-    color: #ffffff;
+    color: #fffefe;
    
   }
   
@@ -353,19 +353,21 @@ body {
     border: none;
     cursor: pointer;
     position: relative;
-    top: 140%;
-     left:2rem;
+    top: 150%;
+    left: -2rem;
   }
   
   /* Estilos para la imagen del vinilo */
   .vinyl-img1 {
     display: flex;
-    width: 80px; /* Ancho de la imagen del vinilo */
-    height: 80px; /* Alto de la imagen del vinilo */
+    width: 60px; /* Ancho de la imagen del vinilo */
+    height: 60px; /* Alto de la imagen del vinilo */
     transition: filter 0.3s;
+    
   }
   .arrow {
-    opacity: .15;
+    opacity: 0.8;
+    left: 10rem;
   }
 }
   
