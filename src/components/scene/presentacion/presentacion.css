@@ -201,7 +201,7 @@ body {
   cursor: pointer;
   position: absolute;
   bottom: 30px;
-  left: 50px;
+  
 }
 
 /* Estilos para la imagen del vinilo */
@@ -229,87 +229,6 @@ body {
 }
 
 
-.Arrow Button {
-
-  @-moz-keyframes bounce {
-    0%, 20%, 50%, 80%, 100% {
-      -moz-transform: translateY(0);
-      transform: translateY(0);
-    }
-    40% {
-      -moz-transform: translateY(-30px);
-      transform: translateY(-30px);
-    }
-    60% {
-      -moz-transform: translateY(-15px);
-      transform: translateY(-15px);
-    }
-  }
-  @-webkit-keyframes bounce {
-    0%, 20%, 50%, 80%, 100% {
-      -webkit-transform: translateY(0);
-      transform: translateY(0);
-    }
-    40% {
-      -webkit-transform: translateY(-30px);
-      transform: translateY(-30px);
-    }
-    60% {
-      -webkit-transform: translateY(-15px);
-      transform: translateY(-15px);
-    }
-  }
-  @keyframes bounce {
-    0%, 20%, 50%, 80%, 100% {
-      -moz-transform: translateY(0);
-      -ms-transform: translateY(0);
-      -webkit-transform: translateY(0);
-      transform: translateY(0);
-    }
-    40% {
-      -moz-transform: translateY(-30px);
-      -ms-transform: translateY(-30px);
-      -webkit-transform: translateY(-30px);
-      transform: translateY(-30px);
-    }
-    60% {
-      -moz-transform: translateY(-15px);
-      -ms-transform: translateY(-15px);
-      -webkit-transform: translateY(-15px);
-      transform: translateY(-15px);
-    }
-  }
-}
-  .container {
-    height: 100vh;
-  }
-  .below {
-    height: 100vh;
-  }
-  .arrow {
-    position: absolute;
-    bottom: 1rem;
-    left: 46%;
-   
-    width: 50px;
-    z-index: 9999999;
-    opacity: .7;
-  }
-  
-  .bounce {
-    -moz-animation: bounce 3s infinite;
-    -webkit-animation: bounce 3s infinite;
-    animation: bounce 3s infinite;
-  }
-
-
-
-
-
-
-
-
-
 @media screen and (max-width: 768px) {
   .start-content .glitch-text {
     font-family: 'PPFormula', sans-serif;
@@ -320,13 +239,31 @@ body {
     background-color: transparent;
     text-align: center;
     
-    text-shadow: 0 0 2px #ffe294c3, 0 0 8px #fdefd0d9; 
     transform-origin: center;
-    color: #fffefe;
+    color: #ffffff;
    
   }
   
-  
+  @keyframes glitchShadow {
+    0% {
+      text-shadow: 0 0 4px #fdfaf2c3, 0 0 4px #fbf7f0d9;
+    }
+    20% {
+      text-shadow: 0 0 4px #dcdcdcc3, 0 0 4px #fdefd0d9;
+    }
+    40% {
+      text-shadow: 0 0 4px #cfcfcfc3, 0 0 4px #fcf3dfd9;
+    }
+    60% {
+      text-shadow: 0 0 4px #ffffffc3, 0 0 4px #faf3e3d9;
+    }
+    80% {
+      text-shadow: 0 0 4px #ffffffc3, 0 0 4px #f3e7ced9;
+    }
+    100% {
+      text-shadow: 0 0 4px #fff1ccc3, 0 0 4px #fcf2dcd9;
+    }
+  }
   
 
   .vinyl-button1 {
@@ -335,21 +272,17 @@ body {
     border: none;
     cursor: pointer;
     position: relative;
-    top: 150%;
-    left: -2rem;
+    top: 140%;
+     left:1rem;
   }
   
   /* Estilos para la imagen del vinilo */
   .vinyl-img1 {
     display: flex;
-    width: 60px; /* Ancho de la imagen del vinilo */
-    height: 60px; /* Alto de la imagen del vinilo */
+    width: 80px; /* Ancho de la imagen del vinilo */
+    height: 80px; /* Alto de la imagen del vinilo */
     transition: filter 0.3s;
-    
   }
-  .arrow {
-    opacity: 0.8;
-    left: 10rem;
-  }
+  
 }
   
