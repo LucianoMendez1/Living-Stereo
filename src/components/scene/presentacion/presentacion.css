@@ -277,7 +277,7 @@ body {
   .titulopresent {
     font-family: 'PPFormula', sans-serif;
     font-size: 3rem;
-    font-weight: 600;
+    font-weight: 800;
     letter-spacing: 1.5px;
     margin-bottom: 1rem;
     background-color: transparent;
@@ -323,8 +323,8 @@ body {
   /* Estilos para la imagen del vinilo */
   .vinyl-img1 {
     display: flex;
-    width: 80px; /* Ancho de la imagen del vinilo */
-    height: 80px; /* Alto de la imagen del vinilo */
+    width: 60px; /* Ancho de la imagen del vinilo */
+    height: 60px; /* Alto de la imagen del vinilo */
     transition: filter 0.3s;
   }
   .arrow{
