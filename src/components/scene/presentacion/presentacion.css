@@ -148,13 +148,13 @@ body {
   2%, 64% {
     transform: translate(20rem, 0);
   }
-/*   4%, 60% {
+   4%, 60% {
     transform: translate(-20rem, 0);
   }
   62% {
     transform: translate(0, 0);
   } 
-
+}
 
 
 .arrow{
