@@ -354,7 +354,7 @@ body {
     text-align: left;
   }
   .bio-video {
-    max-width: calc(var(--index) * 15); 
+    max-width: calc(var(--index) * 14.9); 
     margin-bottom: var(--gallery-gap);
     
     border-radius: 8px;
