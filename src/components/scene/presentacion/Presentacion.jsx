@@ -86,7 +86,7 @@ const Presentacion = React.forwardRef((props, ref) => {
             />
           </button>
           <div className="arrow bounce">
-              <img src="https://www.freeiconspng.com/uploads/white-down-arrow-png-2.png" width="100"/>
+              <img src="https://res.cloudinary.com/dvnhn35l4/image/upload/v1698168845/image_ghroqr.png" width="100"/>
           </div>
           <audio
             ref={audioRef}

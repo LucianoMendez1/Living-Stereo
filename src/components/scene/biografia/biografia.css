@@ -2,7 +2,7 @@ body {
   margin: 0;
   padding: 0;
   color: #ffffff;
-  background-color: #000;
+  background-color: #ffffff;
   font-family: 'Clash Display', sans-serif;
 }
 
@@ -50,25 +50,132 @@ body {
 .start-content {
   z-index: 1;
   text-align: center;
+  
 }
+
+.bio-wrapper{
+  background-color:#030303 ;
+  
+}
+
+.bio-gallery {
+  display: flex;
+  padding: calc(var(--index) * 4) 0;
+}
+
+.bio-gallery > * {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  
+}
+
+.bio-video {
+  max-width: calc(var(--index) * 20); 
+  margin-bottom: var(--gallery-gap);
+  
+  border-radius: 8px;
+  border-radius: 8px;
+}
+
+.bio-gallery-left {
+  margin-top: calc(var(--gallery-gap) * 4);
+  
+}
+
+.bio-gallery-right .bio-video {
+  margin: 0;
+  margin-top: var(--gallery-gap );
+  
+}
+
+.bio-text {
+  color: var(--color-text);
+  position: relative;
+ 
+}
+
+.bio-heading {
+  font-size: 3rem;
+  padding: 100px;
+  margin-left: 30px;
+  font-style: italic;
+  font-weight: 700;
+  line-height: 3rem;
+  color: var(--color-header);
+  margin-bottom: 1.5rem;
+  
+  
+}
+
+
+.bio-heading2 {
+  font-size: 3rem;
+  padding: 100px;
+  margin-left: 30px;
+  font-style: italic;
+  font-weight: 700;
+  line-height: 3rem;
+  color: var(--color-header);
+  margin-bottom: 1.5rem;
+  border-top: 1px solid white; /* Línea blanca arriba de .bio-text */
+  border-bottom: 1px solid white; /* Línea blanca abajo de .bio-text */
+}
+
+
+.bio-text__p {
+  line-height: 1.75;
+ 
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 .description {
   color: #fafafa;
-  
-  max-width: 75%;
   text-align: justify;
-  background: rgba(0, 0, 0, 0.7);
   padding: 20px;
   margin: 0 auto;
   font-size: 1.5rem;
   border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-  font-weight: 700;
-
+  font-weight: 800;
+  font-family: "__canalFont_3a14ea", "__canalFont_Fallback_3a14ea", sans-serif;
   line-height: 2;
-   
+  position: relative; /* Añade posición relativa para elementos pseudo */
+
+  /* Pseudo-elemento para la línea superior */
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 2px; /* Ajusta el grosor de la línea superior según tus preferencias */
+    background-color: rgba(255, 255, 255, 0.735);
+  }
+
+  /* Pseudo-elemento para la línea inferior */
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 2px; /* Ajusta el grosor de la línea inferior según tus preferencias */
+    background-color: rgba(255, 255, 255, 0.808);
+  }
 }
+
 
 
 /* Estilos para el botón de silencio/sonido */
@@ -174,33 +281,79 @@ body {
   }
   
   
-  /* Estilos para la batería */
-  
- /* Estilos para dispositivos móviles (ancho de pantalla <= 768px) */
 @media screen and (max-width: 768px) {
-  /* Modificar títulos de sección */
+ 
   .start-content h1 {
     font-size: 2rem;
   }
 
-  /* Modificar descripción */
   .description {
     font-size: 0.7rem;
     font-weight: 700;
     max-width: 100%;
   }
 
-  /* Modificar botón de silencio/sonido */
   .button-mute {
     padding: 5px 10px;
     font-size: 12px;
   }
 
-  /* Modificar navegación */
   .nav-link {
     font-size: 16px;
     margin: 5px;
   }
 
+  .bio {
+    
+    display: flex;
+    width: calc(var(--index) * 40);
+    left: 100px;
+    top: 350px;
+    z-index: -1;
+  }
+  
+  .bio-container {
+    padding: 0 5vw;
+  }
+  
+  .bio-title {
+    font-size: calc(var(--index) * 1);
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    right: 50px;
+    bottom: 25vh;
+    
+  }
+
+  .bio-heading,
+  .bio-heading2 {
+    font-size: 0.9rem;
+    padding: 20px;
+    margin-left: 0;
+    line-height: 2rem;
+  }
+  
+  .bio-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+  }
+  
+  .bio-gallery-item {
+    max-width: 100%;
+    margin-bottom: var(--gallery-gap);
+  }
+  
+  .bio-gallery-left {
+    margin-top: var(--gallery-gap);
+  }
+  
+  .bio-text {
+    color: var(--color-text);
+    text-align: left; /* Alinear el contenido a la izquierda */
+  }
+  
+  
   /* Otras modificaciones de estilo para dispositivos móviles, si es necesario */
 }
