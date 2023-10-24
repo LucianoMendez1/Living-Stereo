@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
-import LivingBragoni from "./LivingBragoni";
+import LivingSimon from './LivingSimon';
 import "./simondimarzio.css";
 function SimonDimarzio() {
   useEffect(() => {
@@ -202,6 +202,7 @@ function SimonDimarzio() {
               </div>
             </div>
           </div>
+          <LivingSimon/>
          
         </div>
       </div>
