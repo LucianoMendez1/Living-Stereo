@@ -324,8 +324,7 @@ body {
     bottom: 25vh;
   }
   
-  .bio-heading,
-  .bio-heading2 {
+  .bio-heading {
     font-size: 0.9rem;
     padding: 20px;
     margin-left: 0;
@@ -333,7 +332,13 @@ body {
    
     line-height: 1.5; /* Ajustamos la altura de línea */
   }
-  
+  .bio-heading2{
+    font-size: 0.8rem;
+    padding: 10px;
+    margin-left: 0;
+    font-weight: 900;
+    line-height: 1.5; /* Ajustamos la altura de línea */
+  }
   .bio-gallery {
     display: flex;
     flex-wrap: wrap;
