@@ -275,84 +275,82 @@ function AgustinBragoni() {
           <LivingBragoni />
         </div>
       </div>
-      <div className="text-block gallery__item">
-        <h2 className="text-block__h_rider">RIDER TECNICO</h2>
-        <div className="djset">
-          <h4>Dj Set</h4>
+
+      <div>
+        <div className="redes1">
+          <h1>Escuchalo en sus redes</h1>
         </div>
-        <p className="text-block__p1">3 CDJ Nexus - Nexus 2 DJM 900 CDJ 2000</p>
+      </div>
+      <div className="redes-icons">
+        <a
+          href="https://soundcloud.com/agusbragoni/agustin-bragoni-live-ft-simon-di-marzio"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            src="https://res.cloudinary.com/dvnhn35l4/image/upload/v1698110274/soundcloud_sj9krx.png"
+            alt="SoundCloud"
+            className="small-image"
+          />
+        </a>
+        <a
+          href="https://open.spotify.com/artist/1cULybzKerkCYILQ7HE6KV"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            src="https://res.cloudinary.com/dvnhn35l4/image/upload/v1698110079/spotify_hl3rka.png"
+            alt="Spotify"
+            className="small-image"
+          />
+        </a>
+        <a
+          href="https://www.instagram.com/agusbragoni/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            src="https://res.cloudinary.com/dvnhn35l4/image/upload/v1698110078/instagram_pmiidc.png"
+            alt="Insta"
+            className="small-image"
+          />
+        </a>
+        <a
+          href="https://www.youtube.com/channel/UCiJDFbELenl7792FyRxlGyQ"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            src="https://res.cloudinary.com/dvnhn35l4/image/upload/v1698110077/youtube_tuqwvh.png"
+            alt="YouTube"
+            className="small-image"
+          />
+        </a>
+      </div>
+      <div className="container-raider">
+        <h2 className="container-raider__title">Técnico Rider</h2>
+        <div className="djset">
+          <h4>DJ Set</h4>
+        </div>
+        <p className="liveset-description">3 CDJ Nexus - Nexus 2 DJM 900 CDJ 2000</p>
         <div className="liveset">
           <h1>Live Set</h1>
         </div>
-        <p className="text-block__p1">
-          01 X MACBOOK PRO 13 01 X AKAI APC 01 X MINILOGUE 01 X FENDER MUSTANG
-          01 X AMPLIFICADOR FENDER DELUXE 01 X INTERFAZ AUDIENT 01 X LAP STEEL
-          GRETCHS - SALIDA STEREO 2 ENTRADAS - MICROFONO ( GUITARRA ELECTRICA)
+        <p className="container-raider__content">
+          01 MacBook Pro 13 - 01 Akai APC - 01 Minilogue - 01 Fender Mustang 01
+          Fender Deluxe Amplificador - 01 Audient Interfaz - 01 Lap Steel
+          Gretsch - Salida estéreo, 2 entradas - Micrófono (Guitarra Eléctrica)
         </p>
       </div>
-      
+
       <div className="contacto">
         <h1>
-          CONTACTO ELGHETTOPRODUCCiON@GMAiL.COM AGENT MANAGEMENT: LUCiO BURZOMi <br/>
+          CONTACTO ELGHETTOPRODUCCiON@GMAiL.COM AGENT MANAGEMENT: LUCiO BURZOMi{" "}
+          <br />
           TEL: 2215674139
         </h1>
-        </div>
-        <div>
-        <div className="redes1">    
-              <h1>Escuchalo en sus redes</h1>  
-          </div>
-        </div>
-        <div className="redes-icons">
-                <a
-                  href="https://soundcloud.com/agusbragoni/agustin-bragoni-live-ft-simon-di-marzio"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <img
-                    src="https://res.cloudinary.com/dvnhn35l4/image/upload/v1698110274/soundcloud_sj9krx.png"
-                    alt="SoundCloud"
-                    className="small-image"
-                  />
-                </a>
-                <a
-                  href="https://open.spotify.com/artist/1cULybzKerkCYILQ7HE6KV"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <img
-                    src="https://res.cloudinary.com/dvnhn35l4/image/upload/v1698110079/spotify_hl3rka.png"
-                    alt="Spotify"
-                    className="small-image"
-                  />
-                </a>
-                <a
-                  href="https://www.instagram.com/agusbragoni/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <img
-                    src="https://res.cloudinary.com/dvnhn35l4/image/upload/v1698110078/instagram_pmiidc.png"
-                    alt="Insta"
-                    className="small-image"
-                  />
-                </a>
-                <a
-                  href="https://www.youtube.com/channel/UCiJDFbELenl7792FyRxlGyQ"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <img
-                    src="https://res.cloudinary.com/dvnhn35l4/image/upload/v1698110077/youtube_tuqwvh.png"
-                    alt="YouTube"
-                    className="small-image"
-                  />
-                </a>
-             
       </div>
-    
-        </div>
-      
-    
+    </div>
   );
 }
 

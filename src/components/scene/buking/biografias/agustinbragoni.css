@@ -150,27 +150,31 @@ body {
 
 
 
-  .text-block__h_rider{
+  .container-raider__content{
 	display: flex;
+	text-align: center;
+	justify-content: center;
+	text-shadow: 0 0 10px #ffffffc3, 0 0 40px #dcdcdcd9;
 	margin-top: 9rem;
-	left: 40rem;
-	 font-size: calc(var(--index) * 5);
+	max-width: 500px;
+	left: 37%;
+	 font-size: calc(var(--index) * 0.9);
 	 width: 100%;
 	 text-align: center;
 	 line-height: 1.2;
-	
-	 position: relative; /* Agrega posición relativa al contenedor */
+	color: #f1f1f1;
+	 position: relative;
 }
 
-.text-block__p1{
+.container-raider__title{
 	display: flex;
-	margin-top: 9rem;
-	left: 40rem;
-	 font-size: calc(var(--index) * 1);
+	text-align: center;
+	justify-content: center;
+	padding: 10rem;
+	 font-size: calc(var(--index) * 3);
 	 width: 100%;
 	 text-align: center;
 	 line-height: 1.2;
-	
 	 position: relative; /* Agrega posición relativa al contenedor */
 }
 
@@ -179,7 +183,7 @@ body {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	left: 40rem;
+	
 	 font-size: calc(var(--index) * 2);
 	 width: 100%;
 	 text-align: center;
@@ -194,7 +198,6 @@ body {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	left: 40rem;
 	 font-size: calc(var(--index) * 1);
 	 width: 100%;
 	 text-align: center;
@@ -203,13 +206,29 @@ body {
 	 position: relative; 
 }
 
+.liveset-description{
+	display: flex;
+	text-align: center;
+	justify-content: center;
+	text-shadow: 0 0 10px #ffffffc3, 0 0 40px #dcdcdcd9;
+	top: 30px;
+	max-width: 500px;
+	left: 37%;
+	 font-size: calc(var(--index) * 0.9);
+	 width: 100%;
+	 text-align: center;
+	 line-height: 1.2;
+	color: #f1f1f1;
+	 position: relative;
+}
 .contacto{
 	
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	left: 41rem;
+	margin-top: 20rem;
 	bottom: 5rem;
+	left: 35%;
 	 font-size: calc(var(--index) * 0.6);
 	 width: 30%;
 	 text-align: center;
@@ -306,28 +325,54 @@ body {
 		
     }
 
-  
+	.container-raider__content {
+		left: 20%;
+		max-width: 200px;
+		justify-content: center;
+		margin-top: 3rem;
+	  }
+	
+	  .container-raider__title {
+		text-align: center;
+		padding: 3rem;
+		font-size: calc(var(--index) * 2);
+	  }
+	
+	  .djset {
+		text-align: center;
+		font-size: calc(var(--index) * 3);
+	  }
+	
+	  .liveset {
+		text-align: center;
+		top: 20px;
+		font-size: calc(var(--index) * 1.4);
+	  }
+	
+	  .liveset-description {
+		
+		 
+		top: 20px;
+		left: -2%;
+		font-size: calc(var(--index) * 0.8);
+		padding: 3rem;
+		max-width: 500px;
+	  }
+	
 
-    .djset, .liveset, .contacto {
-        position: relative; /* Añade posición relativa */
-        text-align: center; /* Centra el texto */
-        margin: 0 auto; /* Centra horizontalmente */
-		
-		
-        width: 80%; /* Ancho del texto ajustable */
+     .contacto {
+        position: relative; 
+     
+        margin: 0 auto;
+		margin-top: 10rem;
+		left: -2%;
+        width: 80%; 
         font-size: calc(var(--index) * 1);
         line-height: 1.2;
     }
 
-    .contacto {
-		left: 50px;
-        bottom: 0; /* Alinea el texto de contacto en la parte inferior */
-    }
-	.redes1, .redes-icons {
-        display: block;
-        text-align: center;
-        top: auto;
-    }
+    
+	
 
     .redes1 {
         font-size: 1rem;
