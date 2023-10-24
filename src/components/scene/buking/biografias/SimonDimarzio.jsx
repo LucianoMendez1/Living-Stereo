@@ -246,7 +246,7 @@ function SimonDimarzio() {
                   />
                 </a>
                 <a
-                  href="https://www.youtube.com/your-youtube-url"
+                  href="https://www.youtube.com/watch?v=C3eUu7bo3hw&ab_channel=SouthAmericaAvenue"
                   target="_blank"
                   rel="noopener noreferrer"
                 >

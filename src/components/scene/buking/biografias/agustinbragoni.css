@@ -218,6 +218,15 @@ body {
 	 position: relative; 
 }
 
+
+.redes1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top:50%;
+    font-size: 2rem;
+}
+
 @media screen and (max-width: 767px) {
     .hero {
         display: flex;
