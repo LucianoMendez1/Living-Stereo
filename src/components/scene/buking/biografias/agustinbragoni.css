@@ -323,5 +323,13 @@ body {
 		left: 50px;
         bottom: 0; /* Alinea el texto de contacto en la parte inferior */
     }
+	.redes1, .redes-icons {
+        display: block;
+        text-align: center;
+        top: auto;
+    }
 
+    .redes1 {
+        font-size: 1rem;
+    }
 }
