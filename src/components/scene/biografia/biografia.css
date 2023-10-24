@@ -3,7 +3,7 @@ body {
   padding: 0;
   color: #ffffff;
   background-color: #ffffff;
-  font-family: 'Clash Display', sans-serif;
+  
 }
 
 /* Contenedor principal */
@@ -304,7 +304,6 @@ body {
   }
 
   .bio {
-    
     display: flex;
     width: calc(var(--index) * 40);
     left: 100px;
@@ -323,15 +322,16 @@ body {
     text-align: center;
     right: 50px;
     bottom: 25vh;
-    
   }
-
+  
   .bio-heading,
   .bio-heading2 {
     font-size: 0.9rem;
     padding: 20px;
     margin-left: 0;
-    line-height: 2rem;
+    font-weight: 900;
+    font-family: 'Clash Display', sans-serif;
+    line-height: 1.2; /* Ajustamos la altura de línea */
   }
   
   .bio-gallery {
@@ -341,7 +341,7 @@ body {
   }
   
   .bio-gallery-item {
-    max-width: 100%;
+ 
     margin-bottom: var(--gallery-gap);
   }
   
@@ -351,9 +351,15 @@ body {
   
   .bio-text {
     color: var(--color-text);
-    text-align: left; /* Alinear el contenido a la izquierda */
+    text-align: left;
   }
-  
+  .bio-video {
+    max-width: calc(var(--index) * 15); 
+    margin-bottom: var(--gallery-gap);
+    
+    border-radius: 8px;
+    border-radius: 8px;
+  }
   
   /* Otras modificaciones de estilo para dispositivos móviles, si es necesario */
 }
