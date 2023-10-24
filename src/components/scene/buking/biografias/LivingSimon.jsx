@@ -6,6 +6,7 @@ import "../../buking/sliderSection.css";
 import "./livingbragoni.css";
 
 
+
 const LivingSimon = () => {
   const [currentBackgroundVideoBuking] = useState(
     "https://res.cloudinary.com/dvnhn35l4/video/upload/v1697516947/46EEF93D-F18F-41C0-B859-F0EB4A775B95_1_gcvnyh.mov"
@@ -44,8 +45,8 @@ const LivingSimon = () => {
       <div className="hero-section">
         <div className="container">
           <div data-speed=".75" className="main-header">
-            <h1 className="main-title2">Simon Di Marzio</h1>
-            <h6 className="subtitle">Living Stereo</h6>
+            <h1 className="main-title2">Living Stereo</h1>
+            <h6 className="subtitle">Simon Di Marzioo</h6>
           </div>
           <video
             ref={videoRef}
@@ -65,8 +66,8 @@ const LivingSimon = () => {
           <button onClick={toggleSound} className={`vinyl-button ${isMuted ? 'muted' : 'unmuted'}`}>
   <img src="https://res.cloudinary.com/dvnhn35l4/image/upload/v1697857960/klipartz.com_1_tw5vrg.png" alt="Vinilo" className="vinyl-img" />
 </button>
-
         </div>
+        
       </div>
     </div>
   );

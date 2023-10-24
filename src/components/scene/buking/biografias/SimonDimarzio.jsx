@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
-import LivingSimon from './LivingSimon';
+import LivingSimon from "./LivingSimon";
 import "./simondimarzio.css";
 function SimonDimarzio() {
   useEffect(() => {
@@ -202,11 +202,62 @@ function SimonDimarzio() {
               </div>
             </div>
           </div>
-          <LivingSimon/>
-         
+          <LivingSimon />
+          <div className="redes">
+            <div className="redes">
+              <h1>Escuchalo en sus redes</h1>
+            
+            </div>
+            
+          </div>
         </div>
+        <div className="redes-icons">
+                <a
+                  href="https://soundcloud.com/simondimarzio"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    src="https://res.cloudinary.com/dvnhn35l4/image/upload/v1698110274/soundcloud_sj9krx.png"
+                    alt="SoundCloud"
+                    className="small-image"
+                  />
+                </a>
+                <a
+                  href="https://open.spotify.com/artist/0k3Tv7xYk2S3cgnUsUwiu2"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    src="https://res.cloudinary.com/dvnhn35l4/image/upload/v1698110079/spotify_hl3rka.png"
+                    alt="Spotify"
+                    className="small-image"
+                  />
+                </a>
+                <a
+                  href="https://www.instagram.com/simondimarzio/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    src="https://res.cloudinary.com/dvnhn35l4/image/upload/v1698110078/instagram_pmiidc.png"
+                    alt="Insta"
+                    className="small-image"
+                  />
+                </a>
+                <a
+                  href="https://www.youtube.com/your-youtube-url"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    src="https://res.cloudinary.com/dvnhn35l4/image/upload/v1698110077/youtube_tuqwvh.png"
+                    alt="YouTube"
+                    className="small-image"
+                  />
+                </a>
+              </div>
       </div>
-     
     </div>
   );
 }

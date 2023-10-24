@@ -103,12 +103,12 @@
     }
 
     .vinyl-button {
-        bottom: 19rem; /* Ajustar la posición para celulares */
+        bottom:13rem; /* Ajustar la posición para celulares */
         right: 1px; /* Ajustar la posición para celulares */
     }
 
     .vinyl-img {
-        width: 60px; /* Ajustar el tamaño de la imagen del vinilo para celulares */
-        height: 60px; /* Ajustar el tamaño de la imagen del vinilo para celulares */
+        width: 40px; /* Ajustar el tamaño de la imagen del vinilo para celulares */
+        height: 40px; /* Ajustar el tamaño de la imagen del vinilo para celulares */
     }
 }
