@@ -329,11 +329,12 @@ body {
     padding: 20px;
     margin-left: 0;
     font-weight: 900;
-   
+    font-family: 'Montserrat', sans-serif;
     line-height: 1.5; /* Ajustamos la altura de línea */
   }
   .bio-heading2{
     font-size: 0.8rem;
+    font-family: 'Montserrat', sans-serif;
     padding: 10px;
     margin-left: 0;
     font-weight: 900;
