@@ -136,11 +136,11 @@ function AgustinBragoni() {
                 <div className="text-block gallery__item">
                   <h2 className="text-block__h">
                     A LO LARGO DE SU CARRERA HA LOGRADO TOCAR EN LOS ES-
-                    CENARiOS MAS RECONOCiDOS DE ARGENTiNA, COMO EL LOO-
-                    LLAPALOOZA, LUNA PARK, COSQUiN ROCK, ESTADiO MALViNAS
-                    ARGENTiNAS, ENTRE OTROS
+                    CENARiOS MAS RECONOCiDOS DE ARGENTiNA
                   </h2>
-                  <p className="text-block__p"></p>
+                  <p className="text-block__p">COMO EL LOO-
+                    LLAPALOOZA, LUNA PARK, COSQUiN ROCK, ESTADiO MALViNAS
+                    ARGENTiNAS, ENTRE OTROS</p>
                 </div>
                 <img
                   className="gallery__item"
@@ -150,15 +150,12 @@ function AgustinBragoni() {
 
                 <div className="text-block gallery__item">
                   <h2 className="text-block__h">
-                    POR SU PARTE ES PRODUCTOR MUSiCAL Y DJ RESiDENTE DE ICONiC
-                    CLUB, HA COMPARTiDO CABiNA CON LOS DJS MÁS iM- PORTANTES DE
-                    LA ESCENA ARGENTiNA, COMO MARiANO MELLiNO, JUAN HANSEN,
-                    SOUNDEXiLE, EZEQUiEL ARiAS Y JONH COSANi ENTRE OTROS.
-                    ALGUNAS DE SUS FECHAS MÁS DESTACADAS HAN SiDO JUNTO A AL DJ
-                    iNTERNA- CiONAL CiD INC EN ESTADiO UNO (CLUB ESTUDiANTES) Y
-                    JUNTO AL ALEMÁN EiNMUSiK EN ICONIC CLUB.
+                    POR SU PARTE ES PRODUCTOR MUSiCAL Y DJ RESiDENTE DE ICONiC CLUB 
+                    
                   </h2>
-                  <p className="text-block__p"></p>
+                  <p className="text-block__p"> 
+                  EN LOS ÚLTiMOS TiEMPOS, HA TENiDO LA OPORTUNiDAD DE iNCURSiONAR DENTRO DEL GÉNERO HOUSE
+                  </p>
                 </div>
                 <img
                   className="gallery__item"
@@ -170,13 +167,13 @@ function AgustinBragoni() {
                 <div className="text-block gallery__item">
                   <h2 className="text-block__h">
                     AGUSTIN BRAGONi, ES UN MUSiCO PRODUCTOR, QUE DEDiCÓ TODA SU
-                    ViDA A LA MÚSiCA DESDE LOS 5 AÑOS. ACTUALMENTE SE DESEMPEÑA
+                    ViDA A LA MÚSiCA DESDE LOS 5 AÑOS
+                  </h2>
+                  <p className="text-block__p"> ACTUALMENTE SE DESEMPEÑA
                     EN LA ELECTRÓNiCA (PROGRESSiVE HOUSE, MELODiC TECHNO &
                     MELODiC HOUSE). CON SUS DOS FOR- MATOS, DJ SET Y LiVE SET,
                     TOCANDO iNSTRUMENTOS COMO LA GUiTARRA, SiNTETiZADORES Y LAP
-                    STEEL.
-                  </h2>
-                  <p className="text-block__p"></p>
+                    STEEL.</p>
                 </div>
                 <img
                   className="gallery__item"
@@ -185,11 +182,11 @@ function AgustinBragoni() {
                 />
                 <div className="text-block gallery__item">
                   <h2 className="text-block__h">
-                    ASÍ MiSMO, ADEMÁS DE SU PROYECTO COMO DJ, ES PARTE DEL
-                    EQUiPO DE PRODUCCiÓN Y MUSiCALiZACiÓN DE CHANO, UN EXPONENTE
-                    DENTRO DE LA MÚSiCA.
+                    ASÍ MiSMO, ADEMÁS DE SU PROYECTO COMO DJ
                   </h2>
-                  <p className="text-block__p"></p>
+                  <p className="text-block__p">ES PARTE DEL
+                    EQUiPO DE PRODUCCiÓN Y MUSiCALiZACiÓN DE CHANO, UN EXPONENTE
+                    DENTRO DE LA MÚSiCA.</p>
                 </div>
                 <img
                   className="gallery__item"
@@ -199,12 +196,17 @@ function AgustinBragoni() {
 
                 <div className="text-block gallery__item">
                   <h2 className="text-block__h">
-                    EN LOS ÚLTiMOS TiEMPOS, HA TENiDO LA OPORTUNiDAD DE
-                    iNCURSiONAR DENTRO DEL GÉNERO HOUSE, COMPARTiENDO CABiNA CON
-                    KOLOMBO Y EL BRiTÁNiCO NiC FANCiULLi, DE- MOSTRANDO ASi SU
-                    VERSATiLiDAD DENTRO LA ESCENA ELEC- TRÓNiCA
+                  Compartio CABiNA CON LOS DJS MÁS iMPORTANTES DE
+                  LA ESCENA ARGENTiNA,
+                   
                   </h2>
-                  <p className="text-block__p"></p>
+                  <p className="text-block__p"> COMPARTiENDO CABiNA CON
+                    KOLOMBO , MARiANO MELLiNO ,NiC FANCiULLi,JUAN HANSEN,
+                    SOUNDEXiLE, EZEQUiEL ARiAS Y JONH COSANi ENTRE OTROS. DESMOSTRANDO ASi SU
+                    VERSATiLiDAD DENTRO LA ESCENA ELECTRÓNiCA.<br/>
+                    ALGUNAS DE SUS FECHAS MÁS DESTACADAS HAN SiDO JUNTO A AL DJ
+                    iNTERNA- CiONAL CiD INC EN ESTADiO UNO (CLUB ESTUDiANTES) Y
+                    JUNTO AL ALEMÁN EiNMUSiK EN ICONIC CLUB</p>
                 </div>
               </div>
             </div>

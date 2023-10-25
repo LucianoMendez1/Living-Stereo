@@ -78,7 +78,7 @@ src: url('../../../components/fonts/RussoOne-Regular.ttf');
 
 .bio-video {
   max-width: calc(var(--index) * 20); 
-  margin-top: 200px;
+  margin-top: 190px;
   margin-bottom: 50px;
   filter: grayscale(50);
   border-radius: 8px;
@@ -237,7 +237,95 @@ src: url('../../../components/fonts/RussoOne-Regular.ttf');
     text-align: center;
   }
   
+  @media screen and (min-width: 768px) and (max-width: 1440px) {
+    .start-content h1 {
+      font-size: 2rem;
+    }
   
+    .bio {
+      display: flex;
+      width: calc(var(--index) * 40);
+      left: 100px;
+      top: 350px;
+      z-index: -1;
+    }
+  
+    .bio-container {
+      padding: 0 5vw;
+    }
+  
+    .bio-title {
+      font-size: calc(var(--index) * 5);
+      position: absolute;
+      width: 100%;
+      text-align: center;
+      right: 50px;
+      bottom: 25vh;
+    }
+  
+    .bio-heading {
+      font-size: 2.5rem;
+      padding: 20px;
+      margin-left: 0;
+      font-family: 'PPFormula', sans-serif;
+      line-height: 1.5;
+    }
+  
+    .bio-heading2 {
+      font-size: 2.5rem;
+      font-family: 'PPFormula', sans-serif;
+      padding: 10px;
+     
+      margin-left: 0;
+      line-height: 1.5;
+    }
+  
+    .bio-p {
+      font-size: 1.5rem;
+      padding: 10px;
+      margin-left: 0;
+      line-height: 1.5;
+    }
+  
+    .bio-p2 {
+      font-size: 1.2rem;
+      margin-left: 0;
+      margin-top: 0;
+      line-height: 1.5;
+    }
+  
+    .bio-gallery-item {
+      margin-bottom: var(--gallery-gap);
+    }
+  
+    .bio-gallery-left {
+      margin-top: var(--gallery-gap);
+    }
+  
+    .bio-text {
+      color: var(--color-text);
+      text-align: left;
+    }
+  
+    .bio-video {
+      max-width: calc(var(--index) * 16);
+      margin-bottom: var(--gallery-gap);
+     margin-top: 24rem;
+      margin-bottom: 0px;
+      border-radius: 8px;
+    }
+  
+    .bio-video2 {
+      max-width: calc(var(--index) * 16);
+      margin-bottom: var(--gallery-gap);
+      margin-left: 5;
+      border-radius: 8px;
+    }
+  }
+  
+  
+
+
 @media screen and (max-width: 768px) {
  
   .start-content h1 {

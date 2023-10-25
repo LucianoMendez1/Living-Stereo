@@ -70,7 +70,7 @@ const Biografia = () => {
                   <h2 className="bio-heading">
                   Living Stereo El Equipo de Productores Musicales Destacados de Argentina
                     <div className="bio-p">conformada por un talentoso equipo de productores musicales,
-                    incluyendo <br/><span className="highlighted-text">Agustin Bragoni Joaquin Irigoyen, Nicolas Nieves
+                    incluyendo <br/><span className="highlighted-text">Agustin Bragoni, Joaquin Irigoyen, Nicolas Nieves
                     y Simon Di Marzio</span></div>
                     
                   </h2>

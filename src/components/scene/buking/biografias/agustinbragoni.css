@@ -90,7 +90,9 @@ body {
 	margin-bottom: 1.5rem;
 }
 .text-block__p {
-	line-height: 1.75;
+	line-height: 1.2;
+	font-size: 1.5rem;
+	font-weight: 700;
 }
 
 .background-video5 {
@@ -246,6 +248,73 @@ body {
     font-size: 2rem;
 }
 
+
+@media screen and (min-width: 768px) and (max-width: 1440px) {
+	.container-raider__content {
+		left: 25%;
+		max-width: 200px;
+		justify-content: center;
+		margin-top: 3rem;
+	  }
+	
+	  .container-raider__title {
+		text-align: center;
+		padding: 3rem;
+		font-size: calc(var(--index) * 2);
+	  }
+	
+	  .djset {
+		text-align: center;
+		font-size: calc(var(--index) * 3);
+		
+	  }
+	
+	  .liveset {
+		text-align: center;
+		top: 20px;
+		font-size: calc(var(--index) * 1.4);
+
+	  }
+	
+	  .liveset-description {
+		
+		 
+		top: 20px;
+		left: 30%;
+		font-size: calc(var(--index) * 0.8);
+		padding: 3rem;
+		max-width: 500px;
+	  }
+	
+.container-raider__content{
+	left: 42%;
+}
+     .contacto {
+        position: relative; 
+     
+        margin: 0 auto;
+		margin-top: 10rem;
+		left: -2%;
+        width: 80%; 
+        font-size: calc(var(--index) * 1);
+        line-height: 1.2;
+    }
+
+    
+	.text-block__p {
+		line-height: 1.2;
+		font-size: 1rem;
+		font-weight: 700;
+	}
+
+    .redes1 {
+        font-size: 2rem;
+		margin-top: 50px;
+    }
+
+}
+
+
 @media screen and (max-width: 767px) {
     .hero {
         display: flex;
@@ -289,8 +358,8 @@ body {
         text-align: left; /* Alinear el contenido a la izquierda */
     }
 
-    .text-block__h, .text-block__p1, .djset, .liveset, .contacto {
-        font-size: calc(var(--index) * 1);
+    .text-block__h, .text-block__p, .djset, .liveset, .contacto {
+        font-size: calc(var(--index) * 0.9);
         line-height: 1.2;
     }
 

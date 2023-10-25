@@ -7,6 +7,8 @@ import Home from './components/home/Home';
 
 const LazyAgustinBragoni = lazy(() => import('./components/scene/buking/biografias/AgustinBragoni'));
 const LazySimonDimarzio = lazy(() => import('./components/scene/buking/biografias/SimonDimarzio'));
+const LazyNicolasNieves = lazy(() => import('./components/scene/buking/biografias/NicolasNieves'));
+
 
 const App = () => {
   return (
@@ -20,6 +22,7 @@ const App = () => {
           <Route path="/Home" element={<Home />} />
           <Route path="/biografias/AgustinBragoni" element={<LazyAgustinBragoni />} />
           <Route path="/biografias/SimonDimarzio" element={<LazySimonDimarzio />} />
+          <Route path="/biografias/NicolasNieves" element={<LazyNicolasNieves />} />
         </Routes>
       </Suspense>
     </BrowserRouter>

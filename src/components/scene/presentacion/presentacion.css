@@ -274,6 +274,32 @@ body {
 }
 
 
+@media screen and (min-width: 768px) and (max-width: 1440px) {
+  .titulopresent {
+    font-family: 'PPFormula', sans-serif;
+    font-size: 9rem;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+    margin-bottom: 2rem;
+    background-color: transparent;
+    text-align: center;
+    animation: glitchShadow 6s linear infinite;
+    transform-origin: center;
+    color: #ffffff;
+   
+  }
+
+  .arrow{
+    
+      opacity: .15;
+     
+      left: 46%;
+      
+    
+  }
+
+}
+
 @media screen and (max-width: 768px) {
   .titulopresent {
     font-family: 'PPFormula', sans-serif;
