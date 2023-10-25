@@ -355,10 +355,12 @@ body {
 
     .text-block {
         color: var(--color-text);
-        text-align: left; /* Alinear el contenido a la izquierda */
+        text-align: left; 
     }
 
-    .text-block__h, .text-block__p, .djset, .liveset, .contacto {
+	
+
+    .text-block__p, .djset, .liveset, .contacto {
         font-size: calc(var(--index) * 0.9);
         line-height: 1.2;
     }
@@ -386,10 +388,11 @@ body {
     }
 
     .text-block__h {
-        font-size: calc(var(--index) * 1);
+        font-size: calc(var(--index) * 1.1);
 		padding: 10px;
-		font-family: 'Clash Display', sans-serif;
-		font-weight: 800;
+		font-family: 'PPFormula', sans-serif;
+     
+		font-weight: 700;
         line-height: 1.2;
 		
     }
