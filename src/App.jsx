@@ -10,6 +10,9 @@ const LazySimonDimarzio = lazy(() => import('./components/scene/buking/biografia
 
 const App = () => {
   return (
+  <div className='app'>
+    <div className="background"></div>
+ 
     <BrowserRouter>
       <Suspense fallback={<div>Loading...</div>}>
         <Routes>
@@ -20,6 +23,7 @@ const App = () => {
         </Routes>
       </Suspense>
     </BrowserRouter>
+    </div>
   );
 };
 

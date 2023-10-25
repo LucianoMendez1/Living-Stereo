@@ -68,10 +68,11 @@ const Biografia = () => {
               <div className="bio-item">
                 <div className="bio-text">
                   <h2 className="bio-heading">
-                    Living stereo es una destacada productora de Argentina
-                    conformada por un talentoso equipo de productores musicales,
-                    incluyendo Agustín Bragoni, Joaquín Irigoyen, Nicolás Nieves
-                    y Simón Di Marzio
+                  Living Stereo El Equipo de Productores Musicales Destacados de Argentina
+                    <div className="bio-p">conformada por un talentoso equipo de productores musicales,
+                    incluyendo <br/><span className="highlighted-text">Agustin Bragoni Joaquin Irigoyen, Nicolas Nieves
+                    y Simon Di Marzio</span></div>
+                    
                   </h2>
                 </div>
                 <video
@@ -86,7 +87,7 @@ const Biografia = () => {
               <div className="bio-item">
                 <div className="bio-text">
                   <video
-                    className="bio-video"
+                    className="bio-video2"
                     autoPlay
                     loop
                     muted
@@ -94,14 +95,16 @@ const Biografia = () => {
                     src="https://res.cloudinary.com/dvnhn35l4/video/upload/v1696907204/ProyectAgustin/4_uisfb1.mp4"
                   ></video>
                   <h2 className="bio-heading2">
-                    Su música ha obtenido reconocimiento nacional e
-                    internacional bajo el sello "South America Avenue",
-                    respaldada por DJs destacados, como Hernán Cattáneo. Además
-                    de su producción musical, crearon "Animala" en 2023, un
+
+                  "La Destacada Trayectoria Musical de Living Stereo y su Impacto en la Escena Musical"
+                   <div className="bio-p2"> Su música ha obtenido reconocimiento nacional e
+                    internacional bajo el sello <span className="highlighted-text">South America Avenue </span>
+                     respaldada por DJs destacados,como <span className="highlighted-text"> Hernán Cattáneo. </span> Además
+                    de su producción musical, crearon <span className="highlighted-text"> Animala </span>en 2023, un
                     emocionante espacio para 500 personas que se ha destacado
                     por su sonido innovador, puesta en escena y apoyo a artistas
                     locales en crecimiento, generando un gran impacto en la
-                    escena musical.
+                    escena musical.</div>
                   </h2>
                 </div>
               </div>

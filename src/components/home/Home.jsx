@@ -60,6 +60,7 @@ const Home = () => {
       <div ref={presteitbukingsliderRef}>
         <PresteitBukingSlider />
       </div>
+      
      
     </ReactSuspense>
   );

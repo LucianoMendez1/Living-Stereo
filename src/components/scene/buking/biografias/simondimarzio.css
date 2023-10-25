@@ -15,7 +15,8 @@
     align-items: center;
     justify-content: center;
     top:50%;
-    margin-top: 5rem;
+    
+    padding: 50px;
     gap: 100px;
 }
 
@@ -24,7 +25,45 @@
     height: 80px;
   }
 
+
+  .main-titlesimon {
+    display: flex;
+    justify-content: center;
+    font-size: calc(var(--index) * 5); 
+   margin-top: 1rem;
+    width: 100%; 
+    text-align: center; 
+    bottom: 2vh;
+    line-height: 1.2; 
+    text-shadow: 0 0 10px #94e2ffc3, 0 0 40px #d0f1fdd9;
+}
+
+.subtitle-simon{
+    display: flex;
+   left: 65%;
+    font-size: calc(var(--index) * 1);
+    width: 100%;
+    text-align: center;
+    line-height: 1.2;
+    text-shadow:  0 0 10px #94e2ffc3, 0 0 40px #d0f1fdd9;
+
+    position: relative; /* Agrega posición relativa al contenedor */
+}
+
   @media (max-width: 600px) {
+
+    .main-titlesimon{
+        
+        font-size: calc(var(--index) * 5); /* Tamaño de fuente más pequeño para celulares */
+        margin-top: 10rem; /* Margen superior más pequeño para celulares */
+        text-shadow:  0 0 5px #94e2ffc3, 0 0 20px #d0f1fdd9; /* Sombra de texto más suave para celulares */
+    }
+
+    .subtitle-simon {
+       left: 13rem;
+        font-size: calc(var(--index) * 2); /* Tamaño de fuente más pequeño para celulares */
+        text-shadow: 0 0 5px #94e2ffc3, 0 0 20px #d0f1fdd9; /* Sombra de texto más suave para celulares */
+    }
     .redes, .redes-icons {
         display: block;
         text-align: center;

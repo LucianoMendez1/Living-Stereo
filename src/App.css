@@ -5,7 +5,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
-  
+
  
 }
 
@@ -20,3 +20,22 @@
   
 }
 
+.app{
+  background-color: rgba(1, 1, 1, 0.663);
+}
+
+.background{
+  background-color: rgba(0, 0, 0, 0.836);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+  background-image: url("https://res.cloudinary.com/dvnhn35l4/image/upload/v1698194123/background_utccu2.jpg");
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  z-index: -1;
+}

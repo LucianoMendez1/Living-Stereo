@@ -85,15 +85,16 @@ const Presentacion = React.forwardRef((props, ref) => {
               className="vinyl-img1"
             />
           </button>
-          <div className="arrow bounce">
-              <img src="https://res.cloudinary.com/dvnhn35l4/image/upload/v1698168845/image_ghroqr.png" width="100"/>
-          </div>
+        
           <audio
             ref={audioRef}
             src="https://res.cloudinary.com/dvnhn35l4/video/upload/v1698087033/Nicolas_Nieves_Agust%C3%ADn_Bragoni_Simon_Di_Marzio_-_Rivera_Paradise_South_America_Avenue_xbidwr.mp3"
             preload="auto"
           ></audio>
         </div>
+        <div className="arrow bounce">
+              <img src="https://res.cloudinary.com/dvnhn35l4/image/upload/v1698197660/image_2_nzwu8v.png" width="100"/>
+          </div>
       </div>
       <div ref={contentRef} className="content-below">
       </div>

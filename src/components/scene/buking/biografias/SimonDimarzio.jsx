@@ -57,7 +57,7 @@ function SimonDimarzio() {
       );
     });
 
-    // Animaciones para los elementos de texto
+  
     const textBlocks = document.querySelectorAll(".text-block");
     textBlocks.forEach((textBlock) => {
       gsap.fromTo(
@@ -127,23 +127,23 @@ function SimonDimarzio() {
               <div data-speed=".9" className="gallery__left">
                 <img
                   className="gallery__item"
-                  src="https://res.cloudinary.com/dvnhn35l4/image/upload/v1697939320/SimonlivingStereo/DSC08341_wbthfs.jpg"
+                  src="https://res.cloudinary.com/dvnhn35l4/image/upload/v1698192529/8-DSC05676_mwbqtx_sgtzzy.png"
                   alt="img 1"
                 />
 
                 <div className="text-block gallery__item">
                   <h2 className="text-block__h">
                     hasta hoy ha compartido cabina con reconocidos djs como
-                    Mariano Mellino, Soundexile, Emi Galvan, Einmusik, Budakid,
+                    Mariano Mellino, Soundexile, Nick Varón , Emi Galvan, Einmusik, Budakid,
                     D-Formation, Kolombo, Fran Bortolossi, Kevin di Serna,
-                    Antrim, John Cosani, Folgar, Nim, Belu Clavero, Valdovinos,
-                    Joan Retamero, entre otros.
+                    Antrim, John Cosani, Folgar,Analog Jungs, Nim, Belu Clavero, Valdovinos,
+                    Joan Retamero,Eze Ramírez, entre otros.
                   </h2>
                   <p className="text-block__p"></p>
                 </div>
                 <img
                   className="gallery__item"
-                  src="https://res.cloudinary.com/dvnhn35l4/image/upload/v1697939325/SimonlivingStereo/DSC02377_yojsbm.jpg"
+                  src="https://res.cloudinary.com/dvnhn35l4/image/upload/v1697941201/SimonlivingStereo/DSC01761_p0lbu8.jpg"
                   alt="img 3"
                 />
 
@@ -176,10 +176,10 @@ function SimonDimarzio() {
                 />
                 <div className="text-block gallery__item">
                   <h2 className="text-block__h">
-                    Se desempeñó en distintos clubes como Bahrein, Iconic Club,
+                    Se desempeñó en distintos clubes como The bow, Bahrein, Iconic Club,
                     Zegre; así como también en ciclos como Rio Electronic Music,
-                    Hipico PM, Bodega Bonfati (Mendoza), Parador Serena (Mar del
-                    Plata)
+                    Hipico PM, Bodega Bonfati Mendoza, Parador Serena Mar del
+                    Plata
                   </h2>
                   <p className="text-block__p"></p>
                 </div>
@@ -195,7 +195,7 @@ function SimonDimarzio() {
                     sonidos armónicos para crear atmósferas que cautivan al
                     público. A la fecha, se encuentra dando sus primeros pasos
                     como productor musical teniendo feedbacks positivos de
-                    grandes exponentes del género.
+                    grandes exponentes del género ademas recibio support de Hernán Cattaneo en su Podcasts semanal Resident
                   </h2>
                   <p className="text-block__p"></p>
                 </div>

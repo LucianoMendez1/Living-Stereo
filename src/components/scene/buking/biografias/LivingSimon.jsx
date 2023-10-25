@@ -45,8 +45,8 @@ const LivingSimon = () => {
       <div className="hero-section">
         <div className="container">
           <div data-speed=".75" className="main-header">
-            <h1 className="main-title2">Living Stereo</h1>
-            <h6 className="subtitle">Simon Di Marzioo</h6>
+            <h1 className="main-titlesimon">Living Stereo</h1>
+            <h6 className="subtitle-simon">Simon Di Marzioo</h6>
           </div>
           <video
             ref={videoRef}

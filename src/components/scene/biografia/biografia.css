@@ -6,6 +6,11 @@ body {
   
 }
 
+
+@font-face {
+  font-family: 'RussoOne', sans-serif;
+src: url('../../../components/fonts/RussoOne-Regular.ttf');
+}
 /* Contenedor principal */
 .home-container {
   display: flex;
@@ -41,7 +46,7 @@ body {
   align-items: center;
   flex-direction: column;
   opacity: 1;
- background-color: #030303;
+
   
   pointer-events: auto;
   transition: opacity 0.5s ease;
@@ -54,7 +59,7 @@ body {
 }
 
 .bio-wrapper{
-  background-color:#030303 ;
+
   
 }
 
@@ -73,8 +78,18 @@ body {
 
 .bio-video {
   max-width: calc(var(--index) * 20); 
-  margin-bottom: var(--gallery-gap);
-  
+  margin-top: 200px;
+  margin-bottom: 50px;
+  filter: grayscale(50);
+  border-radius: 8px;
+  border-radius: 8px;
+}
+
+.bio-video2{
+  max-width: calc(var(--index) * 20); 
+  margin-left: 10rem;
+  margin-bottom: 50px;
+  filter: grayscale(50);
   border-radius: 8px;
   border-radius: 8px;
 }
@@ -98,11 +113,11 @@ body {
 
 .bio-heading {
   font-size: 3rem;
-  padding: 100px;
-  margin-left: 30px;
-  font-style: italic;
+  padding: 200px;
+  margin-left: 90px;
+
   font-weight: 700;
-  line-height: 3rem;
+  line-height: 3.5rem;
   color: var(--color-header);
   margin-bottom: 1.5rem;
   
@@ -114,9 +129,9 @@ body {
   font-size: 3rem;
   padding: 100px;
   margin-left: 30px;
-  font-style: italic;
+ 
   font-weight: 700;
-  line-height: 3rem;
+  line-height: 3.5rem;
   color: var(--color-header);
   margin-bottom: 1.5rem;
   border-top: 1px solid white; /* Línea blanca arriba de .bio-text */
@@ -124,10 +139,6 @@ body {
 }
 
 
-.bio-text__p {
-  line-height: 1.75;
- 
-}
 
 
 
@@ -177,29 +188,40 @@ body {
 }
 
 
-
-/* Estilos para el botón de silencio/sonido */
-.button-mute {
-  border: none;
-  background-color: transparent;
-  padding: 10px 20px;
-  font-size: 16px;
-  cursor: pointer;
-  position: absolute;
-  bottom: 10px;
-  left: 10px;
-  z-index: 1;
-  transition: background-color 0.3s ease;
-  color: #faba25f3;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
-  transform: perspective(500px) rotateX(30deg);
-}
-
-.button-mute:hover {
-  background-color: #180521;
-}
+.highlighted-text {
+  color: rgb(195, 235, 255); /* Cambia el color de fondo a tu preferencia */
+  font-weight: bold; /* Cambia el peso de la fuente a tu preferencia */
   
-  /* Estilos para la galería de imágenes */
+}
+
+.bio-p{
+ 
+ font-size: 2rem;
+ font-family: 'Russo One', sans-serif;
+  color: #ffffff;
+ margin-top: 50px;
+  line-height: 1.2;
+}
+
+
+.bio-p2{
+ 
+  font-size: 2rem;
+  font-family: 'Russo One', sans-serif;
+   color: #ffffff;
+  margin-top: 50px;
+   line-height: 1.2;
+   
+ }
+ 
+
+
+
+
+
+
+  
+
   .image-gallery {
     background-color: #fff;
     color: #000;
@@ -213,71 +235,6 @@ body {
     color: #000;
     padding: 40px;
     text-align: center;
-  }
-  
-  /* Estilos para la sección de próximos eventos */
-  .events-section {
-    background-color: #000;
-    color: #fff;
-    padding: 40px;
-    text-align: center;
-  }
-  
-  /* Estilos para la sección de contacto */
-  .contact-section {
-    background-color: #fff;
-    color: #000;
-    padding: 40px;
-    text-align: center;
-  }
-  
-  /* Estilos para los enlaces a redes sociales */
-  .social-links {
-    background-color: #000;
-    color: #fff;
-    padding: 40px;
-    text-align: center;
-  }
-  
-  /* Estilos para títulos de sección */
-  .social-links h2 {
-    font-size: 24px;
-    margin-bottom: 20px;
-  }
-  
-  /* Estilos para el formulario de contacto */
-  .contact-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .input-field {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 20px;
-    border: 1px solid #ccc;
-  }
-  
-  .submit-button {
-    background-color: #000;
-    color: #fff;
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-  }
-  
-  /* Estilos para los elementos de navegación (por ejemplo, enlaces a redes sociales) */
-  .nav-link {
-    color: #fff;
-    text-decoration: none;
-    font-size: 24px;
-    margin: 10px;
-    transition: color 0.3s ease;
-  }
-  
-  .nav-link:hover {
-    color: #faba25f3;
   }
   
   
@@ -328,23 +285,59 @@ body {
     font-size: 0.9rem;
     padding: 20px;
     margin-left: 0;
-    font-weight: 900;
+    
     font-family: 'Montserrat', sans-serif;
     line-height: 1.5; /* Ajustamos la altura de línea */
   }
   .bio-heading2{
-    font-size: 0.8rem;
-    font-family: 'Montserrat', sans-serif;
+    font-size: 0.9rem;
+    font-family: 'PPFormula', sans-serif;
     padding: 10px;
     margin-left: 0;
-    font-weight: 900;
+  
     line-height: 1.5; /* Ajustamos la altura de línea */
   }
-  .bio-gallery {
+
+
+  .bio-heading {
+    font-size: 0.9rem;
+    padding: 20px;
+    margin-left: 0;
+    font-family: 'PPFormula', sans-serif;
+  
+    line-height: 1.5; /* Ajustamos la altura de línea */
+  }
+  .bio-p{
+    font-size: 0.6rem;
+   
+    padding: 10px;
+    margin-left: 0;
+  
+    line-height: 1.5; /* Ajustamos la altura de línea */
+  }
+  .bio-p {
     display: flex;
     flex-wrap: wrap;
     padding: 0;
   }
+
+  .bio-p2{
+    font-size: 0.6rem;
+    margin-left: 0;
+  margin-top: 0;
+    line-height: 1.5; /* Ajustamos la altura de línea */
+  }
+  .bio-p2 {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    width: 100%;
+   
+    margin: 0;
+    color: var(--color-text);
+    
+  }
+  
   
   .bio-gallery-item {
  
@@ -360,12 +353,26 @@ body {
     text-align: left;
   }
   .bio-video {
-    max-width: calc(var(--index) * 14.9); 
-    margin-bottom: var(--gallery-gap);
     
+    max-width: calc(var(--index) * 16);
+    
+    margin-bottom: var(--gallery-gap);
+    margin-top: 70px;
+    height: 20rem;
+    margin-bottom: 0px;
     border-radius: 8px;
     border-radius: 8px;
   }
-  
+
+
+  .bio-video2 {
+    max-width: calc(var(--index) * 14.9); 
+    margin-bottom: var(--gallery-gap);
+    margin-left: 0;
+    border-radius: 8px;
+    border-radius: 8px;
+  }
+
+
   /* Otras modificaciones de estilo para dispositivos móviles, si es necesario */
 }
