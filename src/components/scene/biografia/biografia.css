@@ -78,16 +78,18 @@ src: url('../../../components/fonts/RussoOne-Regular.ttf');
 
 .bio-video {
   max-width: calc(var(--index) * 20); 
-  margin-top: 190px;
+ 
   margin-bottom: 50px;
   filter: grayscale(50);
   border-radius: 8px;
+  margin-top: 190px;
   border-radius: 8px;
 }
 
 .bio-video2{
   max-width: calc(var(--index) * 20); 
   margin-left: 10rem;
+ 
   margin-bottom: 50px;
   filter: grayscale(50);
   border-radius: 8px;
@@ -310,7 +312,7 @@ src: url('../../../components/fonts/RussoOne-Regular.ttf');
     .bio-video {
       max-width: calc(var(--index) * 16);
       margin-bottom: var(--gallery-gap);
-     margin-top: 24rem;
+     
       margin-bottom: 0px;
       border-radius: 8px;
     }

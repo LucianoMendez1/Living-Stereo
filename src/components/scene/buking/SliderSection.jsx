@@ -84,8 +84,11 @@ const SliderSection = () => {
               <h1>Simon Dimarzio</h1>
             </div>
           </div>
+          
         </div>
+        
       </div>
+      
     </div>
   );
 };
