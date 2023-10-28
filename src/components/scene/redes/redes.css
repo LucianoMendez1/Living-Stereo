@@ -1,0 +1,7 @@
+.redes{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top:80%;
+    font-size: 2rem;
+}

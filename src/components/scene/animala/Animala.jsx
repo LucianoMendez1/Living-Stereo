@@ -102,7 +102,7 @@ const Animala = () => {
               <div className="bio-item-animala"> 
                 <div className="bio-text-animala"> 
                   <h2 className="bio-animala">
-                    Animala
+                    <div className="title"><h2>Animala</h2></div>
                     <div className="bio-text-animala">
                       En 2023, se convirtió en un lugar emocionante
                       para 500 personas, conocido por su música innovadora y

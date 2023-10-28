@@ -85,6 +85,7 @@ const SliderSection = () => {
             </div>
           </div>
         </div>
+        
       </div>
     </div>
   );

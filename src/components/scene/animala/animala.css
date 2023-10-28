@@ -94,7 +94,6 @@ body {
 }
 
 .bio-animala {
-  font-size: 12rem;
   padding: 200px;
   left: 90%;
   font-weight: 700;
@@ -102,6 +101,12 @@ body {
   color: var(--color-header);
   margin-bottom: 1.5rem;
   
+  
+}
+
+.bio-animala .title{
+  font-size: 8rem;
+  text-shadow: 0 0 5px #ffdf9475, 0 0 20px #fdf6d094;
 }
 
 .bio-image-static-animala {
@@ -116,6 +121,8 @@ body {
   position: relative;
   transition: 1s;
 }
+
+
 
 .bio-image-static-animala:hover {
   filter: none;
@@ -201,7 +208,7 @@ body {
     font-size: 2rem;
   }
   .bio-animala {
-    font-size: 8rem;
+    
     
     left: 65%;
     font-weight: 700;
@@ -209,6 +216,10 @@ body {
     color: var(--color-header);
     margin-bottom: 1.5rem;
     
+  }
+
+  .bio-animala .title{
+    font-size:6rem ;
   }
   
   .bio-image-static {
@@ -329,15 +340,19 @@ body {
   }
   
   .bio-animala {
-    font-size: 2.5rem;
+    
     padding: 20px;
     left: 40%;
     font-weight: 700;
     line-height: 1.5rem;
     color: var(--color-header);
     margin-bottom: 0.5rem;
+    
   }
 
+  .bio-animala .title{
+    font-size: 1.7rem;
+  }
   
   .bio-image-static-animala{
     max-width: calc(var(--index) * 9); /* Cambié el valor de 10 a 7 */
