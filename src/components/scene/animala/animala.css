@@ -323,7 +323,11 @@ body {
   .start-screen {
    
   }
-
+  .bio-gallery-animala {
+    display: flex;
+    padding: calc(var(--index) * 1) 0;
+  }
+  
   .bio-animala {
     font-size: 2.5rem;
     padding: 20px;
@@ -334,13 +338,45 @@ body {
     margin-bottom: 0.5rem;
   }
 
-  .bio-image-static-animala,
-  .bio-image-static2-animala,
+  
+  .bio-image-static-animala{
+    max-width: calc(var(--index) * 9); /* Cambié el valor de 10 a 7 */
+    left: 7.5rem;
+     transform: rotate(0deg);
+     border-radius: 8px;
+     bottom: 120px; /* Cambié el valor de 40 a 70 */
+     border-radius: 8px;
+     text-align: center;
+     position: relative; 
+     filter: grayscale(0);
+     transition: 1s;
+  }
+  .bio-image-static-animala:hover{
+    filter: none;
+  }
+
+
+  .bio-image-static2-animala{
+    max-width: calc(var(--index) * 7); /* Cambié el valor de 10 a 7 */
+    margin-left: 10px;
+     transform: rotate(0deg);
+     filter: grayscale(100%);
+     border-radius: 8px;
+     margin-top: 70px; /* Cambié el valor de 40 a 70 */
+     border-radius: 8px;
+     text-align: center;
+     position: relative;
+  }
+
+  .bio-image-static2-animala:hover{
+    filter: grayscale(100%);
+  }
   .bio-image-static3-animala,
   .bio-image-animala {
     max-width: calc(var(--index) * 7); /* Cambié el valor de 10 a 7 */
-    margin-bottom: 20px;
+   margin-left: 10px;
     transform: rotate(0deg);
+    
     border-radius: 8px;
     margin-top: 70px; /* Cambié el valor de 40 a 70 */
     border-radius: 8px;
