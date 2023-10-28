@@ -54,23 +54,23 @@ body {
   text-align: center;
 }
 
-.bio-wrapper {
+.bio-wrapper-animala {
   
 }
 
-.bio-gallery {
+.bio-gallery-animala {
   display: flex;
   padding: calc(var(--index) * 4) 0;
 }
 
-.bio-gallery > * {
+.bio-gallery-animala > * {
   flex: 1;
   display: flex;
   align-items: center;
   flex-direction: column;
 }
 
-.bio-video2 {
+.bio-video2-animala {
   max-width: calc(var(--index) * 15);
   margin-right: 5%;
   margin-bottom: 50px;
@@ -79,20 +79,19 @@ body {
   border-radius: 8px;
 }
 
-.bio-gallery-left {
+.bio-gallery-left-animala {
   margin-top: calc(var(--gallery-gap) * 4);
 }
 
-.bio-gallery-right .bio-video {
+.bio-gallery-right-animala .bio-video-animala {
   margin: 0;
   margin-top: var(--gallery-gap);
 }
 
-.bio-text {
+.bio-text-animala {
   color: var(--color-text);
   position: relative;
 }
-
 
 .bio-animala {
   font-size: 12rem;
@@ -105,7 +104,7 @@ body {
   
 }
 
-.bio-image-static {
+.bio-image-static-animala {
   max-width: calc(var(--index) * 12);
   margin-bottom: 50px;
   filter: grayscale(50);
@@ -118,11 +117,11 @@ body {
   transition: 1s;
 }
 
-.bio-image-static:hover {
+.bio-image-static-animala:hover {
   filter: none;
 }
 
-.bio-image-static2 {
+.bio-image-static2-animala {
   max-width: calc(var(--index) * 12);
   margin-bottom: 10px;
   
@@ -135,11 +134,11 @@ body {
   transition: 1s;
 }
 
-.bio-image-static2:hover {
+.bio-image-static2-animala:hover {
   filter: grayscale(100%);
 }
 
-.bio-image-static3 {
+.bio-image-static3-animala {
   max-width: calc(var(--index) * 12);
   margin-bottom: 50px;
   filter: grayscale(50);
@@ -152,11 +151,11 @@ body {
   transition: 1s;
 }
 
-.bio-image-static3:hover {
+.bio-image-static3-animala:hover {
   filter: none;
 }
 
-.bio-image {
+.bio-image-animala {
   right: 100px;
   max-width: calc(var(--index) * 20);
   margin-bottom: 50px;
@@ -168,7 +167,7 @@ body {
   position: relative;
 }
 
-.highlighted-text {
+.highlighted-text-animala {
   color: rgb(195, 235, 255);
   font-weight: bold;
 }
@@ -275,7 +274,7 @@ body {
     position: relative;
   }
   
-  .highlighted-text {
+  .highlighted-text-animala {
     color: rgb(195, 235, 255);
     font-weight: bold;
   }
@@ -335,10 +334,10 @@ body {
     margin-bottom: 0.5rem;
   }
 
-  .bio-image-static,
-  .bio-image-static2,
-  .bio-image-static3,
-  .bio-image {
+  .bio-image-static-animala,
+  .bio-image-static2-animala,
+  .bio-image-static3-animala,
+  .bio-image-animala {
     max-width: calc(var(--index) * 10);
     margin-bottom: 20px;
     transform: rotate(0deg);
