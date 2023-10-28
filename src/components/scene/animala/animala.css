@@ -321,13 +321,13 @@ body {
   }
 
   .start-screen {
-    padding: 20px;
+   
   }
 
   .bio-animala {
-    font-size: 4rem;
+    font-size: 2.5rem;
     padding: 20px;
-    left: 50%;
+    left: 40%;
     font-weight: 700;
     line-height: 1.5rem;
     color: var(--color-header);
@@ -338,20 +338,23 @@ body {
   .bio-image-static2-animala,
   .bio-image-static3-animala,
   .bio-image-animala {
-    max-width: calc(var(--index) * 10);
+    max-width: calc(var(--index) * 7); /* Cambié el valor de 10 a 7 */
     margin-bottom: 20px;
     transform: rotate(0deg);
     border-radius: 8px;
-    margin-top: 40px;
+    margin-top: 70px; /* Cambié el valor de 40 a 70 */
     border-radius: 8px;
     text-align: center;
     position: relative;
   }
 
   .bio-text-animala {
-    font-size: 1rem;
-    margin-top: 2rem;
-    line-height: 1.2;
-    width: 100%;
+    font-size: 0.6rem;
+    bottom: 100px;
+    margin-left: 0;
+    line-height: 1.5; 
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
   }
 }
