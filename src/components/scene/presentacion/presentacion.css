@@ -303,7 +303,7 @@ body {
 @media screen and (max-width: 768px) {
   .titulopresent {
     font-family: 'PPFormula', sans-serif;
-    font-size: 3rem;
+    font-size: 2rem;
     font-weight: 800;
     letter-spacing: 1.5px;
     margin-bottom: 2rem;
