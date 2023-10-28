@@ -341,7 +341,7 @@ body {
   
   .bio-image-static-animala{
     max-width: calc(var(--index) * 9); /* Cambié el valor de 10 a 7 */
-    left: 7.5rem;
+    left: 8rem;
      transform: rotate(0deg);
      border-radius: 8px;
      bottom: 120px; /* Cambié el valor de 40 a 70 */
@@ -352,7 +352,7 @@ body {
      transition: 1s;
   }
   .bio-image-static-animala:hover{
-    filter: none;
+    filter: grayscale(100%);
   }
 
 
@@ -369,7 +369,7 @@ body {
   }
 
   .bio-image-static2-animala:hover{
-    filter: grayscale(100%);
+    filter:none;
   }
   .bio-image-static3-animala,
   .bio-image-animala {
