@@ -109,6 +109,16 @@ body {
   animation: glitchShadow 6s linear infinite;
 }
 
+.bio-animala .title::before {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #ffffff;
+  clip: rect(1px, auto, 1px, 0);
+  animation: glitch 0.3s linear infinite;
+}
+
 .bio-image-static-animala {
   max-width: calc(var(--index) * 12);
   margin-bottom: 50px;
@@ -352,7 +362,7 @@ body {
 
   .bio-animala .title{
     font-size: 1.7rem;
-    animation: glitchShadow 6s linear infinite;
+    
   }
   
   .bio-image-static-animala{
