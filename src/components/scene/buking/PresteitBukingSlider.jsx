@@ -39,6 +39,8 @@ const PresteitBukingSlider = () => {
           <SliderSection />
          
         </div>
+        
+      
       </div>
     </div>
   );

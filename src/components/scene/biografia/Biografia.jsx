@@ -100,11 +100,7 @@ const Biografia = () => {
                    <div className="bio-p2"> Su música ha obtenido reconocimiento nacional e
                     internacional bajo el sello <span className="highlighted-text">South America Avenue </span>
                      respaldada por DJs destacados,como <span className="highlighted-text"> Hernán Cattáneo. </span> Además
-                    de su producción musical, crearon <span className="highlighted-text"> Animala </span>en 2023, un
-                    emocionante espacio para 500 personas que se ha destacado
-                    por su sonido innovador, puesta en escena y apoyo a artistas
-                    locales en crecimiento, generando un gran impacto en la
-                    escena musical.</div>
+                    de su producción musical </div>
                   </h2>
                 </div>
               </div>

@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
-import './sliderSection.css';
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
+import "./sliderSection.css";
 
 const SliderSection = () => {
   const [imageClicked, setImageClicked] = useState(false);
@@ -9,7 +9,7 @@ const SliderSection = () => {
 
   const handleClickImage1 = () => {
     setImageClicked(true);
-  }; 
+  };
 
   const handleClickImage2 = () => {
     setImageClicked(true);
@@ -28,7 +28,7 @@ const SliderSection = () => {
       <div className="container2">
         <div className="row">
           <div className="column2">
-          {imageClicked ? (
+            {imageClicked ? (
               <Link to="./biografias/NicolasNieves" onClick={scrollToTop}>
                 <img
                   src="https://res.cloudinary.com/dvnhn35l4/image/upload/v1698269632/NicoLivingStereo/recortado.jpg"
@@ -81,14 +81,11 @@ const SliderSection = () => {
               ></img>
             )}
             <div className="name">
-              <h1>Simon Dimarzio</h1>
+              <h1>Simon Di Marzio</h1>
             </div>
           </div>
-          
         </div>
-        
       </div>
-      
     </div>
   );
 };

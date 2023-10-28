@@ -1,12 +1,13 @@
-import React, { useState, useRef, Suspense as ReactSuspense, useEffect } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import './home.css';
 import { gsap } from 'gsap';
+import ScrollTrigger from 'gsap/ScrollTrigger';
 
 import Presentacion from '../scene/presentacion/Presentacion';
-import SliderSection from '../scene/buking/SliderSection';
 import PresteitBukingSlider from '../scene/buking/PresteitBukingSlider';
 import Biografia from '../scene/biografia/Biografia';
 import Animala from '../scene/animala/Animala';
+import AnimationSvg from '../scene/animala/AnimationSvg';
 
 const Home = () => {
   const presentacionRef = useRef(null);
@@ -27,21 +28,21 @@ const Home = () => {
       biografiaRef.current,
       { opacity: 0, y: 100 },
       { opacity: 1, y: 0, duration: 1 },
-      '-=0.5' 
+      '-=0.5'
     );
 
     tl.fromTo(
       presteitbukingsliderRef.current,
       { opacity: 0, y: 100 },
       { opacity: 1, y: 0, duration: 1 },
-      '-=0.5' 
+      '-=0.5'
     );
 
     tl.fromTo(
       animalaRef.current,
       { opacity: 0, y: 100 },
       { opacity: 1, y: 0, duration: 1 },
-      '-=0.5' // Ajusta este valor para la separación
+      '-=0.5'
     );
   };
 
@@ -50,7 +51,7 @@ const Home = () => {
   }, []);
 
   return (
-    <ReactSuspense fallback={<div>Loading Scene...</div>}>
+    <div>
       <div ref={presentacionRef}>
         <Presentacion />
       </div>
@@ -59,10 +60,13 @@ const Home = () => {
       </div>
       <div ref={presteitbukingsliderRef}>
         <PresteitBukingSlider />
-      </div>
+      </div> 
       
-     
-    </ReactSuspense>
+      <div ref={animalaRef}>
+        <Animala />
+       
+      </div>
+    </div> 
   );
 };
 
