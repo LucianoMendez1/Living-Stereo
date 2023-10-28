@@ -112,10 +112,10 @@ body {
   margin-bottom: 1rem;
   background-color: transparent;
   text-align: center;
-  animation: glitchShadow 6s linear infinite ;
+
   transform-origin: center;
   color: #ffffff;
-  text-shadow: 0 0 10px #ffe2948c, 0 0 40px #fdefd0a1;
+ 
 }
 
 .bio-animala .title::before {

@@ -58,7 +58,7 @@
    width: 100%;
    text-align: center;
    line-height: 1.2;
-   
+   animation: none;
    position: relative; /* Agrega posición relativa al contenedor */
 }
 
