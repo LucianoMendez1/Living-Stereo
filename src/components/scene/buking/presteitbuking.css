@@ -96,7 +96,7 @@
   }
   .subtitle1 .h6{
     font-size: 1.5rem;
-    text-shadow: 0 0 2px #ffe294c3, 0 0 8px #fdefd0d9; 
+    animation: glitchShadow 6s linear infinite;
   }
 
  

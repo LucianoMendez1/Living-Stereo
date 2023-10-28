@@ -69,7 +69,7 @@ const Home = () => {
       <div ref={presteitbukingsliderRef}>
         <PresteitBukingSlider />
       </div>
-      <div ref={redesRef}> {/* Agrega la sección de Redes */}
+      <div ref={redesRef}> 
         <Redes />
       </div>
       <div ref={animalaRef}>

@@ -106,7 +106,7 @@ body {
 
 .bio-animala .title{
   font-size: 8rem;
-  text-shadow: 0 0 5px #ffdf9475, 0 0 20px #fdf6d094;
+  animation: glitchShadow 6s linear infinite;
 }
 
 .bio-image-static-animala {
@@ -352,6 +352,7 @@ body {
 
   .bio-animala .title{
     font-size: 1.7rem;
+    animation: glitchShadow 6s linear infinite;
   }
   
   .bio-image-static-animala{
