@@ -105,8 +105,18 @@ body {
 }
 
 .bio-animala .title{
-  font-size: 8rem;
-  animation: glitchShadow 6s linear infinite;
+  font-family: 'PPFormula', sans-serif;
+  font-size: 6rem;
+  font-weight: 800;
+  letter-spacing: 1px;
+  margin-bottom: 1rem;
+  background-color: transparent;
+  text-align: center;
+ 
+  animation: glitchShadow 6s linear infinite ;
+  transform-origin: center;
+  color: #ffffff;
+  text-shadow: 0 0 10px #ffe294c3, 0 0 40px #fdefd0d9;
 }
 
 .bio-animala .title::before {
@@ -361,7 +371,8 @@ body {
   }
 
   .bio-animala .title{
-    font-size: 1.7rem;
+    font-size: 1.5rem;
+    text-shadow: 0 0 2px #ffe294c3, 0 0 8px #fdefd0d9; 
     
   }
   
