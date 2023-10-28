@@ -34,7 +34,10 @@ const PresteitBukingSlider = () => {
         <div className="start-content1">
           <div className="titulopresteit">
             <span>Press Kit Booking</span>
-            <h4 className="subtitle1">Conoce a los artistas detras de Living Stereo</h4>
+         
+          </div>
+          <div className="descriptionbuking">
+            Conoce a los artistas detras de Living Streo
           </div>
           <SliderSection />
          
