@@ -342,9 +342,7 @@ body {
 }
 
 @media screen and (max-width: 767px) {
-  body {
-    background-color: #ffffff;
-  }
+ 
 
   .background-videoBiografia {
     filter: brightness(0.5);
@@ -371,7 +369,7 @@ body {
 
   .bio-animala .title{
     font-size: 1.5rem;
-    
+    font-weight: 600px;
     
   }
   
