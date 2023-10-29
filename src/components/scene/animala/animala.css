@@ -105,14 +105,14 @@ body {
 }
 
 .bio-animala .title{
-  font-family: 'PPFormula', sans-serif;
+ 
   font-size: 6rem;
   font-weight: 700;
   letter-spacing: 1px;
   margin-bottom: 1rem;
   background-color: transparent;
   text-align: center;
-
+  font-family: 'RussoOne', sans-serif;
   transform-origin: center;
   color: #ffffff;
  

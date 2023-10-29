@@ -6,15 +6,17 @@ import ScrollTrigger from 'gsap/ScrollTrigger';
 import Presentacion from '../scene/presentacion/Presentacion';
 import PresteitBukingSlider from '../scene/buking/PresteitBukingSlider';
 import Biografia from '../scene/biografia/Biografia';
-import Redes from '../scene/redes/Redes'; // Importa la componente de Redes
+import Redes from '../scene/redes/Redes'; 
 import Animala from '../scene/animala/Animala';
+import SelloDiscrografico from '../scene/sello/SelloDiscrografico';
 
 const Home = () => {
   const presentacionRef = useRef(null);
   const biografiaRef = useRef(null);
   const presteitbukingsliderRef = useRef(null);
-  const redesRef = useRef(null); // Crea una referencia para Redes
+  const redesRef = useRef(null);
   const animalaRef = useRef(null);
+  const selloRef = useRef(null); // Nueva referencia para SelloDiscrografico
 
   const animateComponents = () => {
     const tl = gsap.timeline();
@@ -40,7 +42,7 @@ const Home = () => {
     );
 
     tl.fromTo(
-      redesRef.current, // Animar la sección de Redes
+      redesRef.current,
       { opacity: 0, y: 100 },
       { opacity: 1, y: 0, duration: 1 },
       '-=0.5'
@@ -48,6 +50,13 @@ const Home = () => {
 
     tl.fromTo(
       animalaRef.current,
+      { opacity: 0, y: 100 },
+      { opacity: 1, y: 0, duration: 1 },
+      '-=0.5'
+    );
+
+    tl.fromTo(
+      selloRef.current, // Animar la sección de SelloDiscrografico
       { opacity: 0, y: 100 },
       { opacity: 1, y: 0, duration: 1 },
       '-=0.5'
@@ -74,6 +83,9 @@ const Home = () => {
       </div>
       <div ref={animalaRef}>
         <Animala />
+      </div>
+      <div ref={selloRef}>
+        <SelloDiscrografico />
       </div>
     </div>
   );
