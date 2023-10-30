@@ -19,6 +19,35 @@
     object-fit: cover;
 }
 
+audio {
+    position: absolute; /* Establece la posición absoluta para que se superponga a la descripción */
+    top: 0; /* Alinea la parte superior del audio con la parte superior del contenedor de descripción */
+    left: 75%; /* Alinea la izquierda del audio con la izquierda del contenedor de descripción */
+    z-index: 1; /* Asegura que el audio esté por encima de la descripción */
+}
+audio::-webkit-media-controls-panel {
+    background-color: #333;
+    border-radius: 5px;
+}
+audio::-webkit-media-controls-play-button, 
+audio::-webkit-media-controls-pause-button, 
+audio::-webkit-media-controls-mute-button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    padding: 10px;
+    margin: 0 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+audio::-webkit-media-controls-play-button:hover, 
+audio::-webkit-media-controls-pause-button:hover, 
+audio::-webkit-media-controls-mute-button:hover {
+    background-color: #0056b3;
+}
+
 /* Reglas CSS para el elemento .description */
 .description {
     border-left:2px solid #303030;
