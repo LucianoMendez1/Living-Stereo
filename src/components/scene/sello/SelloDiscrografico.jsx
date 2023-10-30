@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom"; // Importa Link para navegar a otra sección
 import "./sellodiscografico.css";
 
 const SelloDiscografico = () => {
@@ -40,13 +41,11 @@ const SelloDiscografico = () => {
               alt=""
               className="sello-image2"
             />
-          {/*   <p className="sello-text">Living Stereo</p>
-            <p className="sello-p">Black</p> */}
           </div>
         
           <div className="bio-sello-south">
-          <span className="highlighted-text-sello"> South America Avenue</span>
-          se complace en presentar su último lanzamiento,
+            <span className="highlighted-text-sello"> South America Avenue</span>
+            se complace en presentar su último lanzamiento,
             dando una cálida bienvenida a <span className="highlighted-text">Nicolas Nieves, Agustin Bragoni y
             Simon Di Mazio </span>al sello con su excepcional EP original de tres
             pistas titulado "River Coast". Este cautivador EP también incluye
@@ -54,7 +53,9 @@ const SelloDiscografico = () => {
             Aires, Argentina, estos tres talentosos productores aportan sus
             perspectivas musicales únicas, mostrando la rica creatividad y el
             vibrante sonido de la escena local
-           
+            <Link to="/album1/Carousel/Carousel"> {/* Navega a la otra sección al hacer clic en el botón */}
+              <button className="buttom-disco">Escuchar</button>
+            </Link>
           </div>
         </div>
       </div>

@@ -4,11 +4,13 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.css';
 
 import Home from './components/home/Home';
+import Albumliving from './components/scene/sello/album1/Carousel/Carousel';
+
 
 const LazyAgustinBragoni = lazy(() => import('./components/scene/buking/biografias/AgustinBragoni'));
 const LazySimonDimarzio = lazy(() => import('./components/scene/buking/biografias/SimonDimarzio'));
 const LazyNicolasNieves = lazy(() => import('./components/scene/buking/biografias/NicolasNieves'));
-
+const LazyAlbumliving = lazy(() => import('./components/scene/sello/album1/Carousel/Carousel'));
 
 const App = () => {
   return (
@@ -23,6 +25,7 @@ const App = () => {
           <Route path="/biografias/AgustinBragoni" element={<LazyAgustinBragoni />} />
           <Route path="/biografias/SimonDimarzio" element={<LazySimonDimarzio />} />
           <Route path="/biografias/NicolasNieves" element={<LazyNicolasNieves />} />
+          <Route path ="/album1/Carousel/Carousel" element ={<LazyAlbumliving />} />
         </Routes>
       </Suspense>
     </BrowserRouter>

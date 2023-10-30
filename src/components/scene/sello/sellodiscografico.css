@@ -130,6 +130,13 @@
     animation: spin 10s linear infinite; /* Aplica la animación "spin" a ambas imágenes */
 }
 
+.buttom-disco{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
 @media (max-width: 768px) {
 
     .selloTitle{

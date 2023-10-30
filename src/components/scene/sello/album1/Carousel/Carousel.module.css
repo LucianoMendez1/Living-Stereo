@@ -1,0 +1,28 @@
+.carousel {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.item {
+    visibility: hidden;
+    transition: all 0.5s ease;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    main {
+        height: 100%;
+        width: 100%;
+    }
+}
+
+.item.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.item.inactive {
+    transform: translateX(-100%);
+}

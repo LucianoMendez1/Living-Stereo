@@ -9,6 +9,7 @@ import Biografia from '../scene/biografia/Biografia';
 import Redes from '../scene/redes/Redes'; 
 import Animala from '../scene/animala/Animala';
 import SelloDiscrografico from '../scene/sello/SelloDiscrografico';
+import Albumliving from '../scene/sello/album1/Carousel/Carousel';
 
 const Home = () => {
   const presentacionRef = useRef(null);
@@ -16,7 +17,8 @@ const Home = () => {
   const presteitbukingsliderRef = useRef(null);
   const redesRef = useRef(null);
   const animalaRef = useRef(null);
-  const selloRef = useRef(null); // Nueva referencia para SelloDiscrografico
+  const selloRef = useRef(null); 
+  const albumlivingRef = useRef(null);
 
   const animateComponents = () => {
     const tl = gsap.timeline();
@@ -61,6 +63,12 @@ const Home = () => {
       { opacity: 1, y: 0, duration: 1 },
       '-=0.5'
     );
+    tl.fromTo(
+      albumlivingRef.current, // Animar la sección de Albumliving
+      { opacity: 0, y: 100 },
+      { opacity: 1, y: 0, duration: 1 },
+      '-=0.5'
+    );
   };
 
   useEffect(() => {
@@ -69,7 +77,7 @@ const Home = () => {
 
   return (
     <div>
-      <div ref={presentacionRef}>
+       <div ref={presentacionRef}>
         <Presentacion />
       </div>
       <div ref={biografiaRef}>
@@ -83,10 +91,13 @@ const Home = () => {
       </div>
       <div ref={animalaRef}>
         <Animala />
-      </div>
+      </div> 
       <div ref={selloRef}>
         <SelloDiscrografico />
-      </div>
+      </div> 
+     {/*  <div ref={albumlivingRef}>
+        <Albumliving />
+      </div> */}
     </div>
   );
 };
