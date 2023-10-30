@@ -20,7 +20,7 @@ function Carousel() {
             audioSrc: 'https://res.cloudinary.com/dvnhn35l4/video/upload/v1698689471/Nicolas_Nieves_Agust%C3%ADn_Bragoni_Simon_Di_Marzio_-_Rivera_Paradise_South_America_Avenue_imwpnj.mp3',
         },
         {
-            text: 'Otro ítem de tu carrusel',
+            text: 'Nicolas Nieves, Agustín Bragoni, Simon Di Marzio',
             title: 'DirtyPool ',
             srcLink: 'https://uploads-ssl.webflow.com/60c73b61baea9c518130ee68/62375338d69258c01fe12876_00_concepts-hero.jpg',
             audioSrc: 'https://res.cloudinary.com/dvnhn35l4/video/upload/v1698689314/Nicolas_Nieves_Agust%C3%ADn_Bragoni_Simon_Di_Marzio_-_Dirty_Pool_South_America_Avenue_mqp7tw.mp3',

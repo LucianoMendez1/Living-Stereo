@@ -31,7 +31,7 @@ function CarouselItem({ onNavigate, text, title, srcLink }) {
       <div className={`${styles.controls}`}>
         <button type="button" onClick={() => navigate('left')}>
           <img
-            src="assets/arrow_left_icon_133703.svg" // Asegúrate de que la ruta de la imagen sea correcta
+            src="https://res.cloudinary.com/dvnhn35l4/image/upload/v1698708720/arrow_left_icon_133703_kxlsuk.png" // Asegúrate de que la ruta de la imagen sea correcta
             alt="left"
             height="50px"
             width="50px"
@@ -40,7 +40,7 @@ function CarouselItem({ onNavigate, text, title, srcLink }) {
         </button>
         <button type="button" onClick={() => navigate('right')}>
           <img
-            src="assets/coolerarrow.svg" // Asegúrate de que la ruta de la imagen sea correcta
+            src="https://res.cloudinary.com/dvnhn35l4/image/upload/v1698708753/arrow_right_icon_133703_eqn4rt.png" // Asegúrate de que la ruta de la imagen sea correcta
             alt="right"
             height="50px"
             width="50px"

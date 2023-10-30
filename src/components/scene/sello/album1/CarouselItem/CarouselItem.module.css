@@ -21,9 +21,11 @@
 
 audio {
     position: absolute; /* Establece la posición absoluta para que se superponga a la descripción */
-    top: 0; /* Alinea la parte superior del audio con la parte superior del contenedor de descripción */
-    left: 75%; /* Alinea la izquierda del audio con la izquierda del contenedor de descripción */
+    top: 200px; /* Alinea la parte superior del audio con la parte superior del contenedor de descripción */
+    left: 70%; /* Alinea la izquierda del audio con la izquierda del contenedor de descripción */
     z-index: 1; /* Asegura que el audio esté por encima de la descripción */
+
+    
 }
 audio::-webkit-media-controls-panel {
     background-color: #333;
