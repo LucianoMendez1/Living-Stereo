@@ -3,7 +3,10 @@
     height: 100%;
     width: 100%;
 }
-
+main {
+    height: 100%;
+    width: 100%;
+}
 .item {
     visibility: hidden;
     transition: all 0.5s ease;
@@ -12,10 +15,7 @@
     left: 0;
     height: 100%;
     width: 100%;
-    main {
-        height: 100%;
-        width: 100%;
-    }
+    
 }
 
 .item.active {

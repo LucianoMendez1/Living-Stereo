@@ -1,5 +1,9 @@
 
 .carousel {
+  
+
+    border-color: rgba(255, 255, 255, 0.1);
+
    
     flex-grow: 1;
     display: grid;
@@ -14,9 +18,11 @@
 
 .picture img {
     
-    width: 100%;
+    object-fit: fill;
+    background-position: center;
+    background-size: cover;
     height: 100%;
-    object-fit: cover;
+    width: 100%;
 }
 
 audio {
@@ -28,7 +34,7 @@ audio {
     
 }
 audio::-webkit-media-controls-panel {
-    background-color: #333;
+    background-color: #ffffff;
     border-radius: 5px;
 }
 audio::-webkit-media-controls-play-button, 
@@ -69,13 +75,15 @@ audio::-webkit-media-controls-mute-button:hover {
     width: 80%;
     font-family: 'PPFormula', sans-serif;
     font-size: 2rem;
+
 }
 
 .description {
+    color: rgb(0, 0, 0);
     background: radial-gradient(
         circle at 1% 50%,
-        rgb(28, 28, 28),
-        rgba(0, 0, 0, 0.86)
+        rgb(255, 255, 255),
+        rgba(212, 251, 255, 0.86)
     ),
     url("data:image/svg+xml,%3Csvg viewBox='0 0 290 290' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='9.5' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
 }
@@ -83,11 +91,20 @@ audio::-webkit-media-controls-mute-button:hover {
 /* Reglas CSS para el elemento .title */
 .title {
     display: flex;
-    cursor: pointer;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 4rem;
+    flex-basis: 50%;
+    font-family: "Montserrat", sans-serif;
+    font-size: 3.5rem;
+    line-height: 3rem;
+    margin: 0px;
+    color: black;
+    text-transform: uppercase;
     background: radial-gradient(
         circle at 1% 190%,
-        rgb(33, 33, 33),
-        rgba(0, 0, 0, 0.86)
+        rgb(255, 255, 255),
+        rgba(212, 251, 255, 0.86)
     ),
     url("data:image/svg+xml,%3Csvg viewBox='0 0 290 290' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='9.5' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
 }
@@ -99,7 +116,7 @@ audio::-webkit-media-controls-mute-button:hover {
   
     font-weight: 800;
     align-self: center;
-    color: white;
+    color: rgb(0, 0, 0);
     line-height: 0.8;
     height: 128px;
     transition: all 0.5s ease;
@@ -108,7 +125,7 @@ audio::-webkit-media-controls-mute-button:hover {
 }
 
 .title:hover h1 {
-    color: #f1f1f1;
+    color: #000000;
     top: -0px;
 }
 
@@ -144,20 +161,25 @@ audio::-webkit-media-controls-mute-button:hover {
     border-left: 2px solid #303030;
     background: radial-gradient(
         circle at 50% 100%,
-        rgb(10, 10, 10),
-        rgba(0, 0, 0, 0.86)
+        rgb(255, 255, 255),
+        rgba(212, 251, 255, 0.86)
     ),
     url("data:image/svg+xml,%3Csvg viewBox='0 0 290 290' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='9.5' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
 }
 
 .controls button {
-    background-color: rgb(20, 20, 20);
-    border: 2px solid #303030;;
+  
+    border: 1px solid #303030;;
     color: #f1f1f1;
     width: 50%;
     height: 100%;
     cursor: pointer;
     transition: all 0.5s ease;
+    background: radial-gradient(
+        circle at 50% 100%,
+        rgb(255, 255, 255),
+        rgba(212, 251, 255, 0.86)
+    )
 }
 
 .controls button::-moz-focus-inner {
@@ -176,3 +198,42 @@ audio::-webkit-media-controls-mute-button:hover {
     outline: none;
     filter: brightness(1.6);
 }
+
+@media (max-width: 480px) {
+    .carousel {
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr; 
+    }
+
+    .picture {
+        border-bottom: none; 
+    }
+
+    .description {
+        padding: 2em; 
+        font-size: 0.5rem; 
+       
+    }
+    ._description_c3q66_59{
+        font-size: 0.6rem;
+    }
+
+    .title {
+        padding: 1rem 2rem;
+    }
+
+    .title h1 {
+        font-size: 3rem;
+        padding-left: 0.2em;
+    }
+
+    .controls {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .controls button {
+        width: 25%; 
+    }
+}
+
