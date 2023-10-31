@@ -23,6 +23,17 @@ main {
     visibility: visible;
 }
 
+
+.ffff{
+    border: 5px solid red;
+    width: 50px;
+    height: 50px;
+    top: 0;
+    left: 0;
+    position: fixed;
+    z-index:999999999 !important;
+}
+
 .item.inactive {
     transform: translateX(-100%);
 }
