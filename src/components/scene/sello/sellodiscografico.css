@@ -130,12 +130,23 @@
     animation: spin 10s linear infinite; /* Aplica la animación "spin" a ambas imágenes */
 }
 
-.buttom-disco{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.buttom-disco {
+    color: #ffffff;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    background-color: transparent; 
     
-}
+  }
+  
+  
+  
+  .buttom-disco:hover {
+    background-color: #ffeea0bc;
+  }
+  
 
 @media (max-width: 768px) {
 
