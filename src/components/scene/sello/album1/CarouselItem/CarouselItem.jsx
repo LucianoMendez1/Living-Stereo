@@ -23,9 +23,9 @@ function CarouselItem({ onNavigate, text, title, srcLink }) {
             South America
             <br /> 
             <br />
-            {title} ✦
+            {title} 
           </h1>
-          <h1 className="effect-title"><br /> ✦</h1>
+          <h1 className="effect-title"><br /></h1>
         </div>
       </div>
       <div className={`${styles.controls}`}>

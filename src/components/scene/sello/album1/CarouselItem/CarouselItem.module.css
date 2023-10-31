@@ -79,7 +79,7 @@ audio::-webkit-media-controls-mute-button:hover {
 }
 
 .description {
-    color: rgb(0, 0, 0);
+    color: rgb(17, 17, 17);
     background: radial-gradient(
         circle at 1% 50%,
         rgb(255, 255, 255),
@@ -99,7 +99,7 @@ audio::-webkit-media-controls-mute-button:hover {
     font-size: 3.5rem;
    
     margin: 0px;
-    color: black;
+  
     text-transform: uppercase;
     background: radial-gradient(
         circle at 1% 190%,
@@ -116,7 +116,7 @@ audio::-webkit-media-controls-mute-button:hover {
   
     font-weight: 800;
     align-self: center;
-    color: rgb(0, 0, 0);
+    color: rgb(20, 20, 20);
     line-height: 0.8;
     height: 128px;
     transition: all 0.5s ease;
@@ -125,7 +125,7 @@ audio::-webkit-media-controls-mute-button:hover {
 }
 
 .title:hover h1 {
-    color: #000000;
+    color: #ffa977;
     top: -0px;
 }
 
