@@ -10,19 +10,19 @@ function Carousel() {
         {
             text: 'Nicolas Nieves, Agustín Bragoni, Simon Di Marzio - Other Side [South America Avenue]',
             title: 'Other Side',
-            srcLink: 'https://uploads-ssl.webflow.com/60c73b61baea9c518130ee68/62375338d69258c01fe12876_00_concepts-hero.jpg',
+            srcLink: 'https://res.cloudinary.com/dvnhn35l4/image/upload/v1697951748/Animala/350302470_271192745476488_4560044944489454201_n_ywsevb.jpg',
             audioSrc: 'https://res.cloudinary.com/dvnhn35l4/video/upload/v1698687934/Nicolas_Nieves_Agust%C3%ADn_Bragoni_Simon_Di_Marzio_-_Other_Side_South_America_Avenue_zchegh.mp3',
         },
         {
             text: 'Nicolas Nieves, Agustín Bragoni, Simon Di Marzio',
             title: 'Rivera Paradise',
-            srcLink: 'https://uploads-ssl.webflow.com/60c73b61baea9c518130ee68/62375338d69258c01fe12876_00_concepts-hero.jpg',
+            srcLink: 'https://res.cloudinary.com/dvnhn35l4/image/upload/v1697951745/Animala/350091469_771875407930011_1637485298770860654_n_mwasyp.jpg',
             audioSrc: 'https://res.cloudinary.com/dvnhn35l4/video/upload/v1698689471/Nicolas_Nieves_Agust%C3%ADn_Bragoni_Simon_Di_Marzio_-_Rivera_Paradise_South_America_Avenue_imwpnj.mp3',
         },
         {
             text: 'Nicolas Nieves, Agustín Bragoni, Simon Di Marzio',
             title: 'DirtyPool ',
-            srcLink: 'https://uploads-ssl.webflow.com/60c73b61baea9c518130ee68/62375338d69258c01fe12876_00_concepts-hero.jpg',
+            srcLink: 'https://res.cloudinary.com/dvnhn35l4/image/upload/v1697939320/SimonlivingStereo/DSC08341_wbthfs.jpg',
             audioSrc: 'https://res.cloudinary.com/dvnhn35l4/video/upload/v1698689314/Nicolas_Nieves_Agust%C3%ADn_Bragoni_Simon_Di_Marzio_-_Dirty_Pool_South_America_Avenue_mqp7tw.mp3',
         },
     ];
