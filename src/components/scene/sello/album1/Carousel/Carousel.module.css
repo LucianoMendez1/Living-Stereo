@@ -1,12 +1,21 @@
+
+.blackLayer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0); /* Inicialmente transparente */
+  z-index: 1; /* Coloca la capa negra por encima de las imágenes */
+  pointer-events: none; /* Evita que la capa negra bloquee interacciones */
+}
 .carousel {
     position: relative;
     height: 100%;
     width: 100%;
+    background-color: #000; 
 }
-main {
-    height: 100%;
-    width: 100%;
-}
+
 .item {
     visibility: hidden;
     transition: all 0.5s ease;
@@ -23,17 +32,23 @@ main {
     visibility: visible;
 }
 
+.boxMusicliving {
+    width: 100%;
+    margin-top: 10px;
+    outline: none;
+  }
+  
+  .boxMusicliving audio {
+    width: 100%;
+  }
+  
+  .boxMusicliving audio::-webkit-media-controls-panel {
+    background-color: #333;
+    color: #fff;
+    border-radius: 5px;
+  }
 
-.ffff{
-    border: 5px solid red;
-    width: 50px;
-    height: 50px;
-    top: 0;
-    left: 0;
-    position: fixed;
-    z-index:999999999 !important;
-}
-
+  
 .item.inactive {
     transform: translateX(-100%);
 }

@@ -1,6 +1,6 @@
 import React, { useState, useRef } from "react";
 import CarouselItem from "../CarouselItem/CarouselItem";
-import * as styles from "./Carousel.module.css";
+import styles from "./Carousel.module.css";
 
 function Carousel() {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -8,7 +8,8 @@ function Carousel() {
 
   const items = [
     {
-      text: "Nicolas Nieves, Agustín Bragoni, Simon Di Marzio - Other Side [South America Avenue]",
+      text:
+        "Nicolas Nieves, Agustín Bragoni, Simon Di Marzio - Other Side [South America Avenue]",
       title: "Other Side",
       srcLink:
         "https://res.cloudinary.com/dvnhn35l4/image/upload/v1697951748/Animala/350302470_271192745476488_4560044944489454201_n_ywsevb.jpg",
@@ -25,7 +26,7 @@ function Carousel() {
     },
     {
       text: "Nicolas Nieves, Agustín Bragoni, Simon Di Marzio",
-      title: "DirtyPool ",
+      title: "DirtyPool",
       srcLink:
         "https://res.cloudinary.com/dvnhn35l4/image/upload/v1697939320/SimonlivingStereo/DSC08341_wbthfs.jpg",
       audioSrc:
@@ -35,13 +36,13 @@ function Carousel() {
 
   function handlePlay() {
     if (audioRef.current) {
-      audioRef.current.play(); // Pausar la reproducción del audio actual
+      audioRef.current.play();
     }
   }
 
   function handleNavigate(direction) {
     if (audioRef.current) {
-      audioRef.current.pause(); // Pausar la reproducción del audio actual
+      audioRef.current.pause();
     }
 
     if (direction === "left") {
@@ -52,40 +53,34 @@ function Carousel() {
 
     if (audioRef.current) {
       audioRef.current.src = items[activeIndex].audioSrc;
-      audioRef.current.play(); // Reproducir el nuevo audio
+      audioRef.current.play();
     }
   }
 
   return (
-    <>
-      <audio
-        className="boxMusic"
-        controls
-        ref={audioRef}
-        src={items[activeIndex].audioSrc}
-      ></audio>
-
-      <div className={`${styles.carousel}`}>
-        {items.map((item, index) => {
-          const classNames = [styles.item];
-          if (index === activeIndex) {
-            classNames.push(styles.active);
-          } else {
-            classNames.push(styles.inactive);
-          }
-          return (
-            <div className={classNames.join(" ")} key={index}>
-              <CarouselItem
-                onNavigate={handleNavigate}
-                text={item.text}
-                srcLink={item.srcLink}
-                title={item.title}
-              />
-            </div>
-          );
-        })}
-      </div>
-    </>
+    <div className={styles.carousel}>
+      {items.map((item, index) => {
+        const classNames = [styles.item];
+        if (index === activeIndex) {
+          classNames.push(styles.active);
+        } else {
+          classNames.push(styles.inactive);
+        }
+        return (
+          <div className={classNames.join(" ")} key={index}>
+            <CarouselItem
+  audioRef={audioRef}
+  music={items[activeIndex].audioSrc}
+  handlePlay={handlePlay} // Llamamos a la función handlePlay
+  onNavigate={handleNavigate}
+  text={item.text}
+  srcLink={item.srcLink}
+  title={item.title}
+/>
+          </div>
+        );
+      })}
+    </div>
   );
 }
 

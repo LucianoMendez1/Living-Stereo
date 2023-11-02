@@ -1,65 +1,51 @@
 
-.carousel {
+
+.boxMusicliving {
+    width: 100%;
+    max-width: 300px; 
+    margin: 10px auto;
+    display: block;
+    background-color: #333; 
+    color: #fff; 
+    padding: 10px;
+    border: 1px solid #555; 
+  }
   
-
+  /* Estilos para el contenedor del carrusel */
+  .carousel {
     border-color: rgba(255, 255, 255, 0.1);
-
-   
     flex-grow: 1;
     display: grid;
+    
     grid-template-rows: 1.6fr 1fr;
-    grid-template-columns: 2fr 1fr;
-}
-
-/* Reglas CSS para el elemento .picture */
-.picture {
+    grid-template-columns: 1.9fr 1fr;
+    background-color: black !important;
+  }
+  
+  /* Estilos para la imagen del carrusel */
+  .picture {
     border-bottom: 1px solid #303030;
-}
+  }
+  
 
-.picture img {
- object-fit: cover;
+ 
+  
+  .picture img {
+    object-fit: cover;
     background-position: center;
     background-size: cover;
     max-height: 600px; /* Establece la altura máxima de la imagen */
     width: 100%;
     filter: brightness(0.8) grayscale(100);
-}
-
-audio {
-    position: absolute; /* Establece la posición absoluta para que se superponga a la descripción */
-    top: 200px; /* Alinea la parte superior del audio con la parte superior del contenedor de descripción */
-    left: 70%; /* Alinea la izquierda del audio con la izquierda del contenedor de descripción */
-    z-index: 1; /* Asegura que el audio esté por encima de la descripción */
-
     
-}
-audio::-webkit-media-controls-panel {
-    background-color: #ffffff;
-    border-radius: 5px;
-}
-audio::-webkit-media-controls-play-button, 
-audio::-webkit-media-controls-pause-button, 
-audio::-webkit-media-controls-mute-button {
-    background-color: (195, 235, 255);
-    color: #fff;
-    border: none;
-    border-radius: 50%;
-    padding: 10px;
-    margin: 0 10px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
+  }
 
-audio::-webkit-media-controls-play-button:hover, 
-audio::-webkit-media-controls-pause-button:hover, 
-audio::-webkit-media-controls-mute-button:hover {
-    background-color: #0056b3;
-}
-
-/* Reglas CSS para el elemento .description */
-.description {
-    border-left:2px solid #303030;
-    border-bottom:2px solid #303030;
+  
+  
+  /* Estilos para la descripción */
+  .description {
+    border-left: 2px solid #303030;
+    border-bottom: 2px solid #303030;
     display: flex;
     color: #f1f1f1;
     flex-direction: column;
@@ -69,27 +55,26 @@ audio::-webkit-media-controls-mute-button:hover {
     text-align: left;
     white-space: pre-line;
     line-height: 1.7;
-}
-
-.description p {
+  }
+  
+  .description p {
     width: 80%;
     font-family: 'PPFormula', sans-serif;
     font-size: 2rem;
-
-}
-
-.description {
+  }
+  
+  .description {
     color: rgb(255, 255, 255);
     background: radial-gradient(
-        circle at 1% 50%,
-        rgb(0, 0, 0),
-        rgba(0, 0, 0, 0.86)
+      circle at 1% 50%,
+      rgb(0, 0, 0),
+      rgba(0, 0, 0, 0.86)
     ),
     url("data:image/svg+xml,%3Csvg viewBox='0 0 290 290' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='9.5' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
-}
-
-/* Reglas CSS para el elemento .title */
-.title {
+  }
+  
+  /* Estilos para el título */
+  .title {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -97,23 +82,19 @@ audio::-webkit-media-controls-mute-button:hover {
     flex-basis: 50%;
     font-family: "Montserrat", sans-serif;
     font-size: 3.5rem;
-   
-    margin: 0px;
-  
     text-transform: uppercase;
     background: radial-gradient(
-        circle at 1% 190%,
-        rgb(0, 0, 0),
-        rgba(0, 0, 0, 0.86)
+      circle at 1% 190%,
+      rgb(0, 0, 0),
+      rgba(0, 0, 0, 0.86)
     ),
     url("data:image/svg+xml,%3Csvg viewBox='0 0 290 290' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='9.5' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
-}
-
-.title h1 {
+  }
+  
+  .title h1 {
     font-size: 5rem;
     padding-left: 0.89em;
     width: 75%;
-  
     font-weight: 800;
     align-self: center;
     color: rgb(255, 255, 255);
@@ -122,121 +103,106 @@ audio::-webkit-media-controls-mute-button:hover {
     transition: all 0.5s ease;
     top: -128px;
     position: relative;
-}
-
-.title:hover h1 {
+  }
+  
+  .title:hover h1 {
     color: #ffffff;
     top: -0px;
-}
-
-.title i {
+  }
+  
+  .title i {
     font-size: 5rem;
     align-self: center;
     color: #f1f1f1;
-}
-
-
-
-
-/* Media Query */
-@media (max-width: 977px) {
-    .title {
-        padding-top: 3em;
-        padding-bottom: 3em;
-    }
-
-    .title h1 {
-        padding-left: 0.2em;
-    }
-}
-
-/* Reglas CSS para el elemento .thing */
-.thing {
+  }
+  
+  /* Estilos para el elemento .thing */
+  .thing {
     height: 128px;
     width: 100%;
     overflow: hidden;
     align-self: center;
     display: flex;
-}
-
-/* Reglas CSS para el elemento .controls */
-.controls {
-    border-left: 2px solid #303030;
+  }
+  
+  /* Estilos para los controles */
+  .controls {
+    border-left: 1px solid #303030;
     background: radial-gradient(
-        circle at 50% 100%,
-        rgb(0, 0, 0),
-        rgba(0, 0, 0, 0.86)
+      circle at 50% 100%,
+      rgb(13, 13, 13),
+      rgba(0, 0, 0, 0.86)
     ),
     url("data:image/svg+xml,%3Csvg viewBox='0 0 290 290' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='9.5' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
-}
-
-.controls button {
+  }
   
-    border: 1px solid #303030;;
-   
+  .controls button {
+    border: 1px solid #303030;
     width: 50%;
     height: 100%;
+    background-color: #303030;
     cursor: pointer;
     transition: all 0.5s ease;
     background: radial-gradient(
-        circle at 50% 100%,
-        rgb(35, 35, 35),
-        rgba(0, 0, 0, 0.86)
-    )
-}
-
-.controls button::-moz-focus-inner {
+      circle at 50% 100%,
+      rgb(16, 16, 16),
+      rgb(0, 0, 0)
+    );
+  }
+  
+  .controls button::-moz-focus-inner {
     border: 0;
-}
-
-.controls button:focus {
+  }
+  
+  .controls button:focus {
     outline: none;
-}
-
-.controls button:active {
+  }
+  
+  .controls button:active {
     outline: none;
-}
-
-.controls button:hover {
+  }
+  
+  .controls button:hover {
     outline: none;
     filter: brightness(1.6);
-}
-
-@media (max-width: 480px) {
+  }
+  
+  @media (max-width: 480px) {
     .carousel {
-        grid-template-rows: 1fr;
-        grid-template-columns: 1fr; 
+      grid-template-rows: 1fr;
+      grid-template-columns: 1fr;
     }
-
+  
     .picture {
-        border-bottom: none; 
+      border-bottom: none;
     }
-
+  
     .description {
-        padding: 2em; 
-        font-size: 0.5rem; 
-       
+      padding: 2em;
+      font-size: 0.5rem;
     }
-    ._description_c3q66_59{
-        font-size: 0.6rem;
+  
+    ._description_c3q66_59 {
+      font-size: 0.6rem;
     }
-
+  
     .title {
-        padding: 1rem 2rem;
+      padding: 1rem 2rem;
     }
-
+  
     .title h1 {
-        font-size: 3rem;
-        padding-left: 0.2em;
+      font-size: 3rem;
+      padding-left: 0.2em;
     }
-
+  
     .controls {
-        display: flex;
-        flex-direction: row;
+      display: flex;
+      flex-direction: row;
     }
-
+  
     .controls button {
-        width: 25%; 
+      width: 25%;
     }
-}
-
+  }
+  
+  
