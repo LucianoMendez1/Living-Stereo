@@ -1,8 +1,7 @@
 import React, { useEffect } from "react";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
-
-import SliderSection from "../SliderSection";
+import LivingSimon from "./LivingSimon";
 
 import "./nicolas.css";
 
@@ -280,8 +279,7 @@ function NicolasNieves() {
         </p>
       </div>
 
-     
-      <SliderSection/>
+    
     </div>
       </div>
     
