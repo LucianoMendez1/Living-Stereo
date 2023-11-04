@@ -69,6 +69,25 @@ const SliderSection = () => {
             {imageClicked3 ? (
               <Link to="./biografias/SimonDimarzio" onClick={scrollToTop}>
                 <img
+                  src="https://res.cloudinary.com/dvnhn35l4/image/upload/v1699070017/agus_wcke3d_kc8s1k.jpg"
+                  alt="Imagen 3"
+                ></img>
+              </Link>
+            ) : (
+              <img
+                src="https://res.cloudinary.com/dvnhn35l4/image/upload/v1699070017/agus_wcke3d_kc8s1k.jpg"
+                alt="Imagen 3"
+                onClick={handleClickImage3}
+              ></img>
+            )}
+            <div className="name">
+              <h1>B2B Bragoni Di Marzio</h1>
+            </div>
+          </div>
+          <div className="column2">
+            {imageClicked3 ? (
+              <Link to="./biografias/SimonDimarzio" onClick={scrollToTop}>
+                <img
                   src="https://res.cloudinary.com/dvnhn35l4/image/upload/v1698269867/NicoLivingStereo/tr_yw4d9c.jpg"
                   alt="Imagen 3"
                 ></img>
