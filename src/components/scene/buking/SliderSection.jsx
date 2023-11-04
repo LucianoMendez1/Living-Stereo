@@ -6,6 +6,7 @@ const SliderSection = () => {
   const [imageClicked, setImageClicked] = useState(false);
   const [imageClicked2, setImageClicked2] = useState(false);
   const [imageClicked3, setImageClicked3] = useState(false);
+  const [imageClicked4, setImageClicked4] = useState(false);
 
   const handleClickImage1 = () => {
     setImageClicked(true);
@@ -19,6 +20,10 @@ const SliderSection = () => {
     setImageClicked3(true);
   };
 
+
+  const handleClickImage4 = () => {
+    setImageClicked4(true);
+  }
   const scrollToTop = () => {
     window.scrollTo(0, 0);
   };
@@ -66,18 +71,18 @@ const SliderSection = () => {
             </div>
           </div>
           <div className="column2">
-            {imageClicked3 ? (
-              <Link to="./biografias/SimonDimarzio" onClick={scrollToTop}>
+            {imageClicked4 ? (
+              <Link to="./biografias/B2B" onClick={scrollToTop}>
                 <img
                   src="https://res.cloudinary.com/dvnhn35l4/image/upload/v1699070017/agus_wcke3d_kc8s1k.jpg"
-                  alt="Imagen 3"
+                  alt="Imagen 4"
                 ></img>
               </Link>
             ) : (
               <img
                 src="https://res.cloudinary.com/dvnhn35l4/image/upload/v1699070017/agus_wcke3d_kc8s1k.jpg"
                 alt="Imagen 3"
-                onClick={handleClickImage3}
+                onClick={handleClickImage4}
               ></img>
             )}
             <div className="name">

@@ -1,7 +1,8 @@
 import React, { useEffect } from "react";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
-import LivingSimon from "./LivingSimon";
+
+import SliderSection from "../SliderSection";
 
 import "./nicolas.css";
 
@@ -279,13 +280,8 @@ function NicolasNieves() {
         </p>
       </div>
 
-     {/*  <div className="contacto">
-        <h1>
-          CONTACTO ELGHETTOPRODUCCiON@GMAiL.COM AGENT MANAGEMENT: LUCiO BURZOMi{" "}
-          <br />
-          TEL: 2215674139
-        </h1>
-      </div> */}
+     
+      <SliderSection/>
     </div>
       </div>
     

@@ -1,0 +1,18 @@
+.main-title-b2b{
+    font-size: calc(var(--index) * 5);
+        position: absolute;
+        width: 100%;
+        text-align: center;
+        right: 300px;
+        bottom: 25vh;
+        line-height: 1.2;
+}
+.main-sustitle{
+    font-size: calc(var(--index) * 2);
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    left:89px;
+    bottom: 20vh;
+    line-height: 1.2;
+}
