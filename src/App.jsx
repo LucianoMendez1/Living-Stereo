@@ -33,17 +33,14 @@ const App = () => {
           <Route path="/biografias/NicolasNieves" element={<LazyNicolasNieves />} />
 
           {/* rutas B 2 b */}
-          <Route path="/biografias/NicolasNieves" element={<LazyNicorouta />} />
+          <Route path="/biografias/B2B" element={<LazyB2B />} />
           <Route path='/biografias/B2B/biografias/B2B' element={<LazyB2B2B2 />} />
           <Route path='/biografias/B2B/biografias/AgustinBragoni' element={<LazyB2B2Agusbragoni />} />
           <Route path='/biografias/B2B/biografias/Simondimarzio' element={<LazyB2B2Simondimarzio />} />
           <Route path='/biografias/B2B/biografias/NicolasNieves' element={<LazyB2B2NicolasNieves />} />
           {/* rutas NICO Slider */}
-   
          
-          {/* rutas agus */}
-
-          {/* rutas simon */}
+          {/* Rutas agus */}
           <Route path ="/album1/Carousel/Carousel" element ={<LazyAlbumliving />} />
         </Routes>
       </Suspense>
