@@ -31,6 +31,7 @@ const Animala = () => {
       const staticImg = image.querySelector(".bio-image-static-animala"); // Cambiado a ".bio-image-static-animala"
       const staticImg2 = image.querySelector(".bio-image-static2-animala"); // Cambiado a ".bio-image-static2-animala"
       const staticImg3 = image.querySelector(".bio-image-static3-animala"); // Cambiado a ".bio-image-static3-animala"
+      const staticImg4 = image.querySelector(".bio-image-static4-animala"); // Cambiado a ".bio-image-static3-animala"
 
       gsap.fromTo(
         staticImg,
@@ -63,7 +64,7 @@ const Animala = () => {
       );
 
       gsap.fromTo(
-        staticImg3,
+        staticImg4,
         { opacity: 0, x: 50 },
         {
           opacity: 1,
@@ -130,7 +131,8 @@ const Animala = () => {
                 <div className="bio-image-animala">
                   <img
                     className="bio-image-static2-animala" // Cambiado a ".bio-image-static2-animala"
-                    src="https://res.cloudinary.com/dvnhn35l4/image/upload/v1697951743/Animala/350271788_563412029304349_3884554252112040800_n_j4slng.jpg"
+                   /*  https://res.cloudinary.com/dvnhn35l4/image/upload/v1699064819/PHOTO-2023-05-18-15-22-47_2_t18qgl.jpg */
+                    src="https://res.cloudinary.com/dvnhn35l4/image/upload/v1699064819/PHOTO-2023-05-18-15-22-47_2_t18qgl.jpg "
                     alt="image 2"
                   />
                 </div>
@@ -141,6 +143,33 @@ const Animala = () => {
                     className="bio-image-static3-animala" // Cambiado a ".bio-image-static3-animala"
                     src="https://res.cloudinary.com/dvnhn35l4/image/upload/v1697951745/Animala/350091469_771875407930011_1637485298770860654_n_mwasyp.jpg"
                     alt="Image 3"
+                  />
+                </div>
+              </div>
+              <div className="bio-item-animala"> 
+                <div className="bio-image-animala">
+                  <img
+                    className="bio-image-static4-animala" // Cambiado a ".bio-image-static3-animala"
+                    src="https://res.cloudinary.com/dvnhn35l4/image/upload/v1699064819/4c24c54f-ec80-4e18-b996-db4ce2302057_zqc63b.jpg"
+                    alt="Image 4"
+                  />
+                </div>
+              </div>
+              <div className="bio-item-animala"> 
+                <div className="bio-image-animala">
+                  <img
+                    className="bio-image-static5-animala" // Cambiado a ".bio-image-static3-animala"
+                    src="https://res.cloudinary.com/dvnhn35l4/image/upload/v1697951743/Animala/350271788_563412029304349_3884554252112040800_n_j4slng.jpg"
+                    alt="Image 5"
+                  />
+                </div>
+              </div>
+              <div className="bio-item-animala"> 
+                <div className="bio-image-animala">
+                  <img
+                    className="bio-image-static6-animala" // Cambiado a ".bio-image-static3-animala"
+                    src="https://res.cloudinary.com/dvnhn35l4/image/upload/v1698271045/NicoLivingStereo/IMG_2938_xziijt.jpg"
+                    alt="Image 6"
                   />
                 </div>
               </div>

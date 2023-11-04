@@ -181,6 +181,69 @@ body {
   filter: none;
 }
 
+
+.bio-image-static4-animala {
+  max-width: calc(var(--index) * 12);
+  margin-bottom: 50px;
+  filter: grayscale(50);
+  border-radius: 8px;
+  transform: rotate(-6deg);
+  margin-top: 310px;
+  right: 65rem;
+  border-radius: 8px;
+  text-align: center;
+  position: relative;
+  transition: 1s;
+}
+
+
+
+.bio-image-static4-animala:hover {
+  filter: none;
+}
+
+.bio-image-static5-animala {
+  max-width: calc(var(--index) * 12);
+  margin-bottom: 50px;
+ filter: grayscale(50);
+  border-radius: 8px;
+  transform: rotate(5deg);
+  margin-top: 570px;
+  right: 65rem;
+  border-radius: 8px;
+  text-align: center;
+  position: relative;
+  transition: 1s;
+  
+}
+
+
+
+.bio-image-static5-animala:hover {
+  filter: none;
+}
+
+.bio-image-static6-animala {
+  max-width: calc(var(--index) * 12);
+  margin-bottom: 50px;
+  filter: grayscale(50);
+  border-radius: 8px;
+  transform: rotate(12deg);
+  margin-top: 310px;
+  right: 64rem;
+  border-radius: 8px;
+  text-align: center;
+  position: relative;
+  transition: 1s;
+}
+
+
+
+.bio-image-static6-animala:hover {
+  filter: none;
+}
+
+
 .bio-image-animala {
   right: 100px;
   max-width: calc(var(--index) * 20);
@@ -383,6 +446,7 @@ body {
      text-align: center;
      position: relative; 
      filter: grayscale(0);
+      
      transition: 1s;
   }
   .bio-image-static-animala:hover{
@@ -391,7 +455,8 @@ body {
 
 
   .bio-image-static2-animala{
-    max-width: calc(var(--index) * 7); /* Cambié el valor de 10 a 7 */
+    
+    max-width: calc(var(--index) * 4); /* Cambié el valor de 10 a 7 */
     margin-left: 10px;
      transform: rotate(0deg);
      filter: grayscale(100%);
@@ -417,6 +482,17 @@ body {
     text-align: center;
     position: relative;
   }
+
+
+  
+  
+
+  .bio-image-static5-animala,
+  .bio-image-static6-animala {
+      display: none;
+  }
+
+
 
   .bio-text-animala {
     font-size: 0.6rem;
