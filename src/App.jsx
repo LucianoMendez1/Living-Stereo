@@ -38,7 +38,7 @@ const App = () => {
           <Route path='/biografias/B2B/biografias/AgustinBragoni' element={<LazyB2B2Agusbragoni />} />
           <Route path='/biografias/B2B/biografias/Simondimarzio' element={<LazyB2B2Simondimarzio />} />
           <Route path='/biografias/B2B/biografias/NicolasNieves' element={<LazyB2B2NicolasNieves />} />
-          {/* rutas NICO Slider */}
+          {/* rutas NICO Slide */}
          
           {/* Rutas agus */}
           <Route path ="/album1/Carousel/Carousel" element ={<LazyAlbumliving />} />
