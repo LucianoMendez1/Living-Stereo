@@ -92,7 +92,7 @@ const Biografia = () => {
                     loop
                     muted
                     playsInline
-                    src="https://res.cloudinary.com/dvnhn35l4/video/upload/v1696907204/ProyectAgustin/4_uisfb1.mp4"
+                    src="https://res.cloudinary.com/dvnhn35l4/video/upload/v1699401093/SaveInsta.App_-_3231108036629867189_bdy1ah.mp4"
                   ></video>
                   <h2 className="bio-heading2">
 

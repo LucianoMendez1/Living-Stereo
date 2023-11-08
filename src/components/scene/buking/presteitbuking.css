@@ -7,26 +7,26 @@
   background-color: transparent;
   text-align: center;
  
-  animation: glitchShadow 6s linear infinite ;
+  
   transform-origin: center;
   color: #ffffff;
-  text-shadow: 0 0 10px #ffe294c3, 0 0 40px #fdefd0d9;
+  
 }
 
 
-.descriptionbuking{
+.descriptionbuking {
   font-family: 'PPFormula', sans-serif;
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: 800;
   letter-spacing: 1px;
   margin-bottom: 1rem;
   background-color: transparent;
-  text-align: center;
-  animation: glitchShadow 6s linear infinite ;
   transform-origin: center;
   color: #ffffff;
-  text-shadow: 0 0 10px #ffe294c3, 0 0 40px #fdefd0d9;
+
+  text-align:center
 }
+
 
 .descriptionbuking::before {
   content: attr(data-text);
@@ -118,7 +118,7 @@
   .titulopresteit {
     font-size: 5rem;
     margin-top: 10rem;
-    text-shadow: 0 0 2px #ffe294c3, 0 0 8px #fdefd0d9; 
+  
   }
   .descriptionbuking {
     font-size: 3rem;
@@ -131,7 +131,7 @@
 @media screen and (max-width: 768px) {
   .titulopresteit {
     font-size: 2rem;
-    text-shadow: 0 0 2px #ffe294c3, 0 0 8px #fdefd0d9; 
+
   }
   .descriptionbuking {
     font-family: 'PPFormula', sans-serif;

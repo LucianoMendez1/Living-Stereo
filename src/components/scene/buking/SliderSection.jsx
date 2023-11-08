@@ -3,27 +3,12 @@ import { Link } from "react-router-dom";
 import "./sliderSection.css";
 
 const SliderSection = () => {
-  const [imageClicked, setImageClicked] = useState(false);
-  const [imageClicked2, setImageClicked2] = useState(false);
-  const [imageClicked3, setImageClicked3] = useState(false);
-  const [imageClicked4, setImageClicked4] = useState(false);
+  const [selectedImage, setSelectedImage] = useState(null);
 
-  const handleClickImage1 = () => {
-    setImageClicked(true);
+  const handleImageClick = (imageURL) => {
+    setSelectedImage(imageURL);
   };
 
-  const handleClickImage2 = () => {
-    setImageClicked(true);
-  };
-
-  const handleClickImage3 = () => {
-    setImageClicked3(true);
-  };
-
-
-  const handleClickImage4 = () => {
-    setImageClicked4(true);
-  }
   const scrollToTop = () => {
     window.scrollTo(0, 0);
   };
@@ -33,83 +18,54 @@ const SliderSection = () => {
       <div className="container2">
         <div className="row">
           <div className="column2">
-            {imageClicked ? (
-              <Link to="./biografias/NicolasNieves" onClick={scrollToTop}>
-                <img
-                  src="https://res.cloudinary.com/dvnhn35l4/image/upload/v1698269632/NicoLivingStereo/recortado.jpg"
-                  alt="Imagen 2"
-                ></img>
-              </Link>
-            ) : (
+            <Link to="/biografias/NicolasNieves" onClick={scrollToTop}>
               <img
                 src="https://res.cloudinary.com/dvnhn35l4/image/upload/v1698269632/NicoLivingStereo/recortado.jpg"
                 alt="Imagen 2"
-                onClick={handleClickImage2}
+                loading="lazy"
               ></img>
-            )}
+            </Link>
             <div className="name">
               <h1>Nicolas Nieves</h1>
             </div>
           </div>
           <div className="column2">
-            {imageClicked ? (
-              <Link to="./biografias/AgustinBragoni" onClick={scrollToTop}>
-                <img
-                  src="https://res.cloudinary.com/dvnhn35l4/image/upload/v1697749878/Agustin_Bragoni_-_Chacra_el_Descanso_2_wv4ttr.jpg"
-                  alt="Imagen 2"
-                ></img>
-              </Link>
-            ) : (
+            <Link to="/biografias/AgustinBragoni" onClick={scrollToTop}>
               <img
                 src="https://res.cloudinary.com/dvnhn35l4/image/upload/v1697749878/Agustin_Bragoni_-_Chacra_el_Descanso_2_wv4ttr.jpg"
                 alt="Imagen 2"
-                onClick={handleClickImage2}
+                loading="lazy"
               ></img>
-            )}
+            </Link>
             <div className="name">
               <h1>Agustin Bragoni</h1>
             </div>
           </div>
           <div className="column2">
-            {imageClicked4 ? (
-              <Link to="./biografias/B2B" onClick={scrollToTop}>
-                <img
-                  src="https://res.cloudinary.com/dvnhn35l4/image/upload/v1699070017/agus_wcke3d_kc8s1k.jpg"
-                  alt="Imagen 4"
-                ></img>
-              </Link>
-            ) : (
+            <Link to="/biografias/B2B" onClick={scrollToTop}>
               <img
                 src="https://res.cloudinary.com/dvnhn35l4/image/upload/v1699070017/agus_wcke3d_kc8s1k.jpg"
-                alt="Imagen 3"
-                onClick={handleClickImage4}
+                alt="Imagen 4"
+                loading="lazy"
               ></img>
-            )}
+            </Link>
             <div className="name">
               <h1>B2B Bragoni Di Marzio</h1>
             </div>
           </div>
           <div className="column2">
-            {imageClicked3 ? (
-              <Link to="./biografias/SimonDimarzio" onClick={scrollToTop}>
-                <img
-                  src="https://res.cloudinary.com/dvnhn35l4/image/upload/v1698269867/NicoLivingStereo/tr_yw4d9c.jpg"
-                  alt="Imagen 3"
-                ></img>
-              </Link>
-            ) : (
+            <Link to="/biografias/SimonDimarzio" onClick={scrollToTop}>
               <img
                 src="https://res.cloudinary.com/dvnhn35l4/image/upload/v1698269867/NicoLivingStereo/tr_yw4d9c.jpg"
                 alt="Imagen 3"
-                onClick={handleClickImage3}
+                loading="lazy"
               ></img>
-            )}
+            </Link>
             <div className="name">
               <h1>Simon Di Marzio</h1>
             </div>
           </div>
         </div>
-        
       </div>
     </div>
   );

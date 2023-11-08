@@ -1,7 +1,4 @@
-/* sceneScroll.css */
-
 body {
-
 	width: 100vw;
 	text-transform: uppercase;
 	-webkit-font-smoothing: antialiased;
@@ -9,134 +6,127 @@ body {
 	user-select: none;
 	font-size: 14px;
 	line-height: 20px;
-	
-	scrollbar-width: 1px; 
+	scrollbar-width: 1px;
 	z-index: 999;
   }
   
-  
   body::-webkit-scrollbar {
-	width: 0.2px; /* Ancho de la barra de desplazamiento en navegadores webkit (Chrome, Safari, Edge) */
+	width: 0.2px;
+	height: 8px; /* Añade una altura para la barra de desplazamiento */
   }
   
   body::-webkit-scrollbar-track {
-	background: #000000; /* Color de fondo de la barra de desplazamiento */
+	background: #000000;
   }
   
   body::-webkit-scrollbar-thumb {
-	background: #333; /* Color del "pomo" de la barra de desplazamiento */
+	background: #333;
   }
   
   body::-webkit-scrollbar-thumb:hover {
-	background: #555; /* Color del "pomo" cuando se pasa el mouse sobre él */
+	background: #555;
   }
-  /* Estiliza la barra de desplazamiento horizontal */
+  
   body::-webkit-scrollbar-thumb:horizontal {
-	background: #333; /* Color del "pomo" de la barra de desplazamiento horizontal */
+	background: #333;
   }
   
   body::-webkit-scrollbar-thumb:horizontal:hover {
-	background: #555; /* Color del "pomo" cuando se pasa el mouse sobre la barra de desplazamiento horizontal */
+	background: #555;
   }
   
-  
-  
   .container2 {
-	  display: flex;
-	  flex-direction: column;
-	  align-items: center;
-	  
-	}
-	
-	.row {
-	  display: flex;
-	  justify-content: space-between;
-	  margin: 0;
-	}
-	
-	.column2 {
-	  flex: 1;
-	  display: flex;
-	  flex-direction: column;
-	  align-items: center;
-	  margin: 0;
-	}
-	
-	.column2 img {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+  }
+  
+  .row {
+	display: flex;
+	justify-content: space-between;
+	margin: 0;
+  }
+  
+  .column2 {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 0;
+  }
+  
+  .column2 img {
 	margin-top: 100px;
-	  width: 350px;
-	  height: 500px;
-	  object-fit: cover;
-	  opacity: 0.8;
-	  transition: 0.5s ease;
-	  
-	}
-	
-	.column2 img:hover {
-	  cursor: crosshair;
-	  width: 600px;
-	  height: 500px;
-	  opacity: 1;
-	}
+	width: 450px;
+	height: 500px;
+	object-fit: cover;
+	opacity: 0.7;
+	transition: 0.5s ease;
+  }
   
+  .column2 img:hover {
+	cursor: crosshair;
+	width: 600px;
+	height: 500px;
+	opacity: 1.5;
+	filter: brightness(1.2);
+  }
   
-  .name h1{
-	  display: flex;
-	  align-items: center;
-	  justify-content: center;
-	  padding: 10px;
+  .name h1 {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 10px;
   }
   
   @media screen and (min-width: 768px) and (max-width: 1440px) {
-	  .column2 img {
+	.column2 img {
 	  margin-top: 50px;
 	  width: 300px;
 	  height: 300px;
 	  object-fit: cover;
 	  opacity: 0.8;
 	  transition: 0.5s ease;
-	  }
-	  
-	  .column2 img:hover {
-		  cursor: crosshair;
-		  width: 350px;
-		  height: 350px;
-		  opacity: 1;
-		}
-		.name h1{
-		  display: flex;
-		  align-items: center;
-		  justify-content: center;
-		  padding: 10px;
-		  font-size: 2rem;
-	  }
+	}
   
+	.column2 img:hover {
+	  cursor: crosshair;
+	  width: 350px;
+	  height: 350px;
+	  opacity: 1;
+	}
+  
+	.name h1 {
+	  display: flex;
+	  align-items: center;
+	  justify-content: center;
+	  padding: 10px;
+	  font-size: 2rem;
+	}
   }
   
-  @media screen and (max-width:767px){
-	  
-	  .column2 img {
-		  margin-top: 100px;
+  @media screen and (max-width: 767px) {
+	.column2 img {
+	  margin-top: 100px;
 	  width: 80px;
 	  height: 300px;
 	  object-fit: cover;
 	  opacity: 0.8;
 	  transition: 0.5s ease;
-	  }
-	  
-	  .column2 img:hover {
-		  cursor: crosshair;
-		  width: 230px;
-		  height: 430px;
-		  opacity: 1;
-		}
-		.name h1{
-		  display: flex;
-		  align-items: center;
-		  justify-content: center;
-		  padding: 10px;
-		  font-size: 1rem;
-	  }
+	}
+  
+	.column2 img:hover {
+	  cursor: crosshair;
+	  width: 230px;
+	  height: 430px;
+	  opacity: 1;
+	}
+  
+	.name h1 {
+	  display: flex;
+	  align-items: center;
+	  justify-content: center;
+	  padding: 10px;
+	  font-size: 1rem;
+	}
   }
-  
-  

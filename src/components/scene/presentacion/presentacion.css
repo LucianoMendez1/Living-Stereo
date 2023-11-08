@@ -66,7 +66,7 @@ body {
 
 .titulopresent{
   font-family: 'PPFormula', sans-serif;
-  font-size: 12rem;
+  font-size: 10rem;
   font-weight: 800;
   letter-spacing: 1px;
   margin-bottom: 1rem;
@@ -235,6 +235,38 @@ body {
 }
 
 
+.vinyl-button1 {
+  position: relative;
+}
+
+
+
+.vinyl-button1 {
+  position: relative;
+  width: 150px;
+
+  height: 150px;
+}
+
+.vinyl-text {
+  position: absolute;
+  
+  transform: translate(-50%, -50%);
+  animation: spin 6s infinite linear;
+}
+
+@keyframes spin {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  to {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+path {
+  stroke: transparent;
+}
 
 
 
@@ -277,7 +309,7 @@ body {
 @media screen and (min-width: 768px) and (max-width: 1440px) {
   .titulopresent {
     font-family: 'PPFormula', sans-serif;
-    font-size: 9rem;
+    font-size: 5rem;
     font-weight: 800;
     letter-spacing: 1.5px;
     margin-bottom: 2rem;
