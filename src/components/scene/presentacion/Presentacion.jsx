@@ -10,7 +10,7 @@ const Presentacion = React.forwardRef((props, ref) => {
   const [isMuted, setIsMuted] = useState(true);
   const videoRef = useRef(null);
   const audioRef = useRef(null);
-  const contentRef = useRef(null); // Agregar esta línea
+  const contentRef = useRef(null);
 
   const toggleMute = () => {
     if (audioRef.current) {
@@ -27,11 +27,10 @@ const Presentacion = React.forwardRef((props, ref) => {
   const playVinylAudio = () => {
     if (audioRef.current) {
       audioRef.current.play();
-      setIsMuted(true); // Silencia el video cuando se reproduce la música del vinilo.
+      setIsMuted(true);
     }
   };
 
-  // Función para detener el audio del vinilo
   const stopVinylAudio = () => {
     if (audioRef.current) {
       audioRef.current.pause();
@@ -60,10 +59,10 @@ const Presentacion = React.forwardRef((props, ref) => {
     <div className="home-container" ref={ref}>
       <div className="start-screen">
         <div className="start-content">
-        <div className="titulopresent">
+          <div className="titulopresent">
             <span>Living Stereo</span>
-            </div>
-          
+          </div>
+
           <video
             ref={videoRef}
             autoPlay
@@ -76,28 +75,16 @@ const Presentacion = React.forwardRef((props, ref) => {
             Tu navegador no admite el elemento de video.
           </video>
           <button
-  onClick={toggleMute}
-  className={`vinyl-button1 ${isMuted ? "muted" : "unmuted"}`}
->
-  <div className="vinyl-text">
-    <svg width="120" height="120">
-    <text x="" y="60" textLength="200" text-anchor="middle" alignment-baseline="middle" fill="#f1f1f1">
-  <textPath href="#textPath">
-    Reproductor 
-  </textPath>
-</text>
-      <path id="textPath" d="M60,0 A60,60 0 0 1 60,150" fill="transparent" />
-    </svg>
-  </div>
-  <img
-    src="https://res.cloudinary.com/dvnhn35l4/image/upload/v1697857960/klipartz.com_1_tw5vrg.png"
-    alt="Vinilo"
-    className="vinyl-img1"
-  />
-</button>
+            onClick={toggleMute}
+            className={`vinyl-button1 ${isMuted ? "muted" : "unmuted"} ${isMuted ? "" : "titilar"}`}
+          >
+            <img
+              src="https://res.cloudinary.com/dvnhn35l4/image/upload/v1697857960/klipartz.com_1_tw5vrg.png"
+              alt="Vinilo"
+              className="vinyl-img1"
+            />
+          </button>
 
-
-        
           <audio
             ref={audioRef}
             src="https://res.cloudinary.com/dvnhn35l4/video/upload/v1698087033/Nicolas_Nieves_Agust%C3%ADn_Bragoni_Simon_Di_Marzio_-_Rivera_Paradise_South_America_Avenue_xbidwr.mp3"
@@ -105,11 +92,13 @@ const Presentacion = React.forwardRef((props, ref) => {
           ></audio>
         </div>
         <div className="arrow bounce">
-              <img src="https://res.cloudinary.com/dvnhn35l4/image/upload/v1698197660/image_2_nzwu8v.png" width="100"/>
-          </div>
+          <img
+            src="https://res.cloudinary.com/dvnhn35l4/image/upload/v1698197660/image_2_nzwu8v.png"
+            width="100"
+          />
+        </div>
       </div>
-      <div ref={contentRef} className="content-below">
-      </div>
+      <div ref={contentRef} className="content-below"></div>
     </div>
   );
 });

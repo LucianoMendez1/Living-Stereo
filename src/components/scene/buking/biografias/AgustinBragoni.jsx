@@ -4,6 +4,7 @@ import ScrollTrigger from "gsap/ScrollTrigger";
 
 import "./agustinbragoni.css";
 import LivingBragoni from "./LivingBragoni";
+import Backhome from "../../backhome/Backhome";
 
 function AgustinBragoni() {
   useEffect(() => {
@@ -94,7 +95,9 @@ function AgustinBragoni() {
   );
 
   return (
+  
     <div className="wrapper">
+       
       <video
         data-speed=".6"
         className="background-video5"
@@ -118,6 +121,7 @@ function AgustinBragoni() {
             alt="Alt"
           />
           <div className="container">
+            
             <div data-speed=".75" className="main-header">
               <h1 className="main-title">Agustin Bragoni</h1>
             </div>
@@ -352,7 +356,9 @@ function AgustinBragoni() {
           TEL: 2215674139
         </h1>
       </div>
+      
     </div>
+    
   );
 }
 

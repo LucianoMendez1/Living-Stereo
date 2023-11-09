@@ -279,23 +279,29 @@ path {
   position: fixed;
   bottom: 30px;
   left: 50px;
+
 }
 
 /* Estilos para la imagen del vinilo */
 .vinyl-img1 {
   display: flex;
-  width: 100px; /* Ancho de la imagen del vinilo */
-  height: 100px; /* Alto de la imagen del vinilo */
+  width: 100px;
+  height: 100px;
   transition: filter 0.3s;
+  animation: heartbeat 5s infinite ;
+  filter: brightness(4); 
 }
 
 /* Estilos para la imagen del vinilo cuando está activo (no muted) */
 .vinyl-button1.unmuted .vinyl-img1 {
   
-  animation: spin 4s linear infinite; /* Animación infinita para girar */
+  animation: spin 6s linear infinite; /* Animación infinita para girar */
   filter: brightness(1.5); /* Cambia el brillo de la imagen */
 }
-/* Definición de la animación de giro */
+.vinyl-button1.titilar {
+  animation: flash 1s ease-in-out; /* Cambia la duración y la curva de la animación según tus preferencias */
+}
+
 @keyframes spin {
   from {
     transform: rotate(0deg);
@@ -304,7 +310,33 @@ path {
     transform: rotate(360deg);
   }
 }
-
+@keyframes flash {
+  0% { opacity: 1; }
+  50% { opacity: 0; }
+  100% { opacity: 1; }
+}
+@keyframes heartbeat {
+  0% {
+    transform: scale(1);
+    filter: brightness(1);
+  }
+  25% {
+    transform: scale(1.2);
+    filter: brightness(1.2);
+  }
+  50% {
+    transform: scale(1);
+    filter: brightness(1);
+  }
+  75% {
+    transform: scale(1.1);
+    filter: brightness(1.2);
+  }
+  100% {
+    transform: scale(1);
+    filter: brightness(1);
+  }
+}
 
 @media screen and (min-width: 768px) and (max-width: 1440px) {
   .titulopresent {
