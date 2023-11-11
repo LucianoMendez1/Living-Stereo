@@ -5,6 +5,7 @@ body {
   background-color: #ffffff;
 }
 
+
 @font-face {
   font-family: 'RussoOne', sans-serif;
   src: url('../../../components/fonts/RussoOne-Regular.ttf');
@@ -418,21 +419,22 @@ body {
   .bio-gallery-animala {
     display: flex;
     flex-wrap: wrap;
-    padding: calc(var(--index) * 2) 0;
+    
     justify-content: space-between; /* Alinea las imágenes en dos filas */
   }
 
   .bio-animala {
     padding: 60px;
     left: 40%;
-    font-weight: 700;
-    line-height: 1.5rem;
+    font-weight: 500;
+    line-height: 1.2rem;
+    
     color: var(--color-header);
     margin-bottom: 0.5rem;
   }
 
   .bio-animala .title {
-    font-size: 1.5rem;
+    font-size: 3rem;
     font-weight: 600px; /* Esto debería ser solo 600, no 600px */
   }
 
@@ -445,9 +447,11 @@ body {
 
   
   
- 
+ .bio-image-animala{
+  display: none;
+ }
   .bio-image-static-animala{
-
+display: none;
   }
 
   .bio-image-static-animala:hover {
@@ -459,8 +463,9 @@ body {
   }
 
   .bio-text-animala {
-    font-size: 0.6rem;
+    font-size: 0.8rem;
     bottom: 100px;
+    margin-top: 20rem;
     margin-left: 0;
     line-height: 1.5;
     display: flex;
