@@ -145,16 +145,18 @@
 @media (max-width: 768px) {
 
     .selloTitle{
-        font-size: 1.9rem;
-        left: 0;
+        font-size: 1.3rem;
+        max-width: 12px;
+        margin-left: 50px;
        
        
     }
     
     .bio-sello-south {
         font-size: 0.5rem;
-        margin-top: 50px;
-        max-width: 200px;
+        margin-top: -160px;
+        margin-left: -4rem;
+        max-width: 300px;
         padding: 20px;
       
       
@@ -168,13 +170,13 @@
 }
     
 .sello-image{
-    left: 65%;
-    top: 20%;  
+    left: 40%;
+    top: 60%;  
 }
 
 .sello-image2{
-    left: 71.5%;
-    top: 23%;
+    left: 47%;
+    top: 62.3%;
 }
 
 
