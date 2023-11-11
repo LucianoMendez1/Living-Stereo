@@ -39,7 +39,7 @@ const PresteitBukingSlider = () => {
           <div className="descriptionbuking">
             Conoce a los artistas detras de Living Streo
           </div>
-          <SliderSection />
+     
          
         </div>
         

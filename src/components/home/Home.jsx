@@ -1,15 +1,17 @@
-import React, { useState, useRef, useEffect } from 'react';
+import React, { useRef, useEffect } from 'react';
 import './home.css';
 import { gsap } from 'gsap';
 import ScrollTrigger from 'gsap/ScrollTrigger';
-
 import Presentacion from '../scene/presentacion/Presentacion';
 import PresteitBukingSlider from '../scene/buking/PresteitBukingSlider';
 import Biografia from '../scene/biografia/Biografia';
-import Redes from '../scene/redes/Redes'; 
+import Redes from '../scene/redes/Redes';
 import Animala from '../scene/animala/Animala';
 import SelloDiscrografico from '../scene/sello/SelloDiscrografico';
-import Albumliving from '../scene/sello/album1/Carousel/Carousel';
+import SliderSection from '../scene/buking/SliderSection';  // Cambié la importación
+// Importa otras dependencias según sea necesario
+
+gsap.registerPlugin(ScrollTrigger);
 
 const Home = () => {
   const presentacionRef = useRef(null);
@@ -17,8 +19,8 @@ const Home = () => {
   const presteitbukingsliderRef = useRef(null);
   const redesRef = useRef(null);
   const animalaRef = useRef(null);
-  const selloRef = useRef(null); 
-  const albumlivingRef = useRef(null);
+  const selloRef = useRef(null);
+ 
 
   const animateComponents = () => {
     const tl = gsap.timeline();
@@ -58,17 +60,13 @@ const Home = () => {
     );
 
     tl.fromTo(
-      selloRef.current, // Animar la sección de SelloDiscrografico
+      selloRef.current,
       { opacity: 0, y: 100 },
       { opacity: 1, y: 0, duration: 1 },
       '-=0.5'
     );
-    tl.fromTo(
-      albumlivingRef.current, // Animar la sección de Albumliving
-      { opacity: 0, y: 100 },
-      { opacity: 1, y: 0, duration: 1 },
-      '-=0.5'
-    );
+
+   
   };
 
   useEffect(() => {
@@ -77,7 +75,7 @@ const Home = () => {
 
   return (
     <div>
-       <div ref={presentacionRef}>
+      <div ref={presentacionRef}>
         <Presentacion />
       </div>
       <div ref={biografiaRef}>
@@ -86,18 +84,18 @@ const Home = () => {
       <div ref={presteitbukingsliderRef}>
         <PresteitBukingSlider />
       </div>
-      <div ref={redesRef}> 
+     
+        <SliderSection />
+     
+      <div ref={redesRef}>
         <Redes />
       </div>
       <div ref={animalaRef}>
         <Animala />
-      </div> 
+      </div>
       <div ref={selloRef}>
         <SelloDiscrografico />
-      </div> 
-     {/*  <div ref={albumlivingRef}>
-        <Albumliving />
-      </div> */}
+      </div>
     </div>
   );
 };

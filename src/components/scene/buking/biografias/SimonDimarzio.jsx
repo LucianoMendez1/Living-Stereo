@@ -3,6 +3,7 @@ import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import LivingSimon from "./LivingSimon";
 import "./simondimarzio.css";
+import SliderSection from "../SliderSection";
 function SimonDimarzio() {
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
@@ -275,13 +276,16 @@ function SimonDimarzio() {
         </p>
       </div>
 
-     {/*  <div className="contacto">
-        <h1>
-          CONTACTO ELGHETTOPRODUCCiON@GMAiL.COM AGENT MANAGEMENT: LUCiO BURZOMi{" "}
-          <br />
+      <div className="contacto">
+        <h1>Conctacto</h1>
+        <p className="contacto-description">
+          ELGHETTOPRODUCCiON@GMAiL.COM AGENT MANAGEMENT: LUCiOBURZOMi
+          
           TEL: 2215674139
-        </h1>
-      </div> */}
+        </p>
+      </div>
+      <div className="artistaslider"><h1>Artistas</h1></div>
+      <div className="slider"><SliderSection/></div>
     </div>
       </div>
    

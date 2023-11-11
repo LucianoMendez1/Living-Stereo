@@ -404,8 +404,8 @@ body {
 
 }
 
+/* Estilos para pantallas más pequeñas (hasta 767px) */
 @media screen and (max-width: 767px) {
- 
 
   .background-videoBiografia {
     filter: brightness(0.5);
@@ -414,93 +414,58 @@ body {
   .start-screen {
    
   }
+
   .bio-gallery-animala {
     display: flex;
-    padding: calc(var(--index) * 1) 0;
+    flex-wrap: wrap;
+    padding: calc(var(--index) * 2) 0;
+    justify-content: space-between; /* Alinea las imágenes en dos filas */
   }
-  
+
   .bio-animala {
-    
-    padding: 20px;
+    padding: 60px;
     left: 40%;
     font-weight: 700;
     line-height: 1.5rem;
     color: var(--color-header);
     margin-bottom: 0.5rem;
-    
   }
 
-  .bio-animala .title{
+  .bio-animala .title {
     font-size: 1.5rem;
-    font-weight: 600px;
-    
-  }
-  
-  .bio-image-static-animala{
-    max-width: calc(var(--index) * 9); /* Cambié el valor de 10 a 7 */
-    left: 8rem;
-     transform: rotate(0deg);
-     border-radius: 8px;
-     bottom: 120px; /* Cambié el valor de 40 a 70 */
-     border-radius: 8px;
-     text-align: center;
-     position: relative; 
-     filter: grayscale(0);
-      
-     transition: 1s;
-  }
-  .bio-image-static-animala:hover{
-    filter: grayscale(100%);
+    font-weight: 600px; /* Esto debería ser solo 600, no 600px */
   }
 
-
-  .bio-image-static2-animala{
-    
-    max-width: calc(var(--index) * 4); /* Cambié el valor de 10 a 7 */
-    margin-left: 10px;
-     transform: rotate(0deg);
-     filter: grayscale(100%);
-     border-radius: 8px;
-     margin-top: 70px; /* Cambié el valor de 40 a 70 */
-     border-radius: 8px;
-     text-align: center;
-     position: relative;
-  }
-
-  .bio-image-static2-animala:hover{
-    filter:none;
-  }
-  .bio-image-static3-animala,
-  .bio-image-animala {
-    max-width: calc(var(--index) * 7); /* Cambié el valor de 10 a 7 */
-   margin-left: 10px;
-    transform: rotate(0deg);
-    
-    border-radius: 8px;
-    margin-top: 70px; /* Cambié el valor de 40 a 70 */
+  /* Estilos comunes para las imágenes */
+  .bio-image-common {
     border-radius: 8px;
     text-align: center;
     position: relative;
   }
 
-
   
   
+ 
+  .bio-image-static-animala{
 
-  .bio-image-static5-animala,
-  .bio-image-static6-animala {
-      display: none;
   }
 
+  .bio-image-static-animala:hover {
+    filter: grayscale(100%);
+  }
 
+  .bio-image-static2-animala:hover {
+    filter: none;
+  }
 
   .bio-text-animala {
     font-size: 0.6rem;
     bottom: 100px;
     margin-left: 0;
-    line-height: 1.5; 
+    line-height: 1.5;
     display: flex;
     flex-wrap: wrap;
     padding: 0;
   }
 }
+

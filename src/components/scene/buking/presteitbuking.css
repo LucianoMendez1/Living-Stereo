@@ -3,11 +3,10 @@
   font-size: 6rem;
   font-weight: 800;
   letter-spacing: 1px;
-  margin-bottom: 1rem;
+  
   background-color: transparent;
   text-align: center;
  
-  
   transform-origin: center;
   color: #ffffff;
   
@@ -117,7 +116,7 @@
 @media screen and (min-width: 768px) and (max-width: 1440px) {
   .titulopresteit {
     font-size: 5rem;
-    margin-top: 10rem;
+    margin-top: 50rem;
   
   }
   .descriptionbuking {
@@ -131,7 +130,7 @@
 @media screen and (max-width: 768px) {
   .titulopresteit {
     font-size: 2rem;
-
+    margin-top: 10rem;
   }
   .descriptionbuking {
     font-family: 'PPFormula', sans-serif;

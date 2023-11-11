@@ -317,8 +317,8 @@ function B2B() {
 
 
      
-      <SliderSection/>
-   
+      <div className="artistasb2b"><h1>Artistas</h1></div>
+      <div className="slider"><SliderSection/></div>
     </div>
    
   );

@@ -39,6 +39,7 @@ body {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	margin-top: -20%;
   }
   
   .row {
@@ -106,10 +107,19 @@ body {
   }
   
   @media screen and (max-width: 767px) {
+	.row {
+	  flex-direction: column; /* Cambia de fila a columna */
+	}
+  
+	.column2 {
+	
+	  margin: 0; /* Elimina el margen para evitar espacio innecesario */
+	}
+  
 	.column2 img {
-	  margin-top: 100px;
-	  width: 80px;
-	  height: 300px;
+	  margin-top: 20px; /* Ajusta según sea necesario */
+	  width: 100%; /* Ajusta según sea necesario */
+	  height: auto; /* Ajusta según sea necesario */
 	  object-fit: cover;
 	  opacity: 0.8;
 	  transition: 0.5s ease;
@@ -117,8 +127,8 @@ body {
   
 	.column2 img:hover {
 	  cursor: crosshair;
-	  width: 230px;
-	  height: 430px;
+	  width: 100%; /* Puedes ajustar esto según sea necesario */
+	  height: auto; /* Puedes ajustar esto según sea necesario */
 	  opacity: 1;
 	}
   
@@ -130,3 +140,4 @@ body {
 	  font-size: 1rem;
 	}
   }
+  

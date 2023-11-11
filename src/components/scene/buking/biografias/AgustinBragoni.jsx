@@ -1,99 +1,91 @@
 import React, { useEffect } from "react";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
+import isMobile from 'is-mobile';
 
 import "./agustinbragoni.css";
 import LivingBragoni from "./LivingBragoni";
 import Backhome from "../../backhome/Backhome";
+import SliderSection from "../SliderSection";
+import Preskit from "../PresteitBukingSlider";
 
 function AgustinBragoni() {
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
 
+    if (!isMobile()) {
+      // Solo activar animaciones en pantallas más grandes
+
+      gsap.fromTo(
+        ".hero-section",
+        { opacity: 1 },
+        {
+          opacity: 0,
+          scrollTrigger: {
+            trigger: ".hero-section",
+            start: "center center",
+            end: "center center",
+            scrub: true,
+          },
+        }
+      );
+
+      const itemsL = document.querySelectorAll(".gallery__left .gallery__item");
+      itemsL.forEach((item, index) => {
+        gsap.fromTo(
+          item,
+          { opacity: 0, x: -50 * (index + 1) },
+          {
+            opacity: 1,
+            x: 0,
+            scrollTrigger: {
+              trigger: item,
+              start: "top bottom",
+              end: "center center",
+              scrub: true,
+            },
+          }
+        );
+      });
+
+      const itemsR = document.querySelectorAll(".gallery__right .gallery__item");
+      itemsR.forEach((item, index) => {
+        gsap.fromTo(
+          item,
+          { opacity: 0, x: 50 * (index + 1) },
+          {
+            opacity: 1,
+            x: 0,
+            scrollTrigger: {
+              trigger: item,
+              start: "top bottom",
+              end: "center center",
+              scrub: true,
+            },
+          }
+        );
+      });
+
+      // Resto de las animaciones
+      // ...
+    }
+  }, []);
+
+  if (!isMobile()) {
     gsap.fromTo(
-      ".hero-section",
-      { opacity: 1 },
+      ".section2",
+      { opacity: 0 },
       {
-        opacity: 0,
+        opacity: 1,
         scrollTrigger: {
-          trigger: ".hero-section",
-          start: "center center",
+          trigger: ".section2",
+          start: "top center",
           end: "center center",
           scrub: true,
         },
       }
     );
-
-    const itemsL = document.querySelectorAll(".gallery__left .gallery__item");
-    itemsL.forEach((item, index) => {
-      gsap.fromTo(
-        item,
-        { opacity: 0, x: -50 * (index + 1) },
-        {
-          opacity: 1,
-          x: 0,
-          scrollTrigger: {
-            trigger: item,
-            start: "top bottom",
-            end: "center center",
-            scrub: true,
-          },
-        }
-      );
-    });
-
-    const itemsR = document.querySelectorAll(".gallery__right .gallery__item");
-    itemsR.forEach((item, index) => {
-      gsap.fromTo(
-        item,
-        { opacity: 0, x: 50 * (index + 1) },
-        {
-          opacity: 1,
-          x: 0,
-          scrollTrigger: {
-            trigger: item,
-            start: "top bottom",
-            end: "center center",
-            scrub: true,
-          },
-        }
-      );
-    });
-
-    // Animaciones para los elementos de texto
-    const textBlocks = document.querySelectorAll(".text-block");
-    textBlocks.forEach((textBlock) => {
-      gsap.fromTo(
-        textBlock,
-        { opacity: 0, y: 20 },
-        {
-          opacity: 1,
-          y: 0,
-          scrollTrigger: {
-            trigger: textBlock,
-            start: "top 80%",
-            end: "center bottom",
-            scrub: true,
-          },
-        }
-      );
-    });
-  }, []);
-
-  gsap.fromTo(
-    ".section2",
-    { opacity: 0 },
-    {
-      opacity: 1,
-      scrollTrigger: {
-        trigger: ".section2",
-        start: "top center",
-        end: "center center",
-        scrub: true,
-      },
-    }
-  );
-
+  }
   return (
   
     <div className="wrapper">
@@ -338,7 +330,7 @@ function AgustinBragoni() {
         <div className="djset">
           <h4>DJ Set</h4>
         </div>
-        <p className="liveset-description">3 CDJ Nexus - Nexus 2 DJM 900 CDJ 2000</p>
+        <p className="liveset-description">3 CDJ Nexus <br/> Nexus 2 DJM 900 CDJ 2000</p>
         <div className="liveset">
           <h1>Live Set</h1>
         </div>
@@ -350,12 +342,15 @@ function AgustinBragoni() {
       </div>
 
       <div className="contacto">
-        <h1>
-          CONTACTO ELGHETTOPRODUCCiON@GMAiL.COM AGENT MANAGEMENT: LUCiO BURZOMi{" "}
-          <br />
+        <h1>Conctacto</h1>
+        <p className="contacto-description">
+          ELGHETTOPRODUCCiON@GMAiL.COM AGENT MANAGEMENT: LUCiOBURZOMi
+          
           TEL: 2215674139
-        </h1>
+        </p>
       </div>
+      <div className="artistas"><h1>Artistas</h1></div>
+      <div className="slider"><SliderSection/></div>
       
     </div>
     

@@ -1,63 +1,34 @@
 import React, { useEffect } from "react";
 import gsap from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
+import ScrollTrigger from "gsap/ScrollTrigger";
+import isMobile from 'is-mobile';
 import "./biografia.css";
 
 const Biografia = () => {
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
 
-    // Animaciones para los elementos de texto
-    const textBlocks = document.querySelectorAll(".bio-text");
-    textBlocks.forEach((textBlock) => {
+    if (!isMobile()) {
+      // Solo activar animaciones en pantallas más grandes
+
       gsap.fromTo(
-        textBlock,
-        { opacity: 0, x: -50 },
+        ".bio-item",
+        { opacity: 0, y: 20 },
         {
           opacity: 1,
-          x: 0,
+          y: 0,
           scrollTrigger: {
-            trigger: textBlock,
+            trigger: ".bio-item",
             start: "top 80%",
             end: "center bottom",
             scrub: true,
           },
         }
       );
-    });
 
-    const videos = document.querySelectorAll(".bio-video");
-    videos.forEach((video) => {
-      gsap.fromTo(
-        video,
-        { opacity: 0, x: 50 },
-        {
-          opacity: 1,
-          x: 0,
-          scrollTrigger: {
-            trigger: video,
-            start: "top bottom",
-            end: "center center",
-            scrub: true,
-          },
-        }
-      );
-    });
-  }, []);
-
-  gsap.fromTo(
-    ".section2",
-    { opacity: 0 },
-    {
-      opacity: 1,
-      scrollTrigger: {
-        trigger: ".section2",
-        start: "top center",
-        end: "center center",
-        scrub: true,
-      },
+      // Agrega más animaciones si es necesario
     }
-  );
+  }, []);
 
   return (
     <div className="bio-wrapper">
@@ -68,19 +39,20 @@ const Biografia = () => {
               <div className="bio-item">
                 <div className="bio-text">
                   <h2 className="bio-heading">
-                  Living Stereo El Equipo de Productores Musicales Destacados de Argentina
-                    <div className="bio-p">conformada por un talentoso equipo de productores musicales,
-                    incluyendo <br/><span className="highlighted-text">Agustin Bragoni, Joaquin Irigoyen, Nicolas Nieves
-                    y Simon Di Marzio</span></div>
-                    
+                    Living Stereo El Equipo de Productores Musicales Destacados de Argentina
+                    <div className="bio-p">
+                      conformada por un talentoso equipo de productores musicales,
+                      incluyendo <br />
+                      <span className="highlighted-text">Agustin Bragoni, Joaquin Irigoyen, Nicolas Nieves y Simon Di Marzio</span>
+                    </div>
                   </h2>
                 </div>
                 <video
                   className="bio-video"
                   autoPlay
-                   loop
-                muted
-               playsInline
+                  loop
+                  muted
+                  playsInline
                   src="https://res.cloudinary.com/dvnhn35l4/video/upload/v1697501262/parabiografia_cprtlw.mp4"
                 ></video>
               </div>
@@ -95,12 +67,13 @@ const Biografia = () => {
                     src="https://res.cloudinary.com/dvnhn35l4/video/upload/v1699401093/SaveInsta.App_-_3231108036629867189_bdy1ah.mp4"
                   ></video>
                   <h2 className="bio-heading2">
-
-                  "La Destacada Trayectoria Musical de Living Stereo y su Impacto en la Escena Musical"
-                   <div className="bio-p2"> Su música ha obtenido reconocimiento nacional e
-                    internacional bajo el sello <span className="highlighted-text">South America Avenue </span>
-                     respaldada por DJs destacados,como <span className="highlighted-text"> Hernán Cattáneo. </span> Además
-                    de su producción musical </div>
+                    "La Destacada Trayectoria Musical de Living Stereo y su Impacto en la Escena Musical"
+                    <div className="bio-p2">
+                      Su música ha obtenido reconocimiento nacional e internacional bajo el sello
+                      <span className="highlighted-text">South America Avenue </span>
+                      respaldada por DJs destacados,como
+                      <span className="highlighted-text"> Hernán Cattáneo. </span> Además de su producción musical
+                    </div>
                   </h2>
                 </div>
               </div>

@@ -16,3 +16,17 @@
     bottom: 20vh;
     line-height: 1.2;
 }
+
+.artistasb2b{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (max-width: 767px) {
+    .artistasb2b{
+        margin-top: 30px;
+        
+    }
+}
+    

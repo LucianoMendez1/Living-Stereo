@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
-import LivingSimon from "./LivingSimon";
+import SliderSection from "../SliderSection";
 
 import "./nicolas.css";
 
@@ -23,41 +23,32 @@ function NicolasNieves() {
       }
     );
 
+    const animateItems = (items, direction) => {
+      items.forEach((item, index) => {
+        gsap.fromTo(
+          item,
+          { opacity: 0, x: direction * 50 * (index + 1) },
+          {
+            opacity: 1,
+            x: 0,
+            scrollTrigger: {
+              trigger: item,
+              start: "top bottom",
+              end: "center center",
+              scrub: true,
+              onEnter: () => item.classList.add("pinned"),
+              onLeaveBack: () => item.classList.remove("pinned"),
+            },
+          }
+        );
+      });
+    };
+
     const itemsL = document.querySelectorAll(".gallery__left .gallery__item");
-    itemsL.forEach((item, index) => {
-      gsap.fromTo(
-        item,
-        { opacity: 0, x: -50 * (index + 1) },
-        {
-          opacity: 1,
-          x: 0,
-          scrollTrigger: {
-            trigger: item,
-            start: "top bottom",
-            end: "center center",
-            scrub: true,
-          },
-        }
-      );
-    });
+    animateItems(itemsL, -1); // Animación hacia la izquierda (-1)
 
     const itemsR = document.querySelectorAll(".gallery__right .gallery__item");
-    itemsR.forEach((item, index) => {
-      gsap.fromTo(
-        item,
-        { opacity: 0, x: 50 * (index + 1) },
-        {
-          opacity: 1,
-          x: 0,
-          scrollTrigger: {
-            trigger: item,
-            start: "top bottom",
-            end: "center center",
-            scrub: true,
-          },
-        }
-      );
-    });
+    animateItems(itemsR, 1); // Animación hacia la derecha (1)
 
     const textBlocks = document.querySelectorAll(".text-block");
     textBlocks.forEach((textBlock) => {
@@ -77,7 +68,6 @@ function NicolasNieves() {
       );
     });
   }, []);
-
   gsap.fromTo(
     ".section2",
     { opacity: 0 },
@@ -94,7 +84,7 @@ function NicolasNieves() {
 
   return (
     <div className="wrapper">
-      <video
+     {/*  <video
         data-speed=".6"
         className="background-video5"
         autoPlay
@@ -107,7 +97,7 @@ function NicolasNieves() {
           type="video/mp4"
         />
         Tu navegador no admite el elemento de videos.
-      </video>
+      </video> */}
       <div className="content">
         <header className="hero-section">
           <img
@@ -128,7 +118,7 @@ function NicolasNieves() {
               <div data-speed=".9" className="gallery__left">
                 <img
                   className="gallery__item"
-                  src="https://res.cloudinary.com/dvnhn35l4/image/upload/v1698272201/NicoLivingStereo/Copia_de_NGR04472_m5vuby.jpg"
+                  src="https://res.cloudinary.com/dvnhn35l4/image/upload/v1699668791/NicoLivingStereo/Copia_de_NGR04472_m5vuby_1_sqjsdk.jpg"
                   alt="img 1"
                 />
 
@@ -145,7 +135,7 @@ function NicolasNieves() {
                 </div>
                 <img
                   className="gallery__item"
-                  src="https://res.cloudinary.com/dvnhn35l4/image/upload/v1698272559/NicoLivingStereo/81022636_128021368307332_5612966744073365906_n_x3vvh8.jpg"
+                  src="https://res.cloudinary.com/dvnhn35l4/image/upload/v1699668790/NicoLivingStereo/81022636_128021368307332_5612966744073365906_n_x3vvh8_1_m6vaud.jpg"
                   alt="img 3"
                 />
 
@@ -161,7 +151,7 @@ function NicolasNieves() {
                 </div>
                 <img
                   className="gallery__item"
-                  src="https://res.cloudinary.com/dvnhn35l4/image/upload/v1698273415/NicoLivingStereo/DSC03968_eomx0l.jpg"
+                  src="https://res.cloudinary.com/dvnhn35l4/image/upload/v1699668792/NicoLivingStereo/DSC03968_eomx0l_2_j3owsf.jpg"
                   alt="img ultima "
                 />
               </div>
@@ -209,10 +199,10 @@ function NicolasNieves() {
                 </div>
               </div>
             </div>
+            
           </div>
-          
-          <div className="redes">
-            <div className="redes">
+          <div className="redesnico">
+            <div className="redesnico">
               <h1>Escuchalo en sus redes</h1>
             </div>
           </div>
@@ -278,11 +268,18 @@ function NicolasNieves() {
           Gretsch - Salida estéreo, 2 entradas - Micrófono 
         </p>
       </div>
-
-    
-    </div>
+      <div className="contacto">
+        <h1>Conctacto</h1>
+        <p className="contacto-description">
+          ELGHETTOPRODUCCiON@GMAiL.COM AGENT MANAGEMENT: LUCiOBURZOMi
+          
+          TEL: 2215674139
+        </p>
       </div>
-    
+      <div className="artistas1"><h1>Artistas</h1></div>
+      <div className="slider"><SliderSection/></div>
+    </div>
+    </div>
   );
 }
 
