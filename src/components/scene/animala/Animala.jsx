@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import gsap from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-import isMobile from 'is-mobile';  // Importa la biblioteca is-mobile
+import ScrollTrigger from "gsap/ScrollTrigger";
+import isMobile from 'is-mobile';
 import "./animala.css";
 
 const Animala = () => {
@@ -9,92 +9,27 @@ const Animala = () => {
     gsap.registerPlugin(ScrollTrigger);
 
     if (!isMobile()) {
-      const textBlocks = document.querySelectorAll(".bio-text-animala");
-      textBlocks.forEach((textBlock) => {
-        gsap.fromTo(
-          textBlock,
-          { opacity: 0, x: -50 },
-          {
-            opacity: 1,
-            x: 0,
-            scrollTrigger: {
-              trigger: textBlock,
-              start: "top 80%",
-              end: "center bottom",
-              scrub: true,
-            },
-          }
-        );
-      });
-
-      const images = document.querySelectorAll(".bio-image-animala");
-      images.forEach((image) => {
-        const staticImg = image.querySelector(".bio-image-static-animala");
-        const staticImg2 = image.querySelector(".bio-image-static2-animala");
-        const staticImg3 = image.querySelector(".bio-image-static3-animala");
-        const staticImg4 = image.querySelector(".bio-image-static4-animala");
-
-        gsap.fromTo(
-          staticImg,
-          { opacity: 0, x: 50 },
-          {
-            opacity: 1,
-            x: 0,
-            scrollTrigger: {
-              trigger: image,
-              start: "top bottom",
-              end: "center center",
-              scrub: true,
-            },
-          }
-        );
-
-        gsap.fromTo(
-          staticImg2,
-          { opacity: 0, x: 50 },
-          {
-            opacity: 1,
-            x: 0,
-            scrollTrigger: {
-              trigger: image,
-              start: "top bottom",
-              end: "center center",
-              scrub: true,
-            },
-          }
-        );
-
-        gsap.fromTo(
-          staticImg4,
-          { opacity: 0, x: 50 },
-          {
-            opacity: 1,
-            x: 0,
-            scrollTrigger: {
-              trigger: image,
-              start: "top bottom",
-              end: "center center",
-              scrub: true,
-            },
-          }
-        );
-      });
+      // Solo activar animaciones en pantallas más grandes
 
       gsap.fromTo(
-        ".section2-animala",
-        { opacity: 0 },
+        ".animala-item",
+        { opacity: 0, y: 20 },
         {
           opacity: 1,
+          y: 0,
           scrollTrigger: {
-            trigger: ".section2-animala",
-            start: "top center",
-            end: "center center",
+            trigger: ".animala-item",
+            start: "top 80%",
+            end: "center bottom",
             scrub: true,
           },
         }
       );
+
+      // Agrega más animaciones si es necesario
     }
   }, []);
+
 
   return (
     <div className="bio-wrapper-animala">

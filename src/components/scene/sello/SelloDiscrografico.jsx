@@ -1,16 +1,14 @@
 import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom"; // Importa Link para navegar a otra sección
+import { Link } from "react-router-dom";
 import "./sellodiscografico.css";
 
 const SelloDiscografico = () => {
   const [isAnimating, setIsAnimating] = useState(true);
 
-  // Función para pausar o reanudar la animación
   const toggleAnimation = () => {
     setIsAnimating((prevState) => !prevState);
   };
 
-  // Control de la animación en función del estado de isAnimating
   useEffect(() => {
     const sello = document.querySelector(".sello");
     if (sello) {
@@ -42,19 +40,22 @@ const SelloDiscografico = () => {
               className="sello-image2"
             />
           </div>
-        
+
           <div className="bio-sello-south">
             <span className="highlighted-text-sello"> South America Avenue</span>
             se complace en presentar su último lanzamiento,
-            dando una cálida bienvenida a <span className="highlighted-text">Nicolas Nieves, Agustin Bragoni y
-            Simon Di Mazio </span>al sello con su excepcional EP original de tres
+            dando una cálida bienvenida a{" "}
+            <span className="highlighted-text">
+              Nicolas Nieves, Agustin Bragoni y Simon Di Mazio
+            </span>{" "}
+            al sello con su excepcional EP original de tres
             pistas titulado "River Coast". Este cautivador EP también incluye
             las canciones "Dirty Pool" y "Other Side". Procedentes de Buenos
             Aires, Argentina, estos tres talentosos productores aportan sus
             perspectivas musicales únicas, mostrando la rica creatividad y el
             vibrante sonido de la escena local
-            <Link to="/album1/Carousel/Carousel"> {/* Navega a la otra sección al hacer clic en el botón */}
-              <button className="buttom-disco">Conocelo</button>
+            <Link to="/album1/Carousel/Carousel">
+              <button className="buttom-disco">Conócelo</button>
             </Link>
           </div>
         </div>
