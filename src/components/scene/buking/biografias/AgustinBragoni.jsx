@@ -69,9 +69,8 @@ function AgustinBragoni() {
       // Resto de las animaciones
       // ...
     }
-  }, []);
-
-  if (!isMobile()) {
+    
+    // Resto de las animaciones fuera de la condición
     gsap.fromTo(
       ".section2",
       { opacity: 0 },
@@ -85,8 +84,7 @@ function AgustinBragoni() {
         },
       }
     );
-  }
-  return (
+  }, []);
   
     <div className="wrapper">
        
@@ -353,8 +351,8 @@ function AgustinBragoni() {
       <div className="slider"><SliderSection/></div>
       
     </div>
-    
-  );
+   
+  ;
 }
 
 export default AgustinBragoni;
