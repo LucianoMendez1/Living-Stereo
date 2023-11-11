@@ -6,11 +6,12 @@ import "./biografia.css";
 
 const Biografia = () => {
   useEffect(() => {
+    // Registra el plugin de ScrollTrigger
     gsap.registerPlugin(ScrollTrigger);
 
+    // Solo activar animaciones en pantallas más grandes
     if (!isMobile()) {
-      // Solo activar animaciones en pantallas más grandes
-
+      // Animación para .bio-item
       gsap.fromTo(
         ".bio-item",
         { opacity: 0, y: 20 },
@@ -26,7 +27,7 @@ const Biografia = () => {
         }
       );
 
-      // Agrega más animaciones si es necesario
+      // Puedes agregar más animaciones aquí si es necesario
     }
   }, []);
 
@@ -39,9 +40,9 @@ const Biografia = () => {
               <div className="bio-item">
                 <div className="bio-text">
                   <h2 className="bio-heading">
-                    Living Stereo El Equipo de Productores Musicales Destacados de Argentina
+                    Living Stereo: El Equipo de Productores Musicales Destacados de Argentina
                     <div className="bio-p">
-                      conformada por un talentoso equipo de productores musicales,
+                      Conformada por un talentoso equipo de productores musicales,
                       incluyendo <br />
                       <span className="highlighted-text">Agustin Bragoni, Joaquin Irigoyen, Nicolas Nieves y Simon Di Marzio</span>
                     </div>
@@ -71,8 +72,8 @@ const Biografia = () => {
                     <div className="bio-p2">
                       Su música ha obtenido reconocimiento nacional e internacional bajo el sello
                       <span className="highlighted-text">South America Avenue </span>
-                      respaldada por DJs destacados,como
-                      <span className="highlighted-text"> Hernán Cattáneo. </span> Además de su producción musical
+                      respaldada por DJs destacados, como
+                      <span className="highlighted-text"> Hernán Cattáneo. </span> Además de su producción musical.
                     </div>
                   </h2>
                 </div>
