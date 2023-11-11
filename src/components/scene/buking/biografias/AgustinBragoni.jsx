@@ -5,9 +5,9 @@ import isMobile from 'is-mobile';
 
 import "./agustinbragoni.css";
 import LivingBragoni from "./LivingBragoni";
-import Backhome from "../../backhome/Backhome";
+
 import SliderSection from "../SliderSection";
-import Preskit from "../PresteitBukingSlider";
+
 
 function AgustinBragoni() {
   useEffect(() => {
