@@ -41,7 +41,7 @@ src: url('../../../components/fonts/RussoOne-Regular.ttf');
   width: 100%;
   
   height: 100vh;
-  animation: zoomOut 1s ease-in-out both;
+  animation: zoomOut 1.1s ease-in-out both;
   display: flex;
   justify-content: center;
   align-items: center;
