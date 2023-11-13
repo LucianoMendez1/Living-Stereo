@@ -5,17 +5,15 @@ import isMobile from 'is-mobile';
 
 import "./agustinbragoni.css";
 import LivingBragoni from "./LivingBragoni";
-
 import SliderSection from "../SliderSection";
-
 
 function AgustinBragoni() {
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
 
-    if (!isMobile()) {
-      // Solo activar animaciones en pantallas más grandes
-
+    const isMobileDevice = isMobile();
+    
+    if (!isMobileDevice) {
       gsap.fromTo(
         ".hero-section",
         { opacity: 1 },
@@ -66,11 +64,26 @@ function AgustinBragoni() {
         );
       });
 
-      // Resto de las animaciones
-      // ...
+      // Animaciones para los elementos de texto
+      const textBlocks = document.querySelectorAll(".text-block");
+      textBlocks.forEach((textBlock) => {
+        gsap.fromTo(
+          textBlock,
+          { opacity: 0, y: 20 },
+          {
+            opacity: 1,
+            y: 0,
+            scrollTrigger: {
+              trigger: textBlock,
+              start: "top 80%",
+              end: "center bottom",
+              scrub: true,
+            },
+          }
+        );
+      });
     }
-    
-    // Resto de las animaciones fuera de la condición
+
     gsap.fromTo(
       ".section2",
       { opacity: 0 },
@@ -85,6 +98,8 @@ function AgustinBragoni() {
       }
     );
   }, []);
+
+  return (
   
     <div className="wrapper">
        
@@ -351,8 +366,8 @@ function AgustinBragoni() {
       <div className="slider"><SliderSection/></div>
       
     </div>
-   
-  ;
+    
+  );
 }
 
 export default AgustinBragoni;

@@ -350,6 +350,7 @@ body {
 
 
 @media screen and (max-width: 767px) {
+	
     .hero {
         display: flex;
         width: 100%;
@@ -433,6 +434,7 @@ body {
     }
 
     .text-block__p {
+		margin-left: 10px;
         line-height: 1.2;
         font-size: 0.6rem;
         font-weight: 500;

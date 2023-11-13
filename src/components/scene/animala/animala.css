@@ -302,10 +302,10 @@ body {
   }
 
   .bio-animala .title{
-    font-size:6rem ;
+    font-size:7rem ;
   }
   
-  .bio-image-static {
+  .bio-image-static-animala {
     max-width: calc(var(--index) * 9);
     margin-bottom: 50px;
     filter: grayscale(50);
@@ -318,28 +318,28 @@ body {
     transition: 1s;
   }
   
-  .bio-image-static:hover {
+  .bio-image-static-animala:hover {
     filter: none;
   }
   
-  .bio-image-static2 {
-    max-width: calc(var(--index) * 9);
+  .bio-image-static2-animala {
+    max-width: calc(var(--index) * 11);
     margin-bottom: 10px;
-    
+   
     border-radius: 8px;
     transform: rotate(5deg);
-    margin-top: 40px;
-    border-radius: 8px;
+    margin-top: 50px;
+   
     text-align: center;
     position: relative;
     transition: 1s;
   }
   
-  .bio-image-static2:hover {
+  .bio-image-static2-animala:hover {
     filter: grayscale(100%);
   }
   
-  .bio-image-static3 {
+  .bio-image-static3-animala {
     max-width: calc(var(--index) * 9);
     margin-bottom: 50px;
     filter: grayscale(50);
@@ -352,9 +352,62 @@ body {
     transition: 1s;
   }
   
-  .bio-image-static3:hover {
+  .bio-image-static3-animala:hover {
     filter: none;
   }
+
+  .bio-image-static4-animala {
+    max-width: calc(var(--index) * 9);
+    margin-bottom: 50px;
+    filter: grayscale(50);
+    border-radius: 8px;
+    margin-top: 240px;
+    margin-left: 50rem;
+    transform: rotate(12deg);
+    border-radius: 8px;
+    text-align: center;
+    position: relative;
+    transition: 1s;
+  }
+  
+  .bio-image-static4-animala:hover {
+    filter: none;
+  }
+  .bio-image-static5-animala {
+    max-width: calc(var(--index) * 10);
+    margin-bottom: 50px;
+    filter: grayscale(50);
+    border-radius: 8px;
+    margin-top: 180px;
+    margin-left: -2rem;
+    transform: rotate(-12deg);
+    border-radius: 8px;
+    text-align: center;
+    position: relative;
+    transition: 1s;
+  }
+  
+  .bio-image-static5-animala:hover {
+    filter: none;
+  }.bio-image-static6-animala {
+    max-width: calc(var(--index) * 8);
+    margin-bottom: 50px;
+    filter: grayscale(50);
+    border-radius: 8px;
+    margin-top: 310px;
+    margin-left: -10rem;
+    transform: rotate(-10deg);
+    border-radius: 8px;
+    text-align: center;
+    position: relative;
+    filter: brightness(0.8) grayscale(100);
+    transition: 1s;
+  }
+  
+  .bio-image-static6-animala:hover {
+    filter: none;
+  }
+  
   
   .bio-image {
     right: 100px;
@@ -374,12 +427,13 @@ body {
   }
   
   .bio-text-animala {
-    font-size: 1rem;
+    font-size: 1.4rem;
     font-family: 'Russo One', sans-serif;
     color: #ffffff;
     margin-top: 8rem;
     line-height: 1.4;
     width: 115%;
+    z-index: 9999;
   }
 
  
@@ -435,7 +489,8 @@ body {
 
   .bio-animala .title {
     font-size: 3rem;
-    font-weight: 600px; /* Esto debería ser solo 600, no 600px */
+    line-height: 1.2rem;
+  
   }
 
   /* Estilos comunes para las imágenes */

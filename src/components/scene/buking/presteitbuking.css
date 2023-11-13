@@ -116,7 +116,7 @@
 @media screen and (min-width: 768px) and (max-width: 1440px) {
   .titulopresteit {
     font-size: 5rem;
-    margin-top: 50rem;
+    margin-top: -20rem;
   
   }
   .descriptionbuking {
@@ -130,7 +130,7 @@
 @media screen and (max-width: 768px) {
   .titulopresteit {
     font-size: 2rem;
-    margin-top: 10rem;
+    margin-top:-18rem;
   }
   .descriptionbuking {
     font-family: 'PPFormula', sans-serif;

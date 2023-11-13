@@ -81,6 +81,9 @@ body {
   }
   
   @media screen and (min-width: 768px) and (max-width: 1440px) {
+	.container2{
+		margin-top: -30rem;
+	}
 	.column2 img {
 	  margin-top: 50px;
 	  width: 300px;
@@ -107,6 +110,9 @@ body {
   }
   
   @media screen and (max-width: 767px) {
+	.container2{
+		margin-top: -30rem;
+	}
 	.row {
 	  flex-direction: column; /* Cambia de fila a columna */
 	}

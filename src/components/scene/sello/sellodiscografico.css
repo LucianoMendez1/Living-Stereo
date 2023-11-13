@@ -10,8 +10,8 @@
 
 .selloTitle {
    margin-top: 150px;
-    font-size: 6rem;
-    padding: 65px;
+    font-size: 4rem;
+    
     margin-left: 90px;
     font-family: 'PPFormula', sans-serif;
     font-weight: 700;
@@ -141,26 +141,75 @@
   text-shadow: 0 0 10px rgb(0, 208, 255); /* Añadir una sombra de texto brillante en hover */
   }
   
-
-@media (max-width: 768px) {
-
-    .selloTitle{
+@media screen and (min-width: 768px) and (max-width: 1440px) {
+    .bio-sello-south {
         font-size: 2rem;
-        max-width: 12px;
+        margin-top: -3rem;
+        margin-left: -4rem;
         
-
-       
-    }
-    .selloTitle span{
-        font-size: 2rem;
+        padding: 20px;
+        
       
         
+        font-family: 'Montserrat', sans-serif;
+        line-height: 1.5;
+    }
+
+.highlighted-text-sello{
+    font-size: 4rem;
+}
+    
+.sello-image{
+    left: 75%;
+    top: 30%;  
+}
+
+.sello-image2{
+    left: 80.5%;
+    top: 39%;
+}
+
+
+
+.sello-image{
+    width: 300px;
+    height: 300px;
+   
+}
+.sello-image2 {
+    width: 150px;
+    height: 150px;
+    z-index: 999;
+    
+}
+
+.buttom-disco {
+    color:  rgb(195, 235, 255);
+    padding: 15px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 2rem;
+    background-color: transparent; 
+    
+  }
+  
+}
+@media (max-width: 768px) {
+
+    .selloTitle h1{
+        font-size: 2rem;
+        
+        margin-top: -10rem;
+        
+        margin-left: -2rem;
 
        
     }
+    
     .bio-sello-south {
         font-size: 0.5rem;
-        margin-top: -30rem;
+        margin-top: -3rem;
         margin-left: -4rem;
         max-width: 300px;
         padding: 20px;
@@ -177,12 +226,12 @@
     
 .sello-image{
     left: 40%;
-    top: 30%;  
+    top: 50%;  
 }
 
 .sello-image2{
     left: 47%;
-    top: 32.3%;
+    top: 52.9%;
 }
 
 

@@ -23,7 +23,7 @@ const SelloDiscografico = () => {
   return (
     <>
       <div className="selloTitle">
-        <span>Sello Discografico</span>
+        <h1>Sello Discografico</h1>
       </div>
 
       <div className="sello-wrapper" onClick={toggleAnimation}>

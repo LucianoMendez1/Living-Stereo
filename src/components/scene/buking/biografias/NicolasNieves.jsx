@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
+import isMobile from 'is-mobile';
 import SliderSection from "../SliderSection";
 
 import "./nicolas.css";
@@ -9,78 +10,83 @@ function NicolasNieves() {
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
 
+    const isMobileDevice = isMobile();
+
+    if (!isMobileDevice) {
+      gsap.fromTo(
+        ".hero-section",
+        { opacity: 1 },
+        {
+          opacity: 0,
+          scrollTrigger: {
+            trigger: ".hero-section",
+            start: "center center",
+            end: "center center",
+            scrub: true,
+          },
+        }
+      );
+
+      const animateItems = (items, direction) => {
+        items.forEach((item, index) => {
+          gsap.fromTo(
+            item,
+            { opacity: 0, x: direction * 50 * (index + 1) },
+            {
+              opacity: 1,
+              x: 0,
+              scrollTrigger: {
+                trigger: item,
+                start: "top bottom",
+                end: "center center",
+                scrub: true,
+                onEnter: () => item.classList.add("pinned"),
+                onLeaveBack: () => item.classList.remove("pinned"),
+              },
+            }
+          );
+        });
+      };
+
+      const itemsL = document.querySelectorAll(".gallery__left .gallery__item");
+      animateItems(itemsL, -1); // Animación hacia la izquierda (-1)
+
+      const itemsR = document.querySelectorAll(".gallery__right .gallery__item");
+      animateItems(itemsR, 1); // Animación hacia la derecha (1)
+
+      const textBlocks = document.querySelectorAll(".text-block");
+      textBlocks.forEach((textBlock) => {
+        gsap.fromTo(
+          textBlock,
+          { opacity: 0, y: 20 },
+          {
+            opacity: 1,
+            y: 0,
+            scrollTrigger: {
+              trigger: textBlock,
+              start: "top 80%",
+              end: "center bottom",
+              scrub: true,
+            },
+          }
+        );
+      });
+    }
+
     gsap.fromTo(
-      ".hero-section",
-      { opacity: 1 },
+      ".section2",
+      { opacity: 0 },
       {
-        opacity: 0,
+        opacity: 1,
         scrollTrigger: {
-          trigger: ".hero-section",
-          start: "center center",
+          trigger: ".section2",
+          start: "top center",
           end: "center center",
           scrub: true,
         },
       }
     );
-
-    const animateItems = (items, direction) => {
-      items.forEach((item, index) => {
-        gsap.fromTo(
-          item,
-          { opacity: 0, x: direction * 50 * (index + 1) },
-          {
-            opacity: 1,
-            x: 0,
-            scrollTrigger: {
-              trigger: item,
-              start: "top bottom",
-              end: "center center",
-              scrub: true,
-              onEnter: () => item.classList.add("pinned"),
-              onLeaveBack: () => item.classList.remove("pinned"),
-            },
-          }
-        );
-      });
-    };
-
-    const itemsL = document.querySelectorAll(".gallery__left .gallery__item");
-    animateItems(itemsL, -1); // Animación hacia la izquierda (-1)
-
-    const itemsR = document.querySelectorAll(".gallery__right .gallery__item");
-    animateItems(itemsR, 1); // Animación hacia la derecha (1)
-
-    const textBlocks = document.querySelectorAll(".text-block");
-    textBlocks.forEach((textBlock) => {
-      gsap.fromTo(
-        textBlock,
-        { opacity: 0, y: 20 },
-        {
-          opacity: 1,
-          y: 0,
-          scrollTrigger: {
-            trigger: textBlock,
-            start: "top 80%",
-            end: "center bottom",
-            scrub: true,
-          },
-        }
-      );
-    });
   }, []);
-  gsap.fromTo(
-    ".section2",
-    { opacity: 0 },
-    {
-      opacity: 1,
-      scrollTrigger: {
-        trigger: ".section2",
-        start: "top center",
-        end: "center center",
-        scrub: true,
-      },
-    }
-  );
 
   return (
     <div className="wrapper">
