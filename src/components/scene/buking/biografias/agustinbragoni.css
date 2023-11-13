@@ -268,20 +268,15 @@ body {
 	margin-top: 20rem;
 }
 
-.artistas{
+.artistas1 {
 	display: flex;
 	text-align: center;
 	justify-content: center;
 	align-items: center;
-	font-size: 3rem;
+	font-size: 2rem;
 }
 @media screen and (min-width: 1024px) and (max-width: 1440px) {
-	.container-raider__content {
-		left: 25%;
-		max-width: 200px;
-		justify-content: center;
-		margin-top: 3rem;
-	}
+	
 	
 	.container-raider__title {
 		text-align: center;
@@ -290,12 +285,13 @@ body {
 	}
 
 	.djset {
-		left: 50px;
+		left: 10px;
 		font-size: calc(var(--index) * 3);
 	}
 
 	.liveset {
 		top: -17rem;
+		
 		font-size: calc(var(--index) * 1.4);
 	}
 
@@ -309,23 +305,23 @@ body {
 
 	.container-raider__content {
 		left: 17%;
-		margin-top: -35%;
-		max-width: 900px;
+		margin-top: -38%;
+		max-width: 800px;
 		padding: 17rem;
 	}
 
 	.contacto {
 		position: relative;
 		margin: 0 auto;
-		left: 44%;
-		margin-top: -9rem;
+		left: 45%;
+		margin-top: -12.9rem;
 		width: 80%;
 		font-size: calc(var(--index) * 1.3);
 		line-height: 1.2;
 	}
 	.contacto-description{
-		left: -16rem;
-		margin-top: -150px;
+		left: -20rem;
+		margin-top: -135px;
 		max-width: 300px;
 	}
 
@@ -340,11 +336,11 @@ body {
 		margin-top: 50px;
 	}
 	.slider{
-		margin-top: 18em;
+		margin-top: 25em;
 	}
-	.artistas h1{
-		
-		margin-top: -5rem;
+	.artistas1 h1{
+		padding: 8rem;
+		margin-top: -10rem;
 	}
 }
 
@@ -362,7 +358,7 @@ body {
     .container {
         padding: 0 5vw;
     }
-
+	
     .main-title {
         font-size: calc(var(--index) * 6);
         position: absolute;
@@ -401,13 +397,17 @@ body {
         line-height: 1.2;
     }
 
+.row{
+	margin-top: 500px;
+}
+
     .column img {
         width: 60%;
 		
         display: flex;
         align-items: center;
         justify-content: center;
-        margin-top: 50%;
+       
         height: auto;
         opacity: 1;
         transition: none;

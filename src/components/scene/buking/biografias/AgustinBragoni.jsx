@@ -362,7 +362,7 @@ function AgustinBragoni() {
           TEL: 2215674139
         </p>
       </div>
-      <div className="artistas"><h1>Artistas</h1></div>
+      <div className="artistas1"><h1>Artistas</h1></div>
       <div className="slider"><SliderSection/></div>
       
     </div>
