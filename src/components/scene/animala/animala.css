@@ -472,9 +472,8 @@ body {
 
   .bio-gallery-animala {
     display: flex;
-    flex-wrap: wrap;
-    
-    justify-content: space-between; /* Alinea las imágenes en dos filas */
+    flex-direction: column; /* Cambiado de 'flex-wrap' a 'flex-direction' */
+    justify-content: space-between; /* Alinea las imágenes una debajo de la otra */
   }
 
   .bio-animala {
@@ -493,7 +492,6 @@ body {
   
   }
 
-  /* Estilos comunes para las imágenes */
   .bio-image-common {
     border-radius: 8px;
     text-align: center;

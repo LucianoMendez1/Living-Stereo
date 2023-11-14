@@ -4,7 +4,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.css';
 
 import Home from './components/home/Home';
-import Albumliving from './components/scene/sello/album1/Carousel/Carousel';
+import Albumliving from './components/scene/sello/album1/Main';
 
 
 const LazyAgustinBragoni = lazy(() => import('./components/scene/buking/biografias/AgustinBragoni'));
@@ -16,7 +16,7 @@ const LazyB2B2Agusbragoni = lazy(() => import('./components/scene/buking/biograf
 const LazyB2B2NicolasNieves = lazy(() => import('./components/scene/buking/biografias/B2B/../NicolasNieves'));
 const LazyB2B2Simondimarzio = lazy(() => import('./components/scene/buking/biografias/B2B/../SimonDimarzio'));
 const LazyNicolasNieves = lazy(() => import('./components/scene/buking/biografias/NicolasNieves'));
-const LazyAlbumliving = lazy(() => import('./components/scene/sello/album1/Carousel/Carousel'));
+const LazyAlbumliving = lazy(() => import('./components/scene/sello/album1/Main'));
 
 const App = () => {
   return (
@@ -41,7 +41,7 @@ const App = () => {
           {/* rutas NICO Slide */}
          
           {/* Rutas agus */}
-          <Route path ="/album1/Carousel/Carousel" element ={<LazyAlbumliving />} />
+          <Route path ="/album1/Main" element ={<LazyAlbumliving />} />
         </Routes>
       </Suspense>
     </BrowserRouter>

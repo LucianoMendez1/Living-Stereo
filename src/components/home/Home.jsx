@@ -9,6 +9,7 @@ import Redes from '../scene/redes/Redes';
 import Animala from '../scene/animala/Animala';
 import SelloDiscrografico from '../scene/sello/SelloDiscrografico';
 import SliderSection from '../scene/buking/SliderSection';  // Cambié la importación
+
 // Importa otras dependencias según sea necesario
 
 gsap.registerPlugin(ScrollTrigger);
@@ -96,6 +97,7 @@ const Home = () => {
       <div ref={selloRef}>
         <SelloDiscrografico />
       </div>
+   
     </div>
   );
 };

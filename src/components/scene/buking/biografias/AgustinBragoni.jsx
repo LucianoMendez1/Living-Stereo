@@ -6,6 +6,7 @@ import isMobile from 'is-mobile';
 import "./agustinbragoni.css";
 import LivingBragoni from "./LivingBragoni";
 import SliderSection from "../SliderSection";
+import Back from "../../navbar/Navbar";
 
 function AgustinBragoni() {
   useEffect(() => {
@@ -16,7 +17,7 @@ function AgustinBragoni() {
     if (!isMobileDevice) {
       gsap.fromTo(
         ".hero-section",
-        { opacity: 1 },
+        { opacity: 0 },
         {
           opacity: 0,
           scrollTrigger: {
@@ -102,7 +103,7 @@ function AgustinBragoni() {
   return (
   
     <div className="wrapper">
-       
+          <Back/>
       <video
         data-speed=".6"
         className="background-video5"
@@ -126,7 +127,7 @@ function AgustinBragoni() {
             alt="Alt"
           />
           <div className="container">
-            
+      
             <div data-speed=".75" className="main-header">
               <h1 className="main-title">Agustin Bragoni</h1>
             </div>

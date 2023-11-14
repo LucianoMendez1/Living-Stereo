@@ -1,0 +1,174 @@
+@import "./AppVariables.scss";
+.article {
+  display: grid;
+  height: 100%;
+  width: 100%;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 2fr 1fr;
+  color: $color_top_navbar;
+
+  // This will make all the articles stack on top of each other
+  position: absolute;
+  top: 0px;
+  left: 0px;
+
+  &__section {
+    height: 100%;
+    overflow: hidden;
+    &__description,
+    &__nav {
+      height: 100%;
+      width: 100%;
+      border-left: $semi_transparent_white_border;
+    }
+    &__title,
+    &__nav {
+      height: 100%;
+      width: 100%;
+      border-top: $semi_transparent_white_border;
+    }
+
+    &__image {
+      object-fit: fill;
+      background-position: center;
+      background-size: cover;
+      height: 100%;
+    }
+
+    &__description {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      padding: 4rem;
+      color: rgba(255, 255, 255, 0.5);
+      font-size: 2rem;
+      a {
+        text-decoration: none;
+        color: $highlight-color;
+      }
+
+      a:hover {
+        color: $highlight-color;
+        text-decoration: underline;
+      }
+    }
+
+    &__title {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 2rem 4rem;
+      flex-basis: 50%;
+      font-family: "Montserrat", sans-serif;
+      font-size: 3.5rem;
+      line-height: 3rem;
+      margin: 0px;
+      text-transform: uppercase;
+
+      &__font-awesome-icon {
+        color: rgba(255, 255, 255, 0.75);
+        font-size: 4rem;
+      }
+    }
+
+    &__nav {
+      display: flex;
+      color: rgba(255, 255, 255, 0.75);
+      font-size: 4rem;
+      button {
+        background-color: transparent;
+        flex-grow: 1;
+        border: none;
+        outline: none;
+        color: rgba(255, 255, 255, 0.75);
+        font-size: 3rem;
+        cursor: pointer;
+        &:hover {
+          background-color: rgba(0, 0, 0, 0.02);
+        }
+        &:nth-child(2) {
+          border-left: $semi_transparent_white_border;
+        }
+        &:hover > [id="FontAwesomeIcon"] {
+          transition: all 0.3s;
+          transform: scale(2);
+          color: $highlight-color;
+        }
+
+        &:active > [id="FontAwesomeIcon"] {
+          transition: all 0.3s;
+          transform: scale(1.5);
+          // color: $highlight-color;
+        }
+      }
+    }
+  }
+  &[data_status="inactive"] {
+    opacity: 0;
+    transform: scale(0);
+  }
+
+  &[data_status="inactive-to-right"] {
+    transition: all 1s;
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%) scale(0);
+  }
+
+  &[data_status="inactive-to-left"] {
+    transition: all 1s;
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(100%) scale(0);
+  }
+
+  &[data_status="active"] {
+    transition: all 1s;
+    filter: blur(0px);
+    opacity: 1;
+    transform: translateX(0) scale(1);
+  }
+}
+
+@keyframes button_errorAnimation {
+  0% {
+    background-color: rgba(0, 0, 0, 0.02);
+  }
+  100% {
+    background-color: transparent;
+  }
+}
+.article__section__title__play-button {
+  font-size: 100px; /* Tamaño del icono (ajústalo según sea necesario) */
+  color: #ffffff; /* Color del icono (puedes cambiarlo) */
+  border: none;
+  background-color: rgb(2, 2, 2);
+  padding: 5px;
+  cursor: pointer;
+  transition: color 0.3s ease; /* Transición de color al pasar el ratón */
+
+  &:hover {
+    color: #2b8ec0; /* Cambia el color al pasar el ratón (puedes cambiarlo) */
+  }
+}
+
+.article__section__title__toggle-button {
+  font-size: 24px; /* Tamaño del icono del botón de prender/apagar */
+  margin-left: 10px; /* Espaciado entre el botón de reproducción y el de prender/apagar */
+  color: #e74c3c; /* Color del icono del botón de prender/apagar (puedes cambiarlo) */
+  cursor: pointer;
+  transition: color 0.3s ease; /* Transición de color al pasar el ratón */
+
+  &:hover {
+    color: #c0392b; /* Cambia el color al pasar el ratón (puedes cambiarlo) */
+  }
+}
+
+.article__section__title {
+  display: flex;
+  align-items: center;
+
+  h2 {
+    margin-right: 10px;
+  }
+}

@@ -54,9 +54,10 @@ const SelloDiscografico = () => {
             Aires, Argentina, estos tres talentosos productores aportan sus
             perspectivas musicales únicas, mostrando la rica creatividad y el
             vibrante sonido de la escena local
-            <Link to="/album1/Carousel/Carousel">
-              <button className="buttom-disco">Conócelo</button>
-            </Link>
+            <Link to="album1/Main">
+  <button className="buttom-disco">Conócelo</button>
+</Link>
+
           </div>
         </div>
       </div>
