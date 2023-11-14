@@ -1,7 +1,7 @@
 @import "./AppVariables.scss";
 .article {
   display: grid;
-  height: 100%;
+  height: 90%;
   width: 100%;
   grid-template-columns: 2fr 1fr;
   grid-template-rows: 2fr 1fr;
@@ -25,6 +25,7 @@
     &__nav {
       height: 100%;
       width: 100%;
+      
       border-top: $semi_transparent_white_border;
     }
 
@@ -40,8 +41,9 @@
       flex-direction: column;
       justify-content: flex-end;
       padding: 4rem;
-      color: rgba(255, 255, 255, 0.5);
+      color: rgb(255, 255, 255);
       font-size: 2rem;
+   
       a {
         text-decoration: none;
         color: $highlight-color;
@@ -60,7 +62,7 @@
       padding: 2rem 4rem;
       flex-basis: 50%;
       font-family: "Montserrat", sans-serif;
-      font-size: 3.5rem;
+      font-size: 4.5rem;
       line-height: 3rem;
       margin: 0px;
       text-transform: uppercase;
@@ -139,7 +141,7 @@
   }
 }
 .article__section__title__play-button {
-  font-size: 100px; /* Tamaño del icono (ajústalo según sea necesario) */
+  font-size: 70px; /* Tamaño del icono (ajústalo según sea necesario) */
   color: #ffffff; /* Color del icono (puedes cambiarlo) */
   border: none;
   background-color: rgb(2, 2, 2);
@@ -148,7 +150,7 @@
   transition: color 0.3s ease; /* Transición de color al pasar el ratón */
 
   &:hover {
-    color: #2b8ec0; /* Cambia el color al pasar el ratón (puedes cambiarlo) */
+    color: rgb(192, 147, 43); /* Cambia el color al pasar el ratón (puedes cambiarlo) */
   }
 }
 
@@ -170,5 +172,54 @@
 
   h2 {
     margin-right: 10px;
+  }
+}
+
+
+@media only screen and (max-width: 767px) {
+  .article {
+    grid-template-columns: 1fr; /* Change the number of columns for smaller screens */
+    grid-template-rows: auto; /* Adjust the row layout as needed */
+
+    &__section {
+      &__description,
+      &__nav {
+        border: none; /* Remove borders for smaller screens */
+      }
+
+      &__title {
+        padding: 2rem; /* Adjust padding for smaller screens */
+      }
+
+      &__image {
+       margin-top: 8rem;
+        height: 200px; /* Allow the image to resize based on its content */
+      }
+
+      &__nav {
+        button {
+          font-size: 2rem; /* Adjust font size for smaller screens */
+        }
+      }
+    }
+  }
+
+  .article__section__title__play-button {
+    font-size: 60px; 
+  }
+
+  .article__section__title__toggle-button {
+    font-size: 18px; 
+    margin-left: 5px;
+  }
+
+  .article__section__title {
+    h2 {
+      font-size: 1.5rem; 
+    }
+  }
+
+  .article__section__description {
+    font-size: 0.8rem;
   }
 }

@@ -5,7 +5,6 @@
   width: 100%;
   border-bottom: $semi_transparent_white_border;
   font-size: 1.5rem;
-  //   justify-content: space-between;
 
   h1,
   h2,
@@ -13,7 +12,8 @@
   a,
   p,
   span {
-    font-family: "Rubik", sans-serif;
+    font-family: 'PPFormula', sans-serif;
+    font-size: 3rem;
     font-weight: 400;
     color: $color_top_navbar;
   }
@@ -25,24 +25,18 @@
     padding: 3rem 2rem;
     display: flex;
     gap: 1rem;
-    border-left: $semi_transparent_white_border;
+    background-color: black;
     align-items: center;
     justify-content: center;
+
     &-logo,
     &-links {
       flex-basis: calc(100% / 3);
-      //   width: calc(100% / 3);
     }
 
     &-social,
     &-contact {
       flex-grow: 1;
-      //   width: calc(100% / 12);
-    }
-
-    &-logo {
-      justify-content: flex-start;
-      font-size: 2.5rem;
     }
 
     &-links {
@@ -53,12 +47,45 @@
       justify-content: space-evenly;
     }
 
-    &__brands {
-      &__twitter {
+  }
+
+  .home{
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-left: 50px;
+    color: #ffffff;
+    
+    border: none;
+    font-size: 2.5rem;
+  }
+  /* Media Query para pantallas más pequeñas */
+  @media only screen and (max-width: 768px) {
+   
+
+    &__section {
+      
+
+      &-logo,
+      &-links,
+      &-social,
+      &-contact {
+        flex-basis: 100%;
       }
-      &__youtube {
+      span {
+       
+        font-size: 1rem;
+        font-weight: 400;
+        color: $color_top_navbar;
       }
-      &__codepen {
+      .home {
+        color: #ffffff;
+        background-color: none;
+        margin-left: -10px;
+        border: none;
+        font-size: 1rem;
       }
     }
   }
