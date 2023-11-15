@@ -22,6 +22,7 @@
 
 .app{
   background-color: rgba(1, 1, 1, 0.663);
+  overflow: hidden;
 }
 
 .background{

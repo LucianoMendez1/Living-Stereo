@@ -1,5 +1,5 @@
 import "./Article.scss";
-import React, { useState } from "react";
+import React, {  useRef, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPlay, faPause, faArrowLeftLong, faArrowRightLong } from "@fortawesome/free-solid-svg-icons";
 
@@ -16,15 +16,19 @@ const Article = ({
   audioSrc,
 }) => {
   const [isPlaying, setPlaying] = useState(false);
-  const audioRef = React.createRef();
+  const audioRef = useRef(null)
 
   const togglePlay = () => {
+    
     if (isPlaying) {
       audioRef.current.pause();
     } else {
       audioRef.current.play();
     }
     setPlaying(!isPlaying);
+  };
+  const nextmusic = () => {
+      audioRef.current.pause()
   };
 
   return (
@@ -48,7 +52,7 @@ const Article = ({
           <h2>{title}</h2>
           <button
             className="article__section__title__play-button"
-            onClick={togglePlay}
+                onClick={togglePlay}
           >
             <FontAwesomeIcon
               id="FontAwesomeIcon"
@@ -61,13 +65,19 @@ const Article = ({
         <div className="article__section__nav">
           <button
             type="button"
-            onClick={handleLeftClick}
+            onClick={()=>{
+               handleLeftClick() 
+               nextmusic()
+              }}
           >
             <FontAwesomeIcon id="FontAwesomeIcon" icon={faArrowLeftLong} />
           </button>
           <button
             type="button"
-            onClick={handleRightClick}
+            onClick={()=>{
+              handleRightClick() 
+              nextmusic()
+             }}
           >
             <FontAwesomeIcon id="FontAwesomeIcon" icon={faArrowRightLong} />
           </button>

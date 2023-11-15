@@ -73,7 +73,7 @@
 .sello-image2 {
     display: flex;
     justify-content: center;
-    top: 35%;
+    top: 37%;
     left: 75%; /* Cambiado a 70% para mover hacia la derecha */
     transform: translate(-50%, -50%);
     width: 14%;
