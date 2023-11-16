@@ -37,45 +37,7 @@
   animation: glitch 0.3s linear infinite;
 }
 
-@keyframes glitchShadow {
-  0% {
-    text-shadow: 0 0 10px #fff9e8c3, 0 0 40px #fdefd0d9;
-  }
-  20% {
-    text-shadow: 0 0 10px #676767c3, 0 0 10px #fdefd0d9;
-  }
-  40% {
-    text-shadow: 0 0 10px #646464c3, 0 0 40px #fdefd0d9;
-  }
-  60% {
-    text-shadow: 0 0 10px #ffffffc3, 0 0 10px #fdefd0d9;
-  }
-  80% {
-    text-shadow: 0 0 10px #ffffffc3, 0 0 40px #fdefd0d9;
-  }
-  100% {
-    text-shadow: 0 0 10px #fff1ccc3, 0 0 10px #fdefd0d9;
-  }
-}
 
-@keyframes changeColor1 {
-  0% {
-      color: #ffffff;
-  }
-  25% {
-      color: #dedede;
-  }
-  50% {
-      color: #faf9fc;
-  }
-  75% {
-      color: #e9e9e9;
-  }
-  100% {
-      color: #ffffff;
-  }
-
-}
 .background-videoBuking{
   position: absolute;
   top: 0;

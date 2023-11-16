@@ -7,7 +7,7 @@
     text-align: center; 
     bottom: 2vh;
     line-height: 1.2; 
-    text-shadow: 0 0 10px #ffe294c3, 0 0 40px #fdefd0d9;
+  
 }
 
 .subtitle{
@@ -17,7 +17,7 @@
     width: 100%;
     text-align: center;
     line-height: 1.2;
-    text-shadow: 0 0 10px #ffe294c3, 0 0 40px #fdefd0d9;
+
     position: relative; /* Agrega posición relativa al contenedor */
 }
   .background-videoLivingbragoni {
@@ -86,13 +86,13 @@
         
         font-size: calc(var(--index) * 5); /* Tamaño de fuente más pequeño para celulares */
         margin-top: 10rem; /* Margen superior más pequeño para celulares */
-        text-shadow: 0 0 5px #ffe294c3, 0 0 20px #fdefd0d9; /* Sombra de texto más suave para celulares */
+       
     }
 
     .subtitle {
        left: 13rem;
         font-size: calc(var(--index) * 2); /* Tamaño de fuente más pequeño para celulares */
-        text-shadow: 0 0 5px #ffe294c3, 0 0 20px #fdefd0d9; /* Sombra de texto más suave para celulares */
+       
     }
 
     .background-videoLivingbragoni {
