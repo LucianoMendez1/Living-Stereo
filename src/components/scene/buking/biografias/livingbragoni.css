@@ -47,6 +47,8 @@
   /* Estilos para la imagen del vinilo */
   .vinyl-img {
     display: flex;
+    animation: heartbeat 5s infinite ;
+    margin-left: 130px;
     width: 80px; /* Ancho de la imagen del vinilo */
     height: 80px; /* Alto de la imagen del vinilo */
     transition: filter 0.3s;
@@ -90,7 +92,7 @@
     }
 
     .subtitle {
-       left: 13rem;
+       left: 12rem;
         font-size: calc(var(--index) * 2); /* Tamaño de fuente más pequeño para celulares */
        
     }
@@ -108,6 +110,7 @@
     }
 
     .vinyl-img {
+      margin-left: 10px;
         width: 40px; /* Ajustar el tamaño de la imagen del vinilo para celulares */
         height: 40px; /* Ajustar el tamaño de la imagen del vinilo para celulares */
     }

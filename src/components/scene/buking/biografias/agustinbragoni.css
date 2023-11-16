@@ -471,7 +471,7 @@ body {
 		
 		 
 		top:-20px;
-		left: 0%;
+		left: 20%;
 		font-size: calc(var(--index) * 0.8);
 		padding: 3rem;
 		max-width: 500px;
