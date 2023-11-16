@@ -15,8 +15,9 @@
   border-radius: 50%; /* Hace que el contenedor tenga forma circular */
 }
 
+
 .home-icon {
-  /* Estilos específicos para el ícono de home */
+padding: 10px;
   color: #ffffff; /* Cambia el color del ícono según tus necesidades */
-  font-size: 50px; /* Ajusta el tamaño del ícono según tus necesidades */
+  font-size: 40px; /* Ajusta el tamaño del ícono según tus necesidades */
 }

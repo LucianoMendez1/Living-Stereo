@@ -111,7 +111,7 @@ body {
   
   @media screen and (max-width: 767px) {
 	.container2{
-		margin-top: -60rem;
+		margin-top: -30rem;
 	}
 	.row {
 	  flex-direction: column; /* Cambia de fila a columna */

@@ -45,15 +45,13 @@ body {
 .main-header {
 	height: 100vh;
 }
-.container {
-	padding: 0 7vw;
-}
+
 .main-title {
 	font-size: calc(var(--index) * 8);
 	position: absolute;
 	width: min-content;
 	bottom: 12vh;
-	
+	left: 200px;
 	line-height: .9;
 }
 .gallery {
@@ -157,7 +155,7 @@ body {
 	text-align: center;
 	justify-content: center;
 	
-	
+	top: -6rem;
 	max-width: 500px;
 	left: 37%;
 	 font-size: calc(var(--index) * 0.9);
@@ -172,8 +170,8 @@ body {
 	display: flex;
 	text-align: center;
 	justify-content: center;
-	padding: 10rem;
-	 font-size: calc(var(--index) * 3);
+	padding: 12rem;
+	 font-size: calc(var(--index) * 4);
 	 width: 100%;
 	 text-align: center;
 	 line-height: 1.2;
@@ -215,7 +213,7 @@ body {
 	
     justify-content: flex-start; /* Alinea el contenido a la izquierda */
    
-    top: 8rem;
+    top: 2.5rem;
     max-width: 500px;
     left: 5%; /* Ajusta la posición izquierda según sea necesario */
     font-size: calc(var(--index) * 0.9);
@@ -231,7 +229,7 @@ body {
 	align-items: center;
 	justify-content: center;
 	
-	top:-26rem;
+	top:-24rem;
 	left: 80%;
 	 font-size: calc(var(--index) * 0.9);
 	 width: 30%;
@@ -246,7 +244,7 @@ body {
 	
     justify-content: flex-start; /* Alinea el contenido a la izquierda */
    
-    top: 13rem;
+    top: 6rem;
     max-width: 500px;
     right:55%; /* Ajusta la posición izquierda según sea necesario */
     font-size: calc(var(--index) * 0.9);
@@ -264,7 +262,7 @@ body {
     font-size: 2rem;
 }
 
-.slider{
+.sliderBiografias{
 	margin-top: 20rem;
 }
 
@@ -335,7 +333,7 @@ body {
 		font-size: 2rem;
 		margin-top: 50px;
 	}
-	.slider{
+	.sliderBiografias{
 		margin-top: 25em;
 	}
 	.artistas1 h1{
@@ -364,7 +362,8 @@ body {
         position: absolute;
         width: 100%;
         text-align: center;
-        right: 50px;
+		left: -70px;
+        right: 40px;
         bottom: 25vh;
         line-height: 1.2;
     }
@@ -397,9 +396,7 @@ body {
         line-height: 1.2;
     }
 
-.row{
-	margin-top: 60rem;
-}
+
 
     .column img {
         width: 60%;
@@ -445,7 +442,7 @@ body {
 		left: 21%;
 		max-width: 200px;
 		justify-content: center;
-		margin-top: 3rem;
+		top: 1rem;
 	  }
 	
 	  .container-raider__title {
@@ -459,14 +456,14 @@ body {
 		justify-content: center;
 		display: flex;
 		align-items: center;
-		left: -24%;
+		left: -20%;
 		font-size: 1.8rem;
 	  }
 	
 	  .liveset {
 		text-align: center;
 		top: 0px;
-		left: 50;
+		left:0;
 		font-size: calc(var(--index) * 1.4);
 	  }
 	
@@ -474,7 +471,7 @@ body {
 		
 		 
 		top:-20px;
-		left: 19%;
+		left: 0%;
 		font-size: calc(var(--index) * 0.8);
 		padding: 3rem;
 		max-width: 500px;
@@ -505,8 +502,8 @@ body {
     .redes1 {
         font-size: 1rem;
     }
-	.slider{
-		margin-top: 6rem;
+	.sliderBiografias{
+		margin-top: 30rem;
 	}
 	.artistas{
 		margin-top: -18rem;

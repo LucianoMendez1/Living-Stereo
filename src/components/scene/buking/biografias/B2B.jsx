@@ -5,7 +5,7 @@ import isMobile from 'is-mobile';
 
 import "./b2b.css";
 import B2BLiving from "./LivingB2B";
-
+import Back from "../../navbar/Navbar";
 import SliderSection from "../SliderSection";
 
 function B2B() {
@@ -22,8 +22,8 @@ function B2B() {
           opacity: 0,
           scrollTrigger: {
             trigger: ".hero-section",
-            start: "center center",
-            end: "center center",
+            start: "center center%", // Comienza la animación cuando el 80% superior del elemento está en la pantalla
+            end: "top 50%",  // Finaliza la animación cuando el 20% superior del elemento está en la pantalla
             scrub: true,
           },
         }
@@ -103,6 +103,7 @@ function B2B() {
 
   return (
     <div className="wrapper">
+        <Back/>
       <video
         data-speed=".6"
         className="background-video5"
@@ -234,7 +235,7 @@ function B2B() {
               </div>
             </div>
 
-            <div class="container2">
+            <div class="containerb2b">
               <div class="row">
                 <div class="column">
                   <img
@@ -324,7 +325,7 @@ function B2B() {
 
      
       <div className="artistasb2b"><h1>Artistas</h1></div>
-      <div className="slider"><SliderSection/></div>
+      <div className="sliderBiografias"><SliderSection/></div>
     </div>
    
   );

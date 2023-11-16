@@ -6,7 +6,7 @@ import isMobile from 'is-mobile';
 import LivingSimon from "./LivingSimon";
 import "./simondimarzio.css";
 import SliderSection from "../SliderSection";
-
+import Back from "../../navbar/Navbar";
 function SimonDimarzio() {
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
@@ -21,8 +21,8 @@ function SimonDimarzio() {
           opacity: 0,
           scrollTrigger: {
             trigger: ".hero-section",
-            start: "center center",
-            end: "center center",
+            start: "center center%", // Comienza la animación cuando el 80% superior del elemento está en la pantalla
+            end: "top 50%",  // Finaliza la animación cuando el 20% superior del elemento está en la pantalla
             scrub: true,
           },
         }
@@ -100,6 +100,7 @@ function SimonDimarzio() {
 
   return (
     <div className="wrapper">
+        <Back/>
       <video
         data-speed=".6"
         className="background-video5"
@@ -291,7 +292,7 @@ function SimonDimarzio() {
         </p>
       </div>
       <div className="artistaslider"><h1>Artistas</h1></div>
-      <div className="slider"><SliderSection/></div>
+      <div className="sliderBiografias"><SliderSection/></div>
     </div>
       </div>
    

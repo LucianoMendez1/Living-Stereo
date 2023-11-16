@@ -221,7 +221,7 @@ function AgustinBragoni() {
               </div>
             </div>
 
-            <div class="container2">
+            <div class="container">
               <div class="row">
                 <div class="column">
                   <img
@@ -364,7 +364,7 @@ function AgustinBragoni() {
         </p>
       </div>
       <div className="artistas1"><h1>Artistas</h1></div>
-      <div className="slider"><SliderSection/></div>
+      <div className="sliderBiografias"><SliderSection/></div>
       
     </div>
     

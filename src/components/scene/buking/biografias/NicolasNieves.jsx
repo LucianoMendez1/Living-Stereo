@@ -3,7 +3,7 @@ import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import isMobile from 'is-mobile';
 import SliderSection from "../SliderSection";
-
+import Back from "../../navbar/Navbar";
 import "./nicolas.css";
 
 function NicolasNieves() {
@@ -20,8 +20,8 @@ function NicolasNieves() {
           opacity: 0,
           scrollTrigger: {
             trigger: ".hero-section",
-            start: "center center",
-            end: "center center",
+            start: "center center%", // Comienza la animación cuando el 80% superior del elemento está en la pantalla
+            end: "top 50%",  // Finaliza la animación cuando el 20% superior del elemento está en la pantalla
             scrub: true,
           },
         }
@@ -90,6 +90,7 @@ function NicolasNieves() {
 
   return (
     <div className="wrapper">
+        <Back/>
      {/*  <video
         data-speed=".6"
         className="background-video5"
@@ -283,7 +284,7 @@ function NicolasNieves() {
         </p>
       </div>
       <div className="artistas1"><h1>Artistas</h1></div>
-      <div className="slider"><SliderSection/></div>
+      <div className="sliderBiografias"><SliderSection/></div>
     </div>
     </div>
   );
