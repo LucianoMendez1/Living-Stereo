@@ -98,6 +98,19 @@ src: url('../../../components/fonts/RussoOne-Regular.ttf');
   border-radius: 8px;
 }
 
+.bio-video3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 140px;
+  left:5%;
+  width: 100%;
+  height: 10%;
+  object-fit: cover;
+  filter: brightness(0.6);
+z-index: -1;
+}
+
 .bio-gallery-left {
   margin-top: calc(var(--gallery-gap) * 4);
   
@@ -141,6 +154,25 @@ src: url('../../../components/fonts/RussoOne-Regular.ttf');
   border-top: 1px solid white; /* Línea blanca arriba de .bio-text */
   border-bottom: 1px solid white; /* Línea blanca abajo de .bio-text */
 }
+
+.bio-heading3 {
+  font-size: 5.1rem;
+
+ 
+
+ justify-content: center;
+ align-items: center;
+ text-align: center;
+
+  font-weight: 600;
+  line-height: 9rem;
+  color: var(--color-header);
+  margin-bottom: 1.5rem;
+
+  
+}
+
+
 
 
 
@@ -217,6 +249,22 @@ src: url('../../../components/fonts/RussoOne-Regular.ttf');
    line-height: 1.2;
    
  }
+
+ 
+ .bio-p3{
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-left: 460px;
+  font-size: 1.9rem;
+  font-family: 'Russo One', sans-serif;
+   color: #ffffff;
+  margin-top: 50px;
+  max-width: 1000px;
+   line-height: 1.6;
+   
+ }
+ 
  
 
 
@@ -297,6 +345,10 @@ src: url('../../../components/fonts/RussoOne-Regular.ttf');
       margin-top: 0;
       line-height: 1.5;
     }
+    .bio-p3{
+      margin-left:10px;
+      font-size: 1.2rem;
+    }
   
     .bio-gallery-item {
       margin-bottom: var(--gallery-gap);
@@ -326,7 +378,16 @@ src: url('../../../components/fonts/RussoOne-Regular.ttf');
       border-radius: 8px;
     }
   }
+
   
+  
+
+
+
+
+
+
+
 @media (min-width: 768px) and (max-width: 979px) {
   .start-content h1 {
     font-size: 2rem;
@@ -412,6 +473,12 @@ src: url('../../../components/fonts/RussoOne-Regular.ttf');
     margin-left: 0px;
     border-radius: 8px;
   }
+  .bio-p3{
+    font-size:1.5rem;
+    margin-left: 0;
+  margin-top: 50px;
+    line-height: 1.5; /* Ajustamos la altura de línea */
+  }
 }
   
 
@@ -488,6 +555,16 @@ src: url('../../../components/fonts/RussoOne-Regular.ttf');
   
     line-height: 1.5; /* Ajustamos la altura de línea */
   }
+
+  .bio-heading3 {
+    font-size: 1.9rem;
+    font-family: 'PPFormula', sans-serif;
+  
+   
+    margin-left: 0;
+    line-height: 1.5;
+  }
+
   .bio-p{
     font-size: 0.6rem;
    
@@ -519,6 +596,14 @@ src: url('../../../components/fonts/RussoOne-Regular.ttf');
     
   }
   
+
+  .bio-p3{
+    font-size: 0.6rem;
+    margin-left: 0;
+  margin-top: 50px;
+    line-height: 1.5; /* Ajustamos la altura de línea */
+  }
+
   
   .bio-gallery-item {
  

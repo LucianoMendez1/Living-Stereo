@@ -79,10 +79,36 @@ const Biografia = () => {
                 </div>
               </div>
             </div>
-          </div>
+            </div>
+          
+                
+            
+       
+      
         </div>
+
+     
       </div>
-    </div>
+        <h2 className="bio-heading3">
+        La destacada trayectoria <br></br>musical de Living Stereo 
+                <div className="bio-p3">
+                  Su música ha obtenido reconocimiento nacional e internacional bajo el sello
+                  <span className="highlighted-text">South America Avenue </span>
+                  respaldada por DJs destacados, como
+                  <span className="highlighted-text"> Hernán Cattáneo. </span> Además de su producción musical.
+                </div>
+                <video
+                className="bio-video3"
+                autoPlay
+                loop
+                muted
+                playsInline
+                src="https://res.cloudinary.com/dvnhn35l4/video/upload/v1696907149/ProyectAgustin/2_gtnfou.mp4"
+              ></video>
+              </h2>
+          
+           
+</div>
   );
 };
 
