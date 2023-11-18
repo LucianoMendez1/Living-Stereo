@@ -75,7 +75,7 @@
 
 
 
-@media screen and (min-width: 768px) and (max-width: 1440px) {
+@media screen and (min-width: 979px) and (max-width: 1440px) {
   .titulopresteit {
     font-size: 5rem;
     margin-top: -20rem;
@@ -87,7 +87,18 @@
   }
 }
 
+@media (min-width: 768px) and (max-width: 979px) {
+  .titulopresteit {
+    font-size: 4rem;
+    margin-top: -20rem;
+  
+  }
+  .descriptionbuking {
+    font-size: 2rem;
+   
+  }
 
+}
 
 @media screen and (max-width: 768px) {
   .titulopresteit {

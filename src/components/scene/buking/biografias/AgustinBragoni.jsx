@@ -214,6 +214,7 @@ function AgustinBragoni() {
                     KOLOMBO , MARiANO MELLiNO ,NiC FANCiULLi,JUAN HANSEN,
                     SOUNDEXiLE, EZEQUiEL ARiAS Y JONH COSANi ENTRE OTROS. DESMOSTRANDO ASi SU
                     VERSATiLiDAD DENTRO LA ESCENA ELECTRÓNiCA.<br/>
+                    <br></br>
                     ALGUNAS DE SUS FECHAS MÁS DESTACADAS HAN SiDO JUNTO A AL DJ
                     iNTERNA- CiONAL CiD INC EN ESTADiO UNO (CLUB ESTUDiANTES) Y
                     JUNTO AL ALEMÁN EiNMUSiK EN ICONIC CLUB</p>

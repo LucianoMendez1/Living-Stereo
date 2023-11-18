@@ -364,6 +364,11 @@ path {
 
 }
 
+
+@media (min-width: 768px) and (max-width: 979px) {
+
+}
+
 @media screen and (max-width: 768px) {
   .titulopresent {
     font-family: 'PPFormula', sans-serif;

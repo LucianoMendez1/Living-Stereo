@@ -22,6 +22,35 @@
     align-items: center;
     justify-content: center;
 }
+@media (min-width: 768px) and (max-width: 979px) {
+    .main-title-b2b{
+        font-size: calc(var(--index) * 4);
+            position: absolute;
+            width: 100%;
+            text-align: center;
+            right: 50px;
+            top: 350px;
+            bottom: 25vh;
+            line-height: 1;
+    }
+    .main-sustitle{
+        font-size: calc(var(--index) * 2);
+        position: absolute;
+        width: 100%;
+        text-align: center;
+        left:150px;
+        top: 32rem;
+        bottom: 20vh;
+        line-height: 1.2;
+    }
+    
+    .artistasb2b{
+        display: flex;
+        align-items: center;
+        margin-top: 50px;
+        justify-content: center;
+    }
+}
 
 @media screen and (max-width: 767px) {
     .artistasb2b{

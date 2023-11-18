@@ -80,7 +80,7 @@ body {
 	padding: 10px;
   }
   
-  @media screen and (min-width: 768px) and (max-width: 1440px) {
+  @media screen and (min-width: 979px) and (max-width: 1440px) {
 	.container2{
 		margin-top: -30rem;
 	}
@@ -108,7 +108,36 @@ body {
 	  font-size: 2rem;
 	}
   }
+  @media (min-width: 768px) and (max-width: 979px) {
+	.container2{
+		margin-top: -30rem;
+	}
+	.column2 img {
+	  margin-top: 50px;
+	  width: 200px;
+	  height: 300px;
+	  object-fit: cover;
+	  opacity: 0.8;
+	  transition: 0.5s ease;
+	}
   
+	.column2 img:hover {
+	  cursor: crosshair;
+	  width: 350px;
+	  height: 350px;
+	  opacity: 1;
+	}
+  
+	.name h1 {
+	  display: flex;
+	  align-items: center;
+	  justify-content: center;
+	 
+	  padding: 10px;
+	  font-size: 1.5rem;
+	}
+  
+  }
   @media screen and (max-width: 767px) {
 	.container2{
 		margin-top: -30rem;

@@ -60,7 +60,7 @@ const Presentacion = React.forwardRef((props, ref) => {
       <div className="start-screen">
         <div className="start-content">
           <div className="titulopresent">
-            <span>Living Stereo</span>
+             <span>Living Stereo</span>
           </div>
 
           <video
