@@ -109,6 +109,8 @@ src: url('../../../components/fonts/RussoOne-Regular.ttf');
   object-fit: cover;
   filter: brightness(0.6);
 z-index: -1;
+border-radius: 8px;
+border-radius: 8px;
 }
 
 .bio-gallery-left {
@@ -346,7 +348,7 @@ z-index: -1;
       line-height: 1.5;
     }
     .bio-p3{
-      margin-left:10px;
+      margin-left:10rem;
       font-size: 1.2rem;
     }
   
@@ -375,6 +377,15 @@ z-index: -1;
       max-width: calc(var(--index) * 16);
       margin-bottom: var(--gallery-gap);
       margin-left: 5;
+      border-radius: 8px;
+    }
+
+    .bio-video3{
+    
+      width: 100%;
+      height: 50vh;
+      margin-left: 0;
+      border-radius: 8px;
       border-radius: 8px;
     }
   }
@@ -478,6 +489,15 @@ z-index: -1;
     margin-left: 0;
   margin-top: 50px;
     line-height: 1.5; /* Ajustamos la altura de línea */
+  }
+
+  .bio-video3{
+    
+    width: 100%;
+    height: 50vh;
+ 
+    border-radius: 8px;
+    border-radius: 8px;
   }
 }
   
@@ -639,6 +659,14 @@ z-index: -1;
     border-radius: 8px;
   }
 
+  .bio-video3{
+    
+    width: 100%;
+    height: 50vh;
+    margin-left: 0;
+    border-radius: 8px;
+    border-radius: 8px;
+  }
 
   /* Otras modificaciones de estilo para dispositivos móviles, si es necesario */
 }
