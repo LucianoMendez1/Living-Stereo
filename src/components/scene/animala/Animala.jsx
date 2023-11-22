@@ -43,7 +43,7 @@ const Animala = () => {
                     <div className="title"><h2>Animala</h2></div>
                     <div className="bio-text-animala">
                       En 2023, se convirtió en un lugar emocionante
-                      para <span className="highlighted-text">500 personas </span> conocido por su música innovadora y
+                      para <span className="highlighted-text">500 personas. </span><br/><br/> Conocido por su música innovadora y
                       apoyo a talentos locales, lo que ha dejado una marca
                       importante en la escena musical.
 

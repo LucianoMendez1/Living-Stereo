@@ -606,8 +606,9 @@ display: none;
     bottom: 100px;
     margin-top: 10rem;
     margin-left: 0;
-    line-height: 1.5;
+    line-height: 1.2;
     display: flex;
+   
     flex-wrap: wrap;
     padding: 0;
   }
