@@ -103,7 +103,7 @@ const Biografia = () => {
                 loop
                 muted
                 playsInline
-                src="https://res.cloudinary.com/dvnhn35l4/video/upload/v1696907149/ProyectAgustin/2_gtnfou.mp4"
+                src="https://res.cloudinary.com/dvnhn35l4/video/upload/v1697590961/SaveInsta.App_-_2804920139101996759_1272469279_puozka.mp4"
               ></video>
               </h2>
           

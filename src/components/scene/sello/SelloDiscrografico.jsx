@@ -55,7 +55,7 @@ const SelloDiscografico = () => {
             perspectivas musicales únicas, mostrando la rica creatividad y el
             vibrante sonido de la escena local
             <Link to="album1/Main">
-  <button className="buttom-disco">Conócelo</button>
+  <button className="buttom-disco">Click para Escuchar</button>
 </Link>
 
           </div>

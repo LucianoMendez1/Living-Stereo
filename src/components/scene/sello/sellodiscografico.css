@@ -141,18 +141,19 @@
   text-shadow: 0 0 10px rgb(0, 208, 255); /* Añadir una sombra de texto brillante en hover */
   }
   
-@media screen and (min-width: 768px) and (max-width: 1440px) {
+
+@media screen and (min-width: 979px) and (max-width: 1440px) {  
     .bio-sello-south {
-        font-size: 2rem;
+        font-size: 1.5rem;
         margin-top: -3rem;
         margin-left: -4rem;
         
         padding: 20px;
         
       
-        
+        font-weight: bolder;  
         font-family: 'Montserrat', sans-serif;
-        line-height: 1.5;
+        line-height: 1.2;
     }
 
 .highlighted-text-sello{
@@ -160,13 +161,13 @@
 }
     
 .sello-image{
-    left: 75%;
-    top: 30%;  
+    left: 35%;
+    top: 55%;  
 }
 
 .sello-image2{
-    left: 80.5%;
-    top: 39%;
+    left: 41.4%;
+    top: 62.8%;
 }
 
 
@@ -177,8 +178,8 @@
    
 }
 .sello-image2 {
-    width: 150px;
-    height: 150px;
+    width: 140px;
+    height: 140px;
     z-index: 999;
     
 }
@@ -194,6 +195,66 @@
     
   }
   
+}
+@media (min-width: 768px) and (max-width: 979px) {
+ 
+    .bio-sello-south {
+        font-size: 1.2rem;
+        margin-top: -3rem;
+        margin-left: -7rem;
+        max-width: 990px;
+        padding: 20px;
+        font-weight: 700;
+      
+        
+        font-family: 'Montserrat', sans-serif;
+        line-height: 1.5;
+    }
+
+    .selloTitle h1{
+        font-size: 5rem;
+        margin-top: -10rem;
+        margin-left: -2rem;
+    }
+
+.highlighted-text-sello{
+    font-size: 3rem;
+}
+    
+.sello-image{
+    left: 35%;
+    top: 55%;  
+}
+
+.sello-image2{
+    left: 43.4%;
+    top: 62.8%;
+}
+
+
+
+.sello-image{
+    width: 300px;
+    height: 300px;
+   
+}
+.sello-image2 {
+    width: 140px;
+    height: 140px;
+    z-index: 999;
+    
+}
+
+.buttom-disco {
+    color:  rgb(195, 235, 255);
+    padding: 15px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 2rem;
+    background-color: transparent; 
+    
+  } 
 }
 @media (max-width: 768px) {
 
@@ -260,5 +321,5 @@
   }
   
 
-
 }
+

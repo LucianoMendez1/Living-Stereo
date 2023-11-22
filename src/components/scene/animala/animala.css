@@ -286,7 +286,24 @@ body {
   text-align: center;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1440px) {
+.bio-video-animala{
+ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 300px;
+    
+    width: 250%;
+    height: 60vh;
+    object-fit: cover;
+    filter: brightness(0.6);
+  z-index: -1;
+  border-radius: 8px;
+  border-radius: 8px;
+  
+}
+
+@media screen and (min-width: 979px) and (max-width: 1440px) {
   .start-content h1 {
     font-size: 2rem;
   }
@@ -456,10 +473,79 @@ body {
     color: var(--color-text);
     text-align: left;
   }
+  .bio-video-animala{
+    margin-top: 60px;
+  
+    width: 140%;
+    height: 50vh;
+  }
 
 }
+@media (min-width: 768px) and (max-width: 979px) {
+  .background-videoBiografia {
+    filter: brightness(0.5);
+  }
 
-/* Estilos para pantallas más pequeñas (hasta 767px) */
+  .start-screen {
+   
+  }
+
+  .bio-gallery-animala {
+    display: flex;
+    flex-direction: column; /* Cambiado de 'flex-wrap' a 'flex-direction' */
+    justify-content: space-between; /* Alinea las imágenes una debajo de la otra */
+  }
+
+  .bio-animala {
+    padding: 60px;
+    left: 40%;
+    font-weight: 500;
+    line-height: 1.2rem;
+    
+    color: var(--color-header);
+    margin-bottom: 0.5rem;
+  }
+
+  .bio-animala .title {
+    font-size: 5rem;
+    line-height: 1.2rem;
+    
+  
+  }
+
+  .bio-image-common {
+    border-radius: 8px;
+    text-align: center;
+    position: relative;
+  }
+
+  
+  
+ .bio-image-animala{
+  display: none;
+ }
+  .bio-image-static-animala{
+display: none;
+  }
+
+  .bio-image-static-animala:hover {
+    filter: grayscale(100%);
+  }
+
+  .bio-image-static2-animala:hover {
+    filter: none;
+  }
+
+  .bio-text-animala {
+   font-weight: 600;
+  }
+  .bio-video-animala{
+    margin-top: 60px;
+  
+    width: 100%;
+    height: 50vh;
+  }
+}
 @media screen and (max-width: 767px) {
 
   .background-videoBiografia {
@@ -524,6 +610,13 @@ display: none;
     display: flex;
     flex-wrap: wrap;
     padding: 0;
+  }
+  
+  .bio-video-animala{
+    margin-top: -90px;
+  
+    width: 130%;
+    height: 40vh;
   }
 }
 
