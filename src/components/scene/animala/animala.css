@@ -604,7 +604,7 @@ display: none;
   .bio-text-animala {
     font-size: 0.8rem;
     bottom: 100px;
-    margin-top: 20rem;
+    margin-top: 10rem;
     margin-left: 0;
     line-height: 1.5;
     display: flex;
@@ -613,7 +613,7 @@ display: none;
   }
   
   .bio-video-animala{
-    margin-top: -90px;
+    margin-top: -100px;
   
     width: 130%;
     height: 40vh;
