@@ -271,10 +271,9 @@
     
     .bio-sello-south {
         font-size: 0.5rem;
-        margin-top: -3rem;
-        margin-left: -4rem;
-        max-width: 300px;
-        padding: 20px;
+        margin-top: -5rem;
+        margin-left: 0rem;
+       
         
       
         
@@ -283,7 +282,9 @@
     }
 
 .highlighted-text-sello{
-    font-size: 0.9rem;
+    font-size: 0.6rem;
+   
+  
 }
     
 .sello-image{
