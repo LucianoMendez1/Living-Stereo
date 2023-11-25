@@ -59,7 +59,7 @@ const Animala = () => {
                 loop
                 muted
                 playsInline
-                src="https://res.cloudinary.com/dvnhn35l4/video/upload/v1699071511/b2bAgusSimon/IMG_7843_qp7zwq.mov"
+                src="https://res.cloudinary.com/dvnhn35l4/video/upload/v1696907149/ProyectAgustin/2_gtnfou.mp4"
               ></video>
                 </div>
              

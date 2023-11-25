@@ -321,10 +321,16 @@ function B2B() {
           Gretsch - Salida estéreo, 2 entradas - Micrófono (Guitarra Eléctrica)
         </p>
       </div>
-
-
+      <div className="contacto">
+        <h1>Conctacto</h1>
+        <p className="contacto-description">
+          ELGHETTOPRODUCCiON@GMAiL.COM AGENT MANAGEMENT: LUCiOBURZOMi
+          
+          TEL: 2215674139
+        </p>
+      </div>
      
-      <div className="artistasb2b"><h1>Artistas</h1></div>
+      <div className="artistas1"><h1>Artistas</h1></div>
       <div className="sliderBiografias"><SliderSection/></div>
     </div>
    

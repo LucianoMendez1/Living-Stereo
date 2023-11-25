@@ -70,8 +70,8 @@ const Biografia = () => {
                   <h2 className="bio-heading2">
                     "La Destacada Trayectoria Musical de Living Stereo y su Impacto en la Escena Musical"
                     <div className="bio-p2">
-                      Su música ha obtenido reconocimiento nacional e internacional bajo el sello
-                      <span className="highlighted-text">South America Avenue </span>
+                      Su música ha obtenido reconocimiento nacional e internacional bajo el sello <span></span> 
+                      <span className="highlighted-text"> South America Avenue </span>
                       respaldada por DJs destacados, como
                       <span className="highlighted-text"> Hernán Cattáneo. </span> Además de su producción musical.
                     </div>

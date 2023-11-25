@@ -349,7 +349,7 @@ border-radius: 8px;
     }
     .bio-p3{
       margin-left:10rem;
-      font-size: 1.2rem;
+      font-size: 1.3rem;
     }
   
     .bio-gallery-item {
@@ -381,10 +381,10 @@ border-radius: 8px;
     }
 
     .bio-video3{
-    
+      margin-top:30px;
       width: 80%;
-      height: 50vh;
-      margin-left: 150px;
+      height: 70vh;
+      margin-left: 135px;
       border-radius: 8px;
       border-radius: 8px;
     }

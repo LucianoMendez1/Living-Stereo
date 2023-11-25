@@ -145,7 +145,7 @@
 
 @media screen and (min-width: 979px) and (max-width: 1440px) {  
     .bio-sello-south {
-        font-size: 1.5rem;
+        font-size:1.5rem;
         margin-top: -3rem;
         margin-left: -4rem;
         
@@ -154,7 +154,7 @@
       
         font-weight: bolder;  
         font-family: 'Montserrat', sans-serif;
-        line-height: 1.2;
+        line-height: 1.5;
     }
 
 .highlighted-text-sello{
@@ -162,13 +162,13 @@
 }
     
 .sello-image{
-    left: 30%;
-    top: 50%;  
+    left: 75%;
+    top: 30%;  
 }
 
 .sello-image2{
-    left: 36.6%;
-    top: 56.8%;
+    left: 80.9%;
+    top: 40.5%;
 }
 
 

@@ -291,7 +291,7 @@ function SimonDimarzio() {
           TEL: 2215674139
         </p>
       </div>
-      <div className="artistaslider"><h1>Artistas</h1></div>
+      <div className="artistas1"><h1>Artistas</h1></div>
       <div className="sliderBiografias"><SliderSection/></div>
     </div>
       </div>
