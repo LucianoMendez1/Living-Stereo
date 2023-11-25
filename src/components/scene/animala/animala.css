@@ -288,18 +288,18 @@ body {
 
 .bio-video-animala{
  
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 300px;
-    
-    width: 250%;
-    height: 60vh;
-    object-fit: cover;
-    filter: brightness(0.6);
-  z-index: -1;
-  border-radius: 8px;
-  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 250px;
+  margin-left: 8rem;
+  width: 200%;
+  height: 80vh;
+  object-fit: cover;
+  filter: brightness(0.6);
+z-index: -1;
+border-radius: 8px;
+border-radius: 8px;
   
 }
 
