@@ -1,25 +1,50 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
 
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
-
- 
 }
 
-.app-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 20px;
-  font-size: 1.4rem;
-  text-align: center;
-  
+h2{
+  text-transform: uppercase;
 }
 
+::selection {
+  color: rgb(0, 0, 0);
+  background-color: #C3EBFF;
+}
+
+::-moz-selection {
+   color: rgb(0, 0, 0);
+   background-color:#C3EBFF;
+}
+
+@font-face {
+  font-family: 'PPFormula';
+  src: url('./components/fonts/PPFormula.woff') format('woff'); /* Ajusta la ruta según la ubicación de tu archivo de fuente */
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  background-color: #000;
+}
+
+::-webkit-scrollbar {
+  background-color: rgb(36, 36, 36);
+  width: 15px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #464646;
+  cursor: pointer;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #383838;
+}
 .app{
   background-color: rgba(1, 1, 1, 0.663);
   overflow: hidden;

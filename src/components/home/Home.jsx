@@ -1,104 +1,29 @@
-import React, { useRef, useEffect } from 'react';
+import React, { useRef, useEffect, Suspense, lazy } from 'react';
 import './home.css';
 import { gsap } from 'gsap';
-import ScrollTrigger from 'gsap/ScrollTrigger';
-import Presentacion from '../scene/presentacion/Presentacion';
-import PresteitBukingSlider from '../scene/buking/PresteitBukingSlider';
-import Biografia from '../scene/biografia/Biografia';
-import Redes from '../scene/redes/Redes';
-import Animala from '../scene/animala/Animala';
-import SelloDiscrografico from '../scene/sello/SelloDiscrografico';
-import SliderSection from '../scene/buking/SliderSection';  // Cambié la importación
+const Presentacion = lazy(() => import('../scene/presentacion/Presentacion'));
+const Biografia = lazy(() => import('../scene/biografia/Biografia'));
+const Redes = lazy(() => import('../scene/redes/Redes'));
+const Animala = lazy(() => import('../scene/animala/Animala'));
+const SelloDiscrografico = lazy(() => import('../scene/sello/SelloDiscrografico'));
+const SliderSection = lazy(() => import('../scene/buking/SliderSection'));
 
-// Importa otras dependencias según sea necesario
-
-gsap.registerPlugin(ScrollTrigger);
 
 const Home = () => {
-  const presentacionRef = useRef(null);
-  const biografiaRef = useRef(null);
-  const presteitbukingsliderRef = useRef(null);
-  const redesRef = useRef(null);
-  const animalaRef = useRef(null);
-  const selloRef = useRef(null);
- 
-
-  const animateComponents = () => {
-    const tl = gsap.timeline();
-
-    tl.fromTo(
-      presentacionRef.current,
-      { opacity: 0, y: 100 },
-      { opacity: 1, y: 0, duration: 1 }
-    );
-
-    tl.fromTo(
-      biografiaRef.current,
-      { opacity: 0, y: 100 },
-      { opacity: 1, y: 0, duration: 1 },
-      '-=0.5'
-    );
-
-    tl.fromTo(
-      presteitbukingsliderRef.current,
-      { opacity: 0, y: 100 },
-      { opacity: 1, y: 0, duration: 1 },
-      '-=0.5'
-    );
-
-    tl.fromTo(
-      redesRef.current,
-      { opacity: 0, y: 100 },
-      { opacity: 1, y: 0, duration: 1 },
-      '-=0.5'
-    );
-
-    tl.fromTo(
-      animalaRef.current,
-      { opacity: 0, y: 100 },
-      { opacity: 1, y: 0, duration: 1 },
-      '-=0.5'
-    );
-
-    tl.fromTo(
-      selloRef.current,
-      { opacity: 0, y: 100 },
-      { opacity: 1, y: 0, duration: 1 },
-      '-=0.5'
-    );
-
-   
-  };
-
-  useEffect(() => {
-    animateComponents();
-  }, []);
 
   return (
-    <div>
-      <div ref={presentacionRef}>
-        <Presentacion />
-      </div>
-      <div ref={biografiaRef}>
-        <Biografia />
-      </div>
-      <div ref={presteitbukingsliderRef}>
-        <PresteitBukingSlider />
-      </div>
-     
-        <SliderSection />
-     
-      <div ref={redesRef}>
-        <Redes />
-      </div>
-      <div ref={animalaRef}>
-        <Animala />
-      </div>
-      <div ref={selloRef}>
-        <SelloDiscrografico />
-      </div>
-   
+    <div className="home">
+
+    <Suspense fallback={<div>Loading...</div>}>
+      <Presentacion />
+      <Biografia />
+      <SliderSection />
+      <Redes />
+      <Animala />
+      <SelloDiscrografico />
+    </Suspense>
     </div>
+
   );
 };
 

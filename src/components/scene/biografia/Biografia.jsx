@@ -5,111 +5,69 @@ import isMobile from 'is-mobile';
 import "./biografia.css";
 
 const Biografia = () => {
-  useEffect(() => {
-    // Registra el plugin de ScrollTrigger
-    gsap.registerPlugin(ScrollTrigger);
-
-    // Solo activar animaciones en pantallas más grandes
-    if (!isMobile()) {
-      // Animación para .bio-item
-      gsap.fromTo(
-        ".bio-item",
-        { opacity: 0, y: 20 },
-        {
-          opacity: 1,
-          y: 0,
-          scrollTrigger: {
-            trigger: ".bio-item",
-            start: "top 80%",
-            end: "center bottom",
-            scrub: true,
-          },
-        }
-      );
-
-      // Puedes agregar más animaciones aquí si es necesario
-    }
-  }, []);
-
+ 
   return (
     <div className="bio-wrapper">
-      <div className="bio-content">
-        <div className="bio-portfolio">
-          <div className="bio-container">
-            <div className="bio-gallery">
-              <div className="bio-item">
-                <div className="bio-text">
-                  <h2 className="bio-heading">
-                    Living Stereo: El Equipo de Productores Musicales Destacados de Argentina
-                    <div className="bio-p">
-                      Conformada por un talentoso equipo de productores musicales,
-                      incluyendo <br />
-                      <span className="highlighted-text">Agustin Bragoni, Joaquin Irigoyen, Nicolas Nieves y Simon Di Marzio</span>
-                    </div>
-                  </h2>
-                </div>
-                <video
+
+      <div className="box_biography">
+          <div className="text_biography">
+            <h2>El Equipo de Productores Musicales mas Destacados de Argentina.</h2>
+            <p>
+                Conformada por un talentoso equipo de productores musicales,incluyendo, 
+                <span> Agustin Bragoni, Joaquin Irigoyen, Nicolas Nieves y Simon Di Marzio.</span>
+            </p>
+          </div>
+
+          <div className="video_biography">
+              <video
                   className="bio-video"
                   autoPlay
                   loop
                   muted
                   playsInline
                   src="https://res.cloudinary.com/dvnhn35l4/video/upload/v1697501262/parabiografia_cprtlw.mp4"
-                ></video>
-              </div>
-              <div className="bio-item">
-                <div className="bio-text">
-                  <video
-                    className="bio-video2"
-                    autoPlay
-                    loop
-                    muted
-                    playsInline
-                    src="https://res.cloudinary.com/dvnhn35l4/video/upload/v1699401093/SaveInsta.App_-_3231108036629867189_bdy1ah.mp4"
-                  ></video>
-                  <h2 className="bio-heading2">
-                    "La Destacada Trayectoria Musical de Living Stereo y su Impacto en la Escena Musical"
-                    <div className="bio-p2">
-                      Su música ha obtenido reconocimiento nacional e internacional bajo el sello <span></span> 
-                      <span className="highlighted-text"> South America Avenue </span>
-                      respaldada por DJs destacados, como
-                      <span className="highlighted-text"> Hernán Cattáneo. </span> Además de su producción musical.
-                    </div>
-                  </h2>
-                </div>
-              </div>
-            </div>
-            </div>
-          
-                
-            
-       
-      
-        </div>
-
-     
+                />
+          </div>
       </div>
-        <h2 className="bio-heading3">
-        La destacada trayectoria <br></br>musical de Living Stereo 
-                <div className="bio-p3">
-                  Su música ha obtenido reconocimiento nacional e internacional bajo el sello
-                  <span className="highlighted-text">South America Avenue </span>
+
+
+      <div className="box_biography box_biography_video">
+        
+          <div className="video_biography video_biography_s2">
+              <video
+                  className="bio-video"
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
+                  src="https://res.cloudinary.com/dvnhn35l4/video/upload/v1697590961/SaveInsta.App_-_2804920139101996759_1272469279_puozka.mp4"
+                />
+          </div>
+
+          <div className="text_biography text_biography_s2">
+            <h2>"La Destacada Trayectoria Musical de Living Stereo y su Impacto en la Escena Musical"</h2>
+            <p>
+                Su música ha obtenido reconocimiento nacional e internacional bajo el sello
+                  <span> South America Avenue </span>
                   respaldada por DJs destacados, como
-                  <span className="highlighted-text"> Hernán Cattáneo. </span> Además de su producción musical.
-                </div>
-                <video
-                className="bio-video3"
-                autoPlay
-                loop
-                muted
-                playsInline
-                src="https://res.cloudinary.com/dvnhn35l4/video/upload/v1697590961/SaveInsta.App_-_2804920139101996759_1272469279_puozka.mp4"
-              ></video>
-              </h2>
-          
-           
-</div>
+                  <span > Hernán Cattáneo. </span> Además de su producción musical.
+            </p>
+          </div>
+      </div>
+
+      <div className="box_text_biography">
+        <h2>La destacada trayectoria musical de living stereo.</h2>
+        <p>
+            Su música ha obtenido reconocimiento nacional e internacional bajo el sello
+            <span > South America Avenue </span>
+            respaldada por DJs destacados, como
+            <span > Hernán Cattáneo. </span> Además de su producción musical.
+        </p>
+      </div>
+     
+    </div>
   );
 };
 
 export default Biografia;
+
