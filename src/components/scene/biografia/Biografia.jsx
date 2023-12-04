@@ -56,9 +56,9 @@ const Biografia = () => {
       </div>
 
       <div className="box_text_biography">
-        <h2>La destacada trayectoria musical de living stereo.</h2>
+        <h2> reconocimiento nacional e internacional </h2>
         <p>
-            Su música ha obtenido reconocimiento nacional e internacional bajo el sello
+        bajo el sello de 
             <span > South America Avenue </span>
             respaldada por DJs destacados, como
             <span > Hernán Cattáneo. </span> Además de su producción musical.

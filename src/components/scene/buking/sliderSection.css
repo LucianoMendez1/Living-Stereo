@@ -47,7 +47,7 @@
 .image-container{
     display: flex;
     width: 58vw ;
-    height: 780px;
+    height: 720px;
     position: relative;
     z-index: 999999 !important;
 }

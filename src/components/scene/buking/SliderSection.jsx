@@ -63,16 +63,16 @@ const SliderSection = () => {
                   <div className="image-name">Simon Di Marzio</div>
               </section>
               <section className="image-container">
-                  <img src="https://res.cloudinary.com/dvnhn35l4/image/upload/v1697749878/Agustin_Bragoni_-_Chacra_el_Descanso_2_wv4ttr.jpg" alt="Agus Img" />
+                  <img src="https://res.cloudinary.com/dvnhn35l4/image/upload/v1697749878/Agustin_Bragoni_-_Chacra_el_Descanso_oyat3i.jpg" alt="Agus Img" />
                   <div className="image-name">Agustin Bragoni</div>
               </section>
               <section className="image-container">
                   <img className='joaquinImg' src="https://res.cloudinary.com/dvnhn35l4/image/upload/v1698269632/NicoLivingStereo/recortado.jpg" alt="Agus Img" />
-                  <div className="image-name">Joaquin Irigoyen</div>
+                  <div className="image-name">Nicolas Nieves</div>
               </section>
           
               <section className="image-container">
-                  <img  src="https://res.cloudinary.com/dvnhn35l4/image/upload/v1699064833/IMG_3719_cwenly.jpg" alt="Agus Img" />
+                  <img  src="https://res.cloudinary.com/dvnhn35l4/image/upload/v1699071443/b2bAgusSimon/IMG_3718_1_tqk5x3.jpg" alt="Agus Img" />
                   <div className="image-name image-name_b2b ">B2B <br />Bragoni <br /> Di Marzio</div>
               </section>
           </section> 

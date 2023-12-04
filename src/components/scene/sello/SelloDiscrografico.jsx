@@ -22,11 +22,41 @@ const SelloDiscografico = () => {
 
   return (
     <>
-      <div className="selloTitle">
+    <div className="sello">
+      <div className="selloTitle">  
         <h1>Sello Discografico</h1>
+        </div>
+        <div className="sello-subtitle"> South America Avenue </div>
+        <div className="sello-biography">
+        
+          <div className="sello-text">
+            
+            <p>
+             se complace en presentar su último lanzamiento,
+            dando una cálida bienvenida a{" "}
+            <span >
+              Nicolas Nieves, Agustin Bragoni y Simon Di Mazio
+            </span>{" "}
+            al sello con su excepcional EP original de tres
+            pistas titulado "River Coast". Este cautivador EP también incluye
+            las canciones "Dirty Pool" y "Other Side". Procedentes de Buenos
+            Aires, Argentina, estos tres talentosos productores aportan sus
+            perspectivas musicales únicas, mostrando la rica creatividad y el
+            vibrante sonido de la escena local
+            <button className="button-disco">Click para Escuchar</button>
+            </p>
+        </div>
       </div>
+      </div>
+    </>
+  );
+};
 
-      <div className="sello-wrapper" onClick={toggleAnimation}>
+export default SelloDiscografico;
+
+
+
+{/*    <div className="sello-wrapper" onClick={toggleAnimation}>
         <div className="sello">
           <div className="sello-content">
             <img
@@ -63,6 +93,4 @@ const SelloDiscografico = () => {
       </div>
     </>
   );
-};
-
-export default SelloDiscografico;
+}; */}
