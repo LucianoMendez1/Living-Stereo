@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react'
 import { Power4, gsap } from 'gsap'
+import './preload.css'
 
 const Preload = () => {
 
@@ -7,6 +8,13 @@ const Preload = () => {
 
     const tl = gsap.timeline()
 
+    tl.set(".container_t_name",{
+        opacity:0
+    })
+
+    tl.set(".container_t_name",{
+        opacity:1
+    })
     tl.fromTo(".box_t_name .t_name",{
         opacity:0,
         duration:1,

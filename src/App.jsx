@@ -5,6 +5,7 @@ import './App.css';
 
 import Home from './components/home/Home';
 import Albumliving from './components/scene/sello/album1/Main';
+import Preload from './components/scene/preload/Preload';
 
 
 const LazyAgustinBragoni = lazy(() => import('./components/scene/buking/biografias/AgustinBragoni'));
@@ -22,7 +23,7 @@ const App = () => {
   return (
   <div className='app'>
     <div className="background"></div>
- 
+    <Preload/>
     <BrowserRouter>
       <Suspense fallback={<div>Loading...</div>}>
         <Routes>
