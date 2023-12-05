@@ -1,10 +1,18 @@
 .redes {
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
-    top:100%;
-    margin-top: 200px;
     font-size: 1.5rem;
+}
+
+.redes-icons a{
+    transition: all .5s ease;
+}
+
+.redes-icons a:hover {
+    scale:1.1;
+    transition: all .5s ease;
 }
 
 .redes h1{

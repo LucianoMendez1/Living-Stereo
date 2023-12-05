@@ -1,260 +1,335 @@
 .sello{
-    position: relative;
+  position: relative;
   width: 100%;
   min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
-  
-  padding: 7rem 10rem;
+  flex-wrap: wrap;
+  flex-direction: row;
+  padding:2rem 5rem;
   margin-top: 2rem;
-    
+  flex: 1;
 }
 
-.selloTitle {
-
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    color: rgba(255, 255, 255, 0.966);
-	font-size: 3vw;
-	font-weight: 900;
-	letter-spacing: .3px;
-	width: 100%;
-    margin-left: 140px;
- 
+.contain_data_sello{
+  width: 70%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  flex: 1;
+  gap: 1rem;
 }
-.sello-subtitle{
-    text-transform: uppercase;
-    justify-content: center ;
-    text-align: center;
-    letter-spacing: 1px;
-    color: #C3EBFF;
-	font-size: 3vw;
-	font-weight: 900;
-	letter-spacing: .3px;
-	width: 100%;
+
+.title_sello{
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  padding: 1rem;
 
 }
-.sello-biography{
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    flex-wrap: nowrap;
-    flex-direction: row;
-    width: 100%;
-   
-    gap: 1rem;
-    position: relative;
-    margin-top: 3rem;
-   
-  
+
+.title_sello h2{
+  color:white;
+  font-size: 6rem;
+  font: 900;
+  letter-spacing: .4px;
+  line-height: 110%;
+}
+
+.title_sello h3{
+  color:white;
+  font-size: 2.6rem;
+  font: 800;
+  letter-spacing: .4px;
+  line-height: 130%;
+}
+
+.text_sello{
+  width: 100%;
+  height: 100%;
+  position: relative;
+  padding: 0 1rem 2rem; 
+
+}
+
+.text_sello p{
+  color:white;
+  font-size: 1.2rem;
+  font: 700;
+  line-height: 150%;
+}
+
+.text_sello span{
+  color: #C3EBFF;
+  font-size: 1.2rem;
+  font: 600;
+  line-height: 130%;
+}
+
+.button-disco{
+  width: 15rem;
+  margin-top: 2rem;
+  border: 2px solid rgb(31, 31, 31);
+  height: 3.3rem;
+  border-radius: 17px;
+  background-color: rgba(0, 0, 0, 0.301);
+  backdrop-filter: blur(10px);
+  color: white;
+  font-size: 1rem;
+  transition: all .4s ease;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+
+.button-disco:focus{
+  scale:.99;
+  background-color: rgb(27, 27, 27);
+  transition: all .4s ease;
+}
+
+/* vinilo */
+
+.contain_data_vinilo{
+  width: 50%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  gap: 2rem;
+}
+
+.separator_vinilo{
+  background-color: rgba(0, 0, 0, 0.014);
+  backdrop-filter: blur(20px);
+  width: 45rem;
+  height: 100%;
+  position: absolute;
+  z-index: 20;
+  right: -20rem;
+  border-radius: 100%;
+  border-left: 10px solid rgba(0, 0, 0, 0.151);
+}
+
+.img_data_vinilo{
+  position: relative;
+  width: 70%;
+  height: 70%;
+  filter: drop-shadow(0 0 40px rgba(255, 255, 255, 0.096));
+  animation: animate_vinilo 6s linear infinite;
+  filter: contrast(105%) brightness(110%);
+}
+
+/* .img_data_vinilo{
+  transition: all .5s ease;
+}
+.img_data_vinilo:hover{
+  scale: 1.05;
+  transition: all .2s ease-in-out;
+}
+ */
+
+.sello-image{
+  position: absolute;
+  width: 34rem;
+  height: 34rem;
+  object-fit: cover;
+  border-radius: 100%;
+  z-index: 9;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50% , -50%);
+}
+
+.sello-image2{
+  position: absolute;
+  width: 16rem;
+  height: 16rem;
+  border-radius: 100%;
+  z-index: 10;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50% , -50%);
+}
+
+
+@keyframes animate_vinilo {
+  100%{
+    rotate: 360deg;
+  }
+}
+
+@media screen and (max-width:1460px) {
+  .sello{
+    padding:2rem 2rem;
+  }
+
+  .separator_vinilo{
+    width: 39rem;
   }
   
-  .sello-text{
-    display: flex;
-    justify-content: center ;
-    align-items: flex-start;
+}
+
+@media screen and (max-width:1160px) {
+  .separator_vinilo{
+    display: none;
+  }
+  .sello{
     flex-direction: column;
-    gap: 2rem;
-    width: 90%;
-    position: relative;
-    
+    padding:2rem 2rem;
+  }
+ 
+  .sello-image{
+    width: 34rem;
+    height: 34rem;
   }
   
-  .sello-text p{
-    text-transform: initial;
-    color: white;
-    font-size: 1.8rem;
-    font-weight: 500;
-    width: 90%;
-    position: relative;
-   
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  }
-  .sello-text  span{
-    color: #C3EBFF;
-    font-size: 1.8rem;
-    letter-spacing: .5px;
-    text-transform: initial;
-    font-weight: 600;
-    width: 90%;
-    position: relative;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  .sello-image2{
+    width: 16rem;
+    height: 16rem;
   }
 
-@keyframes spin {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(360deg);
-    }
+
 }
 
 
+@media screen and (max-width:1060px) {
+  .separator_vinilo{
+    display: none;
+  }
+
+  .sello{
+    flex-direction: column;
+    padding:2rem 2rem;
+  }
+
+  .contain_data_sello{
+    width: 100%;
+  }
 
 
-@media screen and (max-width:1440px) {
-    .selloTitle h2{
-      font-size: 5rem;    
-    }
-    
-    .sello-text{
-      width: 100%;
-    }
-    .sello{
-      padding: 5rem 4rem;
-    }
-  
+
+  .contain_data_vinilo{
+    width: 100%;
+    height: 100%;
+  }
+
+  .sello-image{
+    width: 28rem;
+    height: 28rem;
   }
   
-  
-  @media screen and (max-width:1240px) {
-  
-    .sello{
-      margin-top: 2rem;
-    }
-  
-   
-  
-    .sello-biography{
-      display: flex;
-      justify-content: center;
-      align-items: flex-start;
-      flex-wrap: wrap;
-      padding: 2rem 4rem;
-    }
-    .sello-text {
-      width: 100%;
-    }
-  
-   
-  
-    .selloTitle h1{
-      font-size: 7vw;
-      font-weight: 900;
-      line-height: 7.8vw;
-    }
-  
-    .sello-biography{
-      width: 100%;
-      gap: 2rem;
-    }
-  
-    .sello-subtitle {
-      font-size: 3rem;    
-    }
+  .sello-image2{
+    width: 15rem;
+    height: 15rem;
   }
-  
-  @media screen and (max-width:1180px) {
-  
-    .selloTitle h1{
-      font-size: 7vw;
-      font-weight: 900;
-      line-height: 7.8vw;
-    }
-    
-    .sello-text p{
-      font-size: 1.2rem;
-      font-weight: 500;
-      width: 100%;
-    }
-    
-    .sello-text span{
-      font-size: 1.2rem;
-      font-weight: 500;
-      width: 100%;
-    }
-  
-    .sello{
-      gap: 2rem;
-      padding: 1rem 5rem;
-      margin-top: 7rem;
-    }
-  
-  
-   
-  
-    .sello-biography{
-      padding: 2rem 2rem;
-    }
-    .sello{
-      margin-top: 0rem;
-      padding: 1rem 2rem;
-    }
 }
-  
-  
-  @media screen and (max-width:780px) {
-    .sello-subtitle{
-      font-size: 4vw;
-      font-weight: 900;
-      line-height: 8.4vw;
-    }
-  
-    .sello-biography {
-      padding: 2rem 0rem;
-  }
-    .sello{
-      margin-top: 0rem;
-      padding: 1rem 2rem;
-    }
-  
-    
-  
-    .sello-text p , .sello-text span{
-      font-size: 1.3rem;
-    }
-  
-  
-  
-  @media screen and (max-width:550px) {
-    .sello-text p{
-      font-size: 1.1rem;
-      text-transform: initial;
-    }
-  
-    .sello-text span{
-      text-transform: initial;
-      font-size: 1.1rem;
-    }
-  
-    .selloTitle h1{
-      font-size: 1.9rem;
-      font-weight: 900;
-      line-height: 130%;
-    }
-    .sello-text p , .sello-text span{
-      font-size: 1.1rem;
-    }
-    
-  
-    .sello-biography{
-      width: 100%;
-      gap: 2rem;
-      text-align: start;
-    }
+
+@media screen and (max-width:660px) {
+
+  .title_sello h2{
+    color:white;
+    font-size: 4.5rem;
   }
   
-  
-  @media screen and (max-width:370px) {
-    .sello-text p{
-      font-size: 1.05rem;
-      text-transform: initial;
-    }
-  
-    .sello-text span{
-      text-transform: initial;
-      font-size: 1.05rem;
-    }
-   
-    .selloTitle h1{
-      font-size: 1.8rem;
-      line-height: 140%;
-      margin-left: -50px;
-  
-    }
-   
+  .title_sello h3{
+    color:white;
+    font-size: 2rem;
   }
+  
+  .sello-image{
+    width: 24rem;
+    height: 24rem;
   }
+  
+  .sello-image2{
+    width: 14rem;
+    height: 14rem;
+  }
+}
+
+@media screen and (max-width:440px) {
+
+  .title_sello {
+    padding: 0rem;
+}
+
+  .text_sello {
+    padding: 0 0rem 2rem;
+  }
+
+  .title_sello h2{
+    color:white;
+    font-size: 4.5rem;
+  }
+
+  .img_data_vinilo{
+    height: 25rem;
+  }
+  
+  .title_sello h3{
+    color:white;
+    font-size: 2rem;
+  }
+  
+  .sello-image{
+    width: 20rem;
+    height: 20rem;
+  }
+  
+  .sello-image2{
+    width: 12rem;
+    height: 12rem;
+  }
+}
+
+
+@media screen and (max-width:375px) {
+
+  .title_sello {
+    padding: 0rem;
+}
+
+  .text_sello {
+    padding: 0 0rem 2rem;
+  }
+
+  .title_sello h2{
+    color:white;
+    font-size: 3.4rem;
+  }
+
+  .img_data_vinilo{
+    height: 25rem;
+  }
+
+
+  .text_sello p{
+    color:white;
+    font-size: 1.1rem;
+    line-height: 160%;
+  }
+  
+  .title_sello h3{
+    color:white;
+    font-size: 1.8rem;
+  }
+  
+  .sello-image{
+    width: 20rem;
+    height: 20rem;
+  }
+  
+  .sello-image2{
+    width: 12rem;
+    height: 12rem;
+  }
+}

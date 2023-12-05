@@ -32,8 +32,34 @@ const SliderSection = () => {
         },
       );
 
-
   },[])  
+
+
+  const dataBooking = [
+    {
+      name:'Simon Di Marzio',
+      img:'https://res.cloudinary.com/dvnhn35l4/image/upload/v1698269867/NicoLivingStereo/tr_yw4d9c.jpg',
+      link:'/biografias/SimonDimarzio'
+    },
+    {
+      name:'Agustin Bragoni',
+      img:'https://res.cloudinary.com/dvnhn35l4/image/upload/v1697749878/Agustin_Bragoni_-_Chacra_el_Descanso_oyat3i.jpg',
+      link:'/biografias/AgustinBragoni'
+    },
+    {
+      name:'Nicolas Nieves',
+      img:'https://res.cloudinary.com/dvnhn35l4/image/upload/v1698269632/NicoLivingStereo/recortado.jpg',
+      link:'/biografias/NicolasNieves'
+    },
+    {
+      name:`B2B`,
+      img:'https://res.cloudinary.com/dvnhn35l4/image/upload/v1698269867/NicoLivingStereo/tr_yw4d9c.jpg',
+      link:'/biografias/B2B',
+      booking1 : 'Bragoni ',
+      booking2 : 'Di Marzio',
+      
+    },
+  ]
 
   return (
 
@@ -58,23 +84,16 @@ const SliderSection = () => {
           </div>
 
           <section className='section_gallery'>
-              <section className="image-container">
-                  <img className='simonImg' src="https://res.cloudinary.com/dvnhn35l4/image/upload/v1698269867/NicoLivingStereo/tr_yw4d9c.jpg" alt="Nico Img" />
-                  <div className="image-name">Simon Di Marzio</div>
-              </section>
-              <section className="image-container">
-                  <img src="https://res.cloudinary.com/dvnhn35l4/image/upload/v1697749878/Agustin_Bragoni_-_Chacra_el_Descanso_oyat3i.jpg" alt="Agus Img" />
-                  <div className="image-name">Agustin Bragoni</div>
-              </section>
-              <section className="image-container">
-                  <img className='joaquinImg' src="https://res.cloudinary.com/dvnhn35l4/image/upload/v1698269632/NicoLivingStereo/recortado.jpg" alt="Agus Img" />
-                  <div className="image-name">Nicolas Nieves</div>
-              </section>
-          
-              <section className="image-container">
-                  <img  src="https://res.cloudinary.com/dvnhn35l4/image/upload/v1699071443/b2bAgusSimon/IMG_3718_1_tqk5x3.jpg" alt="Agus Img" />
-                  <div className="image-name image-name_b2b ">B2B <br />Bragoni <br /> Di Marzio</div>
-              </section>
+            {
+              dataBooking.map((data, index) => ( 
+                <Link to={data.link} key={index} > 
+                  <section className="image-container">
+                    <img className='simonImg' src={data.img} alt="images booking" />
+                    <div className="image-name">{data.name}</div>
+                  </section>
+                </Link>
+              ))
+            }
           </section> 
       </div>
     </div>
@@ -83,57 +102,3 @@ const SliderSection = () => {
 };
 
 export default SliderSection;
-
-
-/*  <div className="container2">
-        <div className="row">
-          <div className="column2">
-            <Link to="/biografias/NicolasNieves" onClick={scrollToTop}>
-              <img
-                src="https://res.cloudinary.com/dvnhn35l4/image/upload/v1698269632/NicoLivingStereo/recortado.jpg"
-                alt="Imagen 2"
-                loading="lazy"
-              ></img>
-            </Link>
-            <div className="name">
-              <h1>Nicolas Nieves</h1>
-            </div>
-          </div>
-          <div className="column2">
-            <Link to="/biografias/AgustinBragoni" onClick={scrollToTop}>
-              <img
-                src="https://res.cloudinary.com/dvnhn35l4/image/upload/v1697749878/Agustin_Bragoni_-_Chacra_el_Descanso_2_wv4ttr.jpg"
-                alt="Imagen 2"
-                loading="lazy"
-              ></img>
-            </Link>
-            <div className="name">
-              <h1>Agustin Bragoni</h1>
-            </div>
-          </div>
-          <div className="column2">
-            <Link to="/biografias/B2B" onClick={scrollToTop}>
-              <img
-                src="https://res.cloudinary.com/dvnhn35l4/image/upload/v1699070017/agus_wcke3d_kc8s1k.jpg"
-                alt="Imagen 4"
-                loading="lazy"
-              ></img>
-            </Link>
-            <div className="name">
-              <h1>B2B Bragoni Di Marzio</h1>
-            </div>
-          </div>
-          <div className="column2">
-            <Link to="/biografias/SimonDimarzio" onClick={scrollToTop}>
-              <img
-                src="https://res.cloudinary.com/dvnhn35l4/image/upload/v1698269867/NicoLivingStereo/tr_yw4d9c.jpg"
-                alt="Imagen 3"
-                loading="lazy"
-              ></img>
-            </Link>
-            <div className="name">
-              <h1>Simon Di Marzio</h1>
-            </div>
-          </div>
-        </div>
-      </div> */

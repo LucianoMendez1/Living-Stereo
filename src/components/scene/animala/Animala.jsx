@@ -47,20 +47,17 @@ const Animala = () => {
                       apoyo a talentos locales, lo que ha dejado una marca
                       importante en la escena musical.
 
-                      <span className="highlighted-text-animala">
-
-                      </span>
-
                     </div>
                   </h2>
                   <video
-                className="bio-video-animala"
-                autoPlay
-                loop
-                muted
-                playsInline
-                src="https://res.cloudinary.com/dvnhn35l4/video/upload/v1696907149/ProyectAgustin/2_gtnfou.mp4"
-              ></video>
+                    className="bio-video-animala"
+                    autoPlay
+                    loop
+                    muted
+                    playsInline
+                    src="https://res.cloudinary.com/dvnhn35l4/video/upload/v1696907149/ProyectAgustin/2_gtnfou.mp4"
+                  ></video>
+
                 </div>
              
               </div>
