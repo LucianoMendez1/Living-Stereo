@@ -4,7 +4,6 @@ import HeroDetail from "../components/hero/HeroDetail";
 import DescriptionDetail from "../components/description/DescriptionDetail";
 import BookDetail from "../components/book/BookDetail";
 import VideoDetail from "../components/videoDetail/VideoDetail";
-import AgustinBragoni from "../../AgustinBragoni/AgustinBragoni";
 import TecnicoRider from "../components/rider/TecnicoRider";
 
 const DiMarzioDetail = () => {
