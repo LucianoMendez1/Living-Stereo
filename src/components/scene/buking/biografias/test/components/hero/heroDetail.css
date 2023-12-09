@@ -30,3 +30,57 @@
     width: 65rem;
     filter: contrast(103%) brightness(103%);
 }
+
+@media screen and (min-width: 1024px) and (max-width: 1440px) {
+    .box_hero h2{
+        font-size: 10rem;
+    }
+    .box_img_detail img{
+        width: 50rem;
+        left: 20rem;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 979px) {
+    .box_hero h2{
+        top: 25rem;
+        left: 2rem;
+        font-size: 7rem;
+    }
+    .box_img_detail img {
+        width: 40rem;
+        left: 14rem;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .box_hero h2{
+        font-size: 5rem;
+        top: 25rem;
+        left: 5rem;
+    }
+}
+
+@media screen and (max-width:550px) {
+
+    .box_hero h2{
+        font-size: 3rem;
+        top: 30rem;
+    }
+    .box_img_detail img{
+       top: 20rem;
+    }
+}
+
+@media screen and (max-width:370px) {
+
+    .box_hero h2{
+        font-size: 2.2rem;
+        top: 37rem;
+    }
+
+    .box_img_detail img{
+        top: 30rem;
+    }
+
+}

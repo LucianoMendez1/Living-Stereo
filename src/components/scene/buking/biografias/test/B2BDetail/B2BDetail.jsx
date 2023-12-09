@@ -57,7 +57,7 @@ const B2BDetail = () => {
       <HeroDetail
         name={"B2B "}
         img={
-          "https://res.cloudinary.com/dvnhn35l4/image/upload/v1697749878/Agustin_Bragoni_-_Chacra_el_Descanso_2_wv4ttr.jpg"
+          "https://res.cloudinary.com/dvnhn35l4/image/upload/v1699064833/IMG_3719_cwenly.jpg"
         }
       />
 
@@ -69,7 +69,7 @@ const B2BDetail = () => {
           "Actualmente se desempeña en la electrónica (Progressive House, Melodic Techno & Melodic House). Con sus dos formatos, DJ Set y Live Set, tocando instrumentos como la guitarra, sintetizadores y lap steel."
         }
         img1={
-          "https://res.cloudinary.com/dvnhn35l4/image/upload/v1697749878/Agustin_Bragoni_-_Chacra_el_Descanso_oyat3i.jpg"
+          "https://res.cloudinary.com/dvnhn35l4/image/upload/v1699071423/b2bAgusSimon/CB6AD92B-1BBF-46DA-8D21-92F6A3807A9C_poodip.jpg"
         }
         title2={
           "A lo largo de su carrera ha logrado tocar en los escenarios más reconocidos de Argentina."
@@ -78,14 +78,14 @@ const B2BDetail = () => {
           "Como el Lollapalooza, Luna Park, Cosquin Rock, Estadio Malvinas Argentinas, entre otros."
         }
         img2={
-          "https://res.cloudinary.com/dvnhn35l4/image/upload/v1697754573/Agus_Chano_-_Luna_Park_wfhjea.jpg"
+          "https://res.cloudinary.com/dvnhn35l4/image/upload/v1699071417/b2bAgusSimon/651c4a28-b78c-40c5-905b-a1d18220e3d4_wojmgp.jpg"
         }
         title3={"Así mismo, además de su proyecto como DJ. "}
         text3={
           "Es parte del equipo de producción y musicalización de Chano, un exponente dentro de la música."
         }
         img3={
-          "https://res.cloudinary.com/dvnhn35l4/image/upload/v1697755160/Agustin_Bragoni_2_nmghmd.jpg"
+          "https://res.cloudinary.com/dvnhn35l4/image/upload/v1699071423/b2bAgusSimon/CB8454FB-CB06-45B8-B2BB-DD8605EE7307_1_mri4fo.jpg"
         }
         title4={
           "Por su parte es productor musical y DJ residente de Iconic Club."
@@ -94,25 +94,25 @@ const B2BDetail = () => {
           "En los últimos tiempos, ha tenido la oportunidad de incursionar dentro del género House."
         }
         img4={
-          "https://res.cloudinary.com/dvnhn35l4/image/upload/v1697749878/Agustin_Bragoni_-_Estadio_UNO_o3lsyx.jpg"
+          "https://res.cloudinary.com/dvnhn35l4/image/upload/v1699071425/b2bAgusSimon/f7b52ae3-ad22-4702-999b-35610a63c349_tprk0m.jpg"
         }
         title5={
-          "Compartio cabina con los DJs más importantes de la escena argentina."
+          "Compartieron cabina con los DJs más importantes de la escena argentina."
         }
         text5={
           "Compartiendo cabina con Kolombo, Mariano Mellino, Nic Fanciulli, Juan Hansen, Soundexile, Ezequiel Arias y Jonh Cosani entre otros. Demostrando así su versatilidad dentro la escena electrónica. Algunas de sus fechas más destacadas han sido junto a al DJ internacional Cid Inc en Estadio Uno (Club Estudiantes) y junto al alemán Einmusik en Iconic Club."
         }
         img5={
-          "https://res.cloudinary.com/dvnhn35l4/image/upload/v1697749878/Agustin_Bragoni_-_Estadio_UNO_3_akmaxf.jpg"
+          "https://res.cloudinary.com/dvnhn35l4/image/upload/v1699071424/b2bAgusSimon/D870221E-7541-4B81-A3CE-79E1D58BC806_1_x3ztns.jpg"
         }
       />
 
       <BookDetail arrBook={arrBook} />
 
-      <VideoDetail 
-        name={'Agustin Bragoni'}
-        video={'https://res.cloudinary.com/dvnhn35l4/video/upload/v1697392290/Agustin_Bragoni_-_Living_Stereo_Session_1_1080p_ug5zqm.mp4'}
-      />
+     {/*  <VideoDetail 
+        name={'B2B Bragoni y Di Marzio'}
+        video={'https://res.cloudinary.com/dvnhn35l4/video/upload/v1697501262/parabiografia_cprtlw.mp4'}
+      /> */}
 
       <TecnicoRider/>
 

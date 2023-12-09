@@ -50,7 +50,7 @@ const SliderSection = () => {
     },
     {
       name: `B2B`,
-      img: "https://res.cloudinary.com/dvnhn35l4/image/upload/v1698269867/NicoLivingStereo/tr_yw4d9c.jpg",
+      img: "https://res.cloudinary.com/dvnhn35l4/image/upload/v1699071444/b2bAgusSimon/IMG_3718_eepqps.jpg",
       link: "/B2B",
       booking1: "Bragoni ",
       booking2: "Di Marzio",

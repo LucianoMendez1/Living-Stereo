@@ -57,35 +57,35 @@ const DiMarzioDetail = () => {
       <HeroDetail
         name={"Simon Di Marzio"}
         img={
-          "https://res.cloudinary.com/dvnhn35l4/image/upload/v1697749878/Agustin_Bragoni_-_Chacra_el_Descanso_2_wv4ttr.jpg"
+          "https://res.cloudinary.com/dvnhn35l4/image/upload/v1697939335/SimonlivingStereo/IMG_8760_k3oepw.jpg"
         }
       />
 
       <DescriptionDetail
         title1={
-          "Agustin Bragoni, es un musico productor, que dedicó toda su vida a la música desde los 5 años."
+          "Simon di Marzio es un DJ oriundo de la ciudad de La Plata"
         }
         text1={
-          "Actualmente se desempeña en la electrónica (Progressive House, Melodic Techno & Melodic House). Con sus dos formatos, DJ Set y Live Set, tocando instrumentos como la guitarra, sintetizadores y lap steel."
+          "Comenzó su carrera hace 6 años inspirado en The Chemical Brothers, Jean-Michel Jarre, Sasha y Hernan Cattaneo"
         }
         img1={
-          "https://res.cloudinary.com/dvnhn35l4/image/upload/v1697749878/Agustin_Bragoni_-_Chacra_el_Descanso_oyat3i.jpg"
+          "https://res.cloudinary.com/dvnhn35l4/image/upload/v1698192529/8-DSC05676_mwbqtx_sgtzzy.png"
         }
         title2={
-          "A lo largo de su carrera ha logrado tocar en los escenarios más reconocidos de Argentina."
+          "Sus sets se destacan por contener transiciones largas ysonidos armónicos para crear atmósferas que cautivan alpúblico"
         }
         text2={
-          "Como el Lollapalooza, Luna Park, Cosquin Rock, Estadio Malvinas Argentinas, entre otros."
+          "A la fecha, se encuentra dando sus primeros pasoscomo productor musical teniendo feedbacks positivos de grandes exponentes del género ademas recibio support de Hernán Cattaneo en su Podcasts semanal Resident"
         }
         img2={
-          "https://res.cloudinary.com/dvnhn35l4/image/upload/v1697754573/Agus_Chano_-_Luna_Park_wfhjea.jpg"
+          "https://res.cloudinary.com/dvnhn35l4/image/upload/v1697939328/SimonlivingStereo/IMG_7132_evpp2z.jpg"
         }
-        title3={"Así mismo, además de su proyecto como DJ. "}
+        title3={"Su Trayectoria en los Clubes "}
         text3={
-          "Es parte del equipo de producción y musicalización de Chano, un exponente dentro de la música."
+          "Se desempeñó en distintos clubes como The bow, Bahrein, Iconic Club,Zegre; así como también en ciclos como Rio Electronic Music,Hipico PM, Bodega Bonfati Mendoza, Parador Serena Mar delPlata"
         }
         img3={
-          "https://res.cloudinary.com/dvnhn35l4/image/upload/v1697755160/Agustin_Bragoni_2_nmghmd.jpg"
+          "https://res.cloudinary.com/dvnhn35l4/image/upload/v1697941201/SimonlivingStereo/DSC01761_p0lbu8.jpg"
         }
         title4={
           "Por su parte es productor musical y DJ residente de Iconic Club."
@@ -94,24 +94,24 @@ const DiMarzioDetail = () => {
           "En los últimos tiempos, ha tenido la oportunidad de incursionar dentro del género House."
         }
         img4={
-          "https://res.cloudinary.com/dvnhn35l4/image/upload/v1697749878/Agustin_Bragoni_-_Estadio_UNO_o3lsyx.jpg"
+          "https://res.cloudinary.com/dvnhn35l4/image/upload/v1697941204/SimonlivingStereo/DSC01766_qk5ekt.jpg"
         }
         title5={
-          "Compartio cabina con los DJs más importantes de la escena argentina."
+          "Identidad Musical"
         }
         text5={
-          "Compartiendo cabina con Kolombo, Mariano Mellino, Nic Fanciulli, Juan Hansen, Soundexile, Ezequiel Arias y Jonh Cosani entre otros. Demostrando así su versatilidad dentro la escena electrónica. Algunas de sus fechas más destacadas han sido junto a al DJ internacional Cid Inc en Estadio Uno (Club Estudiantes) y junto al alemán Einmusik en Iconic Club."
+          "Se siente identificado con el Progressive House, Deep House y Organic House."
         }
         img5={
-          "https://res.cloudinary.com/dvnhn35l4/image/upload/v1697749878/Agustin_Bragoni_-_Estadio_UNO_3_akmaxf.jpg"
+          "https://res.cloudinary.com/dvnhn35l4/image/upload/v1697939318/SimonlivingStereo/FF1F4B0A-1771-4A96-97F6-AA5CFA2D4DA0_hqelk0.jpg"
         }
       />
 
-      <BookDetail arrBook={arrBook} />
+      {/* <BookDetail arrBook={arrBook} /> */}
 
       <VideoDetail 
-        name={'Agustin Bragoni'}
-        video={'https://res.cloudinary.com/dvnhn35l4/video/upload/v1697392290/Agustin_Bragoni_-_Living_Stereo_Session_1_1080p_ug5zqm.mp4'}
+        name={'Simon Di Marzio'}
+        video={'https://res.cloudinary.com/dvnhn35l4/video/upload/v1698108274/3_dl3rh9.mp4'}
       />
 
       <TecnicoRider/>

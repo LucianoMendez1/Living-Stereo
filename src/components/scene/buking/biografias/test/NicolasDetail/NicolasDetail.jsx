@@ -57,44 +57,44 @@ const NicolasDetail = () => {
       <HeroDetail
         name={"Nicolas Nieves"}
         img={
-          "https://res.cloudinary.com/dvnhn35l4/image/upload/v1697749878/Agustin_Bragoni_-_Chacra_el_Descanso_2_wv4ttr.jpg"
+          "https://res.cloudinary.com/dvnhn35l4/image/upload/v1698269513/NicoLivingStereo/IMG_6275_vahtzr.jpg"
         }
       />
 
       <DescriptionDetail
         title1={
-          "Agustin Bragoni, es un musico productor, que dedicó toda su vida a la música desde los 5 años."
+          " Nicolas Nieves es un talentoso DJ de Progressive House originario de la ciudad de La Plata"
         }
         text1={
-          "Actualmente se desempeña en la electrónica (Progressive House, Melodic Techno & Melodic House). Con sus dos formatos, DJ Set y Live Set, tocando instrumentos como la guitarra, sintetizadores y lap steel."
+          ">Desde temprana edad, ha sido influenciado por banda sicónicas como Pink Floyd, Led Zeppelin y Radiohead, lo que ha moldeado su estilo musical único."
         }
         img1={
-          "https://res.cloudinary.com/dvnhn35l4/image/upload/v1697749878/Agustin_Bragoni_-_Chacra_el_Descanso_oyat3i.jpg"
+          "https://res.cloudinary.com/dvnhn35l4/image/upload/v1699668791/NicoLivingStereo/Copia_de_NGR04472_m5vuby_1_sqjsdk.jpg"
         }
         title2={
-          "A lo largo de su carrera ha logrado tocar en los escenarios más reconocidos de Argentina."
+          " Influencia en su estilo."
         }
         text2={
-          "Como el Lollapalooza, Luna Park, Cosquin Rock, Estadio Malvinas Argentinas, entre otros."
+          ">Hernan Cattaneo, John Digweed, Sasha y Nick Warren son algunos de los artistas que han influido en el estilo y enfoque musical de Snow. Estos referentes han dejado una huella profunda en su desarrollo artístico."
         }
         img2={
-          "https://res.cloudinary.com/dvnhn35l4/image/upload/v1697754573/Agus_Chano_-_Luna_Park_wfhjea.jpg"
+          "https://res.cloudinary.com/dvnhn35l4/image/upload/v1698273411/NicoLivingStereo/DSC03960_bxewii.jpg"
         }
-        title3={"Así mismo, además de su proyecto como DJ. "}
+        title3={" Su Energia en el Escenario "}
         text3={
-          "Es parte del equipo de producción y musicalización de Chano, un exponente dentro de la música."
+          "su capacidad para transportar a la audiencia a través de sonidos cautivadores son sin duda una experiencia creativa e innovadora para cualquier audiencia"
         }
         img3={
-          "https://res.cloudinary.com/dvnhn35l4/image/upload/v1697755160/Agustin_Bragoni_2_nmghmd.jpg"
+          "https://res.cloudinary.com/dvnhn35l4/image/upload/v1699668790/NicoLivingStereo/81022636_128021368307332_5612966744073365906_n_x3vvh8_1_m6vaud.jpg"
         }
         title4={
-          "Por su parte es productor musical y DJ residente de Iconic Club."
+          "promesa emergente"
         }
         text4={
-          "En los últimos tiempos, ha tenido la oportunidad de incursionar dentro del género House."
+          "Con su pasión por la música, su dedicación a la perfección sonora y su búsqueda constante de generar diversos climas y, Snow está consolidando su nombre como una promesa emergente en la escena de la música electrónica"
         }
         img4={
-          "https://res.cloudinary.com/dvnhn35l4/image/upload/v1697749878/Agustin_Bragoni_-_Estadio_UNO_o3lsyx.jpg"
+          "https://res.cloudinary.com/dvnhn35l4/image/upload/v1699668792/NicoLivingStereo/DSC03968_eomx0l_2_j3owsf.jpg"
         }
         title5={
           "Compartio cabina con los DJs más importantes de la escena argentina."
@@ -103,16 +103,13 @@ const NicolasDetail = () => {
           "Compartiendo cabina con Kolombo, Mariano Mellino, Nic Fanciulli, Juan Hansen, Soundexile, Ezequiel Arias y Jonh Cosani entre otros. Demostrando así su versatilidad dentro la escena electrónica. Algunas de sus fechas más destacadas han sido junto a al DJ internacional Cid Inc en Estadio Uno (Club Estudiantes) y junto al alemán Einmusik en Iconic Club."
         }
         img5={
-          "https://res.cloudinary.com/dvnhn35l4/image/upload/v1697749878/Agustin_Bragoni_-_Estadio_UNO_3_akmaxf.jpg"
+          "https://res.cloudinary.com/dvnhn35l4/image/upload/v1698272645/NicoLivingStereo/58409900_466901200716628_5467733535520079848_n_fhtjs4.jpg"
         }
       />
 
-      <BookDetail arrBook={arrBook} />
+      {/* <BookDetail arrBook={arrBook} /> */}
 
-      <VideoDetail 
-        name={'Agustin Bragoni'}
-        video={'https://res.cloudinary.com/dvnhn35l4/video/upload/v1697392290/Agustin_Bragoni_-_Living_Stereo_Session_1_1080p_ug5zqm.mp4'}
-      />
+     
 
       <TecnicoRider/>
 
