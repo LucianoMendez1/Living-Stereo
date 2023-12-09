@@ -5,7 +5,7 @@ import isMobile from 'is-mobile';
 import "./biografia.css";
 
 const Biografia = () => {
- 
+
   return (
     <div className="bio-wrapper">
 

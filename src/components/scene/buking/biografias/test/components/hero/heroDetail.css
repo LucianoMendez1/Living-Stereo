@@ -1,0 +1,32 @@
+.box_hero{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.box_hero h2{
+ font-size: 14rem;
+ font-weight: 900;
+ position: absolute;
+ filter: drop-shadow(0 0 30px black);
+ bottom: 10rem;
+ width: 55rem;
+ line-height: 100%;
+ left: 11rem;
+ z-index: 101;
+}
+
+.box_img_detail{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+}
+
+.box_img_detail img{
+    position: absolute;
+    top: 10rem;
+    border-radius: 8px;
+    width: 65rem;
+    filter: contrast(103%) brightness(103%);
+}

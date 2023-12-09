@@ -2,8 +2,8 @@ import React, { useEffect } from "react";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import isMobile from 'is-mobile';
-import SliderSection from "../SliderSection";
-import Back from "../../navbar/Navbar";
+import SliderSection from "../../SliderSection";
+import Back from "../../../navbar/Navbar";
 import "./nicolas.css";
 
 function NicolasNieves() {

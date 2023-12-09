@@ -1,13 +1,33 @@
-.redes {
+.box_social {
     position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
     font-size: 1.5rem;
+    width: 100%;
+    gap: 2rem;
 }
 
-.redes-icons a{
+.redes-icons_home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.redes-icons_home a{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     transition: all .5s ease;
+}
+
+.redes-icons_home img{
+    width: 100%;
 }
 
 .redes-icons a:hover {
@@ -21,7 +41,31 @@
 
 @media screen and (max-width: 768px) {
     .redes h1{
+        font-size: 3rem;
+    }
+
+    .redes-icons_home{
+        gap: 1rem;
+    }
+
+    .redes-icons_home img{
+        width: 4rem;
+        height: 4rem;
+        object-fit: contain;
+    }
+}
+
+@media screen and (max-width: 438px) {
+    .redes h1{
         font-size: 2rem;
     }
-    
+
+    .redes-icons_home{
+        gap: .5rem;
+    }
+
+    .redes-icons_home img{
+        width: 3rem;
+        height: 3rem;
+    }
 }

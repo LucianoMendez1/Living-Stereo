@@ -3,12 +3,12 @@ import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import isMobile from 'is-mobile';
 
-import "./agustinbragoni.css";
-import LivingBragoni from "./LivingBragoni";
-import SliderSection from "../SliderSection";
-import Back from "../../navbar/Navbar";
+import "./b2b.css";
+import B2BLiving from "./LivingB2B";
+import Back from "../../../navbar/Navbar";
+import SliderSection from "../../SliderSection";
 
-function AgustinBragoni() {
+function B2B() {
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
 
@@ -28,7 +28,7 @@ function AgustinBragoni() {
           },
         }
       );
-      
+
       const itemsL = document.querySelectorAll(".gallery__left .gallery__item");
       itemsL.forEach((item, index) => {
         gsap.fromTo(
@@ -103,7 +103,7 @@ function AgustinBragoni() {
 
   return (
     <div className="wrapper">
-      <Back/>
+        <Back/>
       <video
         data-speed=".6"
         className="background-video5"
@@ -123,13 +123,18 @@ function AgustinBragoni() {
           <img
             data-speed=".6"
             className="hero"
-            src="https://res.cloudinary.com/dvnhn35l4/image/upload/v1697749878/Agustin_Bragoni_-_Chacra_el_Descanso_2_wv4ttr.jpg"
+            src="https://res.cloudinary.com/dvnhn35l4/image/upload/v1699064833/IMG_3719_cwenly.jpg"
             alt="Alt"
           />
           <div className="container">
-      
             <div data-speed=".75" className="main-header">
-              <h1 className="main-title">Agustin Bragoni</h1>
+              <h1 className="main-title-b2b">
+                {" "}
+                Agustin Bragoni <br></br> Simon Di Marzio{" "}
+              </h1>
+              <h2 className="main-sustitle">
+                B2B<span></span>
+              </h2>
             </div>
           </div>
         </header>
@@ -139,8 +144,8 @@ function AgustinBragoni() {
               <div data-speed=".9" className="gallery__left">
                 <img
                   className="gallery__item"
-                  src="https://res.cloudinary.com/dvnhn35l4/image/upload/v1697749878/Agustin_Bragoni_-_Chacra_el_Descanso_oyat3i.jpg"
-                  alt="Alt"
+                  src="https://res.cloudinary.com/dvnhn35l4/image/upload/v1699071423/b2bAgusSimon/CB6AD92B-1BBF-46DA-8D21-92F6A3807A9C_poodip.jpg"
+                  alt="img 1"
                 />
 
                 <div className="text-block gallery__item">
@@ -148,97 +153,105 @@ function AgustinBragoni() {
                     A LO LARGO DE SU CARRERA HA LOGRADO TOCAR EN LOS ES-
                     CENARiOS MAS RECONOCiDOS DE ARGENTiNA
                   </h2>
-                  <p className="text-block__p">COMO EL LOO-
-                    LLAPALOOZA, LUNA PARK, COSQUiN ROCK, ESTADiO MALViNAS
-                    ARGENTiNAS, ENTRE OTROS</p>
-                </div>
-                <img
-                  className="gallery__item"
-                  src="https://res.cloudinary.com/dvnhn35l4/image/upload/v1697754573/Agus_Chano_-_Luna_Park_wfhjea.jpg"
-                  alt="Alt"
-                />
-
-                <div className="text-block gallery__item">
-                  <h2 className="text-block__h">
-                    POR SU PARTE ES PRODUCTOR MUSiCAL Y DJ RESiDENTE DE ICONiC CLUB 
-                    
-                  </h2>
-                  <p className="text-block__p"> 
-                  EN LOS ÚLTiMOS TiEMPOS, HA TENiDO LA OPORTUNiDAD DE iNCURSiONAR DENTRO DEL GÉNERO HOUSE
+                  <p className="text-block__p">
+                    COMO EL LOO- LLAPALOOZA, LUNA PARK, COSQUiN ROCK, ESTADiO
+                    MALViNAS ARGENTiNAS, ENTRE OTROS
                   </p>
                 </div>
                 <img
                   className="gallery__item"
-                  src="https://res.cloudinary.com/dvnhn35l4/image/upload/v1697755160/Agustin_Bragoni_2_nmghmd.jpg"
-                  alt="Alt"
+                
+                  src="  https://res.cloudinary.com/dvnhn35l4/image/upload/v1699071443/b2bAgusSimon/IMG_3718_1_tqk5x3.jpg"
+                  alt="img 3 "
+                />
+
+                <div className="text-block gallery__item">
+                  <h2 className="text-block__h">
+                    POR SU PARTE ES PRODUCTOR MUSiCAL Y DJ RESiDENTE DE ICONiC
+                    CLUB
+                  </h2>
+                  <p className="text-block__p">
+                    EN LOS ÚLTiMOS TiEMPOS, HA TENiDO LA OPORTUNiDAD DE
+                    iNCURSiONAR DENTRO DEL GÉNERO HOUSE
+                  </p>
+                </div>
+                <img
+                  className="gallery__item"
+                  src="https://res.cloudinary.com/dvnhn35l4/image/upload/v1699071424/b2bAgusSimon/D870221E-7541-4B81-A3CE-79E1D58BC806_1_x3ztns.jpg"
+                  alt="img 5"
                 />
               </div>
               <div data-speed="1.1" className="gallery__right">
                 <div className="text-block gallery__item">
                   <h2 className="text-block__h">
-                    AGUSTIN BRAGONi, ES UN MUSiCO PRODUCTOR, QUE DEDiCÓ TODA SU
-                    ViDA A LA MÚSiCA DESDE LOS 5 AÑOS
+                    AGUSTIN BRAGONi Y SIMON DI MARZIO
                   </h2>
-                  <p className="text-block__p"> ACTUALMENTE SE DESEMPEÑA
-                    EN LA ELECTRÓNiCA (PROGRESSiVE HOUSE, MELODiC TECHNO &
-                    MELODiC HOUSE). CON SUS DOS FOR- MATOS, DJ SET Y LiVE SET,
-                    TOCANDO iNSTRUMENTOS COMO LA GUiTARRA, SiNTETiZADORES Y LAP
-                    STEEL.</p>
+                  <p className="text-block__p">
+                    {" "}
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Dolor nulla dolore sunt. Animi enim veritatis ducimus rem
+                    repellat omnis quia ea magnam autem quidem. Rem voluptates
+                    odio ad at dolores! TOCANDO iNSTRUMENTOS COMO LA GUiTARRA,
+                    SiNTETiZADORES Y LAP STEEL.
+                  </p>
                 </div>
                 <img
                   className="gallery__item"
-                  src="https://res.cloudinary.com/dvnhn35l4/image/upload/v1697749878/Agustin_Bragoni_-_Estadio_UNO_o3lsyx.jpg"
-                  alt="Alt"
+                  src="https://res.cloudinary.com/dvnhn35l4/image/upload/v1699071417/b2bAgusSimon/651c4a28-b78c-40c5-905b-a1d18220e3d4_wojmgp.jpg"
+                  alt="imagen 2"
                 />
                 <div className="text-block gallery__item">
                   <h2 className="text-block__h">
                     ASÍ MiSMO, ADEMÁS DE SU PROYECTO COMO DJ
                   </h2>
-                  <p className="text-block__p">ES PARTE DEL
-                    EQUiPO DE PRODUCCiÓN Y MUSiCALiZACiÓN DE CHANO, UN EXPONENTE
-                    DENTRO DE LA MÚSiCA.</p>
+                  <p className="text-block__p">
+                    ES PARTE DEL EQUiPO DE PRODUCCiÓN Y MUSiCALiZACiÓN DE CHANO,
+                    UN EXPONENTE DENTRO DE LA MÚSiCA.
+                  </p>
                 </div>
                 <img
                   className="gallery__item"
-                  src="https://res.cloudinary.com/dvnhn35l4/image/upload/v1697749878/Agustin_Bragoni_-_Estadio_UNO_3_akmaxf.jpg"
-                  alt="Alt"
+                  src="https://res.cloudinary.com/dvnhn35l4/image/upload/v1699071425/b2bAgusSimon/f7b52ae3-ad22-4702-999b-35610a63c349_tprk0m.jpg"
+                  alt="img 4"
                 />
 
                 <div className="text-block gallery__item">
                   <h2 className="text-block__h">
-                  Compartio CABiNA CON LOS DJS MÁS iMPORTANTES DE
-                  LA ESCENA ARGENTiNA,
-                   
+                    Compartio CABiNA CON LOS DJS MÁS iMPORTANTES DE LA ESCENA
+                    ARGENTiNA,
                   </h2>
-                  <p className="text-block__p"> COMPARTiENDO CABiNA CON
-                    KOLOMBO , MARiANO MELLiNO ,NiC FANCiULLi,JUAN HANSEN,
-                    SOUNDEXiLE, EZEQUiEL ARiAS Y JONH COSANi ENTRE OTROS. DESMOSTRANDO ASi SU
-                    VERSATiLiDAD DENTRO LA ESCENA ELECTRÓNiCA.<br/>
-                    <br></br>
+                  <p className="text-block__p">
+                    {" "}
+                    COMPARTiENDO CABiNA CON KOLOMBO , MARiANO MELLiNO ,NiC
+                    FANCiULLi,JUAN HANSEN, SOUNDEXiLE, EZEQUiEL ARiAS Y JONH
+                    COSANi ENTRE OTROS. DESMOSTRANDO ASi SU VERSATiLiDAD DENTRO
+                    LA ESCENA ELECTRÓNiCA.
+                    <br />
                     ALGUNAS DE SUS FECHAS MÁS DESTACADAS HAN SiDO JUNTO A AL DJ
                     iNTERNA- CiONAL CiD INC EN ESTADiO UNO (CLUB ESTUDiANTES) Y
-                    JUNTO AL ALEMÁN EiNMUSiK EN ICONIC CLUB</p>
+                    JUNTO AL ALEMÁN EiNMUSiK EN ICONIC CLUB
+                  </p>
                 </div>
               </div>
             </div>
 
-            <div class="container">
+            <div class="containerb2b">
               <div class="row">
                 <div class="column">
                   <img
-                    src="https://res.cloudinary.com/dvnhn35l4/image/upload/v1697850814/agusbragoni/1_7_tdgjte.jpg"
+                    src="https://res.cloudinary.com/dvnhn35l4/image/upload/v1699071410/b2bAgusSimon/IMG_3821_itd6bm.jpg"
                     alt="Imagen 1"
                   ></img>
                 </div>
                 <div class="column">
                   <img
-                    src="https://res.cloudinary.com/dvnhn35l4/image/upload/v1697851232/agusbragoni/alemna_v6rqni.jpg"
+                    src="https://res.cloudinary.com/dvnhn35l4/image/upload/v1699071414/b2bAgusSimon/334D01E5-A3E6-4E36-AA33-A5935B7AE6A8_euk7ht.jpg"
                     alt="Imagen 2"
                   ></img>
                 </div>
                 <div class="column">
                   <img
-                    src=" https://res.cloudinary.com/dvnhn35l4/image/upload/v1697849793/agusbragoni/259816088_492493538611125_1617444028955560743_n_zesqyp.jpg"
+                    src=" https://res.cloudinary.com/dvnhn35l4/image/upload/v1699071411/b2bAgusSimon/3C0A8548-AD71-4D67-900B-6262E578A8EC_sdlvgm.jpg"
                     alt="Imagen 3"
                   ></img>
                 </div>
@@ -246,19 +259,19 @@ function AgustinBragoni() {
               <div class="row">
                 <div class="column">
                   <img
-                    src="https://res.cloudinary.com/dvnhn35l4/image/upload/v1697850814/agusbragoni/1_8_lgcr6g.jpg"
+                    src="https://res.cloudinary.com/dvnhn35l4/image/upload/v1699071424/b2bAgusSimon/E599386D-D21E-4F70-94B2-3E19BC5A18CE_zkq4sd.jpg"
                     alt="Imagen 4"
                   ></img>
                 </div>
                 <div class="column">
                   <img
-                    src="https://res.cloudinary.com/dvnhn35l4/image/upload/v1697850814/agusbragoni/1_9_ixhipj.jpg"
+                    src="https://res.cloudinary.com/dvnhn35l4/image/upload/v1699071410/b2bAgusSimon/IMG_3816_s7wcmc.jpg"
                     alt="Imagen 5"
                   ></img>
                 </div>
                 <div class="column">
                   <img
-                    src="https://res.cloudinary.com/dvnhn35l4/image/upload/v1697850801/agusbragoni/1_3_kwe0yk.jpg"
+                    src="https://res.cloudinary.com/dvnhn35l4/image/upload/v1699071422/b2bAgusSimon/C7B7E1B4-D282-43DA-BD6D-ADCF9978C48E_lxwu6s.jpg"
                     alt="Imagen 6"
                   ></img>
                 </div>
@@ -266,86 +279,39 @@ function AgustinBragoni() {
               <div class="row">
                 <div class="column">
                   <img
-                    src="https://res.cloudinary.com/dvnhn35l4/image/upload/v1697850812/agusbragoni/1_5_v5sldy.jpg"
+                    src="https://res.cloudinary.com/dvnhn35l4/image/upload/v1699071426/b2bAgusSimon/E6949356-DCC1-49F5-BA17-12197B511936_rusjdr.jpg"
                     alt="Imagen 7"
                   ></img>
                 </div>
                 <div class="column">
                   <img
-                    src="https://res.cloudinary.com/dvnhn35l4/image/upload/v1697849794/agusbragoni/258850834_648713199833873_412253203610088041_n_iq4ixd.jpg"
+                    src="https://res.cloudinary.com/dvnhn35l4/image/upload/v1699071422/b2bAgusSimon/BF2ACF18-0916-44D5-A4E4-40779D80C37E_nvsxu3.jpg"
                     alt="Imagen 8"
                   ></img>
                 </div>
                 <div class="column">
                   <img
-                    src="https://res.cloudinary.com/dvnhn35l4/image/upload/v1697850813/agusbragoni/1_6_ohzbo9.jpg"
+                    src="https://res.cloudinary.com/dvnhn35l4/image/upload/v1699071412/b2bAgusSimon/7AF95CCB-4B62-4CD7-A67A-0161BD79BCA0_rwakhb.jpg"
                     alt="Imagen 9"
                   ></img>
                 </div>
               </div>
             </div>
           </div>
-          <LivingBragoni />
+          <B2BLiving />
         </div>
       </div>
 
-      <div>
-        <div className="redes1">
-          <h1>Escuchalo en sus redes</h1>
-        </div>
-      </div>
-      <div className="redes-icons">
-        <a
-          href="https://soundcloud.com/agusbragoni/agustin-bragoni-live-ft-simon-di-marzio"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <img
-            src="https://res.cloudinary.com/dvnhn35l4/image/upload/v1698110274/soundcloud_sj9krx.png"
-            alt="SoundCloud"
-            className="small-image"
-          />
-        </a>
-        <a
-          href="https://open.spotify.com/artist/1cULybzKerkCYILQ7HE6KV"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <img
-            src="https://res.cloudinary.com/dvnhn35l4/image/upload/v1698110079/spotify_hl3rka.png"
-            alt="Spotify"
-            className="small-image"
-          />
-        </a>
-        <a
-          href="https://www.instagram.com/agusbragoni/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <img
-            src="https://res.cloudinary.com/dvnhn35l4/image/upload/v1698110078/instagram_pmiidc.png"
-            alt="Insta"
-            className="small-image"
-          />
-        </a>
-        <a
-          href="https://www.youtube.com/channel/UCiJDFbELenl7792FyRxlGyQ"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <img
-            src="https://res.cloudinary.com/dvnhn35l4/image/upload/v1698110077/youtube_tuqwvh.png"
-            alt="YouTube"
-            className="small-image"
-          />
-        </a>
-      </div>
+     
+      
       <div className="container-raider">
         <h2 className="container-raider__title">Técnico Rider</h2>
         <div className="djset">
           <h4>DJ Set</h4>
         </div>
-        <p className="liveset-description">3 CDJ Nexus <br/> Nexus 2 DJM 900 CDJ 2000</p>
+        <p className="liveset-description">
+          3 CDJ Nexus - Nexus 2 DJM 900 CDJ 2000
+        </p>
         <div className="liveset">
           <h1>Live Set</h1>
         </div>
@@ -355,7 +321,6 @@ function AgustinBragoni() {
           Gretsch - Salida estéreo, 2 entradas - Micrófono (Guitarra Eléctrica)
         </p>
       </div>
-
       <div className="contacto">
         <h1>Conctacto</h1>
         <p className="contacto-description">
@@ -364,12 +329,12 @@ function AgustinBragoni() {
           TEL: 2215674139
         </p>
       </div>
+     
       <div className="artistas1"><h1>Artistas</h1></div>
       <div className="sliderBiografias"><SliderSection/></div>
-      
     </div>
-    
+   
   );
 }
 
-export default AgustinBragoni;
+export default B2B;

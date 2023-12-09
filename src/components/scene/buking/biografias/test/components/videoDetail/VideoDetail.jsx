@@ -1,14 +1,21 @@
 import React from "react";
-import "./redes.css";
-const Redes = () => {
+import "./videoDetail.css";
+
+const VideoDetail = ({ name, video }) => {
   return (
-      <div className="box_social">
-        <div className="redes">
-          <h1>Escuchalos en sus redes</h1>
+    <div className="container_video_detail">
+      <h2>{name}</h2>
+      <div className="box_video_detail">
+        <video className="" autoPlay loop muted playsInline src={video} />
+      </div>
+
+      <div className="box_social_detail">
+        <div className="redes_detail_detail">
+          <h2>Escuchalos en sus redes</h2>
         </div>
-        <div className="redes-icons_home">
+        <div className="redes-icons_detail">
           <a
-            href="https://soundcloud.com/living-stereo"
+            href="https://soundcloud.com/agusbragoni/agustin-bragoni-live-ft-simon-di-marzio"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -19,7 +26,7 @@ const Redes = () => {
             />
           </a>
           <a
-            href="https://open.spotify.com/album/3MC0Gx6ZFBbNZxxLcI2fHK"
+            href="https://open.spotify.com/artist/1cULybzKerkCYILQ7HE6KV"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -30,7 +37,7 @@ const Redes = () => {
             />
           </a>
           <a
-            href="https://www.instagram.com/living.stereo/"
+            href="https://www.instagram.com/agusbragoni/"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -41,7 +48,7 @@ const Redes = () => {
             />
           </a>
           <a
-            href="https://www.youtube.com/watch?v=C3eUu7bo3hw"
+            href="https://www.youtube.com/channel/UCiJDFbELenl7792FyRxlGyQ"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -52,8 +59,9 @@ const Redes = () => {
             />
           </a>
         </div>
+      </div>
     </div>
   );
 };
 
-export default Redes;
+export default VideoDetail;

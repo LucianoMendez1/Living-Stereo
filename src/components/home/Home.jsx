@@ -18,9 +18,9 @@ const Home = () => {
       <Presentacion />
       <Biografia />
       <SliderSection />
-      <Redes />
       <Animala />
       <SelloDiscrografico />
+      <Redes />
     </Suspense>
     </div>
 

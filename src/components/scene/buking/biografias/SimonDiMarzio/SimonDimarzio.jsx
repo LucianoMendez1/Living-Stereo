@@ -5,8 +5,10 @@ import isMobile from 'is-mobile';
 
 import LivingSimon from "./LivingSimon";
 import "./simondimarzio.css";
-import SliderSection from "../SliderSection";
-import Back from "../../navbar/Navbar";
+import SliderSection from "../../SliderSection";
+import Back from "../../../navbar/Navbar";
+
+
 function SimonDimarzio() {
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
