@@ -13,13 +13,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 4rem;
+    gap: 3rem;
     flex-direction: row;
     flex-wrap: nowrap;
 }
 
 .redes-icons_home a{
-    width: 100%;
+    width: 5rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -52,6 +52,10 @@
         width: 4rem;
         height: 4rem;
         object-fit: contain;
+    }
+
+    .redes-icons_home a {
+        width: 4rem;
     }
 }
 

@@ -1,11 +1,11 @@
 import React, { lazy, Suspense, useEffect } from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-
 import './App.css';
 
 import Home from './components/home/Home';
 import Preload from './components/scene/preload/Preload';
 import Lenis from '@studio-freight/lenis';
+import Nav from './components/scene/Nav/Nav';
 
 const AgustinBragoni = lazy(() => import('./components/scene/buking/biografias/test/BragoniDetail/BragoniDetail'));
 const SimonDimarzio = lazy(() => import('./components/scene/buking/biografias/test/DiMarzioDetail/DiMarzioDetail'));
@@ -36,6 +36,7 @@ const App = () => {
   <div className='app'>
     <div className="background"></div>
     <Preload/>
+    <Nav/>
     <BrowserRouter>
       <Suspense fallback={<div>Loading...</div>}>
         <Routes>

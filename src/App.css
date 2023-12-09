@@ -9,8 +9,13 @@
   box-sizing: border-box;
 }
 
-h2{
+h2 , h1 ,h3{
   text-transform: uppercase;
+  font-family: 'PPFormula';
+  color: white;
+}
+p, span {
+  color: white;
 }
 
 ::selection {
@@ -28,6 +33,7 @@ h2{
   src: url('./components/fonts/PPFormula.woff') format('woff'); /* Ajusta la ruta según la ubicación de tu archivo de fuente */
   font-weight: normal;
   font-style: normal;
+  color: white;
 }
 
 body {

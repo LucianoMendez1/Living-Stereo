@@ -7,7 +7,7 @@ import "./biografia.css";
 const Biografia = () => {
 
   return (
-    <div className="bio-wrapper">
+    <div className="bio-wrapper" id="biography">
 
       <div className="box_biography">
           <div className="text_biography">
