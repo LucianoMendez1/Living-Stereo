@@ -1,0 +1,232 @@
+.container_rider{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    padding-bottom: 8rem;
+    margin-top: 10rem;
+}
+
+.titleRider{
+    font-size: 10rem;
+    font-weight: 900;
+}
+
+.box_riders{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.box_riders h2 {
+    font-size: 5rem;
+    font-weight: 900;
+}
+
+.box_riders ul {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.box_riders li {
+    font-size: 1.3rem;
+    color: white;
+}
+
+.box_riders li:before {
+    content: '\2022';
+    color: rgb(84, 84, 238); 
+    margin-right: 0.5em; 
+}
+
+.box_riders span , .box_riders strong{
+    color: white;
+    font-size: 1.3rem;
+}
+
+.box_riders span:before {
+    content: '\2022';
+    color: rgb(84, 84, 238); 
+    margin-right: 0.5em; 
+}
+
+.box_riders strong{
+    margin-left: 1.1rem;
+    font-size: 1.5rem;
+}
+
+@media screen and (max-width:1180px) {
+
+
+    .box_riders{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 4rem;
+    }
+   .step_rider{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 1rem;
+   }
+    .box_riders ul {
+        width: 26rem;
+        display: flex;
+        left: 4rem;
+        position: relative;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .titleRider{
+        font-size: 6rem;
+    }
+
+    .box_riders h2 {
+        font-size: 4rem;
+        position: relative;
+        left: -4rem;
+    }
+
+    .box_riders li {
+        font-size: 1.3rem;
+    }
+
+    .box_riders span {
+        font-size: 1.3rem;
+    }
+    .box_riders strong{
+        margin-left: 1.1rem;
+        font-size: 1.5rem;
+    }
+}
+
+
+
+@media screen and (max-width:1180px) {
+    .container_rider{
+        align-items: flex-start;
+        padding: 0 4rem;
+    }
+
+    .box_riders{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 4rem;
+    }
+   .step_rider{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 1rem;
+   }
+    .box_riders ul {
+        width: 100%;
+        display: flex;
+        left: 0;
+        position: relative;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-direction: column;
+ 
+    }
+
+    .titleRider{
+        font-size: 6rem;
+    }
+
+    .box_riders h2 {
+        font-size: 4rem;
+        left: 0;
+    }
+
+    .box_riders li {
+        font-size: 1.3rem;
+    }
+
+    .box_riders span {
+        font-size: 1.3rem;
+    }
+    .box_riders strong{
+        margin-left: 1.1rem;
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width:650px) {
+    .titleRider{
+        font-size: 4rem;
+    }
+
+    .box_riders h2 {
+        font-size: 3rem;
+        font-weight: 900;
+    }
+
+    .box_riders li {
+        font-size: 1.1rem;
+    }
+
+    .box_riders span {
+        font-size: 1.1rem;
+    }
+    .box_riders strong{
+        margin-left: 1.1rem;
+        font-size: 1.3rem;
+    }
+}
+
+
+@media screen and (max-width:450px) {
+
+    .container_rider{
+        padding-bottom: 8rem;
+        margin-top:4rem;
+    }
+
+    .container_rider{
+        padding: 0 2rem;
+    }
+
+    .titleRider{
+        font-size: 3rem;
+    }
+
+    .box_riders h2 {
+        font-size: 2.2rem;
+        font-weight: 900;
+    }
+
+    .box_riders li {
+        font-size: 1.05rem;
+    }
+
+    .box_riders span {
+        font-size: 1.05rem;
+    }
+    .box_riders strong{
+        margin-left: 1.1rem;
+        font-size: 1.1rem;
+    }
+}

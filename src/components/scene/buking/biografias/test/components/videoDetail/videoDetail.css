@@ -84,10 +84,12 @@
     font-size: 4rem;
 }
 
-@media screen and (max-width: 768px) {
+
+@media screen and (max-width: 1448px) {
     .redes_detail h1{
         font-size: 3rem;
     }
+    
 
     .redes-icons_detail{
         gap: 1rem;
@@ -98,11 +100,75 @@
         height: 4rem;
         object-fit: contain;
     }
+
+    .container_video_detail {
+        padding: 2rem 2rem;
+    }
+
+    .container_video_detail h2 {
+        font-size: 7rem;
+        width: 100%;
+        line-height: 100%;
+    }
+    .redes_title {
+        font-size: 4rem !important;
+        width: 100%;
+        line-height: 100%;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .redes_detail h1{
+        font-size: 3rem;
+    }
+    
+
+    .redes-icons_detail{
+        gap: 1rem;
+    }
+
+    .redes-icons_detail img{
+        width: 4rem;
+        height: 4rem;
+        object-fit: contain;
+    }
+
+    .container_video_detail {
+        padding: 2rem 2rem;
+    }
+
+    .redes-icons_detail a {
+        width: 4rem;
+    }
+
+    .redes_detail_detail h2{
+        font-size: 3rem;
+        line-height: 120%;
+ 
+        width: 100%;
+    }
+
+    .redes-icons_detail img {
+        width: 3rem;
+        height: 3rem;
+    }
+
+    .redes_title {
+        font-size: 5rem;
+        width: 100%;
+        line-height: 100%;
+        font-size: 3rem !important;
+    }
 }
 
 @media screen and (max-width: 438px) {
     .redes_detail h1{
         font-size: 2rem;
+    }
+
+    .box_video_detail video{
+        height: 30rem;
     }
 
     .redes-icons_detail{
@@ -113,4 +179,13 @@
         width: 3rem;
         height: 3rem;
     }
+   
+    .redes_detail_detail h2{
+        font-size: 2.2rem;
+        line-height: 120%;
+        width: 100%;
+    }
+
 }
+
+

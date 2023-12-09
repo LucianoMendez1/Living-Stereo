@@ -7,21 +7,21 @@ import VideoDetail from "../components/videoDetail/VideoDetail";
 import AgustinBragoni from "../../AgustinBragoni/AgustinBragoni";
 import TecnicoRider from "../components/rider/TecnicoRider";
 
-const DiMarzioDetail = () => {
+const B2BDetail = () => {
 
 
-  const scrollToTop = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: 'smooth',
-    });
-  };
-
-  useEffect(() => {
-    scrollToTop();
-  }, []);
-
-
+    const scrollToTop = () => {
+        window.scrollTo({
+          top: 0,
+          behavior: 'smooth',
+        });
+      };
+  
+      useEffect(() => {
+        scrollToTop();
+      }, []);
+    
+    
   const arrBook = [
     {
       img:'https://res.cloudinary.com/dvnhn35l4/image/upload/v1697850814/agusbragoni/1_7_tdgjte.jpg'
@@ -56,7 +56,7 @@ const DiMarzioDetail = () => {
   return (
     <div className="container_hero">
       <HeroDetail
-        name={"Simon Di Marzio"}
+        name={"B2B "}
         img={
           "https://res.cloudinary.com/dvnhn35l4/image/upload/v1697749878/Agustin_Bragoni_-_Chacra_el_Descanso_2_wv4ttr.jpg"
         }
@@ -121,4 +121,4 @@ const DiMarzioDetail = () => {
   );
 };
 
-export default DiMarzioDetail
+export default B2BDetail

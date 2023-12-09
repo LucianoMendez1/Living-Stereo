@@ -39,22 +39,22 @@ const SliderSection = () => {
     {
       name:'Simon Di Marzio',
       img:'https://res.cloudinary.com/dvnhn35l4/image/upload/v1698269867/NicoLivingStereo/tr_yw4d9c.jpg',
-      link:'/biografias/SimonDimarzio'
+      link:'/SimonDimarzio'
     },
     {
       name:'Agustin Bragoni',
       img:'https://res.cloudinary.com/dvnhn35l4/image/upload/v1697749878/Agustin_Bragoni_-_Chacra_el_Descanso_oyat3i.jpg',
-      link:'/biografias/AgustinBragoni'
+      link:'/AgustinBragoni'
     },
     {
       name:'Nicolas Nieves',
       img:'https://res.cloudinary.com/dvnhn35l4/image/upload/v1698269632/NicoLivingStereo/recortado.jpg',
-      link:'/biografias/NicolasNieves'
+      link:'/NicolasNieves'
     },
     {
       name:`B2B`,
       img:'https://res.cloudinary.com/dvnhn35l4/image/upload/v1698269867/NicoLivingStereo/tr_yw4d9c.jpg',
-      link:'/biografias/B2B',
+      link:'/B2B',
       booking1 : 'Bragoni ',
       booking2 : 'Di Marzio',
       

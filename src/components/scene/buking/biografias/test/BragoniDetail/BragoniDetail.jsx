@@ -1,12 +1,25 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "../../styles/biography.css";
 import HeroDetail from "../components/hero/HeroDetail";
 import DescriptionDetail from "../components/description/DescriptionDetail";
 import BookDetail from "../components/book/BookDetail";
 import VideoDetail from "../components/videoDetail/VideoDetail";
 import AgustinBragoni from "../../AgustinBragoni/AgustinBragoni";
+import TecnicoRider from "../components/rider/TecnicoRider";
 
 const BragoniDetail = () => {
+
+
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth',
+    });
+  };
+
+  useEffect(() => {
+    scrollToTop();
+  }, []);
 
 
   const arrBook = [
@@ -101,6 +114,8 @@ const BragoniDetail = () => {
         name={'Agustin Bragoni'}
         video={'https://res.cloudinary.com/dvnhn35l4/video/upload/v1697392290/Agustin_Bragoni_-_Living_Stereo_Session_1_1080p_ug5zqm.mp4'}
       />
+
+      <TecnicoRider/>
 
     </div>
   );

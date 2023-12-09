@@ -6,12 +6,11 @@ import './App.css';
 import Home from './components/home/Home';
 import Preload from './components/scene/preload/Preload';
 import Lenis from '@studio-freight/lenis';
-import BragoniDetail from './components/scene/buking/biografias/test/BragoniDetail/BragoniDetail';
 
-const AgustinBragoni = lazy(() => import('./components/scene/buking/biografias/AgustinBragoni/AgustinBragoni'));
-const SimonDimarzio = lazy(() => import('./components/scene/buking/biografias/SimonDiMarzio/SimonDimarzio'));
-const B2B = lazy(() => import('./components/scene/buking/biografias/B2B/B2B'));
-const NicolasNieves = lazy(() => import('./components/scene/buking/biografias/NicolasNieves/NicolasNieves'));
+const AgustinBragoni = lazy(() => import('./components/scene/buking/biografias/test/BragoniDetail/BragoniDetail'));
+const SimonDimarzio = lazy(() => import('./components/scene/buking/biografias/test/DiMarzioDetail/DiMarzioDetail'));
+const B2B = lazy(() => import('./components/scene/buking/biografias/test/B2BDetail/B2BDetail'));
+const NicolasNieves = lazy(() => import('./components/scene/buking/biografias/test/NicolasDetail/NicolasDetail'));
 const Albumliving = lazy(() => import('./components/scene/sello/album1/Main'));
 
 
@@ -29,24 +28,9 @@ const App = () => {
   
     requestAnimationFrame(raf);
 
-
   }, []);
 
 
-
-
-    const scrollToTop = () => {
-      window.scrollTo({
-        top: 0,
-        behavior: 'smooth',
-      });
-    };
-
-    useEffect(() => {
-      scrollToTop();
-    }, []);
-  
-  
 
   return (
   <div className='app'>
@@ -56,17 +40,12 @@ const App = () => {
       <Suspense fallback={<div>Loading...</div>}>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/biografias/AgustinBragoni" element={<BragoniDetail />} />
-          <Route path="/biografias/SimonDimarzio" element={<SimonDimarzio />} />
-          <Route path="/biografias/NicolasNieves" element={<NicolasNieves />} />
+          <Route path="*" element={<Home />} />
+          <Route path="/AgustinBragoni" element={<AgustinBragoni />} />
+          <Route path="/SimonDimarzio" element={<SimonDimarzio />} />
+          <Route path="/NicolasNieves" element={<NicolasNieves />} />
+          <Route path="/B2B" element={<B2B />} />
 
-          {/* rutas B 2 b */}
-          <Route path="/biografias/B2B" element={<B2B />} />
-          <Route path='/biografias/B2B/biografias/B2B' element={<B2B />} />
-          <Route path='/biografias/B2B/biografias/AgustinBragoni' element={<AgustinBragoni />} />
-          <Route path='/biografias/B2B/biografias/Simondimarzio' element={<SimonDimarzio />} />
-          <Route path='/biografias/B2B/biografias/NicolasNieves' element={<NicolasNieves />} />
-          {/* rutas NICO Slide */}
          
           {/* Rutas agus */}
           <Route path ="/album1/Main" element ={<Albumliving />} />

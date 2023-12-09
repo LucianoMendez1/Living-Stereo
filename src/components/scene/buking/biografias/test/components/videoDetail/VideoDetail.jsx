@@ -11,7 +11,7 @@ const VideoDetail = ({ name, video }) => {
 
       <div className="box_social_detail">
         <div className="redes_detail_detail">
-          <h2>Escuchalos en sus redes</h2>
+          <h2 className="redes_title">Escuchalos en sus redes</h2>
         </div>
         <div className="redes-icons_detail">
           <a
