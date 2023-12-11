@@ -45,7 +45,7 @@ const SliderSection = () => {
     },
     {
       name: "Nicolas Nieves",
-      img: "https://res.cloudinary.com/dvnhn35l4/image/upload/v1698269632/NicoLivingStereo/recortado.jpg",
+      img: "https://res.cloudinary.com/dvnhn35l4/image/upload/v1702253981/NicoLivingStereo/RaisRuizFotografia-2_znj0lb.jpg",
       link: "/NicolasNieves",
     },
     {
