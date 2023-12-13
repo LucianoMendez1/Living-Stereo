@@ -48,7 +48,7 @@ const Nav = () => {
             </li>
             <li>
               <a
-                href="#artist"
+                href="#album"
                 className={`${styleLinks} link`}
                 onClick={handleToggle}
               >
@@ -57,7 +57,7 @@ const Nav = () => {
             </li>
             <li>
               <p className={`${styleLinks} link`} onClick={handleToggle}>
-                CONTACTO <span className="spanLink">CONTACTO </span>
+              Album <span className="spanLink">Album </span>
               </p>
             </li>
           </ul>

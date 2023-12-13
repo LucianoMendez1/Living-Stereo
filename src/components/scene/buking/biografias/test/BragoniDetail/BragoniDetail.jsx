@@ -57,7 +57,7 @@ const BragoniDetail = () => {
       <HeroDetail
         name={"Agustin Bragoni"}
         img={
-          "https://res.cloudinary.com/dvnhn35l4/image/upload/v1697749878/Agustin_Bragoni_-_Chacra_el_Descanso_2_wv4ttr.jpg"
+          "https://res.cloudinary.com/dvnhn35l4/image/upload/v1702431702/IMG_3719_cwenly_2_hqkxnx.jpg"
         }
       />
 
@@ -69,7 +69,7 @@ const BragoniDetail = () => {
           "Actualmente se desempeña en la electrónica (Progressive House, Melodic Techno & Melodic House). Con sus dos formatos, DJ Set y Live Set, tocando instrumentos como la guitarra, sintetizadores y lap steel."
         }
         img1={
-          "https://res.cloudinary.com/dvnhn35l4/image/upload/v1697749878/Agustin_Bragoni_-_Chacra_el_Descanso_oyat3i.jpg"
+          "https://res.cloudinary.com/dvnhn35l4/image/upload/v1697754999/Agustin_Bragoni_-_Flyer_2_ai59us.jpg"
         }
         title2={
           "A lo largo de su carrera ha logrado tocar en los escenarios más reconocidos de Argentina."
@@ -78,14 +78,14 @@ const BragoniDetail = () => {
           "Como el Lollapalooza, Luna Park, Cosquin Rock, Estadio Malvinas Argentinas, entre otros."
         }
         img2={
-          "https://res.cloudinary.com/dvnhn35l4/image/upload/v1697754573/Agus_Chano_-_Luna_Park_wfhjea.jpg"
+          "https://res.cloudinary.com/dvnhn35l4/image/upload/v1697594021/agus_wcke3d.jpg"
         }
         title3={"Así mismo, además de su proyecto como DJ. "}
         text3={
           "Es parte del equipo de producción y musicalización de Chano, un exponente dentro de la música."
         }
         img3={
-          "https://res.cloudinary.com/dvnhn35l4/image/upload/v1697755160/Agustin_Bragoni_2_nmghmd.jpg"
+          "https://res.cloudinary.com/dvnhn35l4/image/upload/v1697754573/Agus_Chano_-_Luna_Park_wfhjea.jpg"
         }
         title4={
           "Por su parte es productor musical y DJ residente de Iconic Club."
@@ -94,7 +94,7 @@ const BragoniDetail = () => {
           "En los últimos tiempos, ha tenido la oportunidad de incursionar dentro del género House."
         }
         img4={
-          "https://res.cloudinary.com/dvnhn35l4/image/upload/v1697749878/Agustin_Bragoni_-_Estadio_UNO_o3lsyx.jpg"
+          "https://res.cloudinary.com/dvnhn35l4/image/upload/v1697749880/Agustin_Bragoni_-_Chacra_el_Descanso_1_lvjecr.jpg"
         }
         title5={
           "Compartio cabina con los DJs más importantes de la escena argentina."

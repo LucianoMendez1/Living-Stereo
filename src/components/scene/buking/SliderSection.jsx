@@ -34,22 +34,23 @@ const SliderSection = () => {
 
   const dataBooking = [
     {
-      name: "Simon Di Marzio",
-      img: "https://res.cloudinary.com/dvnhn35l4/image/upload/v1698269867/NicoLivingStereo/tr_yw4d9c.jpg",
-      link: "/SimonDimarzio",
-    },
-    {
       name: "Agustin Bragoni",
       img: "https://res.cloudinary.com/dvnhn35l4/image/upload/v1697749878/Agustin_Bragoni_-_Chacra_el_Descanso_oyat3i.jpg",
       link: "/AgustinBragoni",
     },
+    {
+      name: "Simon Di Marzio",
+      img: "https://res.cloudinary.com/dvnhn35l4/image/upload/v1698269867/NicoLivingStereo/tr_yw4d9c.jpg",
+      link: "/SimonDimarzio",
+    },
+   ,
     {
       name: "Nicolas Nieves",
       img: "https://res.cloudinary.com/dvnhn35l4/image/upload/v1702253981/NicoLivingStereo/RaisRuizFotografia-2_znj0lb.jpg",
       link: "/NicolasNieves",
     },
     {
-      name: `B2B`,
+      name: 'B2B Bragoni - Di Marzio',
       img: "https://res.cloudinary.com/dvnhn35l4/image/upload/v1699071444/b2bAgusSimon/IMG_3718_eepqps.jpg",
       link: "/B2B",
       booking1: "Bragoni ",
@@ -90,6 +91,7 @@ const SliderSection = () => {
               <section className="image-container">
                 <img className="simonImg" src={data.img} alt="images booking" />
                 <div className="image-name">{data.name}</div>
+          
               </section>
             </Link>
           ))}

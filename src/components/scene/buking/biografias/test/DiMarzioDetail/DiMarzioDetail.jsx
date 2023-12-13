@@ -78,14 +78,14 @@ const DiMarzioDetail = () => {
           "A la fecha, se encuentra dando sus primeros pasoscomo productor musical teniendo feedbacks positivos de grandes exponentes del género ademas recibio support de Hernán Cattaneo en su Podcasts semanal Resident"
         }
         img2={
-          "https://res.cloudinary.com/dvnhn35l4/image/upload/v1697939328/SimonlivingStereo/IMG_7132_evpp2z.jpg"
+          "https://res.cloudinary.com/dvnhn35l4/image/upload/v1697862778/5AB4639F-37D0-4EB6-9C95-D26B2147BD2E_nzdotm.jpg"
         }
         title3={"Su Trayectoria en los Clubes "}
         text3={
           "Se desempeñó en distintos clubes como The bow, Bahrein, Iconic Club,Zegre; así como también en ciclos como Rio Electronic Music,Hipico PM, Bodega Bonfati Mendoza, Parador Serena Mar delPlata"
         }
         img3={
-          "https://res.cloudinary.com/dvnhn35l4/image/upload/v1697941201/SimonlivingStereo/DSC01761_p0lbu8.jpg"
+          "https://res.cloudinary.com/dvnhn35l4/image/upload/v1697939333/SimonlivingStereo/IMG_8755_u5fapx.jpg"
         }
         title4={
           "Por su parte es productor musical y DJ residente de Iconic Club."
@@ -94,7 +94,7 @@ const DiMarzioDetail = () => {
           "En los últimos tiempos, ha tenido la oportunidad de incursionar dentro del género House."
         }
         img4={
-          "https://res.cloudinary.com/dvnhn35l4/image/upload/v1697941204/SimonlivingStereo/DSC01766_qk5ekt.jpg"
+          "https://res.cloudinary.com/dvnhn35l4/image/upload/v1697941201/SimonlivingStereo/DSC01761_p0lbu8.jpg"
         }
         title5={
           "Identidad Musical"
