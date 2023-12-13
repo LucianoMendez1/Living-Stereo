@@ -66,7 +66,7 @@ const NicolasDetail = () => {
           " Nicolas Nieves es un talentoso DJ de Progressive House originario de la ciudad de La Plata"
         }
         text1={
-          ">Desde temprana edad, ha sido influenciado por banda sicónicas como Pink Floyd, Led Zeppelin y Radiohead, lo que ha moldeado su estilo musical único."
+          "Desde temprana edad, ha sido influenciado por banda sicónicas como Pink Floyd, Led Zeppelin y Radiohead, lo que ha moldeado su estilo musical único."
         }
         img1={
           "https://res.cloudinary.com/dvnhn35l4/image/upload/v1699668791/NicoLivingStereo/Copia_de_NGR04472_m5vuby_1_sqjsdk.jpg"
@@ -75,7 +75,7 @@ const NicolasDetail = () => {
           " Influencia en su estilo."
         }
         text2={
-          ">Hernan Cattaneo, John Digweed, Sasha y Nick Warren son algunos de los artistas que han influido en el estilo y enfoque musical de Snow. Estos referentes han dejado una huella profunda en su desarrollo artístico."
+          "Hernan Cattaneo, John Digweed, Sasha y Nick Warren son algunos de los artistas que han influido en el estilo y enfoque musical de Snow. Estos referentes han dejado una huella profunda en su desarrollo artístico."
         }
         img2={
           "https://res.cloudinary.com/dvnhn35l4/image/upload/v1698273411/NicoLivingStereo/DSC03960_bxewii.jpg"

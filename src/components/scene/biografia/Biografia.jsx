@@ -58,10 +58,10 @@ const Biografia = () => {
       <div className="box_text_biography">
         <h2> reconocimiento nacional e internacional </h2>
         <p>
-        bajo el sello de 
+        Bajo el sello de 
             <span > South America Avenue </span>
             respaldada por DJs destacados, como
-            <span > Hernán Cattáneo. </span> Además de su producción musical.
+            <span > Hernán Cattáneo,Kevin di Serna,Paul deep ,Nick Varon. </span> Además de su producción musical.
         </p>
       </div>
      

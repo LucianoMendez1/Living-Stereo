@@ -14,7 +14,7 @@ const Animala = () => {
   return (
     <div className="container_animala">
       <div className="box_text_animala">
-        <h2>Animala</h2>
+        <h2>Living Stereo Showcase</h2>
         <p>
           {" "}
           En 2023, se convirtió en un lugar emocionante para{" "}
