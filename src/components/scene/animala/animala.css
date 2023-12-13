@@ -188,6 +188,7 @@
     align-items: center;
   }
 
+
   .img_1 {
     width: 18rem;
     height: 19rem;
@@ -220,7 +221,7 @@
   }
 
   .box_text_animala h2 {
-    font-size: 13rem;
+    font-size: 7rem;
   }
 
   .box_text_animala p {
@@ -274,10 +275,11 @@
 
   .box_text_animala {
     width: 100%;
+   
   }
 
   .box_text_animala h2 {
-    font-size: 5rem;
+    font-size: 4rem;
     color: white;
     font-weight: 900;
   }
@@ -293,6 +295,8 @@
 }
 
 @media screen and (max-width: 440px) {
+  
+  
   .container_animala {
     margin-top: 0rem ;
     height: 100%;
