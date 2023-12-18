@@ -57,7 +57,7 @@ const DiMarzioDetail = () => {
       <HeroDetail
         name={"Simon Di Marzio"}
         img={
-          "https://res.cloudinary.com/dvnhn35l4/image/upload/v1697939335/SimonlivingStereo/IMG_8760_k3oepw.jpg"
+          "https://res.cloudinary.com/dvnhn35l4/image/upload/v1702863532/livingStereo-Optimizado/simon/IMG_8760_k3oepw_1_vpcupd.jpg"
         }
       />
 
@@ -69,7 +69,7 @@ const DiMarzioDetail = () => {
           "Comenzó su carrera hace 6 años inspirado en The Chemical Brothers, Jean-Michel Jarre, Sasha y Hernan Cattaneo"
         }
         img1={
-          "https://res.cloudinary.com/dvnhn35l4/image/upload/v1698192529/8-DSC05676_mwbqtx_sgtzzy.png"
+          "https://res.cloudinary.com/dvnhn35l4/image/upload/v1702863501/livingStereo-Optimizado/simon/8-DSC05676_mwbqtx_sgtzzy_b8mxwa.png"
         }
         title2={
           "Sus sets se destacan por contener transiciones largas ysonidos armónicos para crear atmósferas que cautivan alpúblico"
@@ -94,7 +94,7 @@ const DiMarzioDetail = () => {
           "En los últimos tiempos, ha tenido la oportunidad de incursionar dentro del género House."
         }
         img4={
-          "https://res.cloudinary.com/dvnhn35l4/image/upload/v1697941201/SimonlivingStereo/DSC01761_p0lbu8.jpg"
+          "https://res.cloudinary.com/dvnhn35l4/image/upload/v1702863500/livingStereo-Optimizado/simon/DSC01761_p0lbu8_fvkzyp.jpg"
         }
         title5={
           "Identidad Musical"
@@ -103,7 +103,7 @@ const DiMarzioDetail = () => {
           "Se siente identificado con el Progressive House, Deep House y Organic House."
         }
         img5={
-          "https://res.cloudinary.com/dvnhn35l4/image/upload/v1697939318/SimonlivingStereo/FF1F4B0A-1771-4A96-97F6-AA5CFA2D4DA0_hqelk0.jpg"
+          "https://res.cloudinary.com/dvnhn35l4/image/upload/v1702863498/livingStereo-Optimizado/simon/FF1F4B0A-1771-4A96-97F6-AA5CFA2D4DA0_hqelk0_pe4lqj.jpg"
         }
       />
 
