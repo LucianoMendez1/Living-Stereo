@@ -40,32 +40,32 @@ const Animala = () => {
         <div className="box_img_animala">
           <img
             className="img_animala img_1" // Cambiado a ".bio-image-static-animala"
-            src="https://res.cloudinary.com/dvnhn35l4/image/upload/v1697951746/Animala/349575254_1452085322226359_8168062326411260196_n_zl5jog.jpg"
+            src="https://res.cloudinary.com/dvnhn35l4/image/upload/v1702862586/livingStereo-Optimizado/animala/349575254_1452085322226359_8168062326411260196_n_zl5jog_ow2qqq.jpg"
             alt="Image 1"
           />
           <img
             className="img_animala img_2" // Cambiado a ".bio-image-static2-animala"
-            src="https://res.cloudinary.com/dvnhn35l4/image/upload/v1699064819/PHOTO-2023-05-18-15-22-47_2_t18qgl.jpg "
+            src="https://res.cloudinary.com/dvnhn35l4/image/upload/v1702862589/livingStereo-Optimizado/animala/PHOTO-2023-05-18-15-22-47_2_t18qgl_r5yl17.jpg "
             alt="image 2"
           />
           <img
             className="img_animala img_3" // Cambiado a ".bio-image-static3-animala"
-            src="https://res.cloudinary.com/dvnhn35l4/image/upload/v1697951745/Animala/350091469_771875407930011_1637485298770860654_n_mwasyp.jpg"
+            src="https://res.cloudinary.com/dvnhn35l4/image/upload/v1702862585/livingStereo-Optimizado/animala/350091469_771875407930011_1637485298770860654_n_mwasyp_xcbd93.jpg"
             alt="Image 3"
           />
           <img
             className="img_animala img_4" // Cambiado a ".bio-image-static3-animala"
-            src="https://res.cloudinary.com/dvnhn35l4/image/upload/v1699064819/4c24c54f-ec80-4e18-b996-db4ce2302057_zqc63b.jpg"
+            src="https://res.cloudinary.com/dvnhn35l4/image/upload/v1702862590/livingStereo-Optimizado/animala/4c24c54f-ec80-4e18-b996-db4ce2302057_zqc63b_1_lalbh8.jpg"
             alt="Image 4"
           />
           <img
             className="img_animala img_5" // Cambiado a ".bio-image-static3-animala"
-            src="https://res.cloudinary.com/dvnhn35l4/image/upload/v1697951743/Animala/350271788_563412029304349_3884554252112040800_n_j4slng.jpg"
+            src="https://res.cloudinary.com/dvnhn35l4/image/upload/v1702862587/livingStereo-Optimizado/animala/350271788_563412029304349_3884554252112040800_n_j4slng_auewll.jpg"
             alt="Image 5"
           />
           <img
             className="img_animala img_6" // Cambiado a ".bio-image-static3-animala"
-            src="https://res.cloudinary.com/dvnhn35l4/image/upload/v1698271045/NicoLivingStereo/IMG_2938_xziijt.jpg"
+            src="https://res.cloudinary.com/dvnhn35l4/image/upload/v1702862589/livingStereo-Optimizado/animala/IMG_2938_xziijt_fip4e3.jpg"
             alt="Image 6"
           />
         </div>

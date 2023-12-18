@@ -6,7 +6,7 @@ const INITIAL_CONTENT = [
   {
     id: `ar1`,
     imgSrc:
-      "https://res.cloudinary.com/dvnhn35l4/image/upload/v1699071424/b2bAgusSimon/D870221E-7541-4B81-A3CE-79E1D58BC806_npxghh.jpg",
+      "https://res.cloudinary.com/dvnhn35l4/image/upload/v1702862237/livingStereo-Optimizado/b2b/IMG_3718_1_tqk5x3_1_aza6sk.jpg",
     desc: (
       <>
         South America
@@ -27,7 +27,7 @@ const INITIAL_CONTENT = [
   {
     id: `ar2`,
     imgSrc:
-      "https://res.cloudinary.com/dvnhn35l4/image/upload/v1699071409/b2bAgusSimon/4c24c54f-ec80-4e18-b996-db4ce2302057_awkiz9.jpg",
+      "https://res.cloudinary.com/dvnhn35l4/image/upload/v1702862234/livingStereo-Optimizado/b2b/CB6AD92B-1BBF-46DA-8D21-92F6A3807A9C_poodip_e4nvh3.jpg",
     desc: "Nicolas Nieves, Agustín Bragoni, Simon Di Marzio - Other Side [South America Avenue]",
     title: "DirtyPool",
     data_status: "inactive",
@@ -39,7 +39,7 @@ const INITIAL_CONTENT = [
     id: `ar3`,
 
     imgSrc:
-      "https://res.cloudinary.com/dvnhn35l4/image/upload/v1699071443/b2bAgusSimon/IMG_3719_hlged1.jpg",
+      "https://res.cloudinary.com/dvnhn35l4/image/upload/v1702862587/livingStereo-Optimizado/animala/350271788_563412029304349_3884554252112040800_n_j4slng_auewll.jpg",
     desc: "Nicolas Nieves, Agustín Bragoni, Simon Di Marzio",
     title: "Rivera Paradise",
     data_status: "inactive",

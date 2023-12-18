@@ -69,7 +69,7 @@ const NicolasDetail = () => {
           "Desde temprana edad, ha sido influenciado por banda sicónicas como Pink Floyd, Led Zeppelin y Radiohead, lo que ha moldeado su estilo musical único."
         }
         img1={
-          "https://res.cloudinary.com/dvnhn35l4/image/upload/v1699668791/NicoLivingStereo/Copia_de_NGR04472_m5vuby_1_sqjsdk.jpg"
+          "https://res.cloudinary.com/dvnhn35l4/image/upload/v1702862363/livingStereo-Optimizado/nico/Copia_de_NGR04472_m5vuby_1_sqjsdk_xu0bza.jpg"
         }
         title2={
           " Influencia en su estilo."
@@ -78,14 +78,14 @@ const NicolasDetail = () => {
           "Hernan Cattaneo, John Digweed, Sasha y Nick Warren son algunos de los artistas que han influido en el estilo y enfoque musical de Snow. Estos referentes han dejado una huella profunda en su desarrollo artístico."
         }
         img2={
-          "https://res.cloudinary.com/dvnhn35l4/image/upload/v1698273411/NicoLivingStereo/DSC03960_bxewii.jpg"
+          "https://res.cloudinary.com/dvnhn35l4/image/upload/v1702862366/livingStereo-Optimizado/nico/DSC03962_qdyakp_1_mkjayk.jpg"
         }
         title3={" Su Energia en el Escenario "}
         text3={
           "su capacidad para transportar a la audiencia a través de sonidos cautivadores son sin duda una experiencia creativa e innovadora para cualquier audiencia"
         }
         img3={
-          "https://res.cloudinary.com/dvnhn35l4/image/upload/v1699668790/NicoLivingStereo/81022636_128021368307332_5612966744073365906_n_x3vvh8_1_m6vaud.jpg"
+          "https://res.cloudinary.com/dvnhn35l4/image/upload/v1702862362/livingStereo-Optimizado/nico/81022636_128021368307332_5612966744073365906_n_x3vvh8_1_m6vaud_st0bi6.jpg"
         }
         title4={
           "promesa emergente"
@@ -94,7 +94,7 @@ const NicolasDetail = () => {
           "Con su pasión por la música, su dedicación a la perfección sonora y su búsqueda constante de generar diversos climas y, Snow está consolidando su nombre como una promesa emergente en la escena de la música electrónica"
         }
         img4={
-          "https://res.cloudinary.com/dvnhn35l4/image/upload/v1699668792/NicoLivingStereo/DSC03968_eomx0l_2_j3owsf.jpg"
+          "https://res.cloudinary.com/dvnhn35l4/image/upload/v1702862367/livingStereo-Optimizado/nico/DSC03968_eomx0l_2_j3owsf_k1pqig.jpg"
         }
         title5={
           "Compartio cabina con los DJs más importantes de la escena argentina."

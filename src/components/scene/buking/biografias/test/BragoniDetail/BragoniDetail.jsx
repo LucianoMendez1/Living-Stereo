@@ -69,7 +69,7 @@ const BragoniDetail = () => {
           "Actualmente se desempeña en la electrónica (Progressive House, Melodic Techno & Melodic House). Con sus dos formatos, DJ Set y Live Set, tocando instrumentos como la guitarra, sintetizadores y lap steel."
         }
         img1={
-          "https://res.cloudinary.com/dvnhn35l4/image/upload/v1697754999/Agustin_Bragoni_-_Flyer_2_ai59us.jpg"
+          "https://res.cloudinary.com/dvnhn35l4/image/upload/v1702862235/livingStereo-Optimizado/b2b/D870221E-7541-4B81-A3CE-79E1D58BC806_1_x3ztns_frryee.jpg"
         }
         title2={
           "A lo largo de su carrera ha logrado tocar en los escenarios más reconocidos de Argentina."
@@ -78,7 +78,7 @@ const BragoniDetail = () => {
           "Como el Lollapalooza, Luna Park, Cosquin Rock, Estadio Malvinas Argentinas, entre otros."
         }
         img2={
-          "https://res.cloudinary.com/dvnhn35l4/image/upload/v1697594021/agus_wcke3d.jpg"
+          "https://res.cloudinary.com/dvnhn35l4/image/upload/v1702862237/livingStereo-Optimizado/b2b/651c4a28-b78c-40c5-905b-a1d18220e3d4_wojmgp_xr0gro.jpg"
         }
         title3={"Así mismo, además de su proyecto como DJ. "}
         text3={
@@ -94,7 +94,7 @@ const BragoniDetail = () => {
           "En los últimos tiempos, ha tenido la oportunidad de incursionar dentro del género House."
         }
         img4={
-          "https://res.cloudinary.com/dvnhn35l4/image/upload/v1697749880/Agustin_Bragoni_-_Chacra_el_Descanso_1_lvjecr.jpg"
+          "https://res.cloudinary.com/dvnhn35l4/image/upload/v1702862235/livingStereo-Optimizado/b2b/f7b52ae3-ad22-4702-999b-35610a63c349_tprk0m_yuutnl.jpg"
         }
         title5={
           "Compartio cabina con los DJs más importantes de la escena argentina."
@@ -103,7 +103,7 @@ const BragoniDetail = () => {
           "Compartiendo cabina con Kolombo, Mariano Mellino, Nic Fanciulli, Juan Hansen, Soundexile, Ezequiel Arias y Jonh Cosani entre otros. Demostrando así su versatilidad dentro la escena electrónica. Algunas de sus fechas más destacadas han sido junto a al DJ internacional Cid Inc en Estadio Uno (Club Estudiantes) y junto al alemán Einmusik en Iconic Club."
         }
         img5={
-          "https://res.cloudinary.com/dvnhn35l4/image/upload/v1697749878/Agustin_Bragoni_-_Estadio_UNO_3_akmaxf.jpg"
+          "https://res.cloudinary.com/dvnhn35l4/image/upload/v1702862235/livingStereo-Optimizado/b2b/D870221E-7541-4B81-A3CE-79E1D58BC806_1_x3ztns_frryee.jpg"
         }
       />
 

@@ -35,12 +35,12 @@ const SliderSection = () => {
   const dataBooking = [
     {
       name: "Agustin Bragoni",
-      img: "https://res.cloudinary.com/dvnhn35l4/image/upload/v1697749878/Agustin_Bragoni_-_Chacra_el_Descanso_oyat3i.jpg",
+      img: "https://res.cloudinary.com/dvnhn35l4/image/upload/v1702861924/livingStereo-Optimizado/bukingSlider/Agustin_Bragoni_-_Chacra_el_Descanso_oyat3i_cake6v.jpg",
       link: "/AgustinBragoni",
     },
     {
       name: "Simon Di Marzio",
-      img: "https://res.cloudinary.com/dvnhn35l4/image/upload/v1698269867/NicoLivingStereo/tr_yw4d9c.jpg",
+      img: "https://res.cloudinary.com/dvnhn35l4/image/upload/v1702861927/livingStereo-Optimizado/bukingSlider/tr_yw4d9c_ue5gbv.jpg",
       link: "/SimonDimarzio",
     },
    ,
@@ -51,7 +51,7 @@ const SliderSection = () => {
     },
     {
       name: 'B2B Bragoni - Di Marzio',
-      img: "https://res.cloudinary.com/dvnhn35l4/image/upload/v1699071444/b2bAgusSimon/IMG_3718_eepqps.jpg",
+      img: "https://res.cloudinary.com/dvnhn35l4/image/upload/v1702862237/livingStereo-Optimizado/b2b/IMG_3718_1_tqk5x3_1_aza6sk.jpg",
       link: "/B2B",
       booking1: "Bragoni ",
       booking2: "Di Marzio",
