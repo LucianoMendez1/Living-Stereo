@@ -11,7 +11,7 @@ const Biografia = () => {
 
       <div className="box_biography">
           <div className="text_biography">
-            <h2>El Equipo de Productores Musicales mas Destacados de Argentina.</h2>
+            <h2>Un Equipo de djs y productores de Argentina.</h2>
             <p>
                 Conformada por un talentoso equipo de productores musicales,incluyendo, 
                 <span> Agustin Bragoni, Joaquin Irigoyen, Nicolas Nieves y Simon Di Marzio.</span>
@@ -47,10 +47,8 @@ const Biografia = () => {
           <div className="text_biography text_biography_s2">
             <h2>"La Destacada Trayectoria Musical de Living Stereo y su Impacto en la Escena Musical"</h2>
             <p>
-                Su música ha obtenido reconocimiento nacional e internacional bajo el sello
-                  <span> South America Avenue </span>
-                  respaldada por DJs destacados, como
-                  <span > Hernán Cattáneo. </span> Además de su producción musical.
+            Su música ha obtenido el reconocimiento nacional e internacional contando con el Support DJs como 
+                  <span> Hernan Cattaneo, Kevin Di Serna, Paul Deep y Lopezhouse. </span>
             </p>
           </div>
       </div>
@@ -58,10 +56,12 @@ const Biografia = () => {
       <div className="box_text_biography">
         <h2> reconocimiento nacional e internacional </h2>
         <p>
-        Bajo el sello de 
-            <span > South America Avenue </span>
-            respaldada por DJs destacados, como
-            <span > Hernán Cattáneo,Kevin di Serna,Paul deep ,Nick Varon. </span> Además de su producción musical.
+       Sus Producciones han sido selladas por sellos como 
+       <span> 3erd Avenue </span>
+        y
+       <br/>
+        <span >South America Avenue </span>
+        
         </p>
       </div>
      
