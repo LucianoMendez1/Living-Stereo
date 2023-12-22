@@ -56,7 +56,7 @@ const Biografia = () => {
       <div className="box_text_biography">
         <h2> reconocimiento nacional e internacional </h2>
         <p>
-       Sus Producciones han sido selladas por sellos como 
+       Sus Producciones han sido selladas por Labels como 
        <span> 3erd Avenue </span>
         y
        <br/>
