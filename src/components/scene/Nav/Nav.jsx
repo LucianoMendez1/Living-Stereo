@@ -28,7 +28,7 @@ const Nav = () => {
           <ul className="">
             <li>
               <a
-                href="#"
+                href="/"
                 className={`${styleLinks} link`}
                 onClick={handleToggle}
               >
@@ -48,7 +48,7 @@ const Nav = () => {
             </li>
             <li>
               <a
-                href="#album"
+                href="#Artistas"
                 className={`${styleLinks} link`}
                 onClick={handleToggle}
               >
@@ -56,9 +56,15 @@ const Nav = () => {
               </a>
             </li>
             <li>
+            <a
+                href="/album1/Main"
+                className={`${styleLinks} link`}
+                onClick={handleToggle}
+              >
               <p className={`${styleLinks} link`} onClick={handleToggle}>
               Album <span className="spanLink">Album </span>
               </p>
+              </a>
             </li>
           </ul>
         </div>

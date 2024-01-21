@@ -20,9 +20,7 @@ const Navbar = () => {
 
       <div id="home" className="home">
         {/* Utilizando el componente Link de react-router-dom */}
-        <Link to="/" className="home">
-          <FontAwesomeIcon icon={faHome} />
-        </Link>
+     
       </div>
 
       <div id="navbar__contact-section" className="navbar__section navbar__section-contact">
