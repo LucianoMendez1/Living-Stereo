@@ -50,7 +50,7 @@ const Biografia = () => {
             la Escena Musical"
           </h2>
           <p>
-            Durante sus presentaciones, <span>fusionan Dj Sets</span> con elementos en
+            Durante sus presentaciones, <span>fusionan Dj Sets </span> con elementos en
             vivo como sintetizadores,  guitars, lap steel, voces y percusión
             electrónica. Actualmente <span>Living Stereo ofrece dos formatos de
             actuación </span>en vivo,en los cuales<span> exploran géneros como progressive
