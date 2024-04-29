@@ -45,7 +45,7 @@ const Animala = () => {
           />
           <img
             className="img_animala img_2" // Cambiado a ".bio-image-static2-animala"
-            src="https://res.cloudinary.com/dvnhn35l4/image/upload/v1702862589/livingStereo-Optimizado/animala/PHOTO-2023-05-18-15-22-47_2_t18qgl_r5yl17.jpg "
+            src="https://res.cloudinary.com/dvnhn35l4/image/upload/v1714355015/livingStereo-Optimizado/foto-43_yi5dam.jpg "
             alt="image 2"
           />
           <img

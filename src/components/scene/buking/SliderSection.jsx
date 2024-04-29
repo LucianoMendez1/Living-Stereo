@@ -49,13 +49,13 @@ const SliderSection = () => {
       img: "https://res.cloudinary.com/dvnhn35l4/image/upload/v1702253981/NicoLivingStereo/RaisRuizFotografia-2_znj0lb.jpg",
       link: "/NicolasNieves",
     },
-    {
+   /*  {
       name: 'B2B Bragoni - Di Marzio',
       img: "https://res.cloudinary.com/dvnhn35l4/image/upload/v1702862237/livingStereo-Optimizado/b2b/IMG_3718_1_tqk5x3_1_aza6sk.jpg",
       link: "/B2B",
       booking1: "Bragoni ",
       booking2: "Di Marzio",
-    },
+    }, */
   ];
 
   return (

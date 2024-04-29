@@ -25,10 +25,12 @@ const SelloDiscografico = () => {
     <div className="sello">
         <div className="contain_data_sello">
             <div className="title_sello">
-              <h2>Sello Discografico</h2>
+              <h2>Lanzamientos</h2>
               <h3>South America Avenue </h3>
             </div>
+            
             <div className="text_sello">
+              
               <p>
                 se complace en presentar su último lanzamiento,
                 dando una cálida bienvenida a{" "}

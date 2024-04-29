@@ -15,7 +15,14 @@ const Biografia = () => {
             <span>
               {" "}
               Agustin Bragoni, Joaquin Irigoyen, Nicolas Nieves y Simon Di
-              Marzio.
+              Marzio. <br />{" "}
+            </span>{" "}
+            Con una sólida base en producción musical,Living Stereo sigue
+            desarrollando su marca a través de{" "}
+            <span>
+              {" "}
+              sus presentaciones en vivo las cuales se destacan por ser
+              íntegramente con música propia
             </span>
           </p>
         </div>
@@ -50,11 +57,17 @@ const Biografia = () => {
             la Escena Musical"
           </h2>
           <p>
-            Durante sus presentaciones, <span>fusionan Dj Sets </span> con elementos en
-            vivo como sintetizadores,  guitars, lap steel, voces y percusión
-            electrónica. Actualmente <span>Living Stereo ofrece dos formatos de
-            actuación </span>en vivo,en los cuales<span> exploran géneros como progressive
-            house, deep house y techno.</span> 
+            Durante sus presentaciones, <span>fusionan Dj Sets </span> con
+            elementos en vivo como sintetizadores, guitars, lap steel, voces y
+            percusión electrónica. Actualmente{" "}
+            <span>Living Stereo ofrece dos formatos de actuación </span>en vivo:
+            dj set y live band con sintetizadores guitarra y voces en vivo en
+            los cuales. Ambos formatos se destacan por ser íntegramente con
+            música producida por ellos.
+          {/*   <span>
+              {" "}
+              exploran géneros como progressive house, deep house y techno.
+            </span> */}
           </p>
         </div>
       </div>
@@ -63,16 +76,16 @@ const Biografia = () => {
         <h2> reconocimiento nacional e internacional </h2>
         <p>
           Sus Producciones han sido selladas por labels como
-          <br/>
-          <span> 3erd Avenue </span> 
-          <br/>
+          <br />
+          <span> 3erd Avenue </span>
+          <br />
           <span>One of a kind</span>
-          <br/>
+          <br />
           <span>La perle record</span>
-           <br/>
-           <span>Massive harmony records </span>
-            <br/>
-            <span>Dopamine white</span>
+          <br />
+          <span>Massive harmony records </span>
+          <br />
+          <span>Dopamine white</span>
           <br />
           <span>South America Avenue </span>
         </p>
