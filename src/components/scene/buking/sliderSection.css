@@ -13,6 +13,7 @@
   position: relative;
   z-index: 999;
   padding-top: 4rem;
+ 
   text-align: center;
 }
 
@@ -20,11 +21,35 @@
   text-transform: uppercase;
   letter-spacing: 1px;
   color: rgba(255, 255, 255, 0.966);
-  font-size: 5vw;
+  font-size: 6vw;
+  filter: grayscale(100%);
+  animation: titileo 2s infinite alternate;
   font-weight: 900;
   line-height: 130%;
   letter-spacing: 0.3px;
   width: 100%;
+}
+
+@keyframes titileo {
+  0% {
+    filter: grayscale(0%);
+  }
+  100% {
+    filter: grayscale(100%);
+  }
+}
+
+.changeColor {
+  animation: changeColor 3s infinite;
+}
+
+@keyframes changeColor {
+  0%, 100% {
+    color: rgba(255, 255, 255, 0.966); /* Mantener el color original */
+  }
+  50% {
+    color: "#C3EBFF";
+  }
 }
 
 .gallery_contain p {

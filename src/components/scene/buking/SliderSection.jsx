@@ -30,6 +30,19 @@ const SliderSection = () => {
         opacity: 1,
       }
     );
+    
+    const title = document.querySelector(".gallery_contain h1");
+    const changeColorAnimation = gsap.to(title, {
+      color: "#C3EBFF", // Cambia a rojo (puedes ajustar el color aquí)
+      duration: 3,
+      repeat: -1,
+      yoyo: true,
+      ease: "none",
+    });
+
+    return () => {
+      changeColorAnimation.kill(); // Detiene la animación al desmontar el componente
+    };
   }, []);
 
   const dataBooking = [
@@ -43,19 +56,11 @@ const SliderSection = () => {
       img: "https://res.cloudinary.com/dvnhn35l4/image/upload/v1702861927/livingStereo-Optimizado/bukingSlider/tr_yw4d9c_ue5gbv.jpg",
       link: "/SimonDimarzio",
     },
-   ,
     {
       name: "Nicolas Nieves",
       img: "https://res.cloudinary.com/dvnhn35l4/image/upload/v1702253981/NicoLivingStereo/RaisRuizFotografia-2_znj0lb.jpg",
       link: "/NicolasNieves",
     },
-   /*  {
-      name: 'B2B Bragoni - Di Marzio',
-      img: "https://res.cloudinary.com/dvnhn35l4/image/upload/v1702862237/livingStereo-Optimizado/b2b/IMG_3718_1_tqk5x3_1_aza6sk.jpg",
-      link: "/B2B",
-      booking1: "Bragoni ",
-      booking2: "Di Marzio",
-    }, */
   ];
 
   return (
@@ -81,9 +86,18 @@ const SliderSection = () => {
       </div>
       <div className="gallery_contain" id="artist">
         <div className="box_title_booking">
-          <h1>Press kit booking </h1>
-          <p>Conocé a los artistas detras de Living Stereo.</p>
+          <h1>
+            <a
+              href="/Preskit"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Press kit booking
+            </a>
+          </h1>
+          <p>Conocé a los artistas detrás de Living Stereo.</p>
         </div>
+
 
         <section className="section_gallery">
           {dataBooking.map((data, index) => (

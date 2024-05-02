@@ -64,7 +64,7 @@ const Biografia = () => {
             dj set y live band con sintetizadores guitarra y voces en vivo en
             los cuales. Ambos formatos se destacan por ser íntegramente con
             música producida por ellos.
-          {/*   <span>
+            {/*   <span>
               {" "}
               exploran géneros como progressive house, deep house y techno.
             </span> */}
@@ -76,18 +76,162 @@ const Biografia = () => {
         <h2> reconocimiento nacional e internacional </h2>
         <p>
           Sus Producciones han sido selladas por labels como
-          <br />
-          <span> 3erd Avenue </span>
-          <br />
-          <span>One of a kind</span>
-          <br />
-          <span>La perle record</span>
-          <br />
-          <span>Massive harmony records </span>
-          <br />
-          <span>Dopamine white</span>
-          <br />
-          <span>South America Avenue </span>
+          
+          <div className="redes-icons_biografia">
+            <a
+              href="https://soundcloud.com/3rdavenue"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src="https://res.cloudinary.com/dvnhn35l4/image/upload/v1698110274/soundcloud_sj9krx.png"
+                alt="SoundCloud"
+                className="small-image"
+              />
+            </a>
+            <span> 3erd Avenue </span>
+            <a
+              href="https://www.instagram.com/3rdavenuelabel/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src="https://res.cloudinary.com/dvnhn35l4/image/upload/v1698110078/instagram_pmiidc.png"
+                alt="Instagram"
+                className="small-image"
+              />
+            </a>
+          </div>
+        
+          <div className="redes-icons_biografia">
+            <a
+              href="https://soundcloud.com/oneofakindmuzik"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src="https://res.cloudinary.com/dvnhn35l4/image/upload/v1698110274/soundcloud_sj9krx.png"
+                alt="SoundCloud"
+                className="small-image"
+              />
+            </a>
+            <span>One of a kind</span>
+            <a
+              href="https://www.instagram.com/oneofakindmuzik/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src="https://res.cloudinary.com/dvnhn35l4/image/upload/v1698110078/instagram_pmiidc.png"
+                alt="Instagram"
+                className="small-image"
+              />
+            </a>
+          </div>
+      
+          <div className="redes-icons_biografia">
+            <a
+              href="https://soundcloud.com/laperlerecords"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src="https://res.cloudinary.com/dvnhn35l4/image/upload/v1698110274/soundcloud_sj9krx.png"
+                alt="SoundCloud"
+                className="small-image"
+              />
+            </a>
+            <span>La perle record</span>
+            <a
+              href="https://www.instagram.com/laperlerecords/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src="https://res.cloudinary.com/dvnhn35l4/image/upload/v1698110078/instagram_pmiidc.png"
+                alt="Instagram"
+                className="small-image"
+              />
+            </a>
+          </div>
+          
+          <div className="redes-icons_biografia">
+            <a
+              href="https://soundcloud.com/massiveharmony"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src="https://res.cloudinary.com/dvnhn35l4/image/upload/v1698110274/soundcloud_sj9krx.png"
+                alt="SoundCloud"
+                className="small-image"
+              />
+            </a>
+            <span> Massive harmony records </span>
+            <a
+              href="https://www.instagram.com/massiveharmony/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src="https://res.cloudinary.com/dvnhn35l4/image/upload/v1698110078/instagram_pmiidc.png"
+                alt="Instagram"
+                className="small-image"
+              />
+            </a>
+          </div>
+          
+          <div className="redes-icons_biografia">
+            <a
+              href="https://soundcloud.com/dopamine-music"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src="https://res.cloudinary.com/dvnhn35l4/image/upload/v1698110274/soundcloud_sj9krx.png"
+                alt="SoundCloud"
+                className="small-image"
+              />
+            </a>
+            <span>Dopamine white</span>
+            <a
+              href="https://www.instagram.com/dopamine_music"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src="https://res.cloudinary.com/dvnhn35l4/image/upload/v1698110078/instagram_pmiidc.png"
+                alt=""
+                className="small-image"
+              />
+            </a>
+          </div>
+      
+          <div className="redes-icons_biografia">
+            <a
+              href="https://soundcloud.com/southamericaavenue"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src="https://res.cloudinary.com/dvnhn35l4/image/upload/v1698110274/soundcloud_sj9krx.png"
+                alt="SoundCloud"
+                className="small-image"
+              />
+            </a>
+            <span>South America Avenue </span>
+            <a
+              href="https://www.instagram.com/southamericaavenue/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src="https://res.cloudinary.com/dvnhn35l4/image/upload/v1698110078/instagram_pmiidc.png"
+                alt="Instagram"
+                className="small-image"
+              />
+            </a>
+          </div>
         </p>
       </div>
     </div>

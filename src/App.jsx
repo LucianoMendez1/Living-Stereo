@@ -6,6 +6,7 @@ import Home from './components/home/Home';
 import Preload from './components/scene/preload/Preload';
 import Lenis from '@studio-freight/lenis';
 import Nav from './components/scene/Nav/Nav';
+import Preskit from './components/scene/buking/biografias/test/Presskit/Preskit';
 
 const AgustinBragoni = lazy(() => import('./components/scene/buking/biografias/test/BragoniDetail/BragoniDetail'));
 const SimonDimarzio = lazy(() => import('./components/scene/buking/biografias/test/DiMarzioDetail/DiMarzioDetail'));
@@ -46,6 +47,7 @@ const App = () => {
           <Route path="/SimonDimarzio" element={<SimonDimarzio />} />
           <Route path="/NicolasNieves" element={<NicolasNieves />} />
           <Route path="/B2B" element={<B2B />} />
+          <Route path="/Preskit" element={<Preskit />} />
 
          
           {/* Rutas agus */}
