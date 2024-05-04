@@ -78,17 +78,7 @@ const Biografia = () => {
           Sus Producciones han sido selladas por labels como
           
           <div className="redes-icons_biografia">
-            <a
-              href="https://soundcloud.com/3rdavenue"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img
-                src="https://res.cloudinary.com/dvnhn35l4/image/upload/v1698110274/soundcloud_sj9krx.png"
-                alt="SoundCloud"
-                className="small-image"
-              />
-            </a>
+          
             <span> 3erd Avenue </span>
             <a
               href="https://www.instagram.com/3rdavenuelabel/"
@@ -101,11 +91,8 @@ const Biografia = () => {
                 className="small-image"
               />
             </a>
-          </div>
-        
-          <div className="redes-icons_biografia">
             <a
-              href="https://soundcloud.com/oneofakindmuzik"
+              href="https://soundcloud.com/3rdavenue"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -115,6 +102,10 @@ const Biografia = () => {
                 className="small-image"
               />
             </a>
+          </div>
+        
+          <div className="redes-icons_biografia">
+           
             <span>One of a kind</span>
             <a
               href="https://www.instagram.com/oneofakindmuzik/"
@@ -127,11 +118,8 @@ const Biografia = () => {
                 className="small-image"
               />
             </a>
-          </div>
-      
-          <div className="redes-icons_biografia">
             <a
-              href="https://soundcloud.com/laperlerecords"
+              href="https://soundcloud.com/oneofakindmuzik"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -141,6 +129,10 @@ const Biografia = () => {
                 className="small-image"
               />
             </a>
+          </div>
+      
+          <div className="redes-icons_biografia">
+          
             <span>La perle record</span>
             <a
               href="https://www.instagram.com/laperlerecords/"
@@ -153,11 +145,8 @@ const Biografia = () => {
                 className="small-image"
               />
             </a>
-          </div>
-          
-          <div className="redes-icons_biografia">
             <a
-              href="https://soundcloud.com/massiveharmony"
+              href="https://soundcloud.com/laperlerecords"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -167,6 +156,10 @@ const Biografia = () => {
                 className="small-image"
               />
             </a>
+          </div>
+          
+          <div className="redes-icons_biografia">
+          
             <span> Massive harmony records </span>
             <a
               href="https://www.instagram.com/massiveharmony/"
@@ -179,11 +172,8 @@ const Biografia = () => {
                 className="small-image"
               />
             </a>
-          </div>
-          
-          <div className="redes-icons_biografia">
             <a
-              href="https://soundcloud.com/dopamine-music"
+              href="https://soundcloud.com/massiveharmony"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -193,6 +183,10 @@ const Biografia = () => {
                 className="small-image"
               />
             </a>
+          </div>
+          
+          <div className="redes-icons_biografia">
+           
             <span>Dopamine white</span>
             <a
               href="https://www.instagram.com/dopamine_music"
@@ -205,11 +199,8 @@ const Biografia = () => {
                 className="small-image"
               />
             </a>
-          </div>
-      
-          <div className="redes-icons_biografia">
             <a
-              href="https://soundcloud.com/southamericaavenue"
+              href="https://soundcloud.com/dopamine-music"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -219,6 +210,10 @@ const Biografia = () => {
                 className="small-image"
               />
             </a>
+          </div>
+      
+          <div className="redes-icons_biografia">
+          
             <span>South America Avenue </span>
             <a
               href="https://www.instagram.com/southamericaavenue/"
@@ -228,6 +223,17 @@ const Biografia = () => {
               <img
                 src="https://res.cloudinary.com/dvnhn35l4/image/upload/v1698110078/instagram_pmiidc.png"
                 alt="Instagram"
+                className="small-image"
+              />
+            </a>
+            <a
+              href="https://soundcloud.com/southamericaavenue"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src="https://res.cloudinary.com/dvnhn35l4/image/upload/v1698110274/soundcloud_sj9krx.png"
+                alt="SoundCloud"
                 className="small-image"
               />
             </a>
